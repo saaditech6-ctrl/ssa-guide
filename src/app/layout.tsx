@@ -1,8 +1,9 @@
-﻿import type { Metadata, Viewport } from "next"
+import type { Metadata, Viewport } from "next"
 import { Inter, Playfair_Display } from "next/font/google"
 import "./globals.css"
 import { Header } from "@/components/layout/Header"
 import { Footer } from "@/components/layout/Footer"
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 const inter = Inter({ 
   subsets: ["latin"], 
@@ -70,6 +71,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           {children}
         </main>
         <Footer />
+        <SpeedInsights />
       </body>
     </html>
   )
