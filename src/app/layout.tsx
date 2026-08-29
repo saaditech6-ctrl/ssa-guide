@@ -7,14 +7,12 @@ import { Analytics } from "@vercel/analytics/next"
 import { SpeedInsights } from "@vercel/speed-insights/next"
 import { GoogleAnalytics } from "@/components/analytics/GoogleAnalytics"
 
-// إعداد خط Inter وتفعيل خاصية swap لمنع حجب الرندر
 const inter = Inter({ 
   subsets: ["latin"], 
   variable: "--font-inter", 
   display: "swap" 
 })
 
-// إعداد خط Playfair Display وتحديد الأوزان بدقة
 const playfair = Playfair_Display({ 
   subsets: ["latin"], 
   variable: "--font-playfair", 
@@ -23,22 +21,21 @@ const playfair = Playfair_Display({
   display: "swap" 
 })
 
-// إعدادات الـ Viewport متناسقة مع الهوية البصرية (Navy Theme)
 export const viewport: Viewport = {
   themeColor: "#071530",
   width: "device-width",
   initialScale: 1,
 }
 
-// البيانات الوصفية الشاملة (SEO & Social Metadata)
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.socialsecurityguidecalc.com"),
   alternates: {
-    canonical: "./", // توليد Canonical URL ديناميكي لجميع الصفحات
+    canonical: "./",
   },
+  // تم تحسين القالب لمنع التكرار واختصار اسم الموقع
   title: { 
-    default: "Social Security Guide — Benefits, Calculators & News", 
-    template: "%s | Social Security Guide" 
+    default: "Social Security Guide Calc | Benefits & Retirement Tools", 
+    template: "%s | Social Security Guide Calc" 
   },
   description: "Free calculators, expert guides, and the latest news on Social Security benefits, retirement planning, Medicare, and disability benefits.",
   keywords: [
@@ -51,8 +48,8 @@ export const metadata: Metadata = {
     type: "website", 
     locale: "en_US", 
     url: "https://www.socialsecurityguidecalc.com", 
-    siteName: "Social Security Guide", 
-    title: "Social Security Guide — Benefits, Calculators & News", 
+    siteName: "Social Security Guide Calc", 
+    title: "Social Security Guide Calc | Benefits & Retirement Tools", 
     description: "Free calculators, expert guides, and breaking news on Social Security, Medicare, and retirement benefits.",
     images: [
       {
@@ -89,11 +86,10 @@ export const metadata: Metadata = {
 }
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
-  // كود JSON-LD لتعريف محركات البحث بالهوية الرسمية للموقع
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "WebSite",
-    "name": "Social Security Guide",
+    "name": "Social Security Guide Calc",
     "url": "https://www.socialsecurityguidecalc.com",
     "potentialAction": {
       "@type": "SearchAction",
@@ -111,8 +107,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         />
       </head>
       <body className={`${inter.variable} ${playfair.variable} font-sans min-h-screen flex flex-col antialiased bg-white text-[#071530]`}>
-        
-        {/* رابط تخطي للوصولية (Accessibility) متناسق مع اللون الذهبي للموقع */}
         <a 
           href="#main-content" 
           className="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 bg-[#e4b325] text-[#071530] px-4 py-2 rounded-md font-semibold z-50 shadow-md"
