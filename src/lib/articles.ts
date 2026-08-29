@@ -29,15 +29,15 @@ export interface Article {
 export const articles: Article[] = [
   {
   slug: "cola-updates",
-  title: "Social Security COLA Forecast: Your Projected Raise Explained",
+  title: "Cola 2027: Will Benefits Go Up?",
   metaTitle: "Social Security COLA Estimate: 2.2% – 2.5% Increase?",
-  metaDescription: "Updated for 2026/2027. Are you ready for the 2027 Social Security raise? Projections suggest a 2.2%–2.5% COLA increase. Calculate your new check amount instantly.",
+  metaDescription: "Are you ready for the 2027 Social Security raise? Projections suggest a 2.2%–2.5% COLA increase. Calculate your new check amount instantly.",
   excerpt: "Current inflation data points to a 2.2% to 2.5% COLA boost for 2027. Discover exactly when the SSA will make the official announcement and how this adjustment compares to the record-breaking 8.7% increase seen in recent years.",
   image: "/images/cola-2027-estimate-cover.webp",
   imageAlt: "2027 COLA Estimate: Social Security Increase Prediction - cover image, Social Security Guide",
   category: "COLA Updates",
   author: "Amine Saadi",
-  date: "May 5, 2026",
+  date: "2026-05-05",
   readTime: "4 min read",
   featured: false,
   content: `<p>Current institutional projections for the 2027 Social Security Cost-of-Living Adjustment (COLA) estimate an increase between 2.2% and 2.5%. This early prediction is calculated based on the preliminary 2026 CPI-W inflation data compiled by the Bureau of Labor Statistics (BLS). The official Social Security Administration (SSA) announcement will be released in October 2026.</p>
@@ -109,7 +109,7 @@ export const articles: Article[] = [
   imageAlt: "Navigating Your Social Security Retirement Age: Maximizing Monthly Benefits - cover image, Social Security Guide",
   category: "Retirement Planning",
   author: "Amine Saadi",
-  date: "May 19, 2026",
+  date: "2026-05-19",
   readTime: "5 min read",
   featured: false,
     content: `<p>Deciding when to claim your Social Security retirement benefits is one of the most critical financial choices you will make. While you can legally begin receiving monthly checks as early as age 62, your permanent benefit amount changes drastically depending on your chronological age at the time of application.</p>
