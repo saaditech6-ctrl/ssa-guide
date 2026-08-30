@@ -39,12 +39,12 @@ export default function BenefitsEstimator() {
   const [fra, setFra] = useState<number>(67)
   const [fraMonths, setFraMonths] = useState<number>(0)
 
-  // الحالات المتقدمة للمخطط والتحليلات
+ 
   const [chartData, setChartData] = useState<BenefitChartPoint[]>([])
   const [breakEvenAge, setBreakEvenAge] = useState<number | null>(null)
   const [lifetimeTotals, setLifetimeTotals] = useState<{ early: number; full: number; delayed: number } | null>(null)
 
-  // دالة مساعدة لحساب الميزة الشهرية بناءً على سن مطالبة محدد
+
   const calculateBenefitForAge = (pia: number, targetAge: number, fraYears: number, fraMonths: number) => {
     const fraInMonths = fraYears * 12 + fraMonths
     const targetInMonths = targetAge * 12
@@ -64,7 +64,7 @@ export default function BenefitsEstimator() {
         adjustment += maxDelayedMonths * (2 / 300)
       }
     }
-    // SSA rounds the monthly retirement benefit down to the next lower dollar.
+   
     return Math.floor(pia * adjustment)
   }
 
@@ -74,16 +74,14 @@ export default function BenefitsEstimator() {
     const aime = parseFloat(monthlyEarnings)
     if (!Number.isFinite(aime) || aime < 0) return
 
-    // This estimator uses the 2026 PIA formula, which applies to workers
-    // attaining age 62 in 2026. It does not reconstruct a worker's full
-    // earnings record, indexing factors, or historical COLAs.
+
     const { first, second, rates } = SSA_2026.piaBendPoints
     const piaRaw =
       Math.min(aime, first) * rates.first +
       Math.max(Math.min(aime, second) - first, 0) * rates.second +
       Math.max(aime - second, 0) * rates.third
 
-    // SSA truncates the PIA to the next lower dime.
+  
     const pia = Math.floor(piaRaw * 10) / 10
     const calculatedFRA = { years: 67, months: 0 }
 
@@ -131,7 +129,7 @@ export default function BenefitsEstimator() {
     })
   }
 
-  // Schema.org structured data for WebApplication & FAQPage
+
   const jsonLdSchema = {
     "@context": "https://schema.org",
     "@graph": [
@@ -184,14 +182,14 @@ export default function BenefitsEstimator() {
 
   return (
     <div className="bg-slate-50 min-h-screen py-12">
-      {/* Schema.org Structured Data Injection */}
+     
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdSchema) }}
       />
 
       <div className="container-site max-w-5xl mx-auto px-4">
-        {/* زر العودة للرئيسية */}
+        
         <Link
           href="/calculators"
           className="inline-flex items-center gap-1.5 text-sm font-medium text-slate-600 hover:text-amber-600 transition-colors mb-6"
@@ -199,7 +197,7 @@ export default function BenefitsEstimator() {
           <ArrowLeft size={16} /> Back to All Calculators
         </Link>
 
-        {/* عنوان الحاسبة الاحترافي */}
+    
         <div className="relative bg-[#071530] text-white p-6 sm:p-8 rounded-2xl shadow-sm mb-8 overflow-hidden">
           <div className="absolute right-4 bottom-0 top-0 my-auto h-32 w-32 text-white/5 pointer-events-none items-center justify-center hidden md:flex">
             <Calculator size={128} strokeWidth={1} />
@@ -218,12 +216,12 @@ export default function BenefitsEstimator() {
           </div>
         </div>
 
-        {/* قسم "لماذا تثق بهذه الحاسبة" */}
+       
         <WhyTrustCalculator />
 
-        {/* لوحة التحكم والمدخلات والنتائج الفورية */}
+      
         <div className="grid md:grid-cols-5 gap-8 mb-12">
-          {/* نموذج المدخلات */}
+          
           <form
             onSubmit={handleCalculate}
             className="bg-white border border-slate-200/60 p-6 rounded-2xl shadow-sm md:col-span-3 flex flex-col gap-5"
@@ -232,7 +230,6 @@ export default function BenefitsEstimator() {
               <Calendar size={18} className="text-amber-500" /> Strategic Parameters
             </h2>
 
-            {/* متوسط الدخل الشهري الخاضع للضريبة */}
             <div>
               <div className="flex justify-between items-center mb-2">
                 <label className="block text-xs font-semibold uppercase tracking-wider text-slate-500">
@@ -254,7 +251,7 @@ export default function BenefitsEstimator() {
               <p className="mt-2 text-[11px] leading-relaxed text-slate-500">AIME is not your current salary. It is the average indexed monthly earnings amount used in the Social Security benefit formula. This estimator does not calculate AIME from your earnings record.</p>
             </div>
 
-            {/* سن المطالبة بالمزايا */}
+         
             <div>
               <div className="flex justify-between items-center mb-2">
                 <label className="block text-xs font-semibold uppercase tracking-wider text-slate-500">
@@ -277,7 +274,7 @@ export default function BenefitsEstimator() {
               </div>
             </div>
 
-            {/* زر الحساب */}
+     
             <button
               type="submit"
               className="inline-flex items-center gap-2 justify-center bg-[#071530] text-white hover:bg-amber-600 transition-colors w-full py-3.5 mt-2 rounded-xl text-sm font-semibold cursor-pointer shadow-sm"
@@ -286,7 +283,7 @@ export default function BenefitsEstimator() {
             </button>
           </form>
 
-          {/* لوحة عرض النتائج والمحتوى المشروط */}
+  
           <div className="md:col-span-2 flex flex-col">
             {finalBenefit !== null ? (
               <div className="bg-white border border-slate-200 p-6 rounded-2xl shadow-sm text-center flex-1 flex flex-col justify-center animate-fade-in">
@@ -360,7 +357,7 @@ export default function BenefitsEstimator() {
                   </div>
                 </div>
 
-                {/* نظام الروابط الديناميكية المشروطة */}
+                
                 <div className="mt-5 pt-4 border-t border-slate-100 text-left space-y-3">
                   {claimingAge < fra ? (
                     <div className="p-3.5 bg-rose-50/50 rounded-xl border border-rose-100/80">
@@ -400,7 +397,7 @@ export default function BenefitsEstimator() {
                     </div>
                   )}
 
-                  {/* التوجيه لحاسبة الضرائب */}
+             
                   <div className="p-3.5 bg-amber-50/60 rounded-xl border border-amber-100 flex gap-2 items-start">
                     <ShieldAlert size={16} className="text-amber-600 shrink-0 mt-0.5" />
                     <div>
@@ -428,7 +425,7 @@ export default function BenefitsEstimator() {
           </div>
         </div>
 
-        {/* 📊 القسم البصري المتقدم: التحليل الإستراتيجي والرسم البياني 📊 */}
+       
         {chartData.length > 0 && (
           <div className="bg-white border border-slate-200/60 p-6 sm:p-8 rounded-2xl shadow-sm mb-12 animate-fade-in">
             <h2 className="text-lg font-bold text-[#071530] border-b border-slate-100 pb-4 mb-6 flex items-center gap-2">
@@ -464,7 +461,7 @@ export default function BenefitsEstimator() {
               </div>
             </div>
 
-            {/* الرسم البياني للتراكم المالي */}
+            
             <div className="h-72 w-full mt-4">
               <ResponsiveContainer width="100%" height="100%">
                 <LineChart data={chartData} margin={{ top: 10, right: 20, left: -5, bottom: 5 }}>
@@ -508,7 +505,7 @@ export default function BenefitsEstimator() {
           </div>
         )}
 
-        {/* 🚀 قسم المقال الشامل والتعليمي لتحسين الـ SEO وسلطة الصفحة 🚀 */}
+
         <article className="prose prose-slate max-w-none bg-white border border-slate-200/60 p-6 sm:p-10 rounded-2xl shadow-sm text-left">
           <div className="flex items-center gap-2 mb-4">
             <BookOpen className="text-amber-500" size={24} />
@@ -603,7 +600,7 @@ export default function BenefitsEstimator() {
             <strong>Important limitation:</strong> This is an educational estimator, not an official SSA benefit computation. It starts with an assumed AIME rather than your complete earnings record. Official SSA calculations index covered earnings, select the highest 35 years, compute AIME, apply the applicable eligibility-year PIA formula and COLAs, and then apply claiming-age adjustments. Do not use this estimate as a substitute for your SSA earnings record or benefit statement.
           </div>
 
-          {/* أسئلة FAQ */}
+  
           <div className="border-t border-slate-100 pt-6">
             <h3 className="text-lg font-bold text-[#071530] mb-4">Frequently Asked Questions (FAQ)</h3>
 
