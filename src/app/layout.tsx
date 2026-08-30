@@ -35,7 +35,7 @@ export const metadata: Metadata = {
   // تم تحسين القالب لمنع التكرار واختصار اسم الموقع
   title: { 
     default: "Social Security Guide Calc | Benefits & Retirement Tools", 
-    template: "%s | Social Security Guide Calc" 
+    template: "%s | SSGC" 
   },
   description: "Free calculators, expert guides, and the latest news on Social Security benefits, retirement planning, Medicare, and disability benefits.",
   keywords: [
