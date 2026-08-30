@@ -415,7 +415,7 @@ export function Header() {
 
             <div>
               <span className="block font-playfair text-lg font-bold leading-tight text-[#071530]">
-                SS Guide Calc
+                SSA Guide Calc
               </span>
 
               <span className="block text-[10px] font-black uppercase tracking-[0.25em] text-[#071530]">

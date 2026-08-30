@@ -5,11 +5,11 @@ export async function GET() {
   const siteUrl = 'https://www.socialsecurityguidecalc.com';
 
   const feed = new RSS({
-    title: 'SS Guide Calc - Social Security Blog',
+    title: 'SSA Guide Calc - Social Security Blog',
     description: 'Latest guides, calculators, and social security updates.',
     site_url: siteUrl,
     feed_url: `${siteUrl}/rss.xml`,
-    copyright: `${new Date().getFullYear()} SS Guide Calc`,
+    copyright: `${new Date().getFullYear()} SSA Guide Calc`,
     language: 'en',
   });
 

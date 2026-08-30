@@ -3232,7 +3232,7 @@ content: `
 
 <p>Claiming age is the single biggest lever most people can still pull to raise their own benefit. For a full breakdown of how the numbers change at each age, see our guide on <a href="/blog/social-security-age-62-vs-67-vs-70">Social Security at age 62 vs. 67 vs. 70</a>.</p>
 
-<p><em>This article is for educational purposes only and does not constitute personalized financial, legal, or tax advice. SS Guide Calc is an independent platform and is not affiliated with or endorsed by the Social Security Administration. For guidance specific to your situation, consult SSA.gov, Medicare.gov, or a licensed financial advisor.</em></p>
+<p><em>This article is for educational purposes only and does not constitute personalized financial, legal, or tax advice. SSA Guide Calc is an independent platform and is not affiliated with or endorsed by the Social Security Administration. For guidance specific to your situation, consult SSA.gov, Medicare.gov, or a licensed financial advisor.</em></p>
 `
 },
 
@@ -3340,7 +3340,7 @@ content: `
 <h3>How does inflation and COLA impact the Social Security break-even calculation?</h3>
 <p>Cost-of-Living Adjustments (COLA) apply proportionally to all benefits. Higher annual COLA rates slightly accelerate the break-even point in favor of delayed claiming because percentage increases generate larger absolute dollar boosts on larger base payments.</p>
 
-<p class="text-xs text-slate-500 mt-8 border-t border-slate-200 pt-4"><em>This article is for educational purposes only and does not constitute personalized financial, legal, or tax advice. SS Guide Calc is an independent platform and is not affiliated with or endorsed by the Social Security Administration. For guidance specific to your situation, consult SSA.gov, Medicare.gov, or a licensed financial advisor.</em></p>
+<p class="text-xs text-slate-500 mt-8 border-t border-slate-200 pt-4"><em>This article is for educational purposes only and does not constitute personalized financial, legal, or tax advice. SSA Guide Calc is an independent platform and is not affiliated with or endorsed by the Social Security Administration. For guidance specific to your situation, consult SSA.gov, Medicare.gov, or a licensed financial advisor.</em></p>
 `
 },
 
@@ -3577,7 +3577,7 @@ content: `
 <h3>What happens to the earnings limit after I reach Full Retirement Age?</h3>
 <p>Once you attain Full Retirement Age, the earnings limit disappears entirely. You can earn an unlimited amount of active employment income without any benefit withholding.</p>
 
-<p class="text-xs text-slate-500 mt-8 border-t border-slate-200 pt-4"><em>This article is for educational purposes only and does not constitute personalized financial, legal, or tax advice. SS Guide Calc is an independent platform and is not affiliated with or endorsed by the Social Security Administration. For guidance specific to your situation, consult SSA.gov, Medicare.gov, or a licensed financial advisor.</em></p>
+<p class="text-xs text-slate-500 mt-8 border-t border-slate-200 pt-4"><em>This article is for educational purposes only and does not constitute personalized financial, legal, or tax advice. SSA Guide Calc is an independent platform and is not affiliated with or endorsed by the Social Security Administration. For guidance specific to your situation, consult SSA.gov, Medicare.gov, or a licensed financial advisor.</em></p>
 `
 },
 
@@ -3702,7 +3702,7 @@ metaDescription: "Spouses can claim up to 50% of a partner's benefit at FRA. Lea
 <h3>How do survivor benefits differ for divorced spouses?</h3>
 <p>If your ex-spouse passes away and your marriage lasted at least 10 years, you may qualify for a surviving divorced spouse benefit up to <strong>100% of the deceased worker's benefit</strong> starting as early as age 60 (or age 50 if disabled).</p>
 
-<p class="mt-8 text-sm text-slate-500 italic">This article is for educational purposes only and does not constitute personalized financial, legal, or tax advice. SS Guide Calc is an independent platform and is not affiliated with or endorsed by the Social Security Administration. For guidance specific to your situation, consult SSA.gov, Medicare.gov, or a licensed financial advisor.</p>
+<p class="mt-8 text-sm text-slate-500 italic">This article is for educational purposes only and does not constitute personalized financial, legal, or tax advice. SSA Guide Calc is an independent platform and is not affiliated with or endorsed by the Social Security Administration. For guidance specific to your situation, consult SSA.gov, Medicare.gov, or a licensed financial advisor.</p>
 `
 },
 
@@ -3836,7 +3836,7 @@ metaDescription: "Spouses can claim up to 50% of a partner's benefit at FRA. Lea
   </div>
 </div>
 
-<p class="text-sm text-slate-600 italic my-6">*This article is for educational purposes only and does not constitute personalized financial, legal, or tax advice. SS Guide Calc is an independent platform and is not affiliated with or endorsed by the Social Security Administration. For guidance specific to your situation, consult SSA.gov, Medicare.gov, or a licensed financial advisor.*</p>
+<p class="text-sm text-slate-600 italic my-6">*This article is for educational purposes only and does not constitute personalized financial, legal, or tax advice. SSA Guide Calc is an independent platform and is not affiliated with or endorsed by the Social Security Administration. For guidance specific to your situation, consult SSA.gov, Medicare.gov, or a licensed financial advisor.*</p>
 
 `
 },
@@ -3944,7 +3944,7 @@ metaDescription: "Spouses can claim up to 50% of a partner's benefit at FRA. Lea
     <h3>How do W-2 wages affect the self-employment tax maximum cap?</h3>
     <p>W-2 wages count first toward the annual $184,500 Social Security wage base cap in 2026. If your W-2 wages reach or exceed $184,500, your self-employment income is completely exempt from the 12.4% Social Security tax, though it remains subject to the 2.9% Medicare tax.</p>
 
-    <p>This article is for educational purposes only and does not constitute personalized financial, legal, or tax advice. SS Guide Calc is an independent platform and is not affiliated with or endorsed by the Social Security Administration. For guidance specific to your situation, consult SSA.gov, Medicare.gov, or a licensed financial advisor.</p>
+    <p>This article is for educational purposes only and does not constitute personalized financial, legal, or tax advice. SSA Guide Calc is an independent platform and is not affiliated with or endorsed by the Social Security Administration. For guidance specific to your situation, consult SSA.gov, Medicare.gov, or a licensed financial advisor.</p>
   `
 }
 

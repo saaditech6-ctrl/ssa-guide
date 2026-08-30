@@ -204,7 +204,7 @@ export function Footer() {
 
               <div>
                 <span className="font-playfair font-bold text-white text-lg block leading-tight">
-                  SS Guide Calc
+                  SSA Guide Calc
                 </span>
 
                 <span className="text-[10px] text-amber-300 font-semibold tracking-[0.2em] uppercase block">
