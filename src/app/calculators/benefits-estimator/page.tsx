@@ -29,8 +29,8 @@ interface BenefitChartPoint { age: number; [key: string]: number }
 
 export default function BenefitsEstimator() {
   // المدخلات
-  const [birthYear, setBirthYear] = useState<number>(1965)
   const [monthlyEarnings, setMonthlyEarnings] = useState<string>("5000")
+  const [calculatedAime, setCalculatedAime] = useState<number | null>(null)
   const [claimingAge, setClaimingAge] = useState<number>(67)
 
   // حالات النتائج
@@ -43,19 +43,6 @@ export default function BenefitsEstimator() {
   const [chartData, setChartData] = useState<BenefitChartPoint[]>([])
   const [breakEvenAge, setBreakEvenAge] = useState<number | null>(null)
   const [lifetimeTotals, setLifetimeTotals] = useState<{ early: number; full: number; delayed: number } | null>(null)
-
-  // حساب سن التقاعد الكامل الدقيق (FRA)
-  const calculateFRAValue = (year: number) => {
-    if (year <= 1937) return { years: 65, months: 0 }
-    if (year >= 1938 && year <= 1942) {
-      return { years: 65, months: (year - 1937) * 2 }
-    }
-    if (year >= 1943 && year <= 1954) return { years: 66, months: 0 }
-    if (year >= 1955 && year <= 1959) {
-      return { years: 66, months: (year - 1954) * 2 }
-    }
-    return { years: 67, months: 0 }
-  }
 
   // دالة مساعدة لحساب الميزة الشهرية بناءً على سن مطالبة محدد
   const calculateBenefitForAge = (pia: number, targetAge: number, fraYears: number, fraMonths: number) => {
@@ -77,66 +64,66 @@ export default function BenefitsEstimator() {
         adjustment += maxDelayedMonths * (2 / 300)
       }
     }
-    return Math.round(pia * adjustment)
+    // SSA rounds the monthly retirement benefit down to the next lower dollar.
+    return Math.floor(pia * adjustment)
   }
 
   const handleCalculate = (e: React.FormEvent) => {
     e.preventDefault()
-    const wage = parseFloat(monthlyEarnings)
-    if (isNaN(wage) || wage <= 0) return
 
-    // 1. حساب الـ PIA بناءً على نقاط الـ Bend Points لعام 2026
-    let pia = 0
+    const aime = parseFloat(monthlyEarnings)
+    if (!Number.isFinite(aime) || aime < 0) return
+
+    // This estimator uses the 2026 PIA formula, which applies to workers
+    // attaining age 62 in 2026. It does not reconstruct a worker's full
+    // earnings record, indexing factors, or historical COLAs.
     const { first, second, rates } = SSA_2026.piaBendPoints
-    if (wage <= first) {
-      pia = wage * rates.first
-    } else if (wage <= second) {
-      pia = first * rates.first + (wage - first) * rates.second
-    } else {
-      pia = first * rates.first + (second - first) * rates.second + (wage - second) * rates.third
-    }
+    const piaRaw =
+      Math.min(aime, first) * rates.first +
+      Math.max(Math.min(aime, second) - first, 0) * rates.second +
+      Math.max(aime - second, 0) * rates.third
 
-    const calculatedFRA = calculateFRAValue(birthYear)
+    // SSA truncates the PIA to the next lower dime.
+    const pia = Math.floor(piaRaw * 10) / 10
+    const calculatedFRA = { years: 67, months: 0 }
+
+    setCalculatedAime(aime)
     setFra(calculatedFRA.years)
     setFraMonths(calculatedFRA.months)
-    setEstimatedPIA(Math.round(pia))
+    setEstimatedPIA(pia)
 
-    // 2. حساب الميزة الحالية للمستخدم
     const userBenefit = calculateBenefitForAge(pia, claimingAge, calculatedFRA.years, calculatedFRA.months)
     setFinalBenefit(userBenefit)
 
-    // 3. توليد مقارنات استراتيجية لثلاثة سيناريوهات رئيسية (62، السن الكامل، 70)
     const b62 = calculateBenefitForAge(pia, 62, calculatedFRA.years, calculatedFRA.months)
-    const bFRA = calculateBenefitForAge(pia, calculatedFRA.years, calculatedFRA.years, calculatedFRA.months)
+    const bFRA = calculateBenefitForAge(pia, 67, calculatedFRA.years, calculatedFRA.months)
     const b70 = calculateBenefitForAge(pia, 70, calculatedFRA.years, calculatedFRA.months)
 
-    // 4. بناء بيانات الرسم البياني للمبالغ التراكمية مدى الحياة (Cumulative Benefits) من سن 62 إلى 85
-    const dataPoints = []
+    const dataPoints: BenefitChartPoint[] = []
     let cumulative62 = 0
     let cumulativeFRA = 0
     let cumulative70 = 0
-    let foundBreakEven = null
+    let foundBreakEven: number | null = null
 
-    for (let age = 62; age <= 85; age++) {
-      if (age >= 62) cumulative62 += b62 * 12
-      if (age >= calculatedFRA.years) cumulativeFRA += bFRA * 12
+    for (let age = 62; age <= 95; age++) {
+      cumulative62 += b62 * 12
+      if (age >= 67) cumulativeFRA += bFRA * 12
       if (age >= 70) cumulative70 += b70 * 12
 
       dataPoints.push({
-        age: age,
+        age,
         "Claim at 62 ($)": cumulative62,
-        [`Claim at FRA (${calculatedFRA.years}) ($)`]: cumulativeFRA,
+        "Claim at FRA (67) ($)": cumulativeFRA,
         "Claim at 70 ($)": cumulative70,
       })
 
-      // تحديد نقطة التعادل تقريبياً بين المطالبة المبكرة (62) والمطالبة عند السن الكامل (FRA)
-      if (!foundBreakEven && age > calculatedFRA.years && cumulativeFRA > cumulative62) {
+      if (foundBreakEven === null && age >= 67 && cumulativeFRA >= cumulative62) {
         foundBreakEven = age
       }
     }
 
     setChartData(dataPoints)
-    setBreakEvenAge(foundBreakEven || 78)
+    setBreakEvenAge(foundBreakEven)
     setLifetimeTotals({
       early: cumulative62,
       full: cumulativeFRA,
@@ -179,7 +166,7 @@ export default function BenefitsEstimator() {
             "name": "How accurate is this estimator compared to the official SSA.gov calculator?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Our tool provides a highly precise estimate based on current 2026 indexing rules and progressive bend points. However, official Social Security Administration calculations utilize your complete 35-year historical average of indexed earnings (AIME) rather than a single estimated monthly earnings figure."
+              "text": "This tool provides an estimate from an AIME assumption using the official 2026 PIA formula. It does not calculate your AIME from your earnings record or reproduce the full SSA benefit computation. However, official Social Security Administration calculations utilize your complete 35-year historical average of indexed earnings (AIME) rather than a single estimated monthly earnings figure."
             }
           },
           {
@@ -223,10 +210,10 @@ export default function BenefitsEstimator() {
               Advanced Financial Engine
             </span>
             <h1 className="text-2xl sm:text-3xl font-bold font-playfair mb-3 leading-tight text-white">
-              Social Security Benefits Estimator
+              2026 Social Security PIA & Claiming Age Estimator
             </h1>
             <p className="text-slate-300 text-sm leading-relaxed">
-              Analyze your progressive Social Security benchmarks. Estimate your baseline Primary Insurance Amount (PIA) and chart cumulative lifetime wealth strategies across different claiming horizons.
+              Estimate a 2026 Social Security Primary Insurance Amount (PIA) from an assumed Average Indexed Monthly Earnings (AIME), then compare claiming ages 62, 67, and 70.
             </p>
           </div>
         </div>
@@ -245,31 +232,13 @@ export default function BenefitsEstimator() {
               <Calendar size={18} className="text-amber-500" /> Strategic Parameters
             </h2>
 
-            {/* سنة الميلاد */}
-            <div>
-              <label className="block text-xs font-semibold uppercase tracking-wider text-slate-500 mb-2">
-                Year of Birth
-              </label>
-              <select
-                value={birthYear}
-                onChange={(e) => setBirthYear(parseInt(e.target.value))}
-                className="w-full bg-slate-50 border border-slate-200 rounded-xl px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-amber-500/20 focus:border-amber-500 transition-colors cursor-pointer"
-              >
-                {Array.from({ length: 45 }, (_, i) => 1945 + i).map((year) => (
-                  <option key={year} value={year}>
-                    {year}
-                  </option>
-                ))}
-              </select>
-            </div>
-
             {/* متوسط الدخل الشهري الخاضع للضريبة */}
             <div>
               <div className="flex justify-between items-center mb-2">
                 <label className="block text-xs font-semibold uppercase tracking-wider text-slate-500">
-                  Estimated Monthly Earnings ($)
+                  Estimated AIME ($/month)
                 </label>
-                <span className="text-[11px] text-slate-400">Taxable Cap Compliant</span>
+                <span className="text-[11px] text-slate-400">2026 PIA formula input</span>
               </div>
               <div className="relative">
                 <span className="absolute left-4 top-3.5 text-slate-400 text-sm font-medium">$</span>
@@ -277,11 +246,12 @@ export default function BenefitsEstimator() {
                   type="number"
                   value={monthlyEarnings}
                   onChange={(e) => setMonthlyEarnings(e.target.value)}
-                  placeholder="e.g. 5000"
+                  placeholder="e.g. 5,000"
                   required
                   className="w-full bg-slate-50 border border-slate-200 rounded-xl pl-8 pr-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-amber-500/20 focus:border-amber-500 transition-colors"
                 />
               </div>
+              <p className="mt-2 text-[11px] leading-relaxed text-slate-500">AIME is not your current salary. It is the average indexed monthly earnings amount used in the Social Security benefit formula. This estimator does not calculate AIME from your earnings record.</p>
             </div>
 
             {/* سن المطالبة بالمزايا */}
@@ -332,7 +302,7 @@ export default function BenefitsEstimator() {
 
                 <div className="border-t border-slate-100 pt-4 text-left flex flex-col gap-3">
                   <div className="flex justify-between items-center text-xs">
-                    <span className="text-slate-500 font-medium">Your Full Retirement Age (FRA):</span>
+                    <span className="text-slate-500 font-medium">Full Retirement Age (FRA):</span>
                     <span className="font-bold text-[#071530] bg-slate-100 px-2 py-0.5 rounded">
                       {fra} Years {fraMonths > 0 ? `& ${fraMonths} Months` : ""}
                     </span>
@@ -363,6 +333,33 @@ export default function BenefitsEstimator() {
                   </div>
                 </div>
 
+                <div className="mt-5 border-t border-slate-100 pt-4 text-left">
+                  <h3 className="text-xs font-bold uppercase tracking-wider text-slate-500 mb-3">Claiming-age comparison</h3>
+                  <div className="grid grid-cols-3 gap-2 text-center">
+                    {[
+                      { age: 62, label: "Early", value: calculateBenefitForAge(estimatedPIA!, 62, fra, fraMonths) },
+                      { age: 67, label: "FRA", value: calculateBenefitForAge(estimatedPIA!, 67, fra, fraMonths) },
+                      { age: 70, label: "Delayed", value: calculateBenefitForAge(estimatedPIA!, 70, fra, fraMonths) },
+                    ].map((scenario) => (
+                      <div key={scenario.age} className="rounded-lg bg-slate-50 border border-slate-200 p-2.5">
+                        <div className="text-[10px] font-bold uppercase text-slate-400">{scenario.label}</div>
+                        <div className="text-sm font-bold text-[#071530]">${scenario.value.toLocaleString()}</div>
+                        <div className="text-[10px] text-slate-500">Age {scenario.age}</div>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+
+                <div className="mt-5 border-t border-slate-100 pt-4 text-left">
+                  <h3 className="text-xs font-bold uppercase tracking-wider text-slate-500 mb-3">2026 PIA calculation</h3>
+                  <div className="space-y-2 text-xs text-slate-600">
+                    <div className="flex justify-between gap-4"><span>First $1,286 × 90%</span><strong>${(Math.min(calculatedAime ?? 0, 1286) * 0.9).toFixed(2)}</strong></div>
+                    <div className="flex justify-between gap-4"><span>Next portion × 32%</span><strong>${(Math.max(Math.min(calculatedAime ?? 0, 7749) - 1286, 0) * 0.32).toFixed(2)}</strong></div>
+                    <div className="flex justify-between gap-4"><span>Amount above $7,749 × 15%</span><strong>${(Math.max((calculatedAime ?? 0) - 7749, 0) * 0.15).toFixed(2)}</strong></div>
+                    <div className="flex justify-between gap-4 border-t border-slate-200 pt-2 font-semibold text-[#071530]"><span>PIA after SSA tenth-dollar truncation</span><strong>${estimatedPIA?.toFixed(2)}</strong></div>
+                  </div>
+                </div>
+
                 {/* نظام الروابط الديناميكية المشروطة */}
                 <div className="mt-5 pt-4 border-t border-slate-100 text-left space-y-3">
                   {claimingAge < fra ? (
@@ -380,7 +377,7 @@ export default function BenefitsEstimator() {
                   ) : claimingAge > fra ? (
                     <div className="p-3.5 bg-emerald-50/50 rounded-xl border border-emerald-100/80">
                       <p className="text-xs text-emerald-950 font-medium leading-relaxed">
-                        Strategic move! Delaying until <strong>{claimingAge}</strong> earns you Delayed Retirement Credits to maximize your lifetime wealth.
+                        Delaying until <strong>{claimingAge}</strong> can increase your monthly benefit through delayed retirement credits. This tool does not model life expectancy or lifetime wealth.
                       </p>
                       <Link
                         href="/blog/social-security-delayed-retirement-credits"
@@ -445,25 +442,25 @@ export default function BenefitsEstimator() {
                   Break-Even Baseline
                 </span>
                 <div className="text-xl font-bold text-[#071530]">{breakEvenAge} Years Old</div>
-                <p className="text-[11px] text-slate-500 mt-1">Age where waiting out-returns early claiming.</p>
+                <p className="text-[11px] text-slate-500 mt-1">Approximate age where FRA claiming catches age-62 claiming in cumulative benefits.</p>
               </div>
               <div className="bg-rose-50/40 p-4 rounded-xl border border-rose-100/60 text-left">
                 <span className="text-[11px] font-bold text-rose-500 uppercase tracking-wide block mb-1">
-                  Total Lifetime Payout (Age 62)
+                  Cumulative Benefits Through Age 95 (Claim at 62)
                 </span>
                 <div className="text-xl font-bold text-rose-700">
                   ${lifetimeTotals?.early.toLocaleString()}
                 </div>
-                <p className="text-[11px] text-slate-500 mt-1">Total cumulative payouts at life expectancy.</p>
+                <p className="text-[11px] text-slate-500 mt-1">Cumulative benefits through age 95 in this illustration.</p>
               </div>
               <div className="bg-emerald-50/40 p-4 rounded-xl border border-emerald-100/60 text-left">
                 <span className="text-[11px] font-bold text-emerald-500 uppercase tracking-wide block mb-1">
-                  Total Lifetime Payout (Age 70)
+                  Cumulative Benefits Through Age 95 (Claim at 70)
                 </span>
                 <div className="text-xl font-bold text-emerald-700">
                   ${lifetimeTotals?.delayed.toLocaleString()}
                 </div>
-                <p className="text-[11px] text-slate-500 mt-1">Maximize total payout by optimization.</p>
+                <p className="text-[11px] text-slate-500 mt-1">Cumulative benefits through age 95; not a life-expectancy forecast.</p>
               </div>
             </div>
 
@@ -500,13 +497,13 @@ export default function BenefitsEstimator() {
                     />
                   )}
                   <Line type="monotone" dataKey="Claim at 62 ($)" stroke="#ef4444" strokeWidth={2.5} dot={false} activeDot={{ r: 4 }} />
-                  <Line type="monotone" dataKey={`Claim at FRA (${fra}) ($)`} stroke="#3b82f6" strokeWidth={2.5} dot={false} activeDot={{ r: 4 }} />
+                  <Line type="monotone" dataKey={`Claim at FRA (67) ($)`} stroke="#3b82f6" strokeWidth={2.5} dot={false} activeDot={{ r: 4 }} />
                   <Line type="monotone" dataKey="Claim at 70 ($)" stroke="#10b981" strokeWidth={2.5} dot={false} activeDot={{ r: 4 }} />
                 </LineChart>
               </ResponsiveContainer>
             </div>
             <p className="text-center text-[11px] text-slate-400 mt-4 italic">
-              *The graph models total cumulative cash collected over time to visualize the break-even crossing thresholds.
+              *Illustration only: cumulative nominal benefit payments through age 95. It does not model taxes, Medicare premiums, investment returns, mortality, survivor benefits, or the time value of money.
             </p>
           </div>
         )}
@@ -519,23 +516,21 @@ export default function BenefitsEstimator() {
           </div>
 
           <h2 className="text-xl sm:text-2xl font-bold text-[#071530] mb-4 font-playfair">
-            How This Social Security Benefits Estimator Works: The Math Behind the Code
+            How the 2026 Social Security PIA Estimator Works
           </h2>
 
           <p className="text-slate-600 text-sm sm:text-base leading-relaxed mb-6">
-            Navigating retirement planning requires absolute precision. To help you make the most informed decision, our <strong>Social Security Benefits Estimator</strong> translates complex federal statutes and actuarial mathematics into a personalized, instant monthly projection. This guide pulls back the curtain on the exact mathematical formulas, legislative rules, and programming logic our tool uses to calculate your estimated benefits.
+            This educational estimator applies the official 2026 PIA formula to an assumed AIME and then applies claiming-age adjustments for ages 62 through 70. It is designed to make the calculation visible rather than presenting a single unexplained number.
           </p>
 
           <h3 className="text-lg font-bold text-[#071530] mb-3">Step 1: Calculating Your Full Retirement Age (FRA)</h3>
           <p className="text-slate-600 text-sm sm:text-base leading-relaxed mb-4">
-            The calculation baseline is your statutory <strong>Full Retirement Age (FRA)</strong>. Your FRA is determined entirely by the year you were born. Under federal law, the SSA utilizes a staggered scale to phase in the retirement age from 65 to 67. The calculation logic embedded in our estimator executes this exact sequence:
+            For the 2026 eligibility-year formula, the PIA bend points are those used for workers attaining age 62 in 2026. This generally corresponds to people born in 1964, whose FRA is 67. A separate historical/future-year engine is required for other eligibility years.
           </p>
           <ul className="list-disc pl-6 text-slate-600 text-sm mb-6 space-y-2">
-            <li><strong>Birth Year 1937 or earlier:</strong> FRA is exactly 65.</li>
-            <li><strong>Birth Year 1938 to 1942:</strong> FRA scales incrementally (65 years and 2 months up to 65 years and 10 months).</li>
-            <li><strong>Birth Year 1943 to 1954:</strong> FRA is exactly 66.</li>
-            <li><strong>Birth Year 1955 to 1959:</strong> FRA scales incrementally (66 years and 2 months up to 66 years and 10 months).</li>
-            <li><strong>Birth Year 1960 or later:</strong> FRA is exactly 67.</li>
+            <li><strong>2026 formula scope:</strong> the calculator uses the 2026 PIA bend points of $1,286 and $7,749.</li>
+            <li><strong>FRA in this version:</strong> 67 for the 1964 birth cohort used by the 2026 eligibility-year formula.</li>
+            <li><strong>Other birth/eligibility years:</strong> use a historical/future-year calculation rather than applying 2026 bend points indiscriminately.</li>
           </ul>
           <p className="text-[11px] text-slate-400 mt-1 mb-6">
             Source: <a href="https://www.ssa.gov/benefits/retirement/planner/ageincrease.html" target="_blank" rel="noopener noreferrer" className="underline hover:text-amber-600">SSA — Full Retirement Age Year of Birth Chart</a>
@@ -543,13 +538,13 @@ export default function BenefitsEstimator() {
 
           <h3 className="text-lg font-bold text-[#071530] mb-3">Step 2: Replicating the Primary Insurance Amount (PIA) Formula</h3>
           <p className="text-slate-600 text-sm sm:text-base leading-relaxed mb-4">
-            To estimate your baseline benefit—referred to legally as the <strong>Primary Insurance Amount (PIA)</strong>—our calculator processes your monthly average indexed earnings using the official SSA <strong>&quot;Bend Points&quot;</strong> system. For the year 2026, the statutory bend points are applied mathematically through a progressive three-tiered formula:
+            To estimate your baseline benefit—referred to as the <strong>Primary Insurance Amount (PIA)</strong>—the calculator applies the official SSA bend-point formula to the AIME you enter. It does not reconstruct AIME from your earnings record. For 2026, the formula uses three tiers:
           </p>
           <div className="overflow-x-auto mb-6">
             <table className="w-full border-collapse border border-slate-200 text-sm">
               <thead className="bg-slate-50">
                 <tr>
-                  <th className="border border-slate-200 px-4 py-2.5 text-left font-bold text-slate-700">Earnings Bracket (Monthly)</th>
+                  <th className="border border-slate-200 px-4 py-2.5 text-left font-bold text-slate-700">AIME Bracket (Monthly)</th>
                   <th className="border border-slate-200 px-4 py-2.5 text-left font-bold text-slate-700">Applied Replacement Rate</th>
                   <th className="border border-slate-200 px-4 py-2.5 text-left font-bold text-slate-700">Mathematical Equation Applied</th>
                 </tr>
@@ -558,17 +553,17 @@ export default function BenefitsEstimator() {
                 <tr>
                   <td className="border border-slate-200 px-4 py-2.5 font-medium text-slate-600"><strong>First $1,286</strong></td>
                   <td className="border border-slate-200 px-4 py-2.5 text-slate-600">90%</td>
-                  <td className="border border-slate-200 px-4 py-2.5 font-mono text-slate-500">Earnings &times; 0.90</td>
+                  <td className="border border-slate-200 px-4 py-2.5 font-mono text-slate-500">AIME &times; 0.90</td>
                 </tr>
                 <tr>
-                  <td className="border border-slate-200 px-4 py-2.5 font-medium text-slate-600"><strong>Earnings between $1,286 and $7,749</strong></td>
+                  <td className="border border-slate-200 px-4 py-2.5 font-medium text-slate-600"><strong>AIME between $1,286 and $7,749</strong></td>
                   <td className="border border-slate-200 px-4 py-2.5 text-slate-600">32%</td>
-                  <td className="border border-slate-200 px-4 py-2.5 font-mono text-slate-500">(1,200 &times; 0.90) + ((Earnings - 1,200) &times; 0.32)</td>
+                  <td className="border border-slate-200 px-4 py-2.5 font-mono text-slate-500">(1,286 &times; 0.90) + ((AIME - 1,286) &times; 0.32)</td>
                 </tr>
                 <tr>
-                  <td className="border border-slate-200 px-4 py-2.5 font-medium text-slate-600"><strong>Earnings above $7,749</strong></td>
+                  <td className="border border-slate-200 px-4 py-2.5 font-medium text-slate-600"><strong>AIME above $7,749</strong></td>
                   <td className="border border-slate-200 px-4 py-2.5 text-slate-600">15%</td>
-                  <td className="border border-slate-200 px-4 py-2.5 font-mono text-slate-500">(1,200 &times; 0.90) + (6,000 &times; 0.32) + ((Earnings - 7,200) &times; 0.15)</td>
+                  <td className="border border-slate-200 px-4 py-2.5 font-mono text-slate-500">(1,286 &times; 0.90) + (6,463 &times; 0.32) + ((AIME - 7,749) &times; 0.15)</td>
                 </tr>
               </tbody>
             </table>
@@ -604,6 +599,10 @@ export default function BenefitsEstimator() {
             Source: <a href="https://www.ssa.gov/OACT/quickcalc/early_late.html" target="_blank" rel="noopener noreferrer" className="underline hover:text-amber-600">SSA — Mathematical Calculations for Early and Late Retirement</a>
           </p>
 
+          <div className="rounded-xl border border-amber-200 bg-amber-50/60 p-4 text-sm text-slate-700">
+            <strong>Important limitation:</strong> This is an educational estimator, not an official SSA benefit computation. It starts with an assumed AIME rather than your complete earnings record. Official SSA calculations index covered earnings, select the highest 35 years, compute AIME, apply the applicable eligibility-year PIA formula and COLAs, and then apply claiming-age adjustments. Do not use this estimate as a substitute for your SSA earnings record or benefit statement.
+          </div>
+
           {/* أسئلة FAQ */}
           <div className="border-t border-slate-100 pt-6">
             <h3 className="text-lg font-bold text-[#071530] mb-4">Frequently Asked Questions (FAQ)</h3>
@@ -611,14 +610,14 @@ export default function BenefitsEstimator() {
             <div className="mb-4">
               <h4 className="font-bold text-slate-800 text-sm sm:text-base">How accurate is this estimator compared to the official SSA.gov calculator?</h4>
               <p className="text-slate-600 text-sm leading-relaxed mt-1">
-                Our tool provides a highly precise estimate based on the current 2026 indexing rules and progressive bend points. However, the official Social Security Administration calculations utilize your complete 35-year historical average of indexed earnings (AIME) rather than a single estimated monthly earnings figure. We recommend checking your official statement at SSA.gov to verify your exact earnings history.
+                This tool provides an estimate from an assumed AIME using the 2026 PIA formula. The official Social Security Administration calculation uses your complete earnings record, including indexed covered earnings and the highest 35 years used to determine AIME. We recommend checking your official SSA earnings record and benefit estimate before making a claiming decision.
               </p>
             </div>
 
             <div className="mb-4">
               <h4 className="font-bold text-slate-800 text-sm sm:text-base">Does the calculator account for annual COLA increases?</h4>
               <p className="text-slate-600 text-sm leading-relaxed mt-1">
-                This estimator calculates your retirement benefits in current constant dollars. When the Social Security Administration releases the annual Cost-of-Living Adjustment (COLA) each October, those percentage adjustments are applied directly to your baseline Primary Insurance Amount (PIA), increasing your purchasing power alongside inflation.
+                This estimator does not project future COLAs. It applies the 2026 formula to the AIME you enter and shows the resulting benefit in 2026-formula terms. Actual benefits can differ because SSA uses your complete earnings record, applicable COLAs, and the rules for your specific eligibility year.
               </p>
             </div>
           </div>
