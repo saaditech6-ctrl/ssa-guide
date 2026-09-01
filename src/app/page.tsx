@@ -870,7 +870,7 @@ export default function HomePage() {
         =================================================== */}
 
         <section className="relative z-20 -mt-8 px-4 sm:px-6 lg:px-8">
-          <div className="mx-auto max-w-7xl rounded-[28px] bg-[#edf8f4] p-4 shadow-xl ring-1 ring-black/5 sm:p-6">
+          <div className="mx-auto max-w-7xl rounded-[28px] bg-[#E8BD3E] p-4 shadow-xl ring-1 ring-black/5 sm:p-6">
             <div className="mb-6 flex flex-col justify-between gap-3 sm:flex-row sm:items-end">
               <div>
                 <span className="text-xs font-black uppercase tracking-[0.18em] text-[#0b7357]">
