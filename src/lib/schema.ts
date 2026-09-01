@@ -43,24 +43,47 @@ export function generateFAQSchema(content: string) {
  */
 export function generateArticleSchema(article: Article, url: string) {
   const publishedIso = toIsoDate(article.date);
-  // dateModified يستخدم article.lastUpdated إن وُجد، وإلا يساوي تاريخ النشر كافتراضي آمن
   const modifiedIso = article.lastUpdated
     ? toIsoDate(article.lastUpdated)
     : publishedIso;
 
-  // إعداد رابط الصورة الكامل (مهم جداً لـ Google)
   const imageUrl = article.image
     ? article.image.startsWith("http")
       ? article.image
       : `${BASE_URL}${article.image}`
     : `${BASE_URL}/og-image.jpg`;
 
+  const keywordList = [
+    article.primaryKeyword,
+    ...(article.secondaryKeywords ?? []),
+    article.category,
+    "Social Security",
+    "United States",
+  ].filter(Boolean) as string[];
+
+  const geoName = article.searchIntent?.toLowerCase().includes("local")
+    ? article.title
+    : "United States";
+
   return {
     "@context": "https://schema.org",
     "@type": "Article",
-    headline: article.title,
+    headline: article.metaTitle || article.title,
+    name: article.title,
     description: article.metaDescription || article.excerpt,
-    image: imageUrl, // تم إضافتها لضمان التوافق التام مع Google
+    inLanguage: "en-US",
+    keywords: [...new Set(keywordList)].join(", "),
+    articleSection: article.category,
+    about: [
+      { "@type": "Thing", name: "Social Security" },
+      { "@type": "Thing", name: article.category },
+    ],
+    audience: {
+      "@type": "Audience",
+      audienceType: article.searchIntent || "General public",
+    },
+    isAccessibleForFree: true,
+    image: imageUrl,
     author: {
       "@type": "Person",
       name: article.author || "Amine Saadi",
@@ -81,6 +104,25 @@ export function generateArticleSchema(article: Article, url: string) {
     mainEntityOfPage: {
       "@type": "WebPage",
       "@id": url,
+    },
+    areaServed: {
+      "@type": "Country",
+      name: "United States",
+      addressCountry: "US",
+    },
+    spatialCoverage: {
+      "@type": "Place",
+      name: geoName,
+      addressCountry: "US",
+    },
+    mentions: [...new Set(keywordList)].map((keyword) => ({
+      "@type": "Thing",
+      name: keyword,
+    })),
+    potentialAction: {
+      "@type": "SearchAction",
+      target: "https://www.socialsecurityguidecalc.com/?q={search_term_string}",
+      "query-input": "required name=search_term_string",
     },
   };
 }

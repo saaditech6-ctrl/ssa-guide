@@ -341,6 +341,10 @@ export function Header() {
     ...calculatorLinks,
     ...guideLinks,
     {
+      label: "By State",
+      href: "/states",
+    },
+    {
       label: "Blog",
       href: "/blog",
     },
@@ -448,6 +452,14 @@ export function Header() {
               setActiveDropdown={setActiveDropdown}
               closeDropdown={closeDropdown}
             />
+
+            <Link
+              href="/states"
+              className="text-sm font-medium text-slate-700 transition-colors hover:text-[#071530]"
+              onClick={closeDropdown}
+            >
+              By State
+            </Link>
 
             <Dropdown
               id="blog"
@@ -587,6 +599,19 @@ export function Header() {
                   onClick={closeMobileMenu}
                 />
               ))}
+            </MobileSection>
+
+            {/* State Guides */}
+
+            <MobileSection title="By State">
+              <MobileLink
+                item={{
+                  label: "All States",
+                  href: "/states",
+                }}
+                onClick={closeMobileMenu}
+                bold
+              />
             </MobileSection>
 
             {/* Blog */}

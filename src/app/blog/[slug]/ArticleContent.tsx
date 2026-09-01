@@ -1,6 +1,7 @@
 "use client"
 
 import { useEffect } from "react"
+import Link from "next/link"
 import { useRouter } from "next/navigation"
 import { ArrowLeft, Clock, User, Calendar, Headphones, PlayCircle, Share2 } from "lucide-react"
 import { Article } from "@/lib/articles"
@@ -209,6 +210,16 @@ export default function ArticleContent({ article }: { article: Article }) {
     )
   }
 
+  const localGuideLinks = [
+    { label: "Social Security by State", href: "/states" },
+    { label: "California Social Security", href: "/states/california" },
+    { label: "Texas Social Security", href: "/states/texas" },
+    { label: "Florida Social Security", href: "/states/florida" },
+    { label: "Los Angeles", href: "/states/california/cities/los-angeles" },
+    { label: "New York City", href: "/states/new-york/cities/new-york" },
+    { label: "Chicago", href: "/states/illinois/cities/chicago" },
+  ]
+
   return (
     <article className="max-w-3xl mx-auto px-4 py-6">
       {/* Navigation Button */}
@@ -284,6 +295,21 @@ export default function ArticleContent({ article }: { article: Article }) {
       {/* شريط المشاركة والحفظ أسفل المقال للختام */}
       <div className="mt-8">
         <ShareBar title={article.title} slug={article.slug} image={article.image} />
+      </div>
+
+      <div className="mt-10 rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
+        <h2 className="font-playfair text-2xl font-bold text-[#071530] mb-4">Local guides related to this topic</h2>
+        <div className="flex flex-wrap gap-2">
+          {localGuideLinks.map((item) => (
+            <Link
+              key={item.href}
+              href={item.href}
+              className="inline-flex items-center rounded-full border border-slate-200 bg-slate-50 px-3 py-1.5 text-xs font-semibold text-slate-700 transition-colors hover:border-amber-200 hover:bg-amber-50 hover:text-amber-700"
+            >
+              {item.label}
+            </Link>
+          ))}
+        </div>
       </div>
     </article>
   )

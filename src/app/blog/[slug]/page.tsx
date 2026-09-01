@@ -23,33 +23,55 @@ export async function generateMetadata(
   }
 
   const url = `https://www.socialsecurityguidecalc.com/blog/${article.slug}`
-  const imageUrl = article.image 
-    ? (article.image.startsWith('http') ? article.image : `https://www.socialsecurityguidecalc.com${article.image}`)
+  const imageUrl = article.image
+    ? article.image.startsWith("http")
+      ? article.image
+      : `https://www.socialsecurityguidecalc.com${article.image}`
     : undefined
 
+  const keywordList = [
+    article.primaryKeyword,
+    ...(article.secondaryKeywords ?? []),
+    article.category,
+    "Social Security",
+    "United States",
+    "SSA",
+  ].filter(Boolean) as string[]
+
+  const title = article.metaTitle || `${article.title} | Social Security Guide Calc`
+  const description = article.metaDescription || article.excerpt
+
   return {
-    title: `${article.title} | Social Security Guide Calc`,
-    description: article.excerpt,
+    title,
+    description,
+    keywords: [...new Set(keywordList)].join(", "),
     alternates: { canonical: url },
     openGraph: {
-      title: article.title,
-      description: article.excerpt,
+      title,
+      description,
       url,
       type: "article",
+      locale: "en_US",
+      siteName: "Social Security Guide Calc",
       publishedTime: article.date,
+      modifiedTime: article.lastUpdated || article.updatedDate || article.date,
       authors: [article.author || "Social Security Guide"],
+      tags: [...new Set(keywordList)],
       images: imageUrl ? [{ url: imageUrl, alt: article.title, width: 1200, height: 630 }] : undefined,
     },
     twitter: {
       card: imageUrl ? "summary_large_image" : "summary",
-      title: article.title,
-      description: article.excerpt,
+      title,
+      description,
       images: imageUrl ? [imageUrl] : undefined,
     },
-    // Meta tags إضافية تحسّن أداء Pinterest Rich Pins وتدعم الزر التفاعلي
     other: {
       "pinterest-rich-pin": "true",
       "og:image:secure_url": imageUrl || "",
+      "geo.region": "US",
+      "geo.placename": "United States",
+      "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
+      "article:tag": [...new Set(keywordList)].join(", "),
     },
   }
 }

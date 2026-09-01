@@ -30,30 +30,39 @@ export const viewport: Viewport = {
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.socialsecurityguidecalc.com"),
   alternates: {
-    canonical: "./",
+    canonical: "https://www.socialsecurityguidecalc.com",
   },
-  // تم تحسين القالب لمنع التكرار واختصار اسم الموقع
-  title: { 
-    default: "Social Security Guide Calc | Benefits & Retirement Tools", 
-    template: "%s | SSGC" 
+  applicationName: "Social Security Guide Calc",
+  category: "Finance",
+  title: {
+    default: "Social Security Guide Calc | 2026 Benefits, Medicare & Retirement Tools",
+    template: "%s | Social Security Guide Calc",
   },
-  description: "Free calculators, expert guides, and the latest news on Social Security benefits, retirement planning, Medicare, and disability benefits.",
+  description:
+    "Free Social Security calculators, retirement planning guides, Medicare information, SSDI/SSI explanations, and benefits updates for 2026.",
   keywords: [
-    "social security benefits", "retirement calculator", "full retirement age", 
-    "Medicare enrollment", "social security disability", "COLA increase 2026", 
-    "when to claim social security", "spousal benefits", "SSI benefits", "SSDI eligibility"
+    "Social Security benefits",
+    "retirement calculator",
+    "Social Security retirement age",
+    "Medicare enrollment",
+    "SSDI eligibility",
+    "SSI benefits",
+    "spousal benefits",
+    "COLA increase",
+    "Social Security estimate",
+    "benefit tax calculator",
   ],
-
-  openGraph: { 
-    type: "website", 
-    locale: "en_US", 
-    url: "https://www.socialsecurityguidecalc.com", 
-    siteName: "Social Security Guide Calc", 
-    title: "Social Security Guide Calc | Benefits & Retirement Tools", 
-    description: "Free calculators, expert guides, and breaking news on Social Security, Medicare, and retirement benefits.",
+  openGraph: {
+    type: "website",
+    locale: "en_US",
+    url: "https://www.socialsecurityguidecalc.com",
+    siteName: "Social Security Guide Calc",
+    title: "Social Security Guide Calc | 2026 Benefits, Medicare & Retirement Tools",
+    description:
+      "Free calculators and expert guides covering Social Security, retirement, Medicare, SSDI, SSI, survivor benefits, and tax planning.",
     images: [
       {
-        url: "/og-image.png",
+        url: "https://www.socialsecurityguidecalc.com/og-image.png",
         width: 1200,
         height: 630,
         alt: "Social Security Guide & Calculators",
@@ -62,25 +71,32 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Social Security Guide & Calculators",
-    description: "Calculate your retirement benefits accurately with our 2026 Social Security tools.",
-    images: ["/og-image.png"],
+    title: "Social Security Guide Calc | 2026 Benefits, Medicare & Retirement Tools",
+    description:
+      "Learn how Social Security benefits, Medicare, and retirement planning work with our expert guides and calculators.",
+    images: ["https://www.socialsecurityguidecalc.com/og-image.png"],
   },
-  robots: { 
-    index: true, 
+  robots: {
+    index: true,
     follow: true,
     googleBot: {
       index: true,
       follow: true,
-      'max-video-preview': -1,
-      'max-image-preview': 'large',
-      'max-snippet': -1,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
     },
+  },
+  other: {
+    "geo.region": "US",
+    "geo.placename": "United States",
+    "geo.position": "39.8283;-98.5795",
+    "ICBM": "39.8283, -98.5795",
   },
   verification: {
     google: "nHGnLCeg0J1waRnIaR42OUCFqFfhAycWeh5LCBwIYgg",
     other: {
-      'p:domain_verify': '9de708a92b4bcd24ddb7dfeb14f83046',
+      "p:domain_verify": "9de708a92b4bcd24ddb7dfeb14f83046",
     },
   },
 }
@@ -91,9 +107,20 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     "@type": "WebSite",
     "name": "Social Security Guide Calc",
     "url": "https://www.socialsecurityguidecalc.com",
+    "inLanguage": "en-US",
+    "description": "Educational resources, calculators, and guides for Social Security, Medicare, retirement, and disability benefits in the United States.",
+    "publisher": {
+      "@type": "Organization",
+      "name": "Social Security Guide Calc",
+      "url": "https://www.socialsecurityguidecalc.com",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://www.socialsecurityguidecalc.com/logo.png"
+      }
+    },
     "potentialAction": {
       "@type": "SearchAction",
-      "target": "https://www.socialsecurityguidecalc.com/search?q={search_term_string}",
+      "target": "https://www.socialsecurityguidecalc.com/?q={search_term_string}",
       "query-input": "required name=search_term_string"
     }
   }

@@ -1,4 +1,5 @@
-﻿import Link from "next/link"
+﻿import type { Metadata } from "next"
+import Link from "next/link"
 import Image from "next/image"
 import {
   ArrowRight,
@@ -639,6 +640,22 @@ function formatArticleDate(dateString?: string) {
     day: "numeric",
     year: "numeric",
   })
+}
+
+export const metadata: Metadata = {
+  title: "Social Security Calculator & Benefits Guide 2026",
+  description:
+    "Estimate your Social Security retirement benefit, compare claiming ages, learn Medicare rules, and explore SSDI, SSI, survivor, and tax guidance for 2026.",
+  alternates: {
+    canonical: "https://www.socialsecurityguidecalc.com",
+  },
+  openGraph: {
+    title: "Social Security Calculator & Benefits Guide 2026",
+    description:
+      "Free benefit estimates, retirement planning tools, and expert guides for Social Security, Medicare, SSDI, SSI, and survivor benefits.",
+    url: "https://www.socialsecurityguidecalc.com",
+    type: "website",
+  },
 }
 
 /* =========================================================

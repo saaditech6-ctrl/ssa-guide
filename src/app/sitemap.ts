@@ -1,5 +1,7 @@
 import type { MetadataRoute } from "next";
 import { articles } from "@/lib/articles";
+import { states } from "@/lib/states";
+import { cities } from "@/lib/cities";
 
 const baseUrl = "https://www.socialsecurityguidecalc.com";
 
@@ -38,7 +40,28 @@ const infoRoutes = [
 ];
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const staticRoutes = ["/", "/blog", ...calculatorRoutes, ...guideRoutes, ...infoRoutes];
+  const staticRoutes = ["/", "/blog", "/states", ...calculatorRoutes, ...guideRoutes, ...infoRoutes];
+
+  const stateEntries: MetadataRoute.Sitemap = states.map((state) => ({
+    url: `${baseUrl}/states/${state.slug}`,
+    lastModified: new Date("2026-08-28T00:00:00.000Z"),
+    changeFrequency: "monthly",
+    priority: 0.6,
+  }));
+
+  const cityEntries: MetadataRoute.Sitemap = cities.map((city) => ({
+    url: `${baseUrl}/states/${city.state}/cities/${city.city}`,
+    lastModified: new Date("2026-08-28T00:00:00.000Z"),
+    changeFrequency: "monthly",
+    priority: 0.5,
+  }));
+
+  const cityOfficeEntries: MetadataRoute.Sitemap = cities.map((city) => ({
+    url: `${baseUrl}/states/${city.state}/cities/${city.city}/office`,
+    lastModified: new Date("2026-08-28T00:00:00.000Z"),
+    changeFrequency: "monthly",
+    priority: 0.45,
+  }));
 
   const staticEntries: MetadataRoute.Sitemap = staticRoutes.map((route, index) => ({
     url: `${baseUrl}${route}`,
@@ -70,5 +93,5 @@ export default function sitemap(): MetadataRoute.Sitemap {
     };
   });
 
-  return [...staticEntries, ...articleEntries];
+  return [...staticEntries, ...stateEntries, ...cityEntries, ...cityOfficeEntries, ...articleEntries];
 }
