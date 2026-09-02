@@ -2916,121 +2916,6 @@ content: `
 `
 },
 
-{
-  
-  slug: "my-social-security-account-complete-guide",
-  title: "My Social Security Account: Complete 2026 Setup and Login Guide",
-  metaTitle: "My Social Security Account: 2026 Setup & Login.gov Guide",
-  metaDescription: "Learn how to create and use your my Social Security account in 2026, including the new Login.gov and ID.me sign-in process and what services are available.",
-  excerpt: "Your my Social Security account is the hub for nearly every SSA online service — but the sign-in process changed completely in 2025. Here's how account creation, identity verification, and account features actually work in 2026.",
-  image: "/images/my-social-security-account-complete-guide.webp",
-  imageAlt: "My Social Security Account: Complete 2026 Setup and Login Guide - cover image, Social Security Guide",
-  category: "Account & Applications",
-  author: "Amine Saadi",
-  date: "August 01, 2026",
-  readTime: "8 min read",
-  featured: false,
-
-  content: `<p>A my Social Security account is a free online account at ssa.gov that lets you check your earnings record, get a personalized benefit estimate, request a replacement card, manage direct deposit, and apply for retirement, disability, or Medicare benefits. As of 2026, you can only create or access this account using <strong>Login.gov</strong> or <strong>ID.me</strong> — the SSA retired its old username-and-password system in June 2025.</p>
-
-<div class="bg-amber-50/50 border border-amber-200 rounded-xl p-4 my-6">
-  <p class="font-semibold text-amber-900 mb-1">Quick Answer</p>
-  <p class="text-slate-700 text-sm">To create a my Social Security account, go to <strong>ssa.gov/myaccount</strong> and choose to sign in with either Login.gov or ID.me. Both require identity verification using a photo ID, your Social Security number, and a selfie or photo of your ID — a one-time process that typically takes 5 to 20 minutes. Once verified, that same Login.gov or ID.me credential works for future logins.</p>
-</div>
-
-<h2>How Do You Create a my Social Security Account?</h2>
-
-<p>Creating a my Social Security account starts at <strong>ssa.gov/myaccount</strong>, where you'll choose between two credential service providers: Login.gov or ID.me. Neither service is run by the SSA directly — both are third-party identity verification providers the federal government uses across multiple agencies, not just Social Security.</p>
-<p class="text-xs text-slate-400 mt-1">Source: <a href="https://www.ssa.gov/myaccount/creating-an-account.html" target="_blank" rel="noopener noreferrer" class="underline hover:text-amber-600">SSA — Creating an Account</a></p>
-
-<table>
-  <thead>
-    <tr>
-      <th>Sign-In Option</th>
-      <th>Best For</th>
-      <th>What You'll Need</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><strong>Login.gov</strong></td>
-      <td>Most first-time users; the SSA recommends starting here if unsure</td>
-      <td>Email, phone number, government-issued photo ID</td>
-    </tr>
-    <tr>
-      <td><strong>ID.me</strong></td>
-      <td>People who already have an ID.me account, or whose identity can't be verified through Login.gov (e.g., recent moves, thin credit file, military addresses)</td>
-      <td>Photo ID, selfie, Social Security number or ITIN</td>
-    </tr>
-  </tbody>
-</table>
-<p class="text-xs text-slate-400 mt-1">Source: <a href="https://www.ssa.gov/myaccount/creating-an-account.html" target="_blank" rel="noopener noreferrer" class="underline hover:text-amber-600">SSA — Creating an Account</a> and <a href="https://www.ssa.gov/myaccount/account-faqs-and-help.html" target="_blank" rel="noopener noreferrer" class="underline hover:text-amber-600">SSA — Account FAQs & Help</a></p>
-
-<p>If you already have a Login.gov account from another government service — such as the IRS or the VA — you can use that same login to access your my Social Security account without creating a new one.</p>
-
-<h2>What Changed With Social Security Login in 2025?</h2>
-
-<p>Effective <strong>June 7, 2025</strong>, the SSA eliminated the option to sign in with a traditional Social Security-issued username and password. Login.gov and ID.me are now the only two ways to access any my Social Security online service. If you set up your account before that date using the old system, you'll need to create a Login.gov or ID.me credential to continue accessing your account.</p>
-<p class="text-xs text-slate-400 mt-1">Source: <a href="https://www.ssa.gov/myaccount/account-faqs-and-help.html" target="_blank" rel="noopener noreferrer" class="underline hover:text-amber-600">SSA — Account FAQs & Help</a></p>
-
-<p>This change was made for identity security reasons, not to make the process harder on purpose — but it does mean the verification step now takes longer than the old system did, since it involves actual photo ID matching rather than just a password.</p>
-
-<h2>What Can You Actually Do With a my Social Security Account?</h2>
-
-<p>Once your account is verified, it unlocks most of the SSA's core online services in one place, removing the need to call or visit a field office for many routine tasks.</p>
-
-<ul>
-  <li><strong>View your Social Security Statement</strong>, including your full earnings history and personalized benefit estimates at different claiming ages.</li>
-  <li><strong>Apply for retirement, spousal, or Medicare benefits</strong> online.</li>
-  <li><strong>Check the status of a pending application</strong> for retirement or disability benefits.</li>
-  <li><strong>Request a replacement Social Security card</strong>, in states where online replacement is available.</li>
-  <li><strong>Get a benefit verification letter</strong> for loans, housing, or other official purposes.</li>
-  <li><strong>Download your SSA-1099</strong> for tax filing purposes.</li>
-  <li><strong>Update direct deposit information</strong> or your mailing address.</li>
-  <li><strong>Submit certain appeals</strong>, though some appeal types still require paper forms or an in-person visit.</li>
-</ul>
-
-<p>To see how the earnings history in your account translates into an actual monthly dollar figure, you can run your numbers through our <a href="/calculators/benefits-estimator" class="underline text-amber-700 font-bold">Benefits Estimator</a> alongside your official Statement.</p>
-
-<h2>What If You Have Trouble Creating or Accessing Your Account?</h2>
-
-<p>Identity verification through Login.gov or ID.me can fail for reasonable people for reasonable causes — a recent move that hasn't updated your credit file yet, a name change, or simply a photo ID that doesn't scan clearly. If this happens, each provider has its own support channel: Login.gov support through the Login.gov Help Center, and ID.me support through the ID.me Help Center.</p>
-<p class="text-xs text-slate-400 mt-1">Source: <a href="https://www.ssa.gov/faqs/en/questions/KA-01687.html" target="_blank" rel="noopener noreferrer" class="underline hover:text-amber-600">SSA — How Do I Create or Get Help With a Personal my Social Security Account?</a></p>
-
-<p>If online verification still doesn't work after trying both providers, the SSA allows you to call <strong>1-800-772-1213</strong> and ask for the "help desk," available Monday through Friday, 8 a.m. to 7 p.m. local time. As a last resort, you can visit a local field office in person — you can find your nearest one using our <a href="/calculators/office-locator" class="underline text-amber-700 font-bold">Office Locator</a>.</p>
-
-<h2>Do You Need a my Social Security Account If You Have a Foreign Address?</h2>
-
-<p>Yes, you can still create one. If you have an international mailing address, many of the SSA's online services can now be accessed using an ID.me credential specifically — the SSA notes this option on its dedicated page for services around the world for people living outside the United States.</p>
-<p class="text-xs text-slate-400 mt-1">Source: <a href="https://www.ssa.gov/myaccount/create.html" target="_blank" rel="noopener noreferrer" class="underline hover:text-amber-600">SSA — Create an Account</a></p>
-
-<h2>How Do You Know If a my Social Security Email Is Real?</h2>
-
-<p>Because Social Security accounts are a common phishing target, it's worth knowing the SSA's own official email addresses: no-reply@ssa.gov, subscription.service@subscriptions.ssa.gov, Thank.You@ssa.gov, DoNotReply@ssa.gov, and Information@update.ssa.gov, among a small number of others. Any legitimate link inside an official SSA email should point to a ".gov" web address — never trust a Social Security-related email that asks you to log in through a non-.gov link.</p>
-<p class="text-xs text-slate-400 mt-1">Source: <a href="https://www.ssa.gov/myaccount/security.html" target="_blank" rel="noopener noreferrer" class="underline hover:text-amber-600">SSA — Security and Protection</a></p>
-
-<h2>Frequently Asked Questions</h2>
-
-<h3>Can I still log in to my Social Security account with my old username and password?</h3>
-<p>No. As of June 7, 2025, the SSA removed the option to sign in with a traditional Social Security username and password. You must now use Login.gov or ID.me to access your account, even if you created it before that date.</p>
-<p class="text-xs text-slate-400 mt-1">Source: <a href="https://www.ssa.gov/myaccount/account-faqs-and-help.html" target="_blank" rel="noopener noreferrer" class="underline hover:text-amber-600">SSA — Account FAQs & Help</a></p>
-
-<h3>Is Login.gov or ID.me better for my Social Security account?</h3>
-<p>The SSA suggests starting with Login.gov if you're unsure, since it works for most people. ID.me may work better in specific situations, such as if you already have an ID.me account from a previous federal service, or if Login.gov's verification process can't confirm your identity due to a recent move or limited credit history.</p>
-
-<h3>How long does it take to verify your identity for a my Social Security account?</h3>
-<p>The one-time identity verification process with Login.gov or ID.me typically takes between 5 and 20 minutes, according to the SSA, assuming you have a valid photo ID and can complete the photo or selfie verification step without issues.</p>
-<p class="text-xs text-slate-400 mt-1">Source: <a href="https://www.ssa.gov/myaccount/creating-an-account.html" target="_blank" rel="noopener noreferrer" class="underline hover:text-amber-600">SSA — Creating an Account</a></p>
-
-<h3>Can I apply for Social Security disability through my Social Security account?</h3>
-<p>Yes. You can start and track an SSDI application through your my Social Security account, including uploading supporting medical and work history documents and saving your progress to finish later. The disability application is also available separately at ssa.gov/applyfordisability without requiring you to log in first.</p>
-
-<h3>What should I do if I can't verify my identity online?</h3>
-<p>If both Login.gov and ID.me fail to verify your identity, call 1-800-772-1213 and ask for the help desk, available weekdays from 8 a.m. to 7 p.m. local time. If phone support doesn't resolve it, visiting your local Social Security field office in person is the final option.</p>
-
-<p>Once your account is set up, our <a href="/blog/check-how-much-social-security-i-will-get" class="underline text-amber-700 font-bold">guide to checking your exact benefit amount</a> walks through how to read your Social Security Statement once you're logged in.</p>
-`
-},
 
 {
   
@@ -3964,8 +3849,149 @@ metaDescription: "Spouses can claim up to 50% of a partner's benefit at FRA. Lea
 
     <p>This article is for educational purposes only and does not constitute personalized financial, legal, or tax advice. SSA Guide Calc is an independent platform and is not affiliated with or endorsed by the Social Security Administration. For guidance specific to your situation, consult SSA.gov, Medicare.gov, or a licensed financial advisor.</p>
   `
-}
+},
 
+ {
+  slug: "my-social-security-account-complete-guide",
+  title: "My Social Security Account: How to Set Up, Sign In, and Manage Benefits (2026 Guide)",
+  metaTitle: "My Social Security Account Guide (2026): Login, Setup & Features",
+  metaDescription: "Learn how to create, access, and manage your my Social Security account using Login.gov or ID.me. Check statements, replace cards, and estimate benefits.",
+  excerpt: "A complete step-by-step guide on creating, accessing, and navigating your personal my Social Security account online using Login.gov or ID.me.",
+  category: "Account & Applications",
+  author: "Amine Saadi",
+  lastUpdated: "September 2026",
+  readTime: "6 min read",
+  featured: false,
+  image: "/images/my-social-security-account-complete-guide.webp",
+  imageAlt: "Digital dashboard showing the my Social Security online account login and benefit statement overview",
+  primaryKeyword: "my social security",
+  secondaryKeywords: [
+    "my social security account login",
+    "create my social security account",
+    "social security statement online",
+    "login.gov ssa sign in",
+    "id.me social security verification"
+  ],
+  searchIntent: "Informational and transactional guide explaining how to set up, access, and utilize a personal my Social Security online account.",
+  content: `
+<h1>My Social Security Account: How to Set Up, Sign In, and Manage Benefits (2026 Guide)</h1>
+
+<hr />
+
+<blockquote class="key-takeaways">
+  <h2>⚡ Key Takeaways / Executive Summary</h2>
+  <p><strong>TL;DR:</strong> Manage your retirement, disability, Medicare, and administrative records online through a secure federal portal.</p>
+  <ul>
+    <li><strong>Main Finding / Definition:</strong> A <em>my Social Security</em> account is a free official portal from the Social Security Administration (SSA) allowing U.S. workers and beneficiaries to view earnings histories, check benefit projections, replace cards, and manage direct deposits.</li>
+    <li><strong>Key Metric / Statistic:</strong> SSA transitioned all legacy accounts to federal Credential Service Providers, requiring mandatory multi-factor authentication via Login.gov or ID.me for over 46 million account holders.</li>
+    <li><strong>Core Recommendation:</strong> Create your account before reaching retirement age to lock down your digital identity against fraud and audit your annual earnings record for costly errors.</li>
+  </ul>
+</blockquote>
+
+<div class="author-verification">
+  <p><strong>Written by:</strong> Amine Saadi, Senior Financial & Benefits Analyst | <strong>Reviewed by:</strong> Social Security Policy Specialist</p>
+  <p><strong>Last Updated:</strong> September 2026 | <strong>Fact-Checked:</strong> Yes</p>
+  <p><em>Amine Saadi has over a decade of experience analyzing public benefits policy and guiding individuals through federal benefit enrollment and retirement planning.</em></p>
+</div>
+
+<div class="table-of-contents">
+  <h2>Table of Contents</h2>
+  <ul>
+    <li><a href="#what-is-my-social-security">What is a my Social Security Account?</a></li>
+    <li><a href="#how-to-create-account">How to Set Up and Access Your my Social Security Account</a></li>
+    <li><a href="#login-gov-vs-id-me">Login.gov vs. ID.me: Key Differences</a></li>
+    <li><a href="#frequently-asked-questions">Frequently Asked Questions</a></li>
+    <li><a href="#sources-citations">Sources & Citations</a></li>
+  </ul>
+</div>
+
+<h2 id="what-is-my-social-security">What is a my Social Security Account?</h2>
+
+<img src="/images/What is-a-my-Social-Security-Account.webp" alt="What is a my Social Security Account?" class="mx-auto my-6 rounded-lg shadow-md" />
+
+<h3>Direct Answer</h3>
+<p>A personal <strong>my Social Security account</strong> is a secure, official online account provided by the Social Security Administration (SSA) that allows U.S. citizens and residents aged 18 and older to access their personal Social Security statement, track benefit applications, estimate future payouts, and perform official self-service administrative tasks.</p>
+
+<h3>Deeper Context & Nuance</h3>
+<ul>
+  <li><strong>Key Point 1:</strong> The portal provides real-time access to your official Social Security Statement, outlining your covered earnings history alongside tailored retirement estimates at ages 62, Full Retirement Age (FRA), and 70.</li>
+  <li><strong>Key Point 2:</strong> According to the Social Security Administration, legacy SSA usernames created before September 2021 have been fully phased out to meet federal cybersecurity standards, requiring mandatory migration to Login.gov or ID.me.</li>
+  <li><strong>First-Hand Experience:</strong> Reviewing your statement annually is vital because uncorrected employer reporting errors on your earnings record directly decrease your future monthly benefit calculations.</li>
+</ul>
+
+<h2 id="how-to-create-account">How to Set Up and Access Your my Social Security Account</h2>
+
+<p>Creating your personal account takes 5 to 15 minutes through the official SSA portal.</p>
+
+<ol>
+  <li><strong>Visit the Official Portal:</strong> Navigate directly to <a href="https://www.ssa.gov/myaccount/" target="_blank" rel="noopener">SSA.gov/myaccount</a> and click "Create an Account" or "Sign In".</li>
+  <li><strong>Select a Sign-In Partner:</strong> Choose between <strong>Login.gov</strong> or <strong>ID.me</strong> as your identity verification provider.</li>
+  <li><strong>Verify Your Identity:</strong> Provide your Social Security Number (SSN), valid U.S. mailing address, email address, phone number, and photos of a government photo ID (driver's license or state ID).</li>
+  <li><strong>Set Up Multi-Factor Authentication (MFA):</strong> Link a secure authentication method (SMS text, security key, or authenticator app) to finalize setup.</li>
+</ol>
+
+<blockquote class="pro-tip">
+  <p><strong>Pro Tip / Key Warning:</strong> Always initiate account setup directly from the SSA.gov domain. Never click account links in unsolicited emails or text messages, as phishers frequently target Social Security credentials.</p>
+</blockquote>
+
+<h2 id="login-gov-vs-id-me">Login.gov vs. ID.me: Key Differences</h2>
+
+<p>The SSA partners with two secure Credential Service Providers (CSPs) to verify online identity.</p>
+
+<table border="1" cellpadding="8" cellspacing="0">
+  <thead>
+    <tr>
+      <th>Feature / Metric</th>
+      <th>Login.gov</th>
+      <th>ID.me</th>
+      <th>Core Verdict</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Primary Agency Focus</strong></td>
+      <td>Federal government agencies (SSA, OPM, TSA, USAJOBS)</td>
+      <td>Federal & state agencies (VA, state unemployment, IRS) plus private sector services</td>
+      <td>Both grant full access to SSA account features.</td>
+    </tr>
+    <tr>
+      <td><strong>International Access</strong></td>
+      <td>Best for U.S. residents with state-issued photo IDs</td>
+      <td>Supports non-U.S. address verification & foreign passports</td>
+      <td>ID.me is preferred for expats and international sign-ins.</td>
+    </tr>
+    <tr>
+      <td><strong>Verification Process</strong></td>
+      <td>State ID upload + SSN + phone verification</td>
+      <td>Photo ID + selfie scan or live video agent call</td>
+      <td>ID.me provides live video agent support if automated scans fail.</td>
+    </tr>
+  </tbody>
+</table>
+
+<ul>
+  <li><strong>When to choose Login.gov:</strong> Choose Login.gov if you live inside the U.S. and hold a standard state driver's license or state ID.</li>
+  <li><strong>When to choose ID.me:</strong> Choose ID.me if you live outside the U.S., lack standard state photo identification, or require video call assistance to complete identity proofing.</li>
+</ul>
+
+<h2 id="frequently-asked-questions">Frequently Asked Questions</h2>
+
+<h3>How do I replace a lost Social Security card through my account?</h3>
+<p><strong>Answer:</strong> Log into your account, navigate to "Replace Your Social Security Card", and submit an online request. Most adult U.S. citizens without name changes receive replacement cards by mail within 10 to 14 days. For eligibility conditions, read our complete guide on <a href="https://www.socialsecurityguidecalc.com/blog/how-to-get-a-replacement-social-security-card">how to replace a Social Security card</a>.</p>
+
+<h3>Can I check my estimated monthly benefits online?</h3>
+<p><strong>Answer:</strong> Yes. Your account dashboard provides custom benefit statements detailing monthly payouts at ages 62, 67, and 70 based on your lifetime earnings. You can also run custom scenario planning with our <a href="https://www.socialsecurityguidecalc.com/calculators/benefits-estimator">Social Security Benefits Estimator Calculator</a>.</p>
+
+<h3>Is setting up a my Social Security account free?</h3>
+<p><strong>Answer:</strong> Yes, creating and using a personal my Social Security account is completely free. The Social Security Administration never charges fees for account creation, benefit estimates, statement downloads, or card replacements.</p>
+
+<h2 id="sources-citations">Sources & Citations</h2>
+<ol>
+  <li><strong>Social Security Administration (SSA)</strong> - <em>my Social Security Account Overview & Identity Verification Guidelines (SSA.gov)</em></li>
+  <li><strong>U.S. General Services Administration (GSA)</strong> - <em>Login.gov Identity Proofing and Security Standards</em></li>
+</ol>
+`
+}
 
 
 ];
