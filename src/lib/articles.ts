@@ -3889,7 +3889,7 @@ metaDescription: "Spouses can claim up to 50% of a partner's benefit at FRA. Lea
 </blockquote>
 
 <div class="author-verification">
-  <p><strong>Written by:</strong> Amine Saadi, Senior Financial & Benefits Analyst | <strong>Reviewed by:</strong> Social Security Policy Specialist</p>
+  <p><strong>Written by:</strong> Amine Saadi </p>
   <p><strong>Last Updated:</strong> September 2026 | <strong>Fact-Checked:</strong> Yes</p>
   <p><em>Amine Saadi has over a decade of experience analyzing public benefits policy and guiding individuals through federal benefit enrollment and retirement planning.</em></p>
 </div>
@@ -3990,6 +3990,342 @@ metaDescription: "Spouses can claim up to 50% of a partner's benefit at FRA. Lea
   <li><strong>Social Security Administration (SSA)</strong> - <em>my Social Security Account Overview & Identity Verification Guidelines (SSA.gov)</em></li>
   <li><strong>U.S. General Services Administration (GSA)</strong> - <em>Login.gov Identity Proofing and Security Standards</em></li>
 </ol>
+`
+},
+
+{
+  slug: "social-security-cola",
+  title: "Social Security COLA 2026: How It Works and What to Expect in 2027",
+  metaTitle: "Social Security COLA 2026: 2.8% Increase & 2027 Update",
+  metaDescription: "Learn how the Social Security COLA is calculated, why the 2026 increase is 2.8%, how it affects benefits, and when the official 2027 COLA will be announced.",
+  excerpt: "The 2026 Social Security COLA is 2.8%. Learn how SSA calculates COLA using CPI-W, how the increase affects benefits, and why the official 2027 COLA is not yet known.",
+  category: "COLA Updates",
+  author: "Amine Saadi",
+  date: "2026-09-02",
+  lastUpdated: "2026-09-02",
+  updatedDate: "2026-09-02",
+  readTime: "10 min read",
+  featured: false,
+  image: "/images/social-security-cola.webp",
+  imageAlt: "Social Security COLA and cost of living adjustment guide",
+  primaryKeyword: "social security cola",
+  secondaryKeywords: [
+    "social security cola 2026",
+    "social security cola 2027",
+    "2026 social security increase",
+    "social security cost of living adjustment",
+    "how is social security cola calculated",
+    "social security inflation adjustment",
+    "social security cola history",
+    "when is social security cola announced"
+  ],
+  searchIntent: "Informational",
+  content: `<h1>Social Security COLA 2026: What It Is, How It Is Calculated, and What to Expect in 2027</h1>
+
+<p><strong>TL;DR:</strong></p>
+<ul>
+  <li><strong>Main finding:</strong> The Social Security cost-of-living adjustment (COLA) is an annual benefit increase tied by law to inflation measured by the Consumer Price Index for Urban Wage Earners and Clerical Workers (CPI-W).</li>
+  <li><strong>2026 COLA:</strong> Social Security and SSI benefits increased by <strong>2.8%</strong> in 2026. The increase applies to Social Security benefits payable in January 2026. </li>
+  <li><strong>Average impact:</strong> SSA estimated that the average Social Security retirement benefit increased by about <strong>$56 per month</strong> with the 2026 COLA. </li>
+  <li><strong>2027 COLA:</strong> As of September 2, 2026, the official 2027 COLA has not been announced. SSA states that the next COLA will be announced in October 2026. </li>
+</ul>
+
+<h2>Author & Expertise Verification</h2>
+
+<p><strong>Written by:</strong> Amine Saadi </p>
+<p><strong>Last Updated:</strong> September 2026 | <strong>Fact-Checked:</strong> Yes</p>
+
+<p>Amine Saadi writes and researches consumer-facing Social Security information, with an emphasis on benefit calculations, claiming strategies, retirement rules, and official Social Security Administration data. This article uses primary information from the Social Security Administration and Bureau of Labor Statistics rather than unofficial COLA forecasts.</p>
+
+<h2>Table of Contents</h2>
+<ul>
+  <li><a href="#what-is-social-security-cola">What is Social Security COLA?</a></li>
+  <li><a href="#how-is-cola-calculated">How is Social Security COLA calculated?</a></li>
+  <li><a href="#how-much-is-cola-2026">How much was the Social Security COLA for 2026?</a></li>
+  <li><a href="#2027-cola">What will the Social Security COLA be for 2027?</a></li>
+  <li><a href="#historical-cola">Social Security COLA history</a></li>
+  <li><a href="#how-cola-affects-benefits">How does COLA affect your Social Security benefit?</a></li>
+  <li><a href="#cola-vs-inflation">Social Security COLA vs. inflation</a></li>
+  <li><a href="#faqs">Frequently Asked Questions</a></li>
+</ul>
+
+<h2 id="what-is-social-security-cola">What is Social Security COLA?</h2>
+
+<img src="/images/what-is-social-security-cola_.webp" alt="What is Social Security COLA?" />
+
+<p><strong>Direct answer:</strong> Social Security COLA, or cost-of-living adjustment, is the annual percentage increase applied to Social Security and Supplemental Security Income benefits to help protect their purchasing power from inflation. Federal law ties the COLA to changes in the Consumer Price Index for Urban Wage Earners and Clerical Workers (CPI-W).</p>
+
+<h3>How does Social Security COLA work?</h3>
+
+<p>The Social Security Administration (SSA) does not simply choose a percentage based on the general inflation rate. Federal law establishes a specific formula using the CPI-W, an inflation measure produced by the U.S. Bureau of Labor Statistics (BLS).</p>
+
+<p>SSA explains that the COLA is based on the percentage increase in the average CPI-W for the third quarter of the current year compared with the average CPI-W for the third quarter of the year in which the previous COLA was determined. If the resulting calculation produces no increase, there is no COLA. </p>
+
+<ul>
+  <li><strong>SSA:</strong> Determines and publishes the Social Security COLA.</li>
+  <li><strong>BLS:</strong> Produces the CPI-W data used in the statutory calculation.</li>
+  <li><strong>Federal law:</strong> Establishes the formula used to determine the adjustment.</li>
+</ul>
+
+<p>Automatic Social Security COLAs began in 1975. Before that change, benefit increases generally required special legislation from Congress. </p>
+
+<h2 id="how-is-cola-calculated">How is Social Security COLA calculated?</h2>
+
+<img src="/images/how-is-social-security-cola-calculated.webp" alt="How is Social Security COLA calculated?" />
+
+<p>The calculation uses CPI-W data for July, August, and September and compares the third-quarter average with the applicable comparison-year third-quarter average.</p>
+
+<ol>
+  <li><strong>Collect July CPI-W data:</strong> The first month of the third quarter is included in the statutory comparison.</li>
+  <li><strong>Collect August and September data:</strong> These complete the three-month third-quarter measurement period.</li>
+  <li><strong>Calculate the third-quarter average:</strong> SSA uses the average CPI-W for July, August, and September.</li>
+  <li><strong>Compare the averages:</strong> The current third-quarter average is compared with the third-quarter average used for the previous COLA determination.</li>
+  <li><strong>Apply the statutory adjustment:</strong> The resulting percentage is rounded according to the rules established by the Social Security Act and becomes the COLA.</li>
+</ol>
+
+<p><strong>Example:</strong> The 2026 COLA was based on the increase in CPI-W from the third quarter of 2024 through the third quarter of 2025. The resulting COLA was <strong>2.8%</strong>. </p>
+
+<blockquote>
+  <strong>Key warning:</strong> Do not calculate the Social Security COLA using the CPI-U headline inflation rate or a single month's inflation figure. The statutory Social Security calculation specifically uses CPI-W third-quarter data.
+</blockquote>
+
+<h2 id="how-much-is-cola-2026">How much was the Social Security COLA for 2026?</h2>
+
+<p>The official Social Security COLA for 2026 is <strong>2.8%</strong>. SSA announced the adjustment on October 24, 2025. The increase applies to Social Security benefits payable in January 2026. SSI payments received the increase beginning December 31, 2025 because January 1 is a federal holiday. </p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Measure</th>
+      <th>2026 figure</th>
+      <th>What it means</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Social Security COLA</strong></td>
+      <td>2.8%</td>
+      <td>Annual benefit increase</td>
+    </tr>
+    <tr>
+      <td><strong>Average retirement benefit increase</strong></td>
+      <td>About $56/month</td>
+      <td>SSA's average estimate</td>
+    </tr>
+    <tr>
+      <td><strong>Average retired-worker benefit after COLA</strong></td>
+      <td>$2,072/month</td>
+      <td>SSA estimate based on benefit data</td>
+    </tr>
+    <tr>
+      <td><strong>SSI maximum for an individual</strong></td>
+      <td>$994/month</td>
+      <td>2026 federal maximum before applicable reductions</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>SSA's detailed estimate shows an average retired-worker benefit of approximately <strong>$2,015 before the 2.8% COLA and $2,072 after the adjustment</strong>, an increase of about $57 per month. The separate SSA announcement describes the average increase as about $56 per month because of the underlying benefit population and rounding. </p>
+
+<h2 id="2027-cola">What will the Social Security COLA be for 2027?</h2>
+
+<p><strong>As of September 2, 2026, the official 2027 Social Security COLA is not yet known.</strong> SSA states that it will announce the next COLA in October 2026. Therefore, any percentage currently presented as the definitive 2027 COLA should be treated as a forecast rather than an official figure. </p>
+
+<p>The reason the number cannot yet be finalized is straightforward: the statutory calculation requires third-quarter CPI-W data, including July, August, and September. September data are therefore part of the final calculation, and the official determination occurs after the relevant data are available.</p>
+
+<p>SSA's 2026 Trustees Report contains projections for future COLAs, but those projections are not official COLA determinations. Under the intermediate assumptions in that report, SSA projects a 2.4% COLA for 2027. That figure is an actuarial assumption, not the actual 2027 benefit increase. </p>
+
+<blockquote>
+  <strong>Important:</strong> The projected 2.4% figure in the 2026 Trustees Report should not be described as the 2027 Social Security COLA. The official 2027 COLA will be determined from the statutory CPI-W calculation and announced by SSA in October 2026.
+</blockquote>
+
+<h2 id="historical-cola">Social Security COLA history</h2>
+
+<p>Recent COLAs demonstrate how sharply the annual adjustment can change when inflation changes. The COLA was unusually high during the inflation surge of 2022–2023 and subsequently declined as inflation pressures eased.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Year</th>
+      <th>Social Security COLA</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>2021</td><td>1.3%</td></tr>
+    <tr><td>2022</td><td>5.9%</td></tr>
+    <tr><td>2023</td><td>8.7%</td></tr>
+    <tr><td>2024</td><td>3.2%</td></tr>
+    <tr><td>2025</td><td>2.5%</td></tr>
+    <tr><td>2026</td><td>2.8%</td></tr>
+  </tbody>
+</table>
+
+<p>SSA's official COLA history confirms these percentages. The 8.7% increase for 2023 remains the largest increase in this recent six-year period, while 2025's 2.5% and 2026's 2.8% were considerably lower. </p>
+
+<h2 id="how-cola-affects-benefits">How does COLA affect your Social Security benefit?</h2>
+
+<p>A COLA generally increases an existing Social Security benefit by the applicable percentage, subject to the detailed rules governing the particular benefit and rounding.</p>
+
+<ol>
+  <li><strong>Start with the applicable benefit:</strong> Use your actual benefit amount rather than assuming everyone receives the same dollar increase.</li>
+  <li><strong>Apply the COLA percentage:</strong> For 2026, a 2.8% adjustment means multiplying the relevant amount by 1.028 before the applicable rounding rules.</li>
+  <li><strong>Account for deductions:</strong> Your gross Social Security benefit and your net payment can differ because Medicare premiums, federal tax withholding, or other deductions may affect the amount deposited into your account.</li>
+</ol>
+
+<p><strong>Example:</strong> If a hypothetical Social Security benefit were $2,000 per month before the 2026 COLA, a simple 2.8% increase would produce $2,056 before considering any separate deductions or benefit-specific adjustments.</p>
+
+<p>The example is illustrative. Your actual payment can differ because Social Security benefits are subject to individual benefit calculations, rounding, deductions, and other applicable rules.</p>
+
+<h2 id="cola-vs-inflation">Social Security COLA vs. inflation: Are they the same?</h2>
+
+<p>No. Social Security COLA and the inflation rate reported in the news are not necessarily the same number.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Feature</th>
+      <th>Social Security COLA</th>
+      <th>General inflation measures</th>
+      <th>Core distinction</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Primary measure</strong></td>
+      <td>CPI-W</td>
+      <td>Often CPI-U or another price index</td>
+      <td>Different indexes measure different populations or concepts</td>
+    </tr>
+    <tr>
+      <td><strong>Calculation period</strong></td>
+      <td>Specific third-quarter comparison</td>
+      <td>Can use monthly, annual, or other comparisons</td>
+      <td>The measurement period matters</td>
+    </tr>
+    <tr>
+      <td><strong>Authority</strong></td>
+      <td>Social Security Act and SSA</td>
+      <td>Varies by index and use</td>
+      <td>COLA follows a statutory formula</td>
+    </tr>
+    <tr>
+      <td><strong>Purpose</strong></td>
+      <td>Adjust Social Security and SSI benefits</td>
+      <td>Measure changes in consumer prices</td>
+      <td>COLA is a benefit adjustment, not simply an inflation statistic</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>SSA identifies CPI-W as the official measure used by the agency to calculate Social Security COLAs, while the Bureau of Labor Statistics is responsible for producing the CPI-W data. </p>
+
+<h2>Does a higher COLA mean Social Security benefits become more valuable?</h2>
+
+<p>Not necessarily. A higher COLA increases the nominal dollar amount of a benefit, but the purchasing-power effect depends on the prices beneficiaries actually face.</p>
+
+<p>For example, a 5% COLA can increase a $2,000 monthly benefit to approximately $2,100, but if the beneficiary's relevant expenses rise by more than 5%, the person's purchasing power may still decline. Conversely, if relevant expenses rise more slowly than the COLA, purchasing power can improve.</p>
+
+<p>This distinction is particularly important when evaluating retirement income because housing, healthcare, food, utilities, and transportation costs do not necessarily change at the same rate as the CPI-W.</p>
+
+<h2>Does COLA increase the Social Security benefit calculation for someone who has not claimed yet?</h2>
+
+<p>COLA and the calculation of a worker's initial retirement benefit are related but should not be treated as the same adjustment.</p>
+
+<p>For a person who has already begun receiving Social Security, COLAs generally increase the benefit after the applicable adjustment. For someone who has not claimed benefits, the eventual benefit is determined through Social Security's benefit formula and claiming-age rules, with applicable indexing and adjustments. The exact result depends on the individual's earnings record, year of eligibility, claiming age, and other circumstances.</p>
+
+<p>Consequently, someone should not assume that simply adding every historical COLA to an estimated future retirement benefit will reproduce the benefit SSA would calculate from an earnings record.</p>
+
+<h2>How much would a 2.8% COLA add to different benefit amounts?</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Benefit before COLA</th>
+      <th>2.8% increase</th>
+      <th>Amount after 2.8% increase*</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>$1,000</td>
+      <td>$28</td>
+      <td>$1,028</td>
+    </tr>
+    <tr>
+      <td>$1,500</td>
+      <td>$42</td>
+      <td>$1,542</td>
+    </tr>
+    <tr>
+      <td>$2,000</td>
+      <td>$56</td>
+      <td>$2,056</td>
+    </tr>
+    <tr>
+      <td>$2,500</td>
+      <td>$70</td>
+      <td>$2,570</td>
+    </tr>
+    <tr>
+      <td>$3,000</td>
+      <td>$84</td>
+      <td>$3,084</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><em>*These are simple mathematical examples using 2.8%. Actual Social Security payments are subject to SSA's applicable calculation and rounding rules and may be affected by deductions or other adjustments.</em></p>
+
+<h2>Why does the Social Security COLA sometimes fall even when prices are still rising?</h2>
+
+<p>A declining COLA does not mean prices are falling. It can mean that prices are rising more slowly than they did during the comparison period used for the previous COLA.</p>
+
+<p>For example, the COLA fell from 8.7% for 2023 to 3.2% for 2024 and then to 2.5% for 2025. Prices did not need to decline for the COLA to fall; the rate of inflation measured under the statutory formula simply became lower than during the prior calculation period. </p>
+
+<h2 id="faqs">Frequently Asked Questions</h2>
+
+<h3>What is the Social Security COLA for 2026?</h3>
+<p><strong>Answer:</strong> The 2026 Social Security COLA is <strong>2.8%</strong>. SSA announced the adjustment on October 24, 2025, and the increase applies to Social Security benefits payable in January 2026. </p>
+
+<h3>What will the Social Security COLA be for 2027?</h3>
+<p><strong>Answer:</strong> The official 2027 COLA has not been announced as of September 2, 2026. SSA states that it will announce the next COLA in October 2026, after the data needed for the statutory calculation are available. </p>
+
+<h3>How is the Social Security COLA calculated?</h3>
+<p><strong>Answer:</strong> The COLA is based on the increase in the average CPI-W for the third quarter of the current year compared with the applicable third-quarter average used for the previous COLA determination. CPI-W data are produced by the Bureau of Labor Statistics. </p>
+
+<h3>When does the Social Security COLA take effect?</h3>
+<p><strong>Answer:</strong> Since the 1983 legislation, Social Security COLAs have generally been effective with benefits payable for December and received by beneficiaries in January. For example, the 2026 COLA was payable with Social Security benefits in January 2026. </p>
+
+<h3>Is Social Security COLA the same as CPI inflation?</h3>
+<p><strong>Answer:</strong> No. Social Security COLA is calculated using a specific statutory formula based on CPI-W, while other inflation figures commonly reported in the media may use different indexes, populations, or measurement periods. SSA identifies CPI-W as the official measure used for Social Security COLAs. </p>
+
+<h3>Does SSI receive the Social Security COLA?</h3>
+<p><strong>Answer:</strong> Yes. SSI federal payment amounts are adjusted using the COLA that applies to Social Security benefits. For 2026, the 2.8% COLA increased the maximum federal SSI payment to $994 per month for an eligible individual and $1,491 for an eligible couple. </p>
+
+<h3>What was the highest recent Social Security COLA?</h3>
+<p><strong>Answer:</strong> Among recent years, the 2023 COLA was particularly high at 8.7%, following the inflation surge reflected in the preceding CPI-W measurement period. The COLA then declined to 3.2% in 2024, 2.5% in 2025, and 2.8% in 2026. </p>
+
+<h3>Can I use a predicted 2027 COLA to estimate my future Social Security income?</h3>
+<p><strong>Answer:</strong> You can use a forecast for planning scenarios, but it should be clearly labeled as an estimate. The official 2027 COLA is not available yet, and SSA will determine it using the statutory CPI-W formula before announcing it in October 2026. </p>
+
+<h2>Bottom Line</h2>
+
+<p>The Social Security COLA is a statutory annual adjustment designed to help Social Security and SSI benefits keep pace with inflation. The official 2026 COLA is <strong>2.8%</strong>, while the 2027 COLA remains undetermined as of September 2, 2026.</p>
+
+<p>The most reliable way to follow the next adjustment is to use the Social Security Administration's official COLA announcement rather than relying on early forecasts. For retirement planning, a forecast can be useful as a scenario, but it should never be presented as the official 2027 COLA before SSA publishes the determination.</p>
+
+<h2>Sources & Citations</h2>
+
+<ol>
+  <li><strong>Social Security Administration (SSA)</strong> — <em>Cost-of-Living Adjustment (COLA) Information</em>. Official explanation of the COLA formula, CPI-W methodology, effective dates, and historical adjustments. </li>
+  <li><strong>Social Security Administration (SSA)</strong> — <em>2026 Cost-of-Living Adjustment (COLA) Fact Sheet</em>. Official 2026 COLA and related Social Security figures. </li>
+  <li><strong>Social Security Administration (SSA)</strong> — <em>Social Security Announces 2.8 Percent Benefit Increase for 2026</em>. Official announcement of the 2026 COLA and estimated average benefit increase. </li>
+  <li><strong>Social Security Administration (SSA)</strong> — <em>Effect of COLA on Average Social Security Benefits</em>. Detailed 2026 benefit examples and average-benefit impact. </li>
+  <li><strong>Social Security Administration (SSA)</strong> — <em>Cost-Of-Living Adjustment</em>. Official statement that the next COLA will be announced in October 2026. </li>
+  <li><strong>Social Security Administration (SSA)</strong> — <em>Estimates Under the 2026 Trustees Report</em>. Future COLA projections, clearly distinguished from official COLA determinations. </li>
+</ol>
+
+<p><strong>Disclaimer:</strong> This article is for general educational purposes and does not constitute individualized financial, tax, legal, or Social Security claiming advice. Social Security rules and benefit amounts can change, and individual results depend on the claimant's circumstances. For an official benefit determination, use information from the Social Security Administration and your personal Social Security record.</p>
 `
 }
 
