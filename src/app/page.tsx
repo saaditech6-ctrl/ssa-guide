@@ -521,7 +521,7 @@ const categories: Category[] = [
   {
     title: "Free Calculators",
     description: "Use practical tools to estimate benefits and compare scenarios.",
-    href: "/calculators/benefits-estimator",
+    href: "/calculators",
     type: "calculator",
   },
   {
@@ -539,7 +539,7 @@ const categories: Category[] = [
   {
     title: "Guides & Insights",
     description: "Explore detailed educational resources covering Social Security and Medicare.",
-    href: "/guides/getting-started",
+    href: "/guides",
     type: "guides",
   },
 ]
