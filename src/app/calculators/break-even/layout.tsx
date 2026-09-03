@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   // العنوان المطور: يركز على العام 2026 وعلى اتخاذ قرار مالي حاسم لجذب النقرات
-  title: "2026 Social Security Break-Even Calculator: Is Delaying Worth It?",
+  title: "Social Security Break-Even Calculator: Is Delaying Worth It?",
   description:
-    "Calculate your exact break-even age for 2026. Compare claiming at 62 vs. 70 in real dollars and find your crossover point instantly. 100% Free & No Signup.",
+    "Calculate your exact break-even age. Compare claiming at 62 vs. 70 in real dollars and find your crossover point instantly. 100% Free & No Signup.",
   
   alternates: {
     canonical: "https://www.socialsecurityguidecalc.com/calculators/break-even",
@@ -21,11 +21,11 @@ export const metadata: Metadata = {
 
   // توحيد الهوية البصرية لوسائل التواصل الاجتماعي مع التركيز على "الأثر المالي"
   openGraph: {
-    title: "2026 Social Security Break-Even Calculator | Find Your Crossover Age",
+    title: "Social Security Break-Even Calculator | Find Your Crossover Age",
     description:
       "Use official 2026 math to see exactly when delaying benefits starts paying off. High-precision comparison in real dollars. No registration required.",
     url: "https://www.socialsecurityguidecalc.com/calculators/break-even",
-    siteName: "Social Security Guide",
+    siteName: "Social Security Guide Calc",
     locale: "en_US",
     type: "website",
   },
