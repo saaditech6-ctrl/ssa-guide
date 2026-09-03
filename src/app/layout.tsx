@@ -35,8 +35,8 @@ export const metadata: Metadata = {
   applicationName: "Social Security Guide Calc",
   category: "Finance",
   title: {
-    default: "Social Security Guide Calc | 2026 Benefits, Medicare & Retirement Tools",
-    template: "%s | Social Security Guide Calc",
+    default: "SSGC",
+    template: "%s | SSGC",
   },
   description:
     "Free Social Security calculators, retirement planning guides, Medicare information, SSDI/SSI explanations, and benefits updates for 2026.",
