@@ -3,13 +3,13 @@ import Link from "next/link"
 import type { Metadata } from "next"
 
 export const metadata: Metadata = {
-  title: "Social Security Guides 2026 — Complete Resource Library",
+  title: "Social Security Guides 2026",
   description: "In-depth, expert-reviewed guides on Social Security retirement, disability, Medicare, spousal benefits, and tax strategies by Amine Saadi.",
   alternates: {
     canonical: "https://www.socialsecurityguidecalc.com/guides",
   },
   openGraph: {
-    title: "Social Security Guides 2026 — Complete Resource Library",
+    title: "Social Security Guides 2026 ",
     description: "In-depth guides on Social Security retirement, disability, Medicare, spousal benefits, and tax strategies.",
     url: "https://www.socialsecurityguidecalc.com/guides",
     type: "website",
