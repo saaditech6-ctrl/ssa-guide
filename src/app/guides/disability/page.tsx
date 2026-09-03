@@ -3,7 +3,7 @@ import Link from "next/link"
 import type { Metadata } from "next"
 
 export const metadata: Metadata = {
-  title: "Social Security Disability (SSDI) Guide 2026 — Qualification & Process",
+  title: "Social Security Disability (SSDI) Guide 2026",
   description: "Complete guide to Social Security Disability Insurance (SSDI) — eligibility requirements, monthly benefit amounts, application timeline, and appeal strategies.",
   alternates: {
     canonical: "https://www.socialsecurityguidecalc.com/guides/disability",
