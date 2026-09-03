@@ -1837,7 +1837,7 @@ content: `
   slug: "social-security-delayed-retirement-credits",
   title: "Social Security Delayed Credits 2026: How to Secure Your 8% Annual Bonus",
   metaTitle: "Maximize Social Security: 8% Annual Raise via Delayed Credits",
-  metaDescription: "Want a 24% to 32% permanent raise? Learn how delayed retirement credits add 8% to your check every year until age 70. Calculate your 2026 payout instantly. 100% Free.",
+  metaDescription: "Want a 24% to 32% permanent raise? Learn how delayed retirement credits add 8% to your check every year until age 70.",
   excerpt: "Delaying your claim past FRA is the only guaranteed way to increase your check by 8% annually. Discover how to reach the $5,181 maximum monthly payout.",
   category: "Retirement Planning",
   author: "Amine Saadi",
