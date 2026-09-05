@@ -4363,7 +4363,7 @@ metaDescription: "Spouses can claim up to 50% of a partner's benefit at FRA. Lea
   "excerpt": "Learn how to prepare for Social Security benefits, verify your record of earnings, estimate monthly payments, and coordinate claiming with Medicare and tax planning.",
   "category": "Retirement Planning",
   "author": "Amine Saadi",
-  "date": "September 2026",
+  "date": "2026-09-05",
   "lastUpdated": "September 2026",
   "readTime": "18 min",
   "featured": false,
