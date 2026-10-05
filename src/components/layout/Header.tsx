@@ -76,28 +76,8 @@ const calculatorLinks: NavItem[] = [
     href: "/calculators/earnings-test",
   },
   {
-    label: "SSDI Eligibility",
-    href: "/calculators/ssdi-eligibility",
-  },
-  {
     label: "SSA Office Locator",
     href: "/calculators/office-locator",
-  },
-  {
-    label: "Medicare Plan Finder",
-    href: "/calculators/medicare-plan-finder",
-  },
-  {
-    label: "Survivor Benefits",
-    href: "/calculators/survivor-benefits",
-  },
-  {
-    label: "WEP & GPO Calculator",
-    href: "/calculators/wep-gpo-calculator",
-  },
-  {
-    label: "Couples & Divorced Strategy Optimizer",
-    href: "/calculators/couples-divorced-strategy-optimizer",
   },
 ]
 
@@ -199,14 +179,14 @@ function Dropdown({
   const isActive = activeDropdown === id
   return (
     <div className="relative" onMouseEnter={() => setActiveDropdown(id)} onMouseLeave={() => setActiveDropdown(null)}>
-      <button type="button" onClick={() => setActiveDropdown(isActive ? null : id)} className="flex items-center gap-1 py-2 text-sm font-medium text-slate-700 transition-colors hover:text-[#071530]" aria-expanded={isActive} aria-haspopup="true">
+      <button type="button" onClick={() => setActiveDropdown(isActive ? null : id)} className="flex items-center gap-1 py-2 text-sm font-medium text-[#3c4043] transition-colors hover:text-[#1a73e8]" aria-expanded={isActive} aria-haspopup="true">
         {label}
         <ChevronDown size={14} className={`transition-transform duration-200 ${isActive ? "rotate-180" : ""}`} />
       </button>
       {isActive && (
-        <div className={`absolute left-0 top-full ${width} z-50 rounded-xl border border-slate-100 bg-white py-2 shadow-xl`}>
+        <div className={`absolute left-0 top-full ${width} z-50 rounded-xl border border-[#dadce0] bg-white py-2 shadow-lg`}>
           {items.map((item) => (
-            <Link key={item.href} href={item.href} onClick={closeDropdown} className="block px-4 py-2.5 text-sm font-medium text-slate-600 transition-colors hover:bg-slate-50 hover:text-amber-700">
+            <Link key={item.href} href={item.href} onClick={closeDropdown} className="block px-4 py-2.5 text-sm font-medium text-[#3c4043] transition-colors hover:bg-[#f8f9fa] hover:text-[#1a73e8]">
               {item.label}
             </Link>
           ))}
@@ -358,7 +338,7 @@ export function Header() {
   const navSchema = {
     "@context": "https://schema.org",
     "@type": "ItemList",
-    name: "Social Security Guide Calc Navigation",
+    name: "Social Security Guide Navigation",
     itemListElement: navigationItems.map((item, index) => ({
       "@type": "ListItem",
       position: index + 1,
@@ -395,10 +375,10 @@ export function Header() {
       ===================================================== */}
 
       <nav
-        className="sticky top-0 z-40 border-b border-slate-200 bg-white/95 backdrop-blur-md"
+        className="sticky top-0 z-40 border-b border-[#dadce0] bg-white"
         aria-label="Main navigation"
       >
-        <div className="container-site mx-auto flex max-w-7xl items-center justify-between px-4 py-3">
+        <div className="container-site mx-auto flex max-w-7xl items-center justify-between px-4 py-4">
           {/* =================================================
               LOGO
           ================================================= */}
@@ -411,28 +391,16 @@ export function Header() {
               closeDropdown()
             }}
           >
-            <div className="flex h-9 w-9 items-center justify-center rounded-xl bg-gradient-to-br from-amber-500 via-amber-400 to-yellow-300 shadow-xs transition-transform group-hover:scale-105">
-              <span className="font-playfair text-lg font-black text-[#071530]">
-                S
-              </span>
-            </div>
-
-            <div>
-              <span className="block font-playfair text-lg font-bold leading-tight text-[#071530]">
-                SSA Guide Calc
-              </span>
-
-              <span className="block text-[10px] font-black uppercase tracking-[0.25em] text-[#071530]">
-                Social Security
-              </span>
-            </div>
+            <span className="whitespace-nowrap text-base font-semibold tracking-tight text-[#202124] sm:text-lg">
+              Social Security Guide
+            </span>
           </Link>
 
           {/* =================================================
               DESKTOP NAVIGATION
           ================================================= */}
 
-          <div className="hidden items-center gap-7 md:flex">
+          <div className="hidden items-center gap-5 lg:flex">
             <Dropdown
               id="calculators"
               label="Calculators"
@@ -455,7 +423,7 @@ export function Header() {
 
             <Link
               href="/states"
-              className="text-sm font-medium text-slate-700 transition-colors hover:text-[#071530]"
+              className="text-sm font-medium text-[#3c4043] transition-colors hover:text-[#1a73e8]"
               onClick={closeDropdown}
             >
               By State
@@ -481,46 +449,23 @@ export function Header() {
 
             <Link
               href="/about"
-              className="text-sm font-medium text-slate-700 transition-colors hover:text-[#071530]"
+              className="text-sm font-medium text-[#3c4043] transition-colors hover:text-[#1a73e8]"
               onClick={closeDropdown}
             >
               About
             </Link>
 
-            {/* Legal */}
-
-            <Dropdown
-              id="legal"
-              label="Legal"
-              items={legalLinks}
-              width="w-52"
-              activeDropdown={activeDropdown}
-              setActiveDropdown={setActiveDropdown}
-              closeDropdown={closeDropdown}
-            />
-
-            {/* Social */}
-
-            <Dropdown
-              id="social"
-              label="Social"
-              items={socialLinks}
-              width="w-52"
-              activeDropdown={activeDropdown}
-              setActiveDropdown={setActiveDropdown}
-              closeDropdown={closeDropdown}
-            />
           </div>
 
           {/* =================================================
               DESKTOP ACTIONS
           ================================================= */}
 
-          <div className="hidden items-center gap-3 md:flex">
+          <div className="hidden items-center gap-3 lg:flex">
             <button
               type="button"
               onClick={openSearch}
-              className="rounded-xl p-2 text-slate-600 transition-all hover:bg-slate-100 hover:text-[#071530]"
+              className="rounded-full p-2 text-[#5f6368] transition-colors hover:bg-[#f1f3f4] hover:text-[#202124]"
               aria-label="Search articles"
             >
               <Search size={19} />
@@ -528,7 +473,7 @@ export function Header() {
 
             <Link
               href="/calculators/benefits-estimator"
-              className="inline-flex items-center gap-1.5 rounded-xl bg-[#071530] px-4 py-2 text-sm font-semibold text-white shadow-xs transition-colors hover:bg-[#0f2550]"
+              className="inline-flex items-center gap-1.5 rounded-full bg-[#1a73e8] px-4 py-2 text-sm font-semibold text-white transition-colors hover:bg-[#1558b0]"
             >
               <Calculator size={16} />
               Free Calculator
@@ -539,11 +484,11 @@ export function Header() {
               MOBILE ACTIONS
           ================================================= */}
 
-          <div className="flex items-center gap-1 md:hidden">
+          <div className="flex items-center gap-1 lg:hidden">
             <button
               type="button"
               onClick={openSearch}
-              className="rounded-xl p-2 text-slate-600 transition-colors hover:text-[#071530]"
+              className="rounded-full p-2 text-[#5f6368] transition-colors hover:bg-[#f1f3f4] hover:text-[#202124]"
               aria-label="Search articles"
             >
               <Search size={20} />
@@ -701,7 +646,7 @@ export function Header() {
           className="fixed inset-0 z-50 flex items-start justify-center bg-slate-900/60 px-4 pt-16 backdrop-blur-xs sm:pt-20"
           role="dialog"
           aria-modal="true"
-          aria-label="Search Social Security Guide Calc"
+          aria-label="Search Social Security Guide"
           onClick={closeSearch}
         >
           <div

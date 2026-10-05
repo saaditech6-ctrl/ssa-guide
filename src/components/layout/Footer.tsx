@@ -1,6 +1,5 @@
 ﻿import Link from "next/link"
 import { Rss, Shield } from "lucide-react"
-import { SubscribeForm } from "@/components/ui/SubscribeForm"
 
 interface FooterLink {
   label: string
@@ -34,28 +33,8 @@ const footerLinks: Record<string, FooterLink[]> = {
       href: "/calculators/earnings-test",
     },
     {
-      label: "SSDI Eligibility",
-      href: "/calculators/ssdi-eligibility",
-    },
-    {
       label: "SSA Office Locator",
       href: "/calculators/office-locator",
-    },
-    {
-      label: "Medicare Plan Finder",
-      href: "/calculators/medicare-plan-finder",
-    },
-    {
-      label: "Survivor Benefits",
-      href: "/calculators/survivor-benefits",
-    },
-    {
-      label: "WEP & GPO Calculator",
-      href: "/calculators/wep-gpo-calculator",
-    },
-    {
-      label: "Couples & Divorced Strategy Optimizer",
-      href: "/calculators/couples-divorced-strategy-optimizer",
     },
   ],
 
@@ -112,7 +91,7 @@ const footerLinks: Record<string, FooterLink[]> = {
     },
     {
       label: "Terms of Use",
-      href: "/terms-of-use",
+      href: "/terms",
     },
   ],
 }
@@ -141,43 +120,7 @@ export function Footer() {
   return (
     <footer className="bg-[#071530] text-white border-t border-white/10">
 
-      {/* =========================================================
-          NEWSLETTER
-      ========================================================= */}
-      <section className="border-b border-white/10">
-        <div className="container-site max-w-7xl mx-auto px-4 py-10 sm:py-12">
-          <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-8">
 
-            <div className="max-w-xl">
-              <p className="text-amber-400 text-xs font-bold uppercase tracking-widest mb-2">
-                Stay informed
-              </p>
-
-              <h2 className="font-playfair text-2xl sm:text-3xl font-bold text-white mb-3">
-                Get Social Security updates in your inbox
-              </h2>
-
-              <p className="text-slate-300 text-sm leading-relaxed">
-                Receive Social Security updates, COLA information,
-                retirement planning insights, and new calculator releases.
-              </p>
-            </div>
-
-            <div className="w-full lg:max-w-md">
-              <SubscribeForm
-                placeholder="Your email address"
-                buttonText="Subscribe"
-                dark={true}
-              />
-
-              <p className="text-slate-400 text-xs mt-2.5">
-                No spam. Unsubscribe at any time.
-              </p>
-            </div>
-
-          </div>
-        </div>
-      </section>
 
       {/* =========================================================
           MAIN FOOTER
@@ -194,30 +137,15 @@ export function Footer() {
             <Link
               href="/"
               className="inline-flex items-center gap-3 group"
-              aria-label="Social Security Guide Calc Home"
+              aria-label="Social Security Guide Home"
             >
-              <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-amber-500 via-amber-400 to-yellow-300 flex items-center justify-center transition-transform group-hover:scale-105 shadow-sm">
-                <span className="text-[#071530] font-playfair font-black text-xl">
-                  S
-                </span>
-              </div>
 
               <div>
                 <span className="font-playfair font-bold text-white text-lg block leading-tight">
-                  SSA Guide Calc
-                </span>
-
-                <span className="text-[10px] text-amber-300 font-semibold tracking-[0.2em] uppercase block">
-                  Social Security
+                  Social Security Guide
                 </span>
               </div>
             </Link>
-
-            <p className="text-slate-300 text-sm leading-relaxed max-w-sm mt-5">
-              Independent educational resources, free calculators, and
-              practical guides for Social Security, Medicare, and retirement
-              planning.
-            </p>
 
             {/* =================================================
                 SOCIAL MEDIA
@@ -313,7 +241,7 @@ export function Footer() {
               <strong className="text-slate-300">
                 Important Disclaimer:
               </strong>{" "}
-              Social Security Guide Calc is an independent educational
+              Social Security Guide is an independent educational
               website and is not affiliated with, endorsed by, authorized by,
               or sponsored by the U.S. Social Security Administration (SSA),
               the Centers for Medicare & Medicaid Services (CMS), or any other
@@ -363,7 +291,7 @@ export function Footer() {
                 />
 
                 <span>
-                  © {currentYear} Social Security Guide Calc.
+                  © {currentYear} Social Security Guide.
                   All rights reserved.
                 </span>
               </div>
@@ -387,7 +315,7 @@ export function Footer() {
                 </Link>
 
                 <Link
-                  href="/terms-of-use"
+                  href="/terms"
                   className="text-slate-400 hover:text-white transition-colors"
                 >
                   Terms

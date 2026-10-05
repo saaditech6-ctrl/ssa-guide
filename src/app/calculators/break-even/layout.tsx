@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     description:
       "Use official 2026 math to see exactly when delaying benefits starts paying off. High-precision comparison in real dollars. No registration required.",
     url: "https://www.socialsecurityguidecalc.com/calculators/break-even",
-    siteName: "Social Security Guide Calc",
+    siteName: "Social Security Guide",
     locale: "en_US",
     type: "website",
   },

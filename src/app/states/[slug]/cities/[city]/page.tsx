@@ -31,7 +31,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   const cityInfo = getCityBySlug(slug, city);
 
   if (!state || !cityInfo) {
-    return { title: "City Guide Not Found | Social Security Guide Calc" };
+    return { title: "City Guide Not Found | Social Security Guide" };
   }
 
   const url = `https://www.socialsecurityguidecalc.com/states/${state.slug}/cities/${cityInfo.city}`;

@@ -13,12 +13,7 @@ const calculatorRoutes = [
   "/calculators/medicare-cost",
   "/calculators/tax-calculator",
   "/calculators/earnings-test",
-  "/calculators/ssdi-eligibility",
   "/calculators/office-locator",
-  "/calculators/medicare-plan-finder",
-  "/calculators/survivor-benefits",
-  "/calculators/wep-gpo-calculator",
-  "/calculators/couples-divorced-strategy-optimizer",
 ];
 
 const guideRoutes = [

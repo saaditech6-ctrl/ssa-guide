@@ -102,9 +102,6 @@ export default function ArticleContent({ article }: { article: Article }) {
   const renderStructuredContent = () => {
     const content = article.content
 
-    // 1. تحديد موقع أول عنوان <h2> لحقن الصوت قبله
-    const firstH2Index = content.indexOf("<h2")
-
     // مكون الأوديو
     const AudioComponent = article.audioUrl ? (
       <section className="my-8 bg-[#0f172a] text-white p-4 sm:p-5 rounded-2xl shadow-sm border border-slate-800">
@@ -167,45 +164,12 @@ export default function ArticleContent({ article }: { article: Article }) {
       [&_img]:rounded-xl [&_img]:my-6 [&_img]:max-w-full [&_img]:h-auto
       [&_a]:text-[#1e4f9c] [&_a]:font-semibold [&_a]:underline hover:[&_a]:text-[#071530]`
 
-    // تقسيم الـ HTML بناءً على موقع <h2> وموقع إغلاق الجدول </table>
-    let topSection = content
-    let middleSection = ""
-    let bottomSection = ""
-
-    if (firstH2Index !== -1) {
-      topSection = content.slice(0, firstH2Index)
-      const restContent = content.slice(firstH2Index)
-
-      const tableEndIndex = restContent.indexOf("</table>")
-      if (tableEndIndex !== -1) {
-        const tableEndPos = tableEndIndex + "</table>".length
-        middleSection = restContent.slice(0, tableEndPos)
-        bottomSection = restContent.slice(tableEndPos)
-      } else {
-        middleSection = restContent
-      }
-    }
-
     return (
       <>
-        {/* 1. المقدمة و Quick Answer */}
-        <div className={proseClasses} dangerouslySetInnerHTML={{ __html: topSection }} />
-
-        {/* 🎧 2. مشغل الصوت (تحت Quick Answer وقبل H2) */}
+        {/* Keep article markup intact so wrappers cannot be split across DOM nodes. */}
         {AudioComponent}
-
-        {/* 3. الجزء المتوسط الذي يحتوي على الفقرات والجدول */}
-        {middleSection && (
-          <div className={proseClasses} dangerouslySetInnerHTML={{ __html: middleSection }} />
-        )}
-
-        {/* 🎬 4. مشغل الفيديو (مباشرة تحت الجدول) */}
+        <div className={proseClasses} dangerouslySetInnerHTML={{ __html: content }} />
         {VideoComponent}
-
-        {/* 5. باقي المقال بعد الجدول والفيديو */}
-        {bottomSection && (
-          <div className={proseClasses} dangerouslySetInnerHTML={{ __html: bottomSection }} />
-        )}
       </>
     )
   }

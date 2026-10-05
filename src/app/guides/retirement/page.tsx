@@ -33,7 +33,7 @@ const sections = [
   {
     id: "delayed-retirement-credits",
     title: "The Power of Delayed Retirement Credits",
-    content: "For every year you delay claiming past your FRA, up to age 70, your benefit grows by 8%. This means claiming at 70 instead of 67 gives you 24% more per month for the rest of your life. If your FRA benefit is $2,000 per month, waiting until 70 gives you $2,480 per month — an extra $5,760 per year."
+    content: "For every year you delay claiming past your FRA, up to age 70, your benefit grows by 8%. Delaying from your FRA to age 70 can increase your lifelong monthly benefit by about 24%, depending on your actual earnings record and the claiming age you choose."
   },
   {
     id: "break-even-analysis",

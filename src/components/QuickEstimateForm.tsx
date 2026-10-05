@@ -5,8 +5,7 @@ import Link from "next/link"
 import { ArrowRight, Calculator } from "lucide-react"
 import { states } from "@/lib/states"
 import { cities } from "@/lib/cities"
-
-const SSA_MAX_WAGE_BASE_2026 = 176100
+import { SSA_2026 } from "@/lib/data/2026"
 
 export function QuickEstimateForm() {
   const [salary, setSalary] = useState("")
@@ -36,13 +35,21 @@ export function QuickEstimateForm() {
 
   const handleQuickEstimate = (e: React.FormEvent) => {
     e.preventDefault()
-    const numSalary = parseFloat(salary)
+    const numSalary = Number.parseFloat(salary)
 
-    if (!isNaN(numSalary) && numSalary > 0) {
-      const annualBase = Math.min(numSalary, SSA_MAX_WAGE_BASE_2026)
-      const monthlyEstimate = Math.round((annualBase * 0.4) / 12)
-      setEstimatedBenefit(monthlyEstimate < 500 ? 500 : monthlyEstimate)
+    if (!Number.isFinite(numSalary) || numSalary <= 0) {
+      return
     }
+
+    const { first, second, rates } = SSA_2026.piaBendPoints
+    const monthlyEarnings = Math.max(0, numSalary / 12)
+
+    const estimatedPia =
+      Math.min(monthlyEarnings, first) * rates.first +
+      Math.max(0, Math.min(monthlyEarnings, second) - first) * rates.second +
+      Math.max(0, monthlyEarnings - second) * rates.third
+
+    setEstimatedBenefit(Math.round(Math.max(0, estimatedPia)))
   }
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -139,14 +146,14 @@ export function QuickEstimateForm() {
           className="mt-6 p-5 bg-amber-50/70 border border-amber-200/60 rounded-2xl text-center transition-all animate-in fade-in slide-in-from-top-2 duration-300"
         >
           <span className="text-xs uppercase tracking-wider text-slate-600 font-bold block">
-            Estimated Monthly Payout at FRA
+            Illustrative Monthly Benefit at FRA
           </span>
           <span className="text-3xl sm:text-4xl font-extrabold text-[#071530] block mt-1.5">
             ${estimatedBenefit.toLocaleString()} <span className="text-lg font-normal text-slate-600">/ mo</span>
           </span>
 
           <p className="text-xs text-slate-500 mt-2.5 leading-relaxed">
-            *This quick estimate uses 2026 formula guidelines. For residents of {selectedState}, compare claiming strategies and local office information before filing.
+            *This quick estimate uses a simplified 2026 bend-point model based on current earnings and assumes claiming at full retirement age. Your actual Social Security benefit depends on your 35-year earnings record, claiming age, and future COLAs.
           </p>
 
           <div className="mt-4 flex flex-wrap items-center justify-center gap-3">

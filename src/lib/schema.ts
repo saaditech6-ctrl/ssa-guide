@@ -92,7 +92,7 @@ export function generateArticleSchema(article: Article, url: string) {
     },
     publisher: {
       "@type": "Organization",
-      name: "Social Security Guide Calc",
+      name: "Social Security Guide",
       url: BASE_URL,
       logo: {
         "@type": "ImageObject",

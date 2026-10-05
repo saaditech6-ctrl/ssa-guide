@@ -22,7 +22,7 @@ const playfair = Playfair_Display({
 })
 
 export const viewport: Viewport = {
-  themeColor: "#071530",
+  themeColor: "#ffffff",
   width: "device-width",
   initialScale: 1,
 }
@@ -32,11 +32,11 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://www.socialsecurityguidecalc.com",
   },
-  applicationName: "Social Security Guide Calc",
+  applicationName: "Social Security Guide",
   category: "Finance",
   title: {
-    default: "SSGC",
-    template: "%s | SSGC",
+    default: "Social Security Guide",
+    template: "%s | Social Security Guide",
   },
   description:
     "Free Social Security calculators, retirement planning guides, Medicare information, SSDI/SSI explanations, and benefits updates for 2026.",
@@ -56,8 +56,8 @@ export const metadata: Metadata = {
     type: "website",
     locale: "en_US",
     url: "https://www.socialsecurityguidecalc.com",
-    siteName: "Social Security Guide Calc",
-    title: "Social Security Guide Calc | 2026 Benefits, Medicare & Retirement Tools",
+    siteName: "Social Security Guide",
+    title: "Social Security Guide | 2026 Benefits, Medicare & Retirement Tools",
     description:
       "Free calculators and expert guides covering Social Security, retirement, Medicare, SSDI, SSI, survivor benefits, and tax planning.",
     images: [
@@ -71,7 +71,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Social Security Guide Calc | 2026 Benefits, Medicare & Retirement Tools",
+    title: "Social Security Guide | 2026 Benefits, Medicare & Retirement Tools",
     description:
       "Learn how Social Security benefits, Medicare, and retirement planning work with our expert guides and calculators.",
     images: ["https://www.socialsecurityguidecalc.com/og-image.png"],
@@ -105,13 +105,13 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "WebSite",
-    "name": "Social Security Guide Calc",
+    "name": "Social Security Guide",
     "url": "https://www.socialsecurityguidecalc.com",
     "inLanguage": "en-US",
     "description": "Educational resources, calculators, and guides for Social Security, Medicare, retirement, and disability benefits in the United States.",
     "publisher": {
       "@type": "Organization",
-      "name": "Social Security Guide Calc",
+      "name": "Social Security Guide",
       "url": "https://www.socialsecurityguidecalc.com",
       "logo": {
         "@type": "ImageObject",

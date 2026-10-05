@@ -19,7 +19,7 @@ export async function generateMetadata(
   const article = getArticleBySlug(slug)
 
   if (!article) {
-    return { title: "Article Not Found | Social Security Guide Calc" }
+    return { title: "Article Not Found | Social Security Guide" }
   }
 
   const url = `https://www.socialsecurityguidecalc.com/blog/${article.slug}`
@@ -38,7 +38,7 @@ export async function generateMetadata(
     "SSA",
   ].filter(Boolean) as string[]
 
-  const title = article.metaTitle || `${article.title} | Social Security Guide Calc`
+  const title = article.metaTitle || `${article.title} | Social Security Guide`
   const description = article.metaDescription || article.excerpt
 
   return {
@@ -52,7 +52,7 @@ export async function generateMetadata(
       url,
       type: "article",
       locale: "en_US",
-      siteName: "Social Security Guide Calc",
+      siteName: "Social Security Guide",
       publishedTime: article.date,
       modifiedTime: article.lastUpdated || article.updatedDate || article.date,
       authors: [article.author || "Social Security Guide"],

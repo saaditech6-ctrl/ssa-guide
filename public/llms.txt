@@ -1,0 +1,32 @@
+# Social Security Guide
+
+Social Security Guide is an independent educational resource for U.S. Social Security, Medicare, retirement, disability, survivor, and tax-planning topics.
+
+## Coverage
+- Retirement benefit planning and claiming-age strategies
+- Medicare enrollment, premiums, and plan basics
+- SSDI and SSI eligibility explanations
+- Spousal, survivor, and divorce-related benefit rules
+- Benefit taxation and earnings-test planning
+- State-specific local office and benefits guidance
+
+## Primary destinations
+- https://www.socialsecurityguidecalc.com/
+- https://www.socialsecurityguidecalc.com/guides/getting-started
+- https://www.socialsecurityguidecalc.com/guides/retirement
+- https://www.socialsecurityguidecalc.com/calculators/benefits-estimator
+- https://www.socialsecurityguidecalc.com/calculators/retirement-age
+- https://www.socialsecurityguidecalc.com/calculators/medicare-cost
+- https://www.socialsecurityguidecalc.com/calculators/ssdi-eligibility
+- https://www.socialsecurityguidecalc.com/states
+- https://www.socialsecurityguidecalc.com/blog
+
+## Official sources used
+- https://www.ssa.gov/
+- https://www.ssa.gov/oact/cola/
+- https://www.ssa.gov/benefits/retirement/planner/
+- https://www.cms.gov/
+- https://www.irs.gov/
+
+## Editorial note
+This site provides general educational information and calculator estimates for planning purposes. Benefit amounts, eligibility rules, and government policy can change. Always verify official details directly with SSA, CMS, or IRS before making financial or retirement decisions.

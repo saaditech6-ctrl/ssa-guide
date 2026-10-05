@@ -229,22 +229,24 @@ export default function DisabilityGuidePage() {
           {/* Sticky Sidebar */}
           <aside className="space-y-6 lg:sticky lg:top-24">
             
-            {/* SSDI Eligibility Tool Card */}
+            {/* Official eligibility information */}
             <div className="bg-[#071530] text-white rounded-2xl p-5 shadow-sm border border-white/5 space-y-4">
               <div className="space-y-1">
                 <h3 className="font-bold text-xs tracking-wider uppercase text-amber-400 flex items-center gap-2 font-sans">
-                  <FileCheck size={16} /> Check Eligibility
+                  <FileCheck size={16} /> Eligibility rules
                 </h3>
                 <p className="text-xs text-slate-300 leading-relaxed">
-                  Answer 4 quick questions to see if you may qualify.
+                  Eligibility depends on your work history and medical condition. Review the official SSA criteria.
                 </p>
               </div>
-              <Link 
-                href="/calculators/ssdi-eligibility" 
+              <a
+                href="https://www.ssa.gov/benefits/disability/"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="block text-center bg-amber-500 hover:bg-amber-600 text-[#071530] font-bold text-xs sm:text-sm py-2.5 px-4 rounded-xl shadow-xs transition-colors"
               >
-                SSDI Eligibility Check
-              </Link>
+                Review SSA disability rules
+              </a>
             </div>
 
             {/* Waiting Period Warning Box */}

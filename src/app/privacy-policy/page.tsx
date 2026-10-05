@@ -83,9 +83,9 @@ export default function PrivacyPolicyPage() {
             <h4>Tracking Technologies, Advertising, and Cookies</h4>
             <p>We use tracking technologies such as cookies to track activity and improve Our Service. Cookies are small files placed on Your Device. You can instruct Your browser to refuse all Cookies or indicate when a Cookie is being sent, but some parts of Our Service may then be unavailable.</p>
             <p>Third-party vendors, including advertising networks and analytics services (such as Google Analytics and Google AdSense), may use cookies or web beacons to serve ads or analyze traffic based on your visits to this and other websites on the Internet.</p>
+            <p>If Google advertising is displayed on this website, Google and its partners may use advertising cookies to personalize ads based on your visits to this and other websites. You can manage personalized advertising in <a href="https://www.google.com/settings/ads" target="_blank" rel="noopener noreferrer">Google Ads Settings</a> or opt out of some third-party vendors&apos; personalized advertising at <a href="https://www.aboutads.info/choices/" target="_blank" rel="noopener noreferrer">aboutads.info</a>.</p>
             <ul>
-              <li><strong>Necessary / Essential Cookies</strong>: Session Cookies administered by Us. These are essential to provide services available through the Website, enable features, authenticate users and prevent fraudulent use.</li>
-              <li><strong>Cookies Policy / Notice Acceptance Cookies</strong>: Persistent Cookies administered by Us to identify whether users accepted cookies and record their consent choices.</li>
+              <li><strong>Necessary / Essential Cookies</strong>: Cookies that may be required to operate, secure, and deliver the Website.</li>
               <li><strong>Functionality &amp; Analytics Cookies</strong>: Persistent Cookies administered by Us or third-party providers to analyze visitor usage, remember choices, and provide a seamless interactive experience.</li>
             </ul>
 

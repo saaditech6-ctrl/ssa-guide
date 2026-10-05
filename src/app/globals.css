@@ -37,8 +37,8 @@
 }
 
 html { scroll-behavior: smooth; -webkit-font-smoothing: antialiased; }
-body { background-color: white; color: #071530; font-family: var(--font-inter); }
-h1, h2, h3 { font-family: var(--font-playfair); }
+body { background-color: white; color: #202124; font-family: var(--font-inter); }
+h1, h2, h3 { font-family: var(--font-inter); }
 ::selection { background-color: #f4de90; color: #071530; }
 
 .container-site { margin-left: auto; margin-right: auto; padding-left: 1rem; padding-right: 1rem; max-width: 80rem; }

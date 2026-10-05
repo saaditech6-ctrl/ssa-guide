@@ -17,7 +17,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
 
   if (!state) {
     return {
-      title: "State Not Found | Social Security Guide Calc",
+      title: "State Not Found | Social Security Guide",
     };
   }
 
