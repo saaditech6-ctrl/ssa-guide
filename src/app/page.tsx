@@ -344,6 +344,23 @@ export default function HomePage() {
           </section>
         )}
 
+        <section id="quick-estimator" className="scroll-mt-24 mx-auto max-w-7xl px-4 py-14 sm:px-6 lg:px-8 lg:py-20">
+          <div className="mb-8 flex flex-col justify-between gap-4 sm:flex-row sm:items-end">
+            <div>
+              <p className="text-xs font-semibold uppercase tracking-[0.16em] text-[#5f6368]">Planning tool</p>
+              <h2 className="mt-2 text-3xl font-medium text-[#202124] sm:text-4xl">Estimate your retirement benefit</h2>
+              <p className="mt-3 max-w-2xl text-base leading-7 text-[#5f6368]">Get an educational estimate, then use the detailed tools and guides to compare your options.</p>
+            </div>
+            <Link href="/calculators/benefits-estimator" className="inline-flex items-center gap-2 text-sm font-semibold text-[#1a73e8] hover:underline">
+              Detailed estimator <ArrowRight size={15} />
+            </Link>
+          </div>
+          <div className="rounded-2xl border border-[#dadce0] bg-white p-4 sm:p-6">
+            <QuickEstimateForm />
+          </div>
+          <p className="mt-3 text-xs leading-5 text-[#5f6368]">For educational purposes only. Confirm your official estimate and earnings record with the Social Security Administration.</p>
+        </section>
+
         <section className="border-y border-[#dadce0] bg-[#f8f9fa]">
           <div className="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8 lg:py-14">
             <div className="mb-7 flex items-end justify-between gap-4">
@@ -376,23 +393,6 @@ export default function HomePage() {
               ))}
             </div>
           </div>
-        </section>
-
-        <section id="quick-estimator" className="scroll-mt-24 mx-auto max-w-7xl px-4 py-14 sm:px-6 lg:px-8 lg:py-20">
-          <div className="mb-8 flex flex-col justify-between gap-4 sm:flex-row sm:items-end">
-            <div>
-              <p className="text-xs font-semibold uppercase tracking-[0.16em] text-[#5f6368]">Planning tool</p>
-              <h2 className="mt-2 text-3xl font-medium text-[#202124] sm:text-4xl">Estimate your retirement benefit</h2>
-              <p className="mt-3 max-w-2xl text-base leading-7 text-[#5f6368]">Get an educational estimate, then use the detailed tools and guides to compare your options.</p>
-            </div>
-            <Link href="/calculators/benefits-estimator" className="inline-flex items-center gap-2 text-sm font-semibold text-[#1a73e8] hover:underline">
-              Detailed estimator <ArrowRight size={15} />
-            </Link>
-          </div>
-          <div className="rounded-2xl border border-[#dadce0] bg-white p-4 sm:p-6">
-            <QuickEstimateForm />
-          </div>
-          <p className="mt-3 text-xs leading-5 text-[#5f6368]">For educational purposes only. Confirm your official estimate and earnings record with the Social Security Administration.</p>
         </section>
 
         <section className="border-y border-[#dadce0] bg-[#f8f9fa]">
@@ -470,4 +470,3 @@ export default function HomePage() {
     </>
   )
 }
-
