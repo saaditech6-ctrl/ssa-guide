@@ -4394,7 +4394,7 @@ metaDescription: "Spouses can claim up to 50% of a partner's benefit at FRA. Lea
   updatedDate: "2026-10-11",
   readTime: "14 min read",
   featured: false,
-  image: "/images/articles/Stocks That Benefit From Social Security COLA in 2027.webp",
+  image: "/images/stocks-that-benefit-from-social-security-cola-in-2027.webp",
   imageAlt: "Retiree reviewing personal finance documents and stocks that benefit from Social Security COLA adjustments",
   primaryKeyword: "stocks that benefit from Social Security COLA",
   secondaryKeywords: [
