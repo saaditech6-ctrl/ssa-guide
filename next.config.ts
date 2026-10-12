@@ -12,6 +12,7 @@ const nextConfig: NextConfig = {
     return [
       { source: "/guides/retirement-benefits", destination: "/guides/retirement", permanent: true },
       { source: "/guides/medicare-guide", destination: "/guides/medicare", permanent: true },
+      { source: "/guides/medicareMedicare", destination: "/guides/medicare", permanent: true },
       { source: "/terms-of-use", destination: "/terms", permanent: true },
       { source: "/calculators/ssdi-eligibility", destination: "/guides/disability", permanent: true },
       { source: "/calculators/medicare-plan-finder", destination: "/guides/medicare", permanent: true },

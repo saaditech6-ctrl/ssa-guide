@@ -17,6 +17,7 @@ import {
 
 import { articles } from "@/lib/articles"
 import { QuickEstimateForm } from "@/components/QuickEstimateForm"
+import { ColaStatus } from "@/components/ColaStatus"
 
 /* =========================================================
    Types
@@ -291,6 +292,16 @@ export default function HomePage() {
       />
 
       <main className="bg-white text-[#202124]">
+        <section className="mx-auto max-w-7xl px-4 pt-8 sm:px-6 lg:px-8">
+          <ColaStatus />
+        </section>
+
+        <section className="mx-auto max-w-7xl px-4 pt-2 sm:px-6 lg:px-8">
+          <h1 className="text-3xl font-medium tracking-tight text-[#202124] sm:text-4xl lg:text-5xl">
+            Social Security calculators, guides and benefit updates
+          </h1>
+        </section>
+
         {featuredArticle && (
           <section className="mx-auto max-w-7xl px-4 py-10 sm:px-6 lg:px-8 lg:py-16">
             <div className="grid items-center gap-8 lg:grid-cols-2 lg:gap-16">
@@ -298,9 +309,9 @@ export default function HomePage() {
                 <p className="mb-5 text-xs font-semibold uppercase tracking-[0.16em] text-[#5f6368]">
                   Featured story <span className="mx-2 text-[#dadce0]">/</span>{featuredArticle.category}
                 </p>
-                <h1 className="max-w-2xl text-4xl font-medium leading-tight text-[#202124] sm:text-5xl lg:text-6xl">
+                <h2 className="max-w-2xl text-4xl font-medium leading-tight text-[#202124] sm:text-5xl lg:text-6xl">
                   {featuredArticle.title}
-                </h1>
+                </h2>
                 <p className="mt-5 max-w-xl text-base leading-7 text-[#5f6368] sm:text-lg">
                   {featuredArticle.excerpt}
                 </p>

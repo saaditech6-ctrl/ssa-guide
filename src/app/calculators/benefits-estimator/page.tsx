@@ -12,6 +12,7 @@ import {
   BarChart3,
 } from "lucide-react"
 import { WhyTrustCalculator } from "@/components/ui/WhyTrustCalculator"
+import { ColaStatus } from "@/components/ColaStatus"
 import { SSA_2026 } from "@/lib/data/2026"
 import {
   LineChart,
@@ -130,6 +131,19 @@ export default function BenefitsEstimator() {
   }
 
 
+  const faqEntries = [
+    {
+      question: "How accurate is this estimator compared to the official SSA.gov calculator?",
+      answer:
+        "This tool provides an estimate from an assumed AIME using the official 2026 PIA formula. The official Social Security Administration calculation uses your complete earnings record, including indexed covered earnings and the highest 35 years used to determine AIME. We recommend checking your official SSA earnings record and benefit estimate before making a claiming decision.",
+    },
+    {
+      question: "Does the calculator account for annual COLA increases?",
+      answer:
+        "This estimator does not project future COLAs. It applies the 2026 formula to the AIME you enter and shows the resulting benefit in 2026-formula terms. Actual benefits can differ because SSA uses your complete earnings record, applicable COLAs, and the rules for your specific eligibility year.",
+    },
+  ] as const
+
   const jsonLdSchema = {
     "@context": "https://schema.org",
     "@graph": [
@@ -158,24 +172,14 @@ export default function BenefitsEstimator() {
       },
       {
         "@type": "FAQPage",
-        "mainEntity": [
-          {
-            "@type": "Question",
-            "name": "How accurate is this estimator compared to the official SSA.gov calculator?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "This tool provides an estimate from an AIME assumption using the official 2026 PIA formula. It does not calculate your AIME from your earnings record or reproduce the full SSA benefit computation. However, official Social Security Administration calculations utilize your complete 35-year historical average of indexed earnings (AIME) rather than a single estimated monthly earnings figure."
-            }
+        "mainEntity": faqEntries.map((entry) => ({
+          "@type": "Question",
+          "name": entry.question,
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": entry.answer,
           },
-          {
-            "@type": "Question",
-            "name": "Does the calculator account for annual COLA increases?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "This estimator calculates your retirement benefits in current constant dollars. When the Social Security Administration releases the annual Cost-of-Living Adjustment (COLA), those percentage adjustments are applied directly to your baseline Primary Insurance Amount (PIA)."
-            }
-          }
-        ]
+        }))
       }
     ]
   }
@@ -219,7 +223,10 @@ export default function BenefitsEstimator() {
        
         <WhyTrustCalculator />
 
-      
+        <div className="mb-8">
+          <ColaStatus />
+        </div>
+
         <div className="grid md:grid-cols-5 gap-8 mb-12">
           
           <form
@@ -350,9 +357,18 @@ export default function BenefitsEstimator() {
                 <div className="mt-5 border-t border-slate-100 pt-4 text-left">
                   <h3 className="text-xs font-bold uppercase tracking-wider text-slate-500 mb-3">2026 PIA calculation</h3>
                   <div className="space-y-2 text-xs text-slate-600">
-                    <div className="flex justify-between gap-4"><span>First $1,286 × 90%</span><strong>${(Math.min(calculatedAime ?? 0, 1286) * 0.9).toFixed(2)}</strong></div>
-                    <div className="flex justify-between gap-4"><span>Next portion × 32%</span><strong>${(Math.max(Math.min(calculatedAime ?? 0, 7749) - 1286, 0) * 0.32).toFixed(2)}</strong></div>
-                    <div className="flex justify-between gap-4"><span>Amount above $7,749 × 15%</span><strong>${(Math.max((calculatedAime ?? 0) - 7749, 0) * 0.15).toFixed(2)}</strong></div>
+                    <div className="flex justify-between gap-4">
+                      <span>First ${SSA_2026.piaBendPoints.first.toLocaleString()} × {SSA_2026.piaBendPoints.rates.first * 100}%</span>
+                      <strong>${(Math.min(calculatedAime ?? 0, SSA_2026.piaBendPoints.first) * SSA_2026.piaBendPoints.rates.first).toFixed(2)}</strong>
+                    </div>
+                    <div className="flex justify-between gap-4">
+                      <span>Next portion × {SSA_2026.piaBendPoints.rates.second * 100}%</span>
+                      <strong>${(Math.max(Math.min(calculatedAime ?? 0, SSA_2026.piaBendPoints.second) - SSA_2026.piaBendPoints.first, 0) * SSA_2026.piaBendPoints.rates.second).toFixed(2)}</strong>
+                    </div>
+                    <div className="flex justify-between gap-4">
+                      <span>Amount above ${SSA_2026.piaBendPoints.second.toLocaleString()} × {SSA_2026.piaBendPoints.rates.third * 100}%</span>
+                      <strong>${(Math.max((calculatedAime ?? 0) - SSA_2026.piaBendPoints.second, 0) * SSA_2026.piaBendPoints.rates.third).toFixed(2)}</strong>
+                    </div>
                     <div className="flex justify-between gap-4 border-t border-slate-200 pt-2 font-semibold text-[#071530]"><span>PIA after SSA tenth-dollar truncation</span><strong>${estimatedPIA?.toFixed(2)}</strong></div>
                   </div>
                 </div>
@@ -604,19 +620,12 @@ export default function BenefitsEstimator() {
           <div className="border-t border-slate-100 pt-6">
             <h3 className="text-lg font-bold text-[#071530] mb-4">Frequently Asked Questions (FAQ)</h3>
 
-            <div className="mb-4">
-              <h4 className="font-bold text-slate-800 text-sm sm:text-base">How accurate is this estimator compared to the official SSA.gov calculator?</h4>
-              <p className="text-slate-600 text-sm leading-relaxed mt-1">
-                This tool provides an estimate from an assumed AIME using the 2026 PIA formula. The official Social Security Administration calculation uses your complete earnings record, including indexed covered earnings and the highest 35 years used to determine AIME. We recommend checking your official SSA earnings record and benefit estimate before making a claiming decision.
-              </p>
-            </div>
-
-            <div className="mb-4">
-              <h4 className="font-bold text-slate-800 text-sm sm:text-base">Does the calculator account for annual COLA increases?</h4>
-              <p className="text-slate-600 text-sm leading-relaxed mt-1">
-                This estimator does not project future COLAs. It applies the 2026 formula to the AIME you enter and shows the resulting benefit in 2026-formula terms. Actual benefits can differ because SSA uses your complete earnings record, applicable COLAs, and the rules for your specific eligibility year.
-              </p>
-            </div>
+            {faqEntries.map((entry) => (
+              <div key={entry.question} className="mb-4">
+                <h4 className="font-bold text-slate-800 text-sm sm:text-base">{entry.question}</h4>
+                <p className="text-slate-600 text-sm leading-relaxed mt-1">{entry.answer}</p>
+              </div>
+            ))}
           </div>
         </article>
       </div>
