@@ -17,6 +17,7 @@ export async function GET(request: NextRequest) {
 
     // تصفية وحساب درجة المطابقة (Scoring)
     const matchedArticles = articles
+      .filter((article) => !article.noindex)
       .map((article) => {
         const titleMatch = article.title.toLowerCase().includes(query)
         const categoryMatch = article.category.toLowerCase().includes(query)

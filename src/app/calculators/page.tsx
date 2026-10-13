@@ -1,4 +1,5 @@
-﻿import Link from "next/link"
+import { buildMetadata } from "@/lib/seo"
+import Link from "next/link"
 import {
   Calculator,
   Clock,
@@ -9,11 +10,12 @@ import {
   MapPin,
 } from "lucide-react"
 
-export const metadata = {
-  title: "Free Social Security Calculators 2026 | Social Security Guide",
+export const metadata = buildMetadata({
+  title: "Free Social Security Calculators",
   description:
     "Free educational tools for Social Security retirement estimates, full retirement age, break-even comparisons, Medicare costs, benefit taxes, earnings limits, and office visits.",
-}
+  path: "/calculators",
+})
 
 const calculators = [
   {

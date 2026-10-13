@@ -1,4 +1,4 @@
-﻿import { BookOpen, ShieldAlert, Heart, Activity, Landmark, Percent, Clock, ArrowRight } from "lucide-react"
+import { BookOpen, ShieldAlert, Heart, Activity, Landmark, Percent, Clock, ArrowRight } from "lucide-react"
 import Link from "next/link"
 import type { Metadata } from "next"
 
@@ -132,7 +132,7 @@ export default function GuidesPage() {
       </header>
 
       {/* Main Guides List Section */}
-      <main className="container-site max-w-4xl mx-auto px-4 py-12">
+      <div className="container-site max-w-4xl mx-auto px-4 py-12">
         <section aria-label="Guides Collection" className="flex flex-col gap-4">
           {guides.map((guide) => {
             const IconComponent = guide.icon
@@ -190,7 +190,7 @@ export default function GuidesPage() {
             )
           })}
         </section>
-      </main>
+      </div>
     </div>
   )
 }

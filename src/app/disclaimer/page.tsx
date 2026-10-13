@@ -1,16 +1,13 @@
-﻿import { ArrowLeft, Info } from "lucide-react"
+import { buildMetadata } from "@/lib/seo"
+import { ArrowLeft, Info } from "lucide-react"
 import Link from "next/link"
 import type { Metadata } from "next"
 
-export const metadata: Metadata = {
-  title: "Disclaimer — Social Security Guide",
+export const metadata: Metadata = buildMetadata({
+  title: "Disclaimer",
   description: "Important disclaimers about Social Security Guide information and calculator estimates.",
-  openGraph: {
-    title: "Disclaimer — Social Security Guide",
-    description: "Important disclaimers about Social Security Guide information and calculator estimates.",
-    url: "https://www.socialsecurityguidecalc.com/disclaimer",
-  },
-}
+  path: "/disclaimer",
+})
 
 const jsonLd = {
   "@context": "https://schema.org",
@@ -36,7 +33,7 @@ export default function DisclaimerPage() {
         </div>
       </header>
 
-      <main className="container-site max-w-3xl mx-auto px-4 py-12">
+      <div className="container-site max-w-3xl mx-auto px-4 py-12">
         <article className="bg-white border border-slate-200/80 rounded-2xl p-6 sm:p-10 shadow-xs">
           <div className="bg-blue-50/80 border border-blue-100 rounded-xl p-4 mb-8 flex gap-3 items-start">
             <Info size={18} className="text-blue-700 mt-0.5 flex-shrink-0" />
@@ -89,7 +86,7 @@ export default function DisclaimerPage() {
 </ul>
           </div>
         </article>
-      </main>
+      </div>
     </div>
   )
 }

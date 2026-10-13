@@ -1,16 +1,13 @@
+import { buildMetadata } from "@/lib/seo"
 import { ArrowLeft, ShieldCheck } from "lucide-react"
 import Link from "next/link"
 import type { Metadata } from "next"
 
-export const metadata: Metadata = {
-  title: "Privacy Policy — Social Security Guide",
+export const metadata: Metadata = buildMetadata({
+  title: "Privacy Policy",
   description: "How Social Security Guide collects, uses, and protects your personal information.",
-  openGraph: {
-    title: "Privacy Policy — Social Security Guide",
-    description: "How Social Security Guide collects, uses, and protects your personal information.",
-    url: "https://www.socialsecurityguidecalc.com/privacy-policy",
-  },
-}
+  path: "/privacy-policy",
+})
 
 const jsonLd = {
   "@context": "https://schema.org",
@@ -36,7 +33,7 @@ export default function PrivacyPolicyPage() {
         </div>
       </header>
 
-      <main className="container-site max-w-4xl mx-auto px-4 py-12">
+      <div className="container-site max-w-4xl mx-auto px-4 py-12">
         <article className="bg-white border border-slate-200/80 rounded-2xl p-6 sm:p-10 shadow-xs">
           <div className="bg-slate-50 border-l-4 border-[#a6760d] rounded-r-xl p-5 mb-10 flex gap-4 items-start">
             <ShieldCheck size={22} className="text-[#1e4f9c] mt-0.5 flex-shrink-0" />
@@ -119,6 +116,17 @@ export default function PrivacyPolicyPage() {
             <h3>Security of Your Personal Data</h3>
             <p>The security of Your Personal Data is important to Us, but no method of transmission over the Internet or electronic storage is 100% secure. While We strive to use commercially reasonable means to protect Your Personal Data, We cannot guarantee its absolute security.</p>
 
+            <h2>Service Providers We Use</h2>
+            <p>We use the following third-party services to operate this website. Each service has its own privacy policy and handles data under its own terms.</p>
+            <ul>
+              <li><strong>Vercel</strong> hosts the website and provides privacy-friendly traffic and performance measurement (Vercel Analytics and Speed Insights).</li>
+              <li><strong>Google Analytics 4</strong> measures how visitors use the site, using cookies and similar identifiers.</li>
+              <li><strong>Brevo</strong> processes email addresses you submit to our newsletter form and sends our emails. You can unsubscribe from any email.</li>
+              <li><strong>Formspree</strong> receives the name, email address, subject and message you submit through our contact form so we can reply.</li>
+              <li><strong>YouTube and Pinterest</strong> may set cookies when you play an embedded video or use a Pinterest save button.</li>
+            </ul>
+            {/* TODO(legal): have a lawyer review this section and add any state-specific privacy rights language that applies. */}
+
             <h2>Children&apos;s and Minors&apos; Privacy</h2>
             <p>The Service is not directed to, and We do not knowingly collect Personal Information from, anyone under the age of 16. If You are a parent or guardian and believe Your child has provided Personal Information, please contact Us. If We become aware of such collection, We will take steps to remove it from Our servers as soon as reasonably possible.</p>
             
@@ -132,7 +140,7 @@ export default function PrivacyPolicyPage() {
             <p>If You have questions about this Privacy Policy, contact Us by email at <a href="mailto:contact@socialsecurityguidecalc.com">contact@socialsecurityguidecalc.com</a>.</p>
           </div>
         </article>
-      </main>
+      </div>
     </div>
   )
 }

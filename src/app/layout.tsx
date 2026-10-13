@@ -1,4 +1,4 @@
-﻿import type { Metadata, Viewport } from "next"
+import type { Metadata, Viewport } from "next"
 import { Inter, Playfair_Display } from "next/font/google"
 import "./globals.css"
 import { Header } from "@/components/layout/Header"
@@ -29,9 +29,6 @@ export const viewport: Viewport = {
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.socialsecurityguidecalc.com"),
-  alternates: {
-    canonical: "https://www.socialsecurityguidecalc.com",
-  },
   applicationName: "Social Security Guide",
   category: "Finance",
   title: {
@@ -40,18 +37,6 @@ export const metadata: Metadata = {
   },
   description:
     "Free Social Security calculators, retirement planning guides, Medicare information, SSDI/SSI explanations, and benefits updates for 2026.",
-  keywords: [
-    "Social Security benefits",
-    "retirement calculator",
-    "Social Security retirement age",
-    "Medicare enrollment",
-    "SSDI eligibility",
-    "SSI benefits",
-    "spousal benefits",
-    "COLA increase",
-    "Social Security estimate",
-    "benefit tax calculator",
-  ],
   openGraph: {
     type: "website",
     locale: "en_US",
@@ -87,12 +72,6 @@ export const metadata: Metadata = {
       "max-snippet": -1,
     },
   },
-  other: {
-    "geo.region": "US",
-    "geo.placename": "United States",
-    "geo.position": "39.8283;-98.5795",
-    "ICBM": "39.8283, -98.5795",
-  },
   verification: {
     google: "nHGnLCeg0J1waRnIaR42OUCFqFfhAycWeh5LCBwIYgg",
     other: {
@@ -117,11 +96,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         "@type": "ImageObject",
         "url": "https://www.socialsecurityguidecalc.com/logo.png"
       }
-    },
-    "potentialAction": {
-      "@type": "SearchAction",
-      "target": "https://www.socialsecurityguidecalc.com/?q={search_term_string}",
-      "query-input": "required name=search_term_string"
     }
   }
 

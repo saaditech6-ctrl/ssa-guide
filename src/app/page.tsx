@@ -1,4 +1,4 @@
-﻿import type { Metadata } from "next"
+import type { Metadata } from "next"
 import Link from "next/link"
 import Image from "next/image"
 import {
@@ -226,7 +226,8 @@ export const metadata: Metadata = {
 ========================================================= */
 
 export default function HomePage() {
-  const latestArticles = [...articles]
+  const latestArticles = articles
+    .filter((a) => !a.noindex)
     .sort(
       (a, b) =>
         new Date(b.date ?? 0).getTime() -
@@ -291,7 +292,7 @@ export default function HomePage() {
         }}
       />
 
-      <main className="bg-white text-[#202124]">
+      <div className="bg-white text-[#202124]">
         <section className="mx-auto max-w-7xl px-4 pt-8 sm:px-6 lg:px-8">
           <ColaStatus />
         </section>
@@ -477,7 +478,7 @@ export default function HomePage() {
             </a>
           </div>
         </section>
-      </main>
+      </div>
     </>
   )
 }

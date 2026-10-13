@@ -13,7 +13,7 @@ export async function GET() {
     language: 'en',
   });
 
-  articles.forEach((post) => {
+  articles.filter((a) => !a.noindex).forEach((post) => {
     feed.item({
       title: post.title,
       description: post.excerpt || post.description || '',

@@ -1,4 +1,4 @@
-﻿import type { Metadata } from "next"
+import type { Metadata } from "next"
 import { Clock, HelpCircle, Mail, Phone, User } from "lucide-react"
 
 export const metadata: Metadata = {
@@ -30,7 +30,7 @@ export default function ContactPage() {
   ]
 
   return (
-    <main className="mx-auto max-w-2xl px-4 py-12 sm:py-16">
+    <div className="mx-auto max-w-2xl px-4 py-12 sm:py-16">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
@@ -59,8 +59,8 @@ export default function ContactPage() {
               <div>
                 <dt className="text-xs text-[#5f6368]">Email</dt>
                 <dd className="mt-0.5">
-                  <a href="gmail:saaditech6@gmail.com" className="text-sm font-medium text-[#1a73e8] hover:underline">
-                    saaditech6@gmail.com
+                  <a href="mailto:contact@socialsecurityguidecalc.com" className="text-sm font-medium text-[#1a73e8] hover:underline">
+                    contact@socialsecurityguidecalc.com
                   </a>
                 </dd>
               </div>
@@ -105,6 +105,6 @@ export default function ContactPage() {
           <p className="mt-1 text-xs text-[#5f6368]">Monday to Friday, 8 a.m. to 7 p.m. ET</p>
         </section>
       </div>
-    </main>
+    </div>
   )
 }
