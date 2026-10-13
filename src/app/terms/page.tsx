@@ -1,16 +1,13 @@
-﻿import { ShieldCheck, Mail, Info, ArrowLeft } from "lucide-react"
+import { buildMetadata } from "@/lib/seo"
+import { ShieldCheck, Mail, Info, ArrowLeft } from "lucide-react"
 import Link from "next/link"
 import type { Metadata } from "next"
 
-export const metadata: Metadata = {
-  title: "Terms of Use — Social Security Guide",
+export const metadata: Metadata = buildMetadata({
+  title: "Terms of Use",
   description: "Terms and conditions for using Social Security Guide calculators, guides, and educational resources.",
-  openGraph: {
-    title: "Terms of Use — Social Security Guide",
-    description: "Terms and conditions for using Social Security Guide calculators, guides, and educational resources.",
-    url: "https://www.socialsecurityguidecalc.com/terms",
-  }
-}
+  path: "/terms",
+})
 
 const termsSections = [
   {
@@ -97,7 +94,7 @@ export default function TermsPage() {
       </section>
 
       {/* Main Legal Content */}
-      <main className="container-site max-w-3xl mx-auto px-4 py-12">
+      <div className="container-site max-w-3xl mx-auto px-4 py-12">
         <div className="bg-white border border-slate-200/80 rounded-2xl p-6 sm:p-10 shadow-xs">
           
           {/* Top Legal Notice Banner */}
@@ -145,7 +142,7 @@ export default function TermsPage() {
           </div>
 
         </div>
-      </main>
+      </div>
     </div>
   )
 }

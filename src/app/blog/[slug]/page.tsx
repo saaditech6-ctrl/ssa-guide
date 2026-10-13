@@ -3,6 +3,9 @@ import { notFound } from "next/navigation"
 import { articles, getArticleBySlug } from "@/lib/articles"
 import { generateFAQSchema, generateArticleSchema } from "@/lib/schema"
 import ArticleContent from "./ArticleContent"
+import { ColaStatus } from "@/components/ColaStatus"
+
+const COLA_SLUGS = new Set(["social-security-cola", "cola-updates", "social-security-whats-really-changing-in-2027"])
 
 export async function generateStaticParams() {
   return articles.map((article) => ({ slug: article.slug }))
@@ -44,8 +47,8 @@ export async function generateMetadata(
   return {
     title,
     description,
-    keywords: [...new Set(keywordList)].join(", "),
     alternates: { canonical: url },
+    ...(article.noindex ? { robots: { index: false, follow: true } } : {}),
     openGraph: {
       title,
       description,
@@ -65,14 +68,6 @@ export async function generateMetadata(
       description,
       images: imageUrl ? [imageUrl] : undefined,
     },
-    other: {
-      "pinterest-rich-pin": "true",
-      "og:image:secure_url": imageUrl || "",
-      "geo.region": "US",
-      "geo.placename": "United States",
-      "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
-      "article:tag": [...new Set(keywordList)].join(", "),
-    },
   }
 }
 
@@ -89,7 +84,7 @@ export default async function ArticleDetailPage({ params }: PageProps) {
   const articleSchema = generateArticleSchema(article, url)
 
   return (
-    <main className="bg-slate-50 min-h-screen py-10">
+    <div className="bg-slate-50 min-h-screen py-10">
       {/* Article Structural Schema Injection (Server Side) */}
       <script
         type="application/ld+json"
@@ -104,8 +99,14 @@ export default async function ArticleDetailPage({ params }: PageProps) {
         />
       )}
 
+      {COLA_SLUGS.has(article.slug) && (
+        <div className="container-site mx-auto max-w-4xl px-4">
+          <ColaStatus />
+        </div>
+      )}
+
       {/* Main Interactive Client Component */}
       <ArticleContent article={article} />
-    </main>
+    </div>
   )
 }

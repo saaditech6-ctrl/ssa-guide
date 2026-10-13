@@ -26,6 +26,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   return {
     title: `Social Security in ${state.name} | Benefits, Medicare & SSDI Guide`,
     description: `${state.description} Learn about retirement age, Medicare, SSDI, SSI, survivor benefits, and office locator resources in ${state.name}.`,
+    robots: { index: false, follow: true },
     alternates: { canonical: url },
     openGraph: {
       title: `Social Security in ${state.name}`,
@@ -97,7 +98,7 @@ export default async function StatePage({ params }: PageProps) {
   };
 
   return (
-    <main className="bg-slate-50 min-h-screen">
+    <div className="bg-slate-50 min-h-screen">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
@@ -169,6 +170,6 @@ export default async function StatePage({ params }: PageProps) {
           </div>
         </div>
       </section>
-    </main>
+    </div>
   );
 }

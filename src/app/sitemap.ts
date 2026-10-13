@@ -1,92 +1,45 @@
-import type { MetadataRoute } from "next";
-import { articles } from "@/lib/articles";
-import { states } from "@/lib/states";
-import { cities } from "@/lib/cities";
+import type { MetadataRoute } from "next"
+import { articles } from "@/lib/articles"
 
-const baseUrl = "https://www.socialsecurityguidecalc.com";
+const baseUrl = "https://www.socialsecurityguidecalc.com"
 
-const calculatorRoutes = [
-  "/calculators",
-  "/calculators/benefits-estimator",
-  "/calculators/retirement-age",
-  "/calculators/break-even",
-  "/calculators/medicare-cost",
-  "/calculators/tax-calculator",
-  "/calculators/earnings-test",
-  "/calculators/office-locator",
-];
+// Update a page's date here only when its content really changes.
+const staticPages: { path: string; lastModified: string }[] = [
+  { path: "/", lastModified: "2026-10-12" },
+  { path: "/blog", lastModified: "2026-10-12" },
+  { path: "/calculators", lastModified: "2026-10-12" },
+  { path: "/calculators/benefits-estimator", lastModified: "2026-10-12" },
+  { path: "/calculators/retirement-age", lastModified: "2026-09-01" },
+  { path: "/calculators/break-even", lastModified: "2026-09-01" },
+  { path: "/calculators/medicare-cost", lastModified: "2026-09-01" },
+  { path: "/calculators/tax-calculator", lastModified: "2026-09-01" },
+  { path: "/calculators/earnings-test", lastModified: "2026-09-01" },
+  { path: "/calculators/office-locator", lastModified: "2026-09-01" },
+  { path: "/guides", lastModified: "2026-09-01" },
+  { path: "/guides/getting-started", lastModified: "2026-09-01" },
+  { path: "/guides/retirement", lastModified: "2026-09-01" },
+  { path: "/guides/benefit-taxes", lastModified: "2026-09-01" },
+  { path: "/guides/disability", lastModified: "2026-09-01" },
+  { path: "/guides/medicare", lastModified: "2026-09-01" },
+  { path: "/guides/spousal-benefits", lastModified: "2026-09-01" },
+  { path: "/about", lastModified: "2026-09-01" },
+  { path: "/contact", lastModified: "2026-09-01" },
+  { path: "/privacy-policy", lastModified: "2026-10-12" },
+  { path: "/disclaimer", lastModified: "2026-09-01" },
+  { path: "/terms", lastModified: "2026-09-01" },
+]
 
-const guideRoutes = [
-  "/guides",
-  "/guides/getting-started",
-  "/guides/retirement",
-  "/guides/benefit-taxes",
-  "/guides/disability",
-  "/guides/medicare",
-  "/guides/spousal-benefits",
-];
+/** Accepts ISO dates and strings like "September 2026"; never falls back to "now". */
+function toDate(value?: string): Date {
+  const parsed = value ? new Date(value) : new Date(NaN)
+  return Number.isNaN(parsed.getTime()) ? new Date("2026-01-01") : parsed
+}
 
-const infoRoutes = [
-  "/about",
-  "/contact",
-  "/privacy-policy",
-  "/disclaimer",
-  "/terms",
-];
-
+// /states/** pages are noindex until they carry unique local content, so they are not listed here.
 export default function sitemap(): MetadataRoute.Sitemap {
-  const staticRoutes = ["/", "/blog", "/states", ...calculatorRoutes, ...guideRoutes, ...infoRoutes];
-
-  const stateEntries: MetadataRoute.Sitemap = states.map((state) => ({
-    url: `${baseUrl}/states/${state.slug}`,
-    lastModified: new Date("2026-08-28T00:00:00.000Z"),
-    changeFrequency: "monthly",
-    priority: 0.6,
-  }));
-
-  const cityEntries: MetadataRoute.Sitemap = cities.map((city) => ({
-    url: `${baseUrl}/states/${city.state}/cities/${city.city}`,
-    lastModified: new Date("2026-08-28T00:00:00.000Z"),
-    changeFrequency: "monthly",
-    priority: 0.5,
-  }));
-
-  const cityOfficeEntries: MetadataRoute.Sitemap = cities.map((city) => ({
-    url: `${baseUrl}/states/${city.state}/cities/${city.city}/office`,
-    lastModified: new Date("2026-08-28T00:00:00.000Z"),
-    changeFrequency: "monthly",
-    priority: 0.45,
-  }));
-
-  const staticEntries: MetadataRoute.Sitemap = staticRoutes.map((route, index) => ({
-    url: `${baseUrl}${route}`,
-    lastModified: new Date("2026-08-28T00:00:00.000Z"),
-    changeFrequency:
-      route === "/" ? "daily" : route === "/blog" ? "weekly" : "monthly",
-    priority:
-      route === "/"
-        ? 1
-        : route === "/calculators" || route === "/guides" || route === "/blog"
-        ? 0.9
-        : index < 20
-        ? 0.8
-        : 0.5,
-  }));
-
-  const articleEntries: MetadataRoute.Sitemap = articles.map((article) => {
-    const articleDate =
-      article.lastUpdated ||
-      article.updatedDate ||
-      article.date ||
-      "2026-01-01";
-
-    return {
-      url: `${baseUrl}/blog/${article.slug}`,
-      lastModified: articleDate ? new Date(articleDate) : new Date(),
-      changeFrequency: "monthly",
-      priority: 0.7,
-    };
-  });
-
-  return [...staticEntries, ...stateEntries, ...cityEntries, ...cityOfficeEntries, ...articleEntries];
+  const pages = staticPages.map((p) => ({ url: `${baseUrl}${p.path === "/" ? "" : p.path}`, lastModified: new Date(p.lastModified) }))
+  const posts = articles
+    .filter((a) => !a.noindex)
+    .map((a) => ({ url: `${baseUrl}/blog/${a.slug}`, lastModified: toDate(a.lastUpdated || a.updatedDate || a.date) }))
+  return [...pages, ...posts]
 }

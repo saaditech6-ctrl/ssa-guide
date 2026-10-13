@@ -1,4 +1,4 @@
-﻿import Link from "next/link";
+import Link from "next/link";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -31,7 +31,7 @@ const jsonLd = {
 
 export default function AboutPage() {
   return (
-    <main className="mx-auto max-w-4xl px-6 py-16">
+    <div className="mx-auto max-w-4xl px-6 py-16">
       {/* JSON-LD */}
       <script
         type="application/ld+json"
@@ -249,6 +249,6 @@ export default function AboutPage() {
           </Link>
         </div>
       </section>
-    </main>
+    </div>
   );
 }

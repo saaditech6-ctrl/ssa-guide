@@ -39,6 +39,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   return {
     title: `Social Security in ${cityInfo.metro}, ${state.name} | Local Guide`,
     description: `${cityInfo.description} Learn how local retirement, Medicare, and disability planning works for ${cityInfo.metro}, ${state.name}.`,
+    robots: { index: false, follow: true },
     alternates: { canonical: url },
   };
 }
@@ -104,7 +105,7 @@ export default async function CityPage({ params }: PageProps) {
   };
 
   return (
-    <main className="bg-slate-50 min-h-screen">
+    <div className="bg-slate-50 min-h-screen">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
@@ -172,6 +173,6 @@ export default async function CityPage({ params }: PageProps) {
           </div>
         </div>
       </section>
-    </main>
+    </div>
   );
 }

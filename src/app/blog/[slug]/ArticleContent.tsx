@@ -252,9 +252,9 @@ export default function ArticleContent({ article }: { article: Article }) {
       <ShareBar title={article.title} slug={article.slug} image={article.image} />
 
       {/* Main Body Content Block */}
-      <main className="bg-white border border-slate-200/80 rounded-2xl p-6 sm:p-10 shadow-xs">
+      <div className="bg-white border border-slate-200/80 rounded-2xl p-6 sm:p-10 shadow-xs">
         {renderStructuredContent()}
-      </main>
+      </div>
 
       {/* شريط المشاركة والحفظ أسفل المقال للختام */}
       <div className="mt-8">

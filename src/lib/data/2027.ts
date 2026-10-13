@@ -1,5 +1,9 @@
 export const COLA_2027 = {
   year: 2027,
+  /** Set to the official percent (e.g. 2.8) the day SSA announces it; leave null until then. */
+  colaPercent: null as number | null,
+  /** ISO date SSA announced it, e.g. "2026-10-14". */
+  announcedOn: null as string | null,
   status: "pending-official-announcement",
   label: "Official 2027 COLA announcement pending",
   summary:

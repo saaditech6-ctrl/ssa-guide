@@ -6,6 +6,7 @@ export const metadata: Metadata = {
   title: "Social Security by State | U.S. Benefits & Medicare Guides",
   description:
     "Explore Social Security, disability, Medicare, and retirement guidance for every U.S. state with local SEO-focused benefits information.",
+  robots: { index: false, follow: true },
   alternates: {
     canonical: "https://www.socialsecurityguidecalc.com/states",
   },
@@ -55,7 +56,7 @@ export default function StatesPage() {
   };
 
   return (
-    <main className="bg-slate-50 min-h-screen">
+    <div className="bg-slate-50 min-h-screen">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
@@ -111,6 +112,6 @@ export default function StatesPage() {
           ))}
         </div>
       </section>
-    </main>
+    </div>
   );
 }

@@ -42,115 +42,57 @@ export function generateFAQSchema(content: string) {
  * يبني Article schema كامل ومطابق لشروط Google Rich Results
  */
 export function generateArticleSchema(article: Article, url: string) {
-  const publishedIso = toIsoDate(article.date);
-  const modifiedIso = article.lastUpdated
-    ? toIsoDate(article.lastUpdated)
-    : publishedIso;
+  const publishedIso = toIsoDate(article.date ?? article.lastUpdated ?? article.updatedDate)
+  const modifiedIso = toIsoDate(article.lastUpdated ?? article.updatedDate ?? article.date)
 
   const imageUrl = article.image
     ? article.image.startsWith("http")
       ? article.image
       : `${BASE_URL}${article.image}`
-    : `${BASE_URL}/og-image.jpg`;
-
-  const keywordList = [
-    article.primaryKeyword,
-    ...(article.secondaryKeywords ?? []),
-    article.category,
-    "Social Security",
-    "United States",
-  ].filter(Boolean) as string[];
-
-  const geoName = article.searchIntent?.toLowerCase().includes("local")
-    ? article.title
-    : "United States";
+    : `${BASE_URL}/og-image.png`
 
   return {
     "@context": "https://schema.org",
     "@type": "Article",
     headline: article.metaTitle || article.title,
-    name: article.title,
     description: article.metaDescription || article.excerpt,
     inLanguage: "en-US",
-    keywords: [...new Set(keywordList)].join(", "),
     articleSection: article.category,
-    about: [
-      { "@type": "Thing", name: "Social Security" },
-      { "@type": "Thing", name: article.category },
-    ],
-    audience: {
-      "@type": "Audience",
-      audienceType: article.searchIntent || "General public",
-    },
     isAccessibleForFree: true,
-    image: imageUrl,
+    image: [imageUrl],
     author: {
       "@type": "Person",
       name: article.author || "Amine Saadi",
       url: `${BASE_URL}/about`,
-      jobTitle: "Financial Content Creator",
     },
     publisher: {
       "@type": "Organization",
       name: "Social Security Guide",
       url: BASE_URL,
-      logo: {
-        "@type": "ImageObject",
-        url: `${BASE_URL}/logo.png`,
-      },
+      logo: { "@type": "ImageObject", url: `${BASE_URL}/logo.png` },
     },
     datePublished: publishedIso,
     dateModified: modifiedIso,
-    mainEntityOfPage: {
-      "@type": "WebPage",
-      "@id": url,
-    },
-    areaServed: {
-      "@type": "Country",
-      name: "United States",
-      addressCountry: "US",
-    },
-    spatialCoverage: {
-      "@type": "Place",
-      name: geoName,
-      addressCountry: "US",
-    },
-    mentions: [...new Set(keywordList)].map((keyword) => ({
-      "@type": "Thing",
-      name: keyword,
-    })),
-    potentialAction: {
-      "@type": "SearchAction",
-      target: "https://www.socialsecurityguidecalc.com/?q={search_term_string}",
-      "query-input": "required name=search_term_string",
-    },
-  };
+    mainEntityOfPage: { "@type": "WebPage", "@id": url },
+  }
 }
 
 /**
- * يحوّل أي تاريخ نصي إلى صيغة ISO 8601 قياسية كاملة تشتمل على التوقيت والمنطقة الزمنية (Z).
- * مثال ناتج: "2026-05-05T12:00:00.000Z"
+ * Converts "2026-05-05", "June 2, 2026" or "September 2026" to a stable ISO string.
+ * Never returns the current time: a build-time date would change on every deploy.
  */
-function toIsoDate(dateString?: string): string {
-  if (!dateString) return new Date().toISOString();
-
-  // إذا كان التاريخ مسبقاً بصيغة ISO كاملة تحتوي على T، نقوم بتحويله مباشرة
-  if (dateString.includes("T")) {
-    const d = new Date(dateString);
-    if (!isNaN(d.getTime())) return d.toISOString();
+export function toIsoDate(dateString?: string): string {
+  if (dateString) {
+    const parsed = new Date(dateString.includes("T") ? dateString : `${dateString} 12:00:00 UTC`)
+    if (!Number.isNaN(parsed.getTime())) return parsed.toISOString()
+    const loose = new Date(dateString)
+    if (!Number.isNaN(loose.getTime())) {
+      loose.setUTCHours(12, 0, 0, 0)
+      return loose.toISOString()
+    }
   }
-
-  // معالجة التواريخ من صيغ مثل "2026-05-05" أو "May 5, 2026"
-  const parsed = new Date(dateString);
-
-  if (!isNaN(parsed.getTime())) {
-    // تعيين وقت افتراضي (12:00:00 UTC) لمنع التذبذب بين الأيام بسبب المناطق الزمنية
-    parsed.setUTCHours(12, 0, 0, 0);
-    return parsed.toISOString();
-  }
-
-  // fallback آمن في حال وجود نص غير صالح
-  return new Date().toISOString();
+  console.error(`schema.ts: missing or invalid article date "${dateString}"`)
+  return "2026-01-01T12:00:00.000Z"
 }
 
 function stripHtml(html: string): string {
