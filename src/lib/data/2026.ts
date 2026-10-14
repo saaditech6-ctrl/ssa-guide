@@ -16,6 +16,8 @@ export const SSA_2026 = {
     beforeFRAWithholdingRatio: 2,
     yearOfFRAWithholdingRatio: 3,
   },
+  /** Maximum annual earnings subject to Social Security tax (SSA contribution and benefit base). */
+  taxableMaximum: 184500,
   source: 'https://www.ssa.gov/OACT/COLA/piaformula.html',
   earningsTestSource: 'https://www.ssa.gov/OACT/COLA/rtea.html',
 } as const
