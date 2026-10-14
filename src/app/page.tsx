@@ -13,7 +13,6 @@ import {
   FileText,
   HeartPulse,
   LayoutGrid,
-  Mail,
   Scale,
   TrendingUp,
   CircleHelp,
@@ -22,7 +21,6 @@ import {
 import { articles } from "@/lib/articles"
 import { buildMetadata } from "@/lib/seo"
 import { SSA_2026 } from "@/lib/data/2026"
-import { SubscribeForm } from "@/components/ui/SubscribeForm"
 import { HeroEstimator } from "@/components/home/HeroEstimator"
 import { HomeColaBanner } from "@/components/home/HomeColaBanner"
 
