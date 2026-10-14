@@ -3600,33 +3600,32 @@ metaDescription: "Spouses can claim up to 50% of a partner's benefit at FRA. Lea
 },
 
 {
-  slug: "social-security-earnings-test-limit",
-  title: "Social Security Earnings Test Limit: How Working in Retirement Affects Your Benefits",
-  metaTitle: "Social Security Earnings Test Limit (2026 Rules & Calculator)",
-  metaDescription: "Working while claiming Social Security before Full Retirement Age can temporarily withhold benefits. Learn the 2026 earnings test limits and how to calculate your payout.",
-  excerpt: "Claiming Social Security before your Full Retirement Age while continuing to work triggers the Retirement Earnings Test. Learn the earnings limits, withholdings, and how withheld money is returned later.",
-  category: "Retirement Planning",
-  author: "Amine Saadi",
-  date: "2026-08-19",
-  updatedDate: "2026-08-19",
-  readTime: "7 min read",
-  featured: false,
-  image: "/images/social-security-earnings-test-limit.webp",
-  imageAlt: "Infographic demonstrating the Social Security Retirement Earnings Test thresholds and withholding rates, Social Security Guide",
-  primaryKeyword: "social security earnings test limit",
-  secondaryKeywords: [
+  "slug": "social-security-earnings-test-limit",
+  "title": "Social Security Earnings Test Limit: How Working in Retirement Affects Your Benefits",
+  "metaTitle": "Social Security Earnings Test Limit (2026-2027 Rules & Calculator)",
+  "metaDescription": "Working while claiming Social Security before Full Retirement Age can temporarily withhold benefits. Learn the 2026 & 2027 earnings test limits ($25,560 and $67,920) and how to calculate your payout.",
+  "excerpt": "Claiming Social Security before your Full Retirement Age while continuing to work triggers the Retirement Earnings Test. Learn the updated 2026 and 2027 earnings limits, withholdings, and how withheld money is returned later.",
+  "category": "Retirement Planning",
+  "author": "Amine Saadi",
+  "date": "2026-08-19",
+  "updatedDate": "2026-10-14",
+  "readTime": "7 min read",
+  "featured": false,
+  "image": "/images/social-security-earnings-test-limit.webp",
+  "imageAlt": "Infographic demonstrating the Social Security Retirement Earnings Test thresholds and withholding rates, Social Security Guide",
+  "primaryKeyword": "social security earnings test limit",
+  "secondaryKeywords": [
     "social security earnings limit",
     "working while on social security",
     "social security retirement earnings test",
     "how much can you earn while receiving social security"
   ],
-  searchIntent: "Informational",
-  content: `
-<p>The <strong>Social Security earnings test limit</strong> is the maximum amount of earned income you can make while receiving Social Security retirement benefits before reaching your <strong>Full Retirement Age (FRA)</strong> without having a portion of your monthly benefit payments temporarily withheld.</p>
+  "searchIntent": "Informational",
+  "content": `<p>The <strong>Social Security earnings test limit</strong> is the maximum amount of earned income you can make while receiving Social Security retirement benefits before reaching your <strong>Full Retirement Age (FRA)</strong> without having a portion of your monthly benefit payments temporarily withheld.</p>
 
 <div class="bg-amber-50/50 border border-amber-200 rounded-xl p-4 my-6">
   <p class="font-semibold text-amber-900 mb-1">Quick Answer</p>
-  <p class="text-sm text-amber-800">If you claim Social Security early and continue to work, the Social Security Administration (SSA) temporarily withholds $1 in benefits for every $2 earned above the annual exempt limit. In the calendar year you reach Full Retirement Age, a higher limit applies, withholding $1 for every $3 over the threshold. Once you hit your FRA, the earnings test ends completely, and SSA recalculates your benefit upward to account for withheld payments.</p>
+  <p class="text-sm text-amber-800">If you claim Social Security early and continue to work, the Social Security Administration (SSA) temporarily withholds $1 in benefits for every $2 earned above the annual exempt limit ($24,480 in 2026; $25,560 in 2027). In the calendar year you reach Full Retirement Age, a higher limit applies ($65,160 in 2026; $67,920 in 2027), withholding $1 for every $3 over the threshold. Once you hit your FRA, the earnings test ends completely, and SSA recalculates your benefit upward to account for withheld payments.</p>
 </div>
 
 <h2>What Is the Social Security Retirement Earnings Test?</h2>
@@ -3635,7 +3634,7 @@ metaDescription: "Spouses can claim up to 50% of a partner's benefit at FRA. Lea
 
 <p>The purpose of the rule is to restrict Social Security benefits to individuals who have fully or partially retired from the active workforce. It does not apply to passive income such as investment dividends, pensions, capital gains, or 401(k) distributions.</p>
 
-<h2>Social Security Earnings Test Thresholds and Rules</h2>
+<h2>Social Security Earnings Test Thresholds and Rules (2026–2027)</h2>
 
 <p>The SSA categorizes working beneficiaries into two distinct rule phases depending on their age relative to their Full Retirement Age during the calendar year:</p>
 
@@ -3644,31 +3643,35 @@ metaDescription: "Spouses can claim up to 50% of a partner's benefit at FRA. Lea
     <thead class="bg-slate-100 text-slate-900">
       <tr>
         <th class="p-3 border border-slate-200">Age Phase</th>
-        <th class="p-3 border border-slate-200">Earnings Condition</th>
+        <th class="p-3 border border-slate-200">2026 Exempt Limit</th>
+        <th class="p-3 border border-slate-200">2027 Exempt Limit</th>
         <th class="p-3 border border-slate-200">Withholding Rate</th>
       </tr>
     </thead>
     <tbody class="divide-y divide-slate-200 text-slate-700">
       <tr>
         <td class="p-3 border border-slate-200 font-medium">Under Full Retirement Age for the Entire Year</td>
-        <td class="p-3 border border-slate-200">Earned income exceeds annual limit</td>
+        <td class="p-3 border border-slate-200">$24,480 / yr<br><span class="text-xs text-slate-500">($2,040 / mo)</span></td>
+        <td class="p-3 border border-slate-200 font-semibold text-slate-900">$25,560 / yr<br><span class="text-xs text-slate-500">($2,130 / mo)</span></td>
         <td class="p-3 border border-slate-200">$1 withheld for every $2 earned above threshold</td>
       </tr>
       <tr>
         <td class="p-3 border border-slate-200 font-medium">Year Reaching Full Retirement Age</td>
-        <td class="p-3 border border-slate-200">Earned income prior to birthday month exceeds higher limit</td>
-        <td class="p-3 border border-slate-200">$1 withheld for every $3 earned above threshold</td>
+        <td class="p-3 border border-slate-200">$65,160 / yr<br><span class="text-xs text-slate-500">($5,430 / mo)</span></td>
+        <td class="p-3 border border-slate-200 font-semibold text-slate-900">$67,920 / yr<br><span class="text-xs text-slate-500">($5,660 / mo)</span></td>
+        <td class="p-3 border border-slate-200">$1 withheld for every $3 earned above threshold (prior to birthday month)</td>
       </tr>
       <tr>
         <td class="p-3 border border-slate-200 font-medium">Month Hitting Full Retirement Age &amp; Older</td>
-        <td class="p-3 border border-slate-200">No earnings cap</td>
+        <td class="p-3 border border-slate-200 font-semibold">No Limit</td>
+        <td class="p-3 border border-slate-200 font-semibold text-slate-900">No Limit</td>
         <td class="p-3 border border-slate-200">No benefits withheld, regardless of total wages</td>
       </tr>
     </tbody>
   </table>
 </div>
 
-<p class="text-xs text-slate-400 mt-1">Source: <a href="https://www.ssa.gov/benefits/retirement/planner/whileworking.html" target="_blank" rel="noopener noreferrer" class="underline hover:text-amber-600">Social Security Administration (SSA.gov)</a></p>
+<p class="text-xs text-slate-400 mt-1">Source: <a href="https://www.ssa.gov/oact/cola/rtea.html" target="_blank" rel="noopener noreferrer" class="underline hover:text-amber-600">Social Security Administration (SSA.gov)</a></p>
 
 <h2>What Counts as Earned Income Under the Earnings Test?</h2>
 
@@ -3691,13 +3694,13 @@ metaDescription: "Spouses can claim up to 50% of a partner's benefit at FRA. Lea
 
 <h2>Hypothetical Calculation Example: How Benefits Are Withheld</h2>
 
-<p>Consider a worker who turned 62 in 2026 and opted to start receiving a monthly Social Security benefit of $1,500 ($18,000 annually). They decide to remain employed in a consulting role earning $30,000 gross wages annually.</p>
+<p>Consider a worker who claims early Social Security in 2027 and receives a monthly benefit of $1,500 ($18,000 annually). They decide to remain employed in a consulting role earning $35,000 gross wages annually.</p>
 
-<p>Assuming an annual exempt threshold of $23,400 for early claimers:</p>
+<p>Applying the 2027 annual exempt threshold of <strong>$25,560</strong> for early claimers:</p>
 <ol class="list-decimal pl-6 space-y-2 text-slate-700 my-4">
-  <li><strong>Excess Earnings Calculation:</strong> $30,000 total wages – $23,400 exempt limit = $6,600 excess earnings.</li>
-  <li><strong>Withholding Penalty Applied:</strong> $1 withheld for every $2 over the threshold ($6,600 / 2 = $3,300 total reduction required).</li>
-  <li><strong>Monthly Benefit Adjustment:</strong> Rather than reducing monthly checks fractionally, the SSA withholds full monthly checks until the mandatory offset amount is covered. With a $1,500 monthly benefit, SSA withholds 3 full checks ($4,500 total withheld), leaving a remaining $1,200 balance paid back to the beneficiary in the following calendar year.</li>
+  <li><strong>Excess Earnings Calculation:</strong> $35,000 total wages – $25,560 exempt limit = $9,440 excess earnings.</li>
+  <li><strong>Withholding Penalty Applied:</strong> $1 withheld for every $2 over the threshold ($9,440 / 2 = $4,720 total reduction required).</li>
+  <li><strong>Monthly Benefit Adjustment:</strong> Rather than reducing monthly checks fractionally, the SSA withholds full monthly checks until the mandatory offset amount is covered. With a $1,500 monthly benefit, SSA withholds 4 full checks ($6,000 total withheld), leaving a remaining $1,280 balance paid back to the beneficiary in the following calendar year.</li>
 </ol>
 
 <p>To determine how your exact wage profile, claiming age, and projected earnings impact your monthly benefit check, evaluate your numbers with our free <a href="/calculators/earnings-test">earnings test calculator</a>.</p>
@@ -3711,6 +3714,10 @@ metaDescription: "Spouses can claim up to 50% of a partner's benefit at FRA. Lea
 <h2>Frequently Asked Questions About the Social Security Earnings Test Limit</h2>
 
 <div class="space-y-6 my-6">
+  <div>
+    <h3 class="font-semibold text-slate-900">What are the Social Security earnings limits for 2027?</h3>
+    <p class="text-slate-700 mt-1">For beneficiaries under Full Retirement Age all year, the 2027 exempt limit is <strong>$25,560</strong> ($2,130/month). For those reaching Full Retirement Age during 2027, the limit is <strong>$67,920</strong> ($5,660/month) for earnings prior to the month FRA is attained.</p>
+  </div>
   <div>
     <h3 class="font-semibold text-slate-900">Does the Social Security earnings test apply after Full Retirement Age?</h3>
     <p class="text-slate-700 mt-1">No, the Social Security earnings test stops completely starting the exact month you achieve your Full Retirement Age. From that month forward, you can earn an unlimited amount from wages or self-employment without any withholding applied to your monthly benefits.</p>
@@ -3730,7 +3737,6 @@ metaDescription: "Spouses can claim up to 50% of a partner's benefit at FRA. Lea
 </div>
 
 <p class="text-sm text-slate-600 italic my-6">*This article is for educational purposes only and does not constitute personalized financial, legal, or tax advice. SSA Guide Calc is an independent platform and is not affiliated with or endorsed by the Social Security Administration. For guidance specific to your situation, consult SSA.gov, Medicare.gov, or a licensed financial advisor.*</p>
-
 `
 },
 
