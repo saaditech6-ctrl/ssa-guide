@@ -4156,7 +4156,7 @@ metaDescription: "Spouses can claim up to 50% of a partner's benefit at FRA. Lea
   </tbody>
 </table>
 
-<p>SSA's official COLA history confirms these percentages. The 8.7% increase for 2023 remains the largest increase in this recent six-year period, while 2025's 2.5% and 2026's 2.8% were considerably lower. </p>
+<p>SSA's official COLA history confirms these percentages. The 8.7% increase for 2023 remains the largest increase in this recent six-year period, while 2025's 2.5% and 2.8% in 2026 were considerably lower. </p>
 
 <h2 id="how-cola-affects-benefits">How does COLA affect your Social Security benefit?</h2>
 
@@ -4308,7 +4308,9 @@ metaDescription: "Spouses can claim up to 50% of a partner's benefit at FRA. Lea
 
 <p>The Social Security COLA is a statutory annual adjustment designed to help Social Security and SSI benefits keep pace with inflation. The official 2026 COLA is <strong>2.8%</strong>, and the official 2027 COLA is <strong>3.6%</strong>, announced on October 14, 2026.</p>
 
-<p>The most reliable source for COLA figures is the Social Security Administration's official announcement. Check ssa.gov/cola for the full 2027 fact sheet, including the new taxable maximum and earnings limits.</p>
+<p>The most reliable source for COLA figures is the Social Security Administration's official announcement. Check <a href="https://www.ssa.gov/cola" target="_blank" rel="noopener noreferrer">Social Security Administration COLA Fact Sheet</a> for the full 2027 updates, including the new taxable maximum and earnings limits.</p>
+
+<p>For more detailed analyses on your retirement benefits, explore our <a href="/blog/social-security-cola">complete Social Security COLA updates and guide</a>.</p>
 
 <h2>Sources & Citations</h2>
 
