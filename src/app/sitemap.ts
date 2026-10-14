@@ -5,8 +5,8 @@ const baseUrl = "https://www.socialsecurityguidecalc.com"
 
 // Update a page's date here only when its content really changes.
 const staticPages: { path: string; lastModified: string }[] = [
-  { path: "/", lastModified: "2026-10-12" },
-  { path: "/blog", lastModified: "2026-10-12" },
+  { path: "/", lastModified: "2026-10-14" },
+  { path: "/blog", lastModified: "2026-10-14" },
   { path: "/calculators", lastModified: "2026-10-12" },
   { path: "/calculators/benefits-estimator", lastModified: "2026-10-12" },
   { path: "/calculators/retirement-age", lastModified: "2026-09-01" },
