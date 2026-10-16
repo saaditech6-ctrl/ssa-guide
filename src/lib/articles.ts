@@ -4537,8 +4537,280 @@ metaDescription: "Spouses can claim up to 50% of a partner's benefit at FRA. Lea
   <li>Explore foundational strategies in our <a href="/guides/retirement">retirement planning guide</a>.</li>
 </ul>
   `
-}
+}, 
+{
+  slug: "stocks-that-benefit-from-social-security-cola",
+  title: "Stocks That Benefit From Social Security COLA in 2027",
+  metaTitle: "Stocks That Benefit From Social Security COLA 2027",
+  metaDescription:
+    "Do stocks that benefit from Social Security COLA exist? See how the 3.6% 2027 raise hits retiree budgets and what filings show. Read the facts first.",
+  excerpt:
+    "The SSA set the 2027 COLA at 3.6%, about $75 more per month for the average retired worker. See what that means for budgets, Medicare costs, and three companies tied to retiree spending.",
+  content: `<blockquote>
+<p><strong>Quick Summary</strong></p>
+<ul>
+<li><strong>The COLA:</strong> The SSA set the 2027 Social Security COLA at 3.6 percent on October 14, 2026, up from 2.8 percent for 2026. The average retired worker gets about $75 more per month starting in January 2027.</li>
+<li><strong>The catch:</strong> The raise mostly offsets inflation, and energy led the latest price gains. Groceries rose 1.8 percent in the 12 months to September 2026, while medical care commodities, which include drugs, fell 3.3 percent.</li>
+<li><strong>Retiree budgets:</strong> Households headed by someone 65 or older put about 12.7 percent of spending into healthcare, versus 7.9 percent for all households, but most of that is insurance.</li>
+<li><strong>The stocks:</strong> Kroger, Albertsons and CVS Health sell groceries and prescriptions, yet recent filings show weak grocery sales growth and pharmacy price pressure. We found no source linking a COLA announcement to their sales.</li>
+<li><strong>Medicare:</strong> The Part B premium is projected to rise $6.60 to $209.50 in 2027. CMS usually confirms the final number in November.</li>
+<li><strong>Bottom line:</strong> Treat the idea as a hypothesis. This article is educational and is not investment advice.</li>
+</ul>
+</blockquote>
 
+<p><strong>Stocks that benefit from Social Security COLA</strong> is a search that spikes every October, and the honest answer is narrower than the headlines suggest. On October 14, 2026, the Social Security Administration announced a 3.6 percent cost-of-living adjustment for 2027. For the average retired worker, that is about $75 more per month.</p>
+
+<p>Whether that money lifts any one company is a hypothesis, not a proven fact. This guide starts with what the raise does to a retiree's budget. It then uses Kroger, Albertsons and CVS Health as three examples of retiree spending stocks, with figures taken from company filings and federal data.</p>
+
+<p>This is education, not investment advice. Nothing here is a recommendation to buy or sell any security.</p>
+
+<h2>What the 3.6% COLA Changes for Retirees in 2027</h2>
+
+<p>The 2027 COLA is 3.6 percent, and it applies to both Social Security and Supplemental Security Income (SSI) benefits. According to the <a href="https://www.ssa.gov/blog/en/posts/2026-10-14.html" target="_blank" rel="noopener noreferrer">SSA's October 14 announcement</a>, nearly 72 million Social Security beneficiaries will see the increase beginning in January 2027. About 7.3 million SSI recipients get higher payments starting December 31, 2026.</p>
+
+<p>The percentage is set by formula, not by a discretionary decision. It reflects the rise in the CPI-W from the third quarter of 2025 to the third quarter of 2026, as our guide to <a href="/blog/how-is-social-security-cola-calculated">how the Social Security COLA is calculated</a> explains. For a broader overview, see our <a href="/blog/social-security-cola">Social Security COLA page</a>.</p>
+
+<p>The SSA's <a href="https://www.ssa.gov/news/en/cola/factsheets/2027.html" target="_blank" rel="noopener noreferrer">2027 COLA fact sheet</a> estimates these average monthly benefits payable in January 2027:</p>
+
+<table>
+<thead>
+<tr><th>Beneficiary group</th><th>Before 3.6% COLA</th><th>After 3.6% COLA</th><th>Monthly increase</th></tr>
+</thead>
+<tbody>
+<tr><td>All retired workers</td><td>$2,095</td><td>$2,170</td><td>$75</td></tr>
+<tr><td>Aged couple, both receiving benefits</td><td>$3,238</td><td>$3,355</td><td>$117</td></tr>
+<tr><td>Aged widow(er) alone</td><td>$1,936</td><td>$2,005</td><td>$69</td></tr>
+<tr><td>All disabled workers</td><td>$1,642</td><td>$1,701</td><td>$59</td></tr>
+<tr><td>Disabled worker, spouse and child(ren)</td><td>$2,970</td><td>$3,077</td><td>$107</td></tr>
+<tr><td>Widowed mother and two children</td><td>$3,932</td><td>$4,074</td><td>$142</td></tr>
+</tbody>
+</table>
+
+<p>The same fact sheet lists other 2027 numbers that may affect retirees who work or receive SSI:</p>
+
+<ul>
+<li><strong>Maximum taxable earnings:</strong> $192,300, up from $184,500.</li>
+<li><strong>Earnings test:</strong> $25,560 a year if you are under full retirement age all year, and $67,920 in the year you reach it (up from $24,480 and $65,160).</li>
+<li><strong>Maximum benefit at full retirement age:</strong> $4,188 a month, up from $4,152.</li>
+<li><strong>SSI federal payment standard:</strong> $1,029 for an individual and $1,544 for a couple, up from $994 and $1,491.</li>
+</ul>
+
+<p>Our article on <a href="/blog/social-security-whats-really-changing-in-2027">what is really changing in Social Security in 2027</a> walks through these changes in more detail.</p>
+
+<h2>Why a COLA Is Not the Same as Extra Spending Money</h2>
+
+<p>A COLA mostly restores purchasing power that inflation has already taken, so it should not be treated as new spending money. The latest <a href="https://www.bls.gov/news.release/cpi.nr0.htm" target="_blank" rel="noopener noreferrer">BLS Consumer Price Index report</a> shows why. Prices for all items rose 3.7 percent over the 12 months ending September 2026, and the CPI-W, which the COLA uses, rose 3.9 percent.</p>
+
+<p>The September reading was higher than the 3.6 percent COLA, which averages July through September. That suggests inflation picked up toward the end of the measuring period.</p>
+
+<p>The mix matters more than the headline. Over the same 12 months, energy rose 20.4 percent and gasoline rose 34.2 percent. Food at home rose only 1.8 percent. Medical care commodities, a category that includes drugs, fell 3.3 percent, while medical care services rose 2.5 percent.</p>
+
+<p>That pattern suggests many retirees feel this raise at the gas pump and on utility bills before they feel it in the grocery aisle. These indexes cover broad groups of consumers, so older households' own price experience can differ.</p>
+
+<h2>What Older Households Actually Spend on Groceries and Healthcare</h2>
+
+<p>BLS data show that households headed by someone 65 or older spend a larger share of their budgets on healthcare than other households, but most of that spending is insurance rather than pharmacy purchases. The table uses 2024 figures from the <a href="https://www.bls.gov/opub/reports/consumer-expenditures/2024/home.htm" target="_blank" rel="noopener noreferrer">BLS Consumer Expenditure Survey report</a>.</p>
+
+<table>
+<thead>
+<tr><th>Category (2024)</th><th>Households age 65+</th><th>All households</th></tr>
+</thead>
+<tbody>
+<tr><td>Total annual spending</td><td>$61,432</td><td>$78,535</td></tr>
+<tr><td>Food at home</td><td>$5,251 (8.5% of spending)</td><td>$6,224 (7.9%)</td></tr>
+<tr><td>Healthcare</td><td>$7,799 (12.7% of spending)</td><td>$6,197 (7.9%)</td></tr>
+</tbody>
+</table>
+
+<p>The age 65+ dollar amounts come from BLS series published by the St. Louis Fed: <a href="https://fred.stlouisfed.org/series/CXUTOTALEXPLB0407M" target="_blank" rel="noopener noreferrer">total spending</a>, <a href="https://fred.stlouisfed.org/series/CXUFOODHOMELB0407M" target="_blank" rel="noopener noreferrer">food at home</a> and <a href="https://fred.stlouisfed.org/series/CXUHEALTHLB0407M" target="_blank" rel="noopener noreferrer">healthcare</a>. The 65+ percentages are our own calculations from those figures.</p>
+
+<p>Inside the 65+ healthcare total, <a href="https://fred.stlouisfed.org/series/CXUHLTHINSRLB0407M" target="_blank" rel="noopener noreferrer">health insurance</a> was $5,107, <a href="https://fred.stlouisfed.org/series/CXUMEDSERVSLB0407M" target="_blank" rel="noopener noreferrer">medical services</a> $1,449 and <a href="https://fred.stlouisfed.org/series/CXUMEDSUPPLLB0407M" target="_blank" rel="noopener noreferrer">medical supplies</a> $344. By subtraction, drugs account for roughly $900 a year. Insurance, which includes Medicare premiums, dwarfs spending at the pharmacy counter.</p>
+
+<p>Now put the COLA in scale. A $75 monthly increase is $900 a year, about one-sixth of the $5,251 the average 65+ household spends on groceries. That is real help, but not a surge. These are also averages, and an average benefit and an average household budget describe different groups.</p>
+
+<h2>Uneven Social Security Spending: Why Payment Timing Matters</h2>
+
+<p>Uneven Social Security spending describes how purchases bunch around the day a benefit arrives and thin out later in the month, especially for households with little savings. A study by Mastrobuoni and Weinberg in the <a href="https://doi.org/10.1257/pol.1.2.163" target="_blank" rel="noopener noreferrer">American Economic Journal: Economic Policy</a> found that recipients without savings consumed about 25 percent fewer calories the week before checks than the week after.</p>
+
+<p>The same study found that recipients with some savings smoothed their consumption across the month. Households without savings were about a fourth of the sample. The research measured food intake, not store choice, and it was published in 2009, so treat it as a pattern rather than a forecast.</p>
+
+<p>People who started benefits after May 1997 generally receive them on the second, third or fourth Wednesday of the month, depending on birth date. A COLA does not change that schedule. It only changes the amount.</p>
+
+<p>For retailers, that suggests the COLA could modestly raise what a retiree can spend while the monthly rhythm stays the same. The effect also depends on savings: households with cushions spend steadily, while those living check to check may feel each payment more sharply.</p>
+
+<h2>Medicare Costs That Absorb Part of the 2027 Raise</h2>
+
+<p>Medicare Part B premiums are usually deducted from the Social Security check, so a higher premium shrinks the net COLA. The <a href="https://www.cms.gov/data-research/statistics-trends-and-reports/trustees-report-trust-funds" target="_blank" rel="noopener noreferrer">2026 Medicare Trustees Report</a> projects a standard Part B premium of $209.50 a month for 2027, up from $202.90 in 2026. It also projects the Part B deductible rising from $283 to $292.</p>
+
+<p>If the projection holds, the premium rises $6.60 and leaves about $68 of the average $75 COLA for someone who pays Part B from their check. The projection is not final. As of October 16, 2026, CMS has not announced the official 2027 premium, and it typically does so in November.</p>
+
+<p>Our <a href="/blog/medicare-2027-costs-premiums-guide">2027 Medicare costs and premiums guide</a> covers the details, and the <a href="/calculators/medicare-cost">Medicare cost calculator</a> can estimate your own situation.</p>
+
+<p>Prescription coverage is changing too. The Trustees Report states that the Part D deductible will be $700 and the annual out-of-pocket cap $2,400 in 2027, up from $615 and $2,100 in 2026. The cap still limits a retiree's yearly drug bill, but it rises with drug spending.</p>
+
+<h2>Three Retiree-Exposed Companies at a Glance</h2>
+
+<p>Kroger, Albertsons and CVS Health all sell groceries or prescriptions to older shoppers, but in the filings we reviewed none of them reports what share of sales comes from Social Security recipients. We use them as examples of companies exposed to retiree grocery and pharmacy spending, not as picks. Market capitalization is omitted because it changes daily.</p>
+
+<table>
+<thead>
+<tr><th>Company</th><th>Latest period (as of)</th><th>Sales trend</th><th>Debt</th><th>Quarterly dividend</th></tr>
+</thead>
+<tbody>
+<tr><td>Kroger (KR)</td><td>Q2 fiscal 2026, ended Aug. 15, 2026</td><td>Identical sales without fuel +0.2%; full-year guidance cut to 0.2%-0.8%</td><td>Total debt $17.0 billion; net total debt $15.5 billion (1.91x adjusted EBITDA)</td><td>$0.39 declared, up from $0.35</td></tr>
+<tr><td>Albertsons (ACI)</td><td>Q2 fiscal 2026, ended Sept. 12, 2026</td><td>Identical sales -0.8%; fiscal 2026 outlook withdrawn</td><td>Total debt $9.33 billion; net debt ratio 2.42x</td><td>$0.17</td></tr>
+<tr><td>CVS Health (CVS)</td><td>Q2 2026, ended June 30, 2026</td><td>Revenue $106.1 billion, up 7.3%; adjusted EPS $2.58</td><td>Long-term debt $59.5 billion plus $2.0 billion current portion</td><td>$0.665, unchanged from a year earlier</td></tr>
+</tbody>
+</table>
+
+<h3>Kroger (NYSE: KR)</h3>
+
+<p>Kroger's second quarter ended August 15, 2026, with sales of $34.6 billion and identical sales without fuel up just 0.2 percent, according to its <a href="https://ir.kroger.com/news/news-details/2026/Kroger-Reports-Second-Quarter-2026-Results-and-Updates-Guidance-for-2026/default.aspx" target="_blank" rel="noopener noreferrer">September 11 earnings release</a>.</p>
+
+<p>The company cut its full-year identical sales guidance to 0.2 to 0.8 percent from 1.0 to 2.0 percent. It said the new range includes about a 140 basis point drag from Inflation Reduction Act pharmacy pricing.</p>
+
+<p>On the balance sheet, total debt was $17.0 billion and net total debt was $15.5 billion at quarter end. Net debt to adjusted EBITDA was 1.91, below the company's 2.30 to 2.50 target range. Kroger raised its dividend 11 percent, its 20th straight annual increase, and declared $0.39 a share for the quarter.</p>
+
+<h3>Albertsons (NYSE: ACI)</h3>
+
+<p>Albertsons reported its second quarter, which ended September 12, 2026, on <a href="https://www.sec.gov/Archives/edgar/data/1646972/000164697226000059/aciq226earningsrelease.htm" target="_blank" rel="noopener noreferrer">October 13, 2026</a>. Identical sales fell 0.8 percent, digital sales rose 11 percent, net income was $51.5 million, and adjusted EBITDA was $784.0 million versus $848.4 million a year earlier.</p>
+
+<p>The company operated 2,240 stores with 1,709 in-store pharmacies. It stopped giving a fiscal 2026 outlook while it completes a comprehensive business review, and it plans an investor day in spring 2027.</p>
+
+<p>Total debt including finance leases was $9.33 billion, and the net debt ratio was 2.42, up from 2.02 a year earlier. The quarterly dividend remained $0.17 per share.</p>
+
+<h3>CVS Health (NYSE: CVS)</h3>
+
+<p>CVS reaches retirees through retail pharmacies and through Aetna Medicare Advantage plans. Its <a href="https://investors.cvshealth.com/news/news-details/2026/CVS-HEALTH-CORPORATION-REPORTS-STRONG-SECOND-QUARTER-2026-RESULTS-AND-RAISES-FULL-YEAR-2026-GUIDANCE/default.aspx" target="_blank" rel="noopener noreferrer">second quarter 2026 release</a> shows revenue of $106.1 billion, up 7.3 percent, and about 4.2 million Medicare Advantage members at June 30, 2026.</p>
+
+<p>At that date, long-term debt was $59.5 billion plus a $2.0 billion current portion. CVS's <a href="https://www.sec.gov/Archives/edgar/data/0000064803/000006480326000098/cvs-20260630.htm" target="_blank" rel="noopener noreferrer">quarterly filing</a> shows a dividend of $0.665 per share in both the second quarter of 2026 and the same quarter a year earlier.</p>
+
+<p>In our reading, CVS's results depend more on Medicare Advantage medical costs and drug pricing than on the size of the COLA.</p>
+
+<h2>The Blocked Kroger-Albertsons Merger and Its Aftermath</h2>
+
+<p>A federal court blocked the roughly $24.6 billion Kroger-Albertsons merger in December 2024, and the fight over who is to blame goes to trial in Delaware on October 19, 2026. The facts below come from <a href="https://www.sec.gov/Archives/edgar/data/0000056873/000110465926108926/kr-20260815x10q.htm" target="_blank" rel="noopener noreferrer">Kroger's latest quarterly filing</a>.</p>
+
+<ul>
+<li>The Federal Trade Commission sued in February 2024. On December 10, 2024, a federal court in Oregon issued a preliminary injunction against the merger.</li>
+<li>The same day, Albertsons sued Kroger in the Delaware Court of Chancery. It seeks a $600 million termination fee plus other damages.</li>
+<li>Kroger says it owes no fee because Albertsons failed to meet its obligations under the merger agreement.</li>
+</ul>
+
+<p>Press reports of Albertsons' pretrial filing put its total damages claim above $9 billion. Reported figures vary, and Kroger disputes liability. We make no prediction about the outcome, which could cost either company real money.</p>
+
+<p>The aftermath shows up in the numbers. Kroger's rolling four-quarter results include $63 million of merger-related litigation and settlement charges, and its <a href="https://www.sec.gov/Archives/edgar/data/56873/000110465926037723/kr-20260131x10k.htm" target="_blank" rel="noopener noreferrer">fiscal 2025 annual report</a> shows a $2.5 billion fulfillment network impairment. Albertsons reported $123.0 million of merger-related costs over its latest four quarters and a $773.8 million opioid settlement charge in its fourth quarter of fiscal 2025.</p>
+
+<p>For shoppers, the practical result is that the two chains still compete as separate companies in many markets.</p>
+
+<h2>Walmart and Costco: Competition for the Same Retiree Dollars</h2>
+
+<p>Walmart and Costco are growing faster than traditional supermarkets, so extra retiree spending may not land at Kroger or Albertsons, which is a risk for any list of retiree spending stocks. Walmart's <a href="https://www.sec.gov/Archives/edgar/data/104169/000010416926000055/wmt-20260131.htm" target="_blank" rel="noopener noreferrer">annual report</a> shows grocery was roughly 59 percent of Walmart U.S. net sales in fiscal 2026.</p>
+
+<p>In the quarter ended July 31, 2026, Walmart U.S. comparable sales rose 2.6 percent without fuel, and the company said grocery grew at a mid-single-digit rate with share gains. It also said negotiated drug pricing took about 125 basis points off comparable sales, per its <a href="https://corporate.walmart.com/news/2026/08/20/walmart-releases-q2-fy27-earnings" target="_blank" rel="noopener noreferrer">August 20 earnings summary</a>.</p>
+
+<p>Costco's <a href="https://www.sec.gov/Archives/edgar/data/0000909832/000090983226000084/costex9918-k92426.htm" target="_blank" rel="noopener noreferrer">fiscal 2026 results</a> for the year ended August 30, 2026, show net sales of $297.2 billion, up 10.1 percent, net income of $9.226 billion and membership fees of $5.907 billion.</p>
+
+<p>Compare that with identical sales of plus 0.2 percent at Kroger and minus 0.8 percent at Albertsons. The metrics are not identical, and Costco's figures include gasoline and international sales, so the comparison is directional. It does fit a pattern in which value-focused chains, not traditional grocers, capture growth.</p>
+
+<h2>Do Stocks That Benefit From Social Security COLA Really Exist?</h2>
+
+<p>Not in a way the data can prove: we found no government or academic study that isolates the effect of a COLA announcement on the sales of any single retailer or pharmacy chain. Here is the balance of evidence from this article.</p>
+
+<h3>What supports the idea</h3>
+
+<ul>
+<li>Groceries and prescriptions are needs, and BLS data show older households spend more of their budgets on healthcare, and slightly more on groceries, than other households.</li>
+<li>Research on benefit timing shows spending responds to Social Security payments among recipients with little savings.</li>
+<li>The 3.6 percent COLA is larger than the 2.8 percent adjustment for 2026 and adds about $75 a month for the average retired worker.</li>
+</ul>
+
+<h3>What cuts against it</h3>
+
+<ul>
+<li>The COLA mainly offsets inflation, and energy led the recent rise while grocery prices rose only 1.8 percent.</li>
+<li>Medicare premiums and out-of-pocket drug costs claim part of the raise before it reaches stores.</li>
+<li>Negotiated drug prices under the Inflation Reduction Act lowered pharmacy-driven sales growth at Kroger and Walmart, and Albertsons cites the same headwind, even as lower prices help retirees.</li>
+<li>Walmart and Costco are growing faster than traditional supermarkets.</li>
+<li>Company-specific issues, including merger litigation, debt, turnaround plans and operating costs, drive results in ways a COLA cannot.</li>
+</ul>
+
+<p>The fair conclusion is that retiree spending is a steady background support for these businesses, not a catalyst tied to one October announcement. Anyone researching stocks that benefit from Social Security COLA should read the filings directly and consider speaking with a licensed financial professional.</p>
+
+<h2>What to Monitor Over the Next Few Months</h2>
+
+<p>Several scheduled events will show how retiree-linked demand, pharmacy pricing and merger risk are playing out:</p>
+
+<ol>
+<li><strong>October 19, 2026:</strong> The Delaware trial between Albertsons and Kroger is scheduled to begin.</li>
+<li><strong>October 20, 2026:</strong> Kroger has scheduled an investor update meeting on its strategy and longer-term targets.</li>
+<li><strong>November 10, 2026:</strong> BLS is scheduled to publish the October Consumer Price Index.</li>
+<li><strong>November 2026:</strong> CMS typically announces the official 2027 Part B premium, and SSA COLA notices appear in my Social Security accounts starting in late November.</li>
+<li><strong>Albertsons' fourth quarter:</strong> The company expects to share its turnaround plan and refreshed financial framework, with an investor day planned for spring 2027.</li>
+<li><strong>Next quarterly reports:</strong> Watch identical sales, pharmacy pricing effects, debt levels and dividends at Kroger, Albertsons, CVS, Walmart and Costco.</li>
+</ol>
+
+<h2>How Retirees Can Plan Around the 3.6% Raise</h2>
+
+<p>The most useful step is to calculate your own net increase rather than relying on the national average.</p>
+
+<ol>
+<li><strong>Watch for your notice.</strong> The SSA says online COLA notices begin in late November for people with a my Social Security account, and mailed notices go out in December.</li>
+<li><strong>Subtract Medicare.</strong> Take out the Part B premium and any Part D premium withheld from your check to see what you actually keep.</li>
+<li><strong>Expect uneven months.</strong> If your budget runs tight before the next payment, hold a small buffer so a bigger check does not get spent early.</li>
+<li><strong>Check work and tax effects.</strong> If you work before full retirement age, the 2027 earnings limit is $25,560 a year. Depending on your income, up to 85 percent of benefits can be taxable.</li>
+</ol>
+
+<h2>Frequently Asked Questions</h2>
+
+<h3>What is the Social Security COLA for 2027?</h3>
+<p>The 2027 Social Security COLA is 3.6 percent, announced by the Social Security Administration on October 14, 2026. It applies to Social Security and SSI benefits, and the SSA says the average retired worker will receive about $75 more per month starting in January 2027. The 2026 COLA was 2.8 percent.</p>
+
+<h3>When will I see the 3.6% COLA?</h3>
+<p>Social Security recipients will see the higher amount in payments received starting January 2027, while SSI recipients receive their increased payment on December 31, 2026. COLA notices appear in my Social Security accounts starting in late November, and mailed notices go out in December to people who do not use paperless notices.</p>
+
+<h3>Do stocks that benefit from Social Security COLA really exist?</h3>
+<p>No reliable study we found shows that a COLA announcement reliably lifts any single company's sales. Retailers and pharmacies sell what retirees need, so demand is steady, but price negotiation, competition and company-specific problems often matter more. Treat the idea as a hypothesis and check company filings, not headlines.</p>
+
+<h3>How much of the 2027 COLA will Medicare take back?</h3>
+<p>If the Trustees' projection holds, the standard Part B premium rises $6.60 to $209.50 a month, which would leave about $68 of the average $75 increase for a retiree who pays Part B from their check. CMS typically announces the official 2027 premium in November, so the final amount may differ.</p>
+
+<h3>What is uneven Social Security spending?</h3>
+<p>It describes how retirees' purchases tend to bunch around the day a payment arrives and thin out later in the month. Research found that benefit recipients with little savings consumed about 25 percent fewer calories the week before checks than the week after, while those with savings spread spending evenly.</p>
+
+<h3>Is the Kroger-Albertsons merger dispute over?</h3>
+<p>No. A federal court blocked the $24.6 billion merger in December 2024 and the deal ended, but the companies are still litigating in Delaware over a $600 million termination fee and damages. Kroger's filings say that trial is scheduled to begin October 19, 2026.</p>
+
+<h2>Next Step: Check Your Own Numbers</h2>
+
+<p>National averages only go so far. Use our <a href="/calculators/benefits-estimator">benefits estimator</a> to see how a 3.6 percent increase applies to your own benefit, then read the <a href="/guides/retirement">retirement guide</a> for help planning the rest of your budget.</p>
+
+<blockquote>
+<p><strong>Disclaimer:</strong> This article is for general education only and is not investment, tax, legal or financial advice. It does not recommend buying or selling any security. Company figures come from filings and press releases dated as noted and may have changed, so confirm them with the original sources. Social Security and Medicare rules can change. Consult a licensed professional about your situation. Read our <a href="/disclaimer">full disclaimer</a>.</p>
+</blockquote>`,
+  category: "Retirement",
+  author: "Amine Saadi",
+  date: "2026-10-16",
+  lastUpdated: "2026-10-16",
+  updatedDate: "2026-10-16",
+  readTime: "16 min read",
+  featured: false,
+  image: "/images/Stocks That Benefit From Social Security COLA in 2027 .webp",
+  imageAlt:
+    "Retired couple reviewing grocery and pharmacy receipts beside a 2027 Social Security COLA notice, illustrating stocks that benefit from Social Security COLA",
+  primaryKeyword: "stocks that benefit from Social Security COLA",
+  secondaryKeywords: [
+    "uneven Social Security spending",
+    "retiree spending stocks",
+    "Social Security COLA 2027",
+    "3.6% COLA",
+    "Medicare Part B premium 2027",
+    "Kroger Albertsons merger",
+    "grocery and pharmacy stocks for retirees",
+    "how COLA affects retiree budgets",
+  ],
+  searchIntent: "informational",
+}, 
 
 ];
 
