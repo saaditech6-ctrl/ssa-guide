@@ -76,7 +76,6 @@ export const metadata: Metadata = {
     google: "nHGnLCeg0J1waRnIaR42OUCFqFfhAycWeh5LCBwIYgg",
     other: {
       "p:domain_verify": "9de708a92b4bcd24ddb7dfeb14f83046",
-      "msvalidate.01": "D474F952B827672843EF3FDA7D4492FE",
     },
   },
 }
@@ -103,6 +102,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en" className="scroll-smooth" suppressHydrationWarning>
       <head>
+        <meta
+          name="msvalidate.01"
+          content="D474F952B827672843EF3FDA7D4492FE"
+        />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
