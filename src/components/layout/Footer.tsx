@@ -124,18 +124,10 @@ const socialLinks = [
   {
     label: "Facebook",
     shortLabel: "f",
-    href: "https://www.facebook.com/SocialSecurityGuideCalc",
+    href: "https://www.facebook.com/amine.saadi.773",
   },
-  {
-    label: "LinkedIn",
-    shortLabel: "in",
-    href: "https://www.linkedin.com/in/amine-saadi1985/",
-  },
-  {
-    label: "YouTube",
-    shortLabel: "▶",
-    href: "https://www.youtube.com/@SocialSecurityGuideCalc",
-  },
+
+
 ]
 
 export function Footer() {
