@@ -92,23 +92,31 @@ const guideLinks: NavItem[] = [
   },
   {
     label: "Retirement Benefits",
-    href: "/guides/retirement",
+    href: "/retirement-benefits",
+  },
+  {
+    label: "Retirement Income Planning",
+    href: "/retirement-income-planning",
+  },
+  {
+    label: "Disability Benefits",
+    href: "/disability-benefits",
+  },
+  {
+    label: "Spousal Benefits",
+    href: "/spousal-benefits",
+  },
+  {
+    label: "Medicare Guide",
+    href: "/medicare-guide",
+  },
+  {
+    label: "Medicare Enrollment",
+    href: "/medicare-enrollment",
   },
   {
     label: "Avoid Benefit Taxes",
     href: "/guides/benefit-taxes",
-  },
-  {
-    label: "Disability (SSDI)",
-    href: "/guides/disability",
-  },
-  {
-    label: "Medicare Complete Guide",
-    href: "/guides/medicare",
-  },
-  {
-    label: "Spousal Benefits",
-    href: "/guides/spousal-benefits",
   },
 ]
 

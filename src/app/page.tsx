@@ -57,6 +57,23 @@ const comparisons = [
   { title: "Spousal vs your own benefit", text: "Learn how spousal benefits compare with your own record.", href: "/guides/spousal-benefits" },
 ]
 
+const trustPoints = [
+  { title: "Independent educational guidance", text: "We explain how Social Security rules work without steering readers toward a sales pitch or a product they don’t need." },
+  { title: "Built around real SSA rules", text: "Our calculators, comparisons, and articles are organized around claiming age, earnings limits, Medicare, and benefit taxation." },
+  { title: "Clear decision support", text: "Readers can compare claim ages, estimate taxes, and understand trade-offs before making a high-impact retirement decision." },
+]
+
+const topicPillars = [
+  { title: "Retirement planning", text: "Claiming age, FRA, delayed retirement credits, and break-even analysis.", href: "/retirement-benefits", icon: Calculator },
+  { title: "Retirement income planning", text: "How to balance Social Security, taxes, and household cash flow over retirement.", href: "/retirement-income-planning", icon: TrendingUp },
+  { title: "Medicare & health costs", text: "Premiums, IRMAA, enrollment timing, and out-of-pocket planning.", href: "/medicare-guide", icon: HeartPulse },
+  { title: "Medicare enrollment", text: "Initial enrollment timing, special enrollment periods, and late penalty avoidance.", href: "/medicare-enrollment", icon: CalendarDays },
+  { title: "Disability benefits", text: "Eligibility, disability rules, and SSDI/SSI differences for eligible workers.", href: "/disability-benefits", icon: Briefcase },
+  { title: "Spousal & survivor coverage", text: "How benefits are coordinated across filing status and family history.", href: "/spousal-benefits", icon: Scale },
+  { title: "Taxes & income planning", text: "Benefit-tax thresholds, investment income, and annual income planning.", href: "/guides/benefit-taxes", icon: FileText },
+  { title: "How to get started", text: "A beginner-friendly overview of retirement benefits, disclaimers, and next steps.", href: "/guides/getting-started", icon: BookOpen },
+]
+
 const money = (n: number) => `$${n.toLocaleString("en-US")}`
 
 const faqs = [
@@ -146,8 +163,22 @@ export default function HomePage() {
     .sort((x, y) => y.effective!.getTime() - x.effective!.getTime())
     .slice(0, 4)
 
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": faqs.map((faq) => ({
+      "@type": "Question",
+      name: faq.q,
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: faq.a,
+      },
+    })),
+  }
+
   return (
     <div className="bg-gradient-to-b from-[#eef3fb] via-[#f7f9fd] to-white text-slate-900">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       {/* Hero */}
       <section className="relative overflow-hidden">
         {hasHeroPhoto && (
@@ -197,6 +228,71 @@ export default function HomePage() {
                 <span className="mt-1.5 flex-1 text-xs leading-5 text-slate-500">{c.text}</span>
                 <span className="mt-4 inline-flex items-center gap-1 text-xs font-semibold text-blue-600 group-hover:underline">
                   Calculate now <ArrowRight size={13} aria-hidden="true" />
+                </span>
+              </Link>
+            ))}
+          </div>
+        </section>
+
+        <section aria-labelledby="trust-heading" className="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm sm:p-8">
+          <div className="mb-6 max-w-2xl">
+            <p className="text-xs font-bold uppercase tracking-[0.12em] text-blue-700">Why readers choose us</p>
+            <h2 id="trust-heading" className="mt-2 text-2xl font-semibold text-slate-900 sm:text-3xl">A practical guide for important retirement decisions</h2>
+          </div>
+          <div className="grid gap-4 md:grid-cols-3">
+            {trustPoints.map((point) => (
+              <div key={point.title} className="rounded-2xl border border-slate-200 bg-slate-50 p-5">
+                <div className="mb-3 inline-flex rounded-xl bg-blue-100 p-2 text-blue-700">
+                  <CheckCircle2 size={20} aria-hidden="true" />
+                </div>
+                <h3 className="text-lg font-semibold text-slate-900">{point.title}</h3>
+                <p className="mt-2 text-sm leading-6 text-slate-600">{point.text}</p>
+              </div>
+            ))}
+          </div>
+        </section>
+
+        <section aria-labelledby="planner-heading" className="rounded-3xl bg-[#071530] px-6 py-8 text-white shadow-lg sm:px-8">
+          <div className="flex flex-col gap-6 lg:flex-row lg:items-end lg:justify-between">
+            <div className="max-w-2xl">
+              <p className="text-xs font-bold uppercase tracking-[0.14em] text-[#dfe9ff]">Start here</p>
+              <h2 id="planner-heading" className="mt-2 text-2xl font-semibold sm:text-3xl">Choose the next step that matches your situation</h2>
+            </div>
+            <Link href="/guides/getting-started" className="inline-flex items-center justify-center rounded-full bg-[#e4b325] px-4 py-2 text-sm font-semibold text-[#071530] transition hover:brightness-105">
+              See the beginner guide
+            </Link>
+          </div>
+          <div className="mt-6 grid gap-4 md:grid-cols-3">
+            <Link href="/retirement-benefits" className="rounded-2xl border border-white/10 bg-white/5 p-5 transition hover:bg-white/10">
+              <p className="text-sm font-semibold text-[#f5d77f]">I want an estimate</p>
+              <h3 className="mt-3 text-lg font-semibold text-white">Calculate my retirement benefit</h3>
+              <p className="mt-2 text-sm leading-6 text-slate-200">Start with your age, earnings, and claiming age to understand the likely monthly payment.</p>
+            </Link>
+            <Link href="/retirement-benefits" className="rounded-2xl border border-white/10 bg-white/5 p-5 transition hover:bg-white/10">
+              <p className="text-sm font-semibold text-[#f5d77f]">I want to compare ages</p>
+              <h3 className="mt-3 text-lg font-semibold text-white">Compare 62, 67, and 70</h3>
+              <p className="mt-2 text-sm leading-6 text-slate-200">See how waiting can increase your monthly benefit and when the larger check catches up.</p>
+            </Link>
+            <Link href="/medicare-guide" className="rounded-2xl border border-white/10 bg-white/5 p-5 transition hover:bg-white/10">
+              <p className="text-sm font-semibold text-[#f5d77f]">I want health-cost clarity</p>
+              <h3 className="mt-3 text-lg font-semibold text-white">Understand Medicare planning</h3>
+              <p className="mt-2 text-sm leading-6 text-slate-200">Review premiums, enrollment timing, and how healthcare costs fit into retirement planning.</p>
+            </Link>
+          </div>
+        </section>
+
+        <section aria-labelledby="topics-heading">
+          <SectionHeader icon={BookOpen} title="Explore by topic" text="Learn the rules behind the numbers before you claim." href="/guides" linkLabel="Browse all guides" />
+          <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+            {topicPillars.map((topic) => (
+              <Link key={topic.href} href={topic.href} className="group rounded-2xl border border-slate-200 bg-white p-5 shadow-sm transition hover:-translate-y-0.5 hover:shadow-md">
+                <span className="flex h-11 w-11 items-center justify-center rounded-xl bg-blue-100 text-blue-700">
+                  <topic.icon size={22} aria-hidden="true" />
+                </span>
+                <h3 className="mt-4 text-lg font-semibold text-slate-900">{topic.title}</h3>
+                <p className="mt-2 text-sm leading-6 text-slate-600">{topic.text}</p>
+                <span className="mt-4 inline-flex items-center gap-1 text-sm font-semibold text-blue-600 group-hover:underline">
+                  Learn more <ArrowRight size={14} aria-hidden="true" />
                 </span>
               </Link>
             ))}

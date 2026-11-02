@@ -1,25 +1,10 @@
 import type { Metadata, Viewport } from "next"
-import { Inter, Playfair_Display } from "next/font/google"
 import "./globals.css"
 import { Header } from "@/components/layout/Header"
 import { Footer } from "@/components/layout/Footer"
 import { Analytics } from "@vercel/analytics/next"
 import { SpeedInsights } from "@vercel/speed-insights/next"
 import { GoogleAnalytics } from "@/components/analytics/GoogleAnalytics"
-
-const inter = Inter({ 
-  subsets: ["latin"], 
-  variable: "--font-inter", 
-  display: "swap" 
-})
-
-const playfair = Playfair_Display({ 
-  subsets: ["latin"], 
-  variable: "--font-playfair", 
-  weight: ["400", "600", "700"], 
-  style: ["normal", "italic"], 
-  display: "swap" 
-})
 
 export const viewport: Viewport = {
   themeColor: "#ffffff",
@@ -111,7 +96,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
       </head>
-      <body className={`${inter.variable} ${playfair.variable} font-sans min-h-screen flex flex-col antialiased bg-white text-[#071530]`}>
+      <body className="font-sans min-h-screen flex flex-col antialiased bg-white text-[#071530]">
         <a 
           href="#main-content" 
           className="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 bg-[#e4b325] text-[#071530] px-4 py-2 rounded-md font-semibold z-50 shadow-md"

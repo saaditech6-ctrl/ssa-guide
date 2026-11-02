@@ -45,23 +45,39 @@ const footerLinks: Record<string, FooterLink[]> = {
     },
     {
       label: "Retirement Benefits",
-      href: "/guides/retirement",
+      href: "/retirement-benefits",
+    },
+    {
+      label: "Retirement Income Planning",
+      href: "/retirement-income-planning",
+    },
+    {
+      label: "Claiming Age Strategy",
+      href: "/blog/social-security-retirement-age-strategies",
+    },
+    {
+      label: "Disability Benefits",
+      href: "/disability-benefits",
+    },
+    {
+      label: "Spousal Benefits",
+      href: "/spousal-benefits",
+    },
+    {
+      label: "Medicare Guide",
+      href: "/medicare-guide",
+    },
+    {
+      label: "Medicare Enrollment",
+      href: "/medicare-enrollment",
+    },
+    {
+      label: "Medicare Cost Guide",
+      href: "/blog/medicare-2027-costs-premiums-guide",
     },
     {
       label: "Avoid Benefit Taxes",
       href: "/guides/benefit-taxes",
-    },
-    {
-      label: "Disability (SSDI)",
-      href: "/guides/disability",
-    },
-    {
-      label: "Medicare Complete Guide",
-      href: "/guides/medicare",
-    },
-    {
-      label: "Spousal Benefits",
-      href: "/guides/spousal-benefits",
     },
   ],
 
@@ -69,6 +85,14 @@ const footerLinks: Record<string, FooterLink[]> = {
     {
       label: "About Us",
       href: "/about",
+    },
+    {
+      label: "Why Trust Us",
+      href: "/editorial-standards",
+    },
+    {
+      label: "Advertising Disclosure",
+      href: "/ads-disclosure",
     },
     {
       label: "Contact",
@@ -119,8 +143,18 @@ export function Footer() {
 
   return (
     <footer className="bg-[#071530] text-white border-t border-white/10">
-
-
+      <div className="border-b border-white/10 bg-[#0a1d33]">
+        <div className="container-site mx-auto max-w-7xl px-4 py-3 text-xs text-slate-200 sm:text-sm">
+          <div className="flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between">
+            <p>
+              Independent educational resource • Not affiliated with SSA, Medicare, or any government agency • Ad-supported
+            </p>
+            <Link href="/ads-disclosure" className="font-semibold text-amber-300 hover:text-amber-200 underline underline-offset-2">
+              Advertising disclosure
+            </Link>
+          </div>
+        </div>
+      </div>
 
       {/* =========================================================
           MAIN FOOTER
