@@ -33,7 +33,7 @@ export function HomeColaBanner() {
           href="/blog/social-security-cola"
           className="inline-flex w-fit shrink-0 items-center gap-2 rounded-full border border-blue-600 bg-white px-5 py-2.5 text-sm font-semibold text-blue-700 transition-colors hover:bg-blue-50"
         >
-          Learn more <ArrowRight size={15} aria-hidden="true" />
+          Read the Social Security COLA guide <ArrowRight size={15} aria-hidden="true" />
         </Link>
       </div>
     </section>
