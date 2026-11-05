@@ -1,6 +1,12 @@
 ﻿import { ArrowLeft, BookOpen, ShieldAlert, Sparkles, ChevronRight, FileCheck, Calendar, Clock, UserCheck } from "lucide-react"
 import Link from "next/link"
 import type { Metadata } from "next"
+import GuideResearchPanels from "@/components/content/GuideResearchPanels"
+import { SSA_2026 } from "@/lib/data/2026"
+import { SSA_2027 } from "@/lib/data/2027"
+import { calcPia } from "@/lib/benefit-math"
+
+const LAST_REVIEWED = "2026-11-04"
 
 export const metadata: Metadata = {
   title: "Social Security Disability (SSDI) Guide 2026",
@@ -14,7 +20,7 @@ export const metadata: Metadata = {
     url: "https://www.socialsecurityguidecalc.com/guides/disability",
     type: "article",
     publishedTime: "2026-01-20T00:00:00.000Z",
-    modifiedTime: "2026-06-01T00:00:00.000Z",
+    modifiedTime: `${LAST_REVIEWED}T00:00:00.000Z`,
     authors: ["Amine Saadi"],
   },
 }
@@ -28,7 +34,7 @@ const sections = [
   {
     id: "who-qualifies",
     title: "Who Qualifies for SSDI?",
-    content: "To qualify for SSDI, you must meet two main criteria. First, you must have a medical condition that prevents you from doing substantial work and is expected to last at least 12 months or result in death. Second, you must have earned enough work credits — typically 40 credits, with 20 earned in the last 10 years, though younger workers may qualify with fewer credits."
+    content: "SSDI eligibility has both medical and insured-status requirements. SSA evaluates whether a medically determinable impairment prevents substantial work under its rules and whether the condition meets the duration requirement; the work-credit test varies with age and work history. SSI has different financial eligibility rules. An official SSA decision, not a screening tool or diagnosis alone, determines eligibility."
   },
   {
     id: "disability-definition",
@@ -38,22 +44,22 @@ const sections = [
   {
     id: "benefit-amounts",
     title: "How Much Will You Receive?",
-    content: "Your SSDI benefit is based on your average lifetime earnings before your disability began, calculated the same way as retirement benefits. In 2026, the average SSDI payment is approximately $1,537 per month. The maximum possible SSDI benefit in 2026 is $3,822 per month for someone with a strong earnings history."
+    content: "The amount of an SSDI benefit is based on the worker's Social Security earnings record and disability-specific calculation. A general retirement PIA example is not an SSDI quote: disability onset, the applicable computation period, and SSA's rules affect the official amount. SSA's online account or award notice is the appropriate source for an individual estimate."
   },
   {
     id: "how-to-apply",
     title: "How to Apply for SSDI",
-    content: "You can apply online at SSA.gov, by calling 1-800-772-1213, or by visiting your local SSA office. You will need your Social Security number, birth certificate, medical records and doctor information, work history for the past 15 years, and recent W-2 forms or tax returns. Apply as soon as you become disabled — there is a five-month waiting period before benefits begin."
+    content: "You can apply through SSA online, by phone, or with an appointment. Be ready to provide identifying information, medical providers and treatment details, medication information, and work history requested by SSA. Many SSDI claims have a five-full-month waiting period after the disability onset date, subject to program rules and exceptions. Keep a dated record of symptoms, limitations, and treatment."
   },
   {
     id: "application-timeline",
     title: "The SSDI Application Process Timeline",
-    content: "The initial application typically takes 3 to 6 months for a decision. If denied, you can request reconsideration within 60 days, which takes another 3 to 5 months. If denied again, you can request a hearing before an Administrative Law Judge, which can take 12 to 24 months. The entire process from initial application to hearing can take 2 to 3 years in some cases."
+    content: "Processing time varies with the medical evidence, whether SSA needs examinations or records, and workload. Keep copies of submitted forms and respond promptly to requests. If SSA issues an unfavorable decision, read the notice carefully: it identifies the appeal level, deadline, and how to file. Check SSA's current appeal instructions rather than relying on a typical processing estimate."
   },
   {
     id: "appeals-process",
     title: "What to Do If You Are Denied",
-    content: "Approximately 67% of initial SSDI applications are denied. Do not be discouraged. File an appeal within 60 days of your denial letter. The approval rate improves significantly at the hearing level, especially when applicants are represented by an attorney or advocate. Most disability attorneys work on contingency — they only collect a fee if you win, capped at 25% of back pay up to $7,200."
+    content: "If SSA denies a claim, use the appeal process described in the notice and submit the request by the deadline stated there. A reconsideration or hearing is a new review step, not a guarantee of approval. Preserve medical records, treatment history, work information, and copies of communications. Representation is optional; if you consider a representative, confirm current fee rules and authorization with SSA rather than assuming a particular fee or outcome."
   },
   {
     id: "ssdi-vs-ssi",
@@ -63,14 +69,93 @@ const sections = [
   {
     id: "key-takeaways",
     title: "Key Takeaways",
-    content: "SSDI provides essential income protection for workers who become disabled before retirement age. The application process is lengthy and complex, but persistence pays off. Use our SSDI Eligibility Check to see if you may qualify, and consider seeking professional help when applying."
+    content: "SSDI is an insurance benefit tied to work and disability rules, while SSI is a separate needs-based program. Gather accurate medical and work records, apply through SSA, respond to requests, and follow the appeal instructions if needed. No calculator or general guide can guarantee a decision or substitute for SSA's review."
   }
+]
+
+const expandedSections = [
+  {
+    title: "How SSA evaluates the medical claim",
+    paragraphs: [
+      "SSA does not decide a claim from a diagnosis label alone. The agency considers medical evidence showing the condition, its severity, treatment, symptoms, and resulting functional limits. Evidence can include records from treating clinicians, test results, medication history, and statements about daily activities. A complete record should explain what a person can and cannot sustain in a work setting, not only list diagnoses.",
+      "The disability standard also considers whether the condition prevents substantial work under SSA's rules and whether it has lasted or is expected to last for the required duration, or is expected to result in death. SSA's sequential evaluation considers whether the person is doing substantial gainful activity, has a severe impairment, meets or equals a listed impairment, can do past relevant work, and can adjust to other work in light of the applicable vocational factors. A condition not listed in SSA's impairment listings may still be evaluated under the agency's rules.",
+      "Keep a simple, factual treatment timeline: symptoms, appointments, medication changes, side effects, referrals, and periods when the condition worsened. Make sure medical providers know about limitations that affect attendance, concentration, lifting, standing, or other work activities. Submit relevant records and answer SSA requests promptly; missing evidence can slow the determination or leave the reviewer without important context."
+    ],
+  },
+  {
+    title: "Work credits and insured status are personal",
+    paragraphs: [
+      "SSDI is an earned insurance program. The number of work credits required depends on the worker's age when disability begins, and recent work may matter as well as total covered work. This means a single statement such as “everyone needs the same number of credits” is not reliable. Check SSA's official insured-status explanation for the age-based rules and ask SSA to confirm whether your own record is currently insured.",
+      "Work credits are based on earnings subject to Social Security taxes, up to an annual maximum number of credits. That dollar threshold changes over time. The table above shows the taxable maximum, which is not the SSDI income limit and does not by itself establish insured status. A person can have high income in a recent year but still need enough covered work across the relevant period.",
+      "SSDI and SSI should not be confused. SSDI eligibility depends on disability and insured status; SSI has income and resource rules and can be available to people who do not qualify for SSDI. Some people may meet both programs' requirements, but the agencies apply separate standards and payment rules. Use SSA's screening and application pages to determine which application or applications fit your situation."
+    ],
+  },
+  {
+    title: "What an SSDI estimate can and cannot tell you",
+    paragraphs: [
+      "The amount is connected to covered earnings, not a flat payment assigned to every person with the same diagnosis. A younger worker's benefit is not directly comparable with another worker's benefit because earnings histories, disability onset, and computation details can differ. The official amount appears in the person's SSA record or decision notice; published averages are not individual promises.",
+      "The worked examples below intentionally use the site's retirement PIA function to show how the 2026 bend-point formula responds to an assumed AIME. They are educational demonstrations of a formula, not SSDI award calculations. The examples do not establish the claimant's disability onset date, insured status, AIME for disability purposes, family benefits, or any offsets. Do not use the numbers to plan an appeal or replace an SSA estimate.",
+      "If you need to budget while an application is pending, separate confirmed resources from possible benefits. Record recurring expenses, insurance premiums, and income that is actually available. Consider contacting a qualified benefits counselor or legal-aid organization about other assistance while SSA reviews the claim; eligibility for those programs is separate and must be checked with the responsible agency."
+    ],
+  },
+  {
+    title: "Prepare a complete application file",
+    paragraphs: [
+      "Before applying, collect contact information for medical providers, dates of treatment, medication details, test and hospital information, and a clear description of work performed. Include a truthful work history with duties and physical or cognitive demands. If you have difficulty obtaining a record, tell SSA which provider has it and follow up on requests. Never exaggerate symptoms or guess at dates when you can verify them.",
+      "After filing, watch for SSA mail, online messages, and requests for additional evidence. Keep a log of dates and copies of what you send. If symptoms or treatment change, inform SSA. If SSA schedules an examination, attend or promptly explain a conflict using the agency's instructions. An application is not complete simply because the initial form has been submitted; cooperation with follow-up requests can matter.",
+      "If the claim is denied, use the exact appeal path and deadline on the notice. Appeals require attention to the reasons SSA gave and any new or missing evidence; repeating the original form without addressing the record may not resolve the issue. Ask SSA how to submit documents, and seek representation only after checking the person's credentials, fee arrangement, and SSA authorization requirements."
+    ],
+  },
+  {
+    title: "Medicare and other benefits after an SSDI decision",
+    paragraphs: [
+      "A favorable SSDI decision can affect later access to Medicare, but entitlement does not necessarily mean Medicare begins immediately. The timing and exceptions depend on the type of entitlement, and separate rules apply to people with certain conditions. Confirm the effective dates in the SSA notice and with Medicare before ending other health coverage.",
+      "If you have employer or marketplace insurance, ask how a change in work or disability status affects the policy, dependents, prescription coverage, and enrollment opportunities. Do not cancel a policy until you know when replacement coverage begins. Keep premium invoices and notices, and compare the actual coverage rather than assuming Medicare pays every medical bill.",
+      "A disability determination also does not automatically settle eligibility for SSI, Medicaid, workers' compensation, private disability insurance, or other programs. Some programs have income, resource, offset, or coordination rules. Contact each program administrator for a written explanation of how benefits interact in your case."
+    ],
+  },
+]
+
+const examplePiaOne = calcPia(1800)
+const examplePiaTwo = calcPia(4200)
+const money = (value: number) => `$${value.toLocaleString("en-US")}`
+
+const figures = [
+  { label: "PIA first bend point (context only)", value2026: money(SSA_2026.piaBendPoints.first), value2027: money(SSA_2027.piaBendPoints.first) },
+  { label: "PIA second bend point (context only)", value2026: money(SSA_2026.piaBendPoints.second), value2027: money(SSA_2027.piaBendPoints.second) },
+  { label: "Social Security taxable maximum", value2026: money(SSA_2026.taxableMaximum), value2027: money(SSA_2027.taxableMaximum) },
+  { label: "Earnings-test limit before FRA (retirement context)", value2026: money(SSA_2026.earningsTest.beforeFRA), value2027: money(SSA_2027.earningsTest.beforeFRA) },
+]
+
+const examples = [
+  {
+    title: "Lower assumed AIME: formula demonstration only",
+    inputs: `Assumed AIME of ${money(1800)} and the ${SSA_2026.year} PIA bend points in the site's calculator.`,
+    result: `calcPia returns an illustrative monthly PIA of ${money(examplePiaOne)} before any claim-age adjustment.`,
+    limitation: "This is not an SSDI estimate. Disability onset, insured status, disability-specific computation details, and SSA's official record are not modeled.",
+  },
+  {
+    title: "Higher assumed AIME: formula demonstration only",
+    inputs: `Assumed AIME of ${money(4200)} with the same 2026 bend-point formula.`,
+    result: `calcPia returns an illustrative monthly PIA of ${money(examplePiaTwo)}; the difference reflects only the assumed AIME in this formula example.`,
+    limitation: "Do not interpret either output as a payment entitlement or use it to predict an SSA decision; obtain the official estimate from SSA.",
+  },
+]
+
+const officialSources = [
+  { label: "SSA: Disability benefits and qualifying rules", href: "https://www.ssa.gov/benefits/disability/" },
+  { label: "SSA: Disability benefits eligibility and work credits", href: "https://www.ssa.gov/benefits/disability/qualify.html" },
+  { label: "SSA: Apply for disability benefits", href: "https://www.ssa.gov/applyfordisability/" },
+  { label: "SSA: Appeal a decision", href: "https://www.ssa.gov/apply/appeal-decision-we-made" },
+  { label: "SSA: Retirement PIA formula and bend points", href: SSA_2026.source },
+  { label: "SSA: Social Security contribution and benefit base", href: "https://www.ssa.gov/oact/cola/cbb.html" },
+  { label: "SSA: 2027 COLA announcement and annual changes", href: SSA_2027.source },
 ]
 
 export default function DisabilityGuidePage() {
   const baseUrl = "https://www.socialsecurityguidecalc.com"
 
-  // Comprehensive Structured Data (Article + FAQPage + BreadcrumbList)
+  // Article and breadcrumb structured data; FAQs remain visible in the article.
   const jsonLd = {
     "@context": "https://schema.org",
     "@graph": [
@@ -94,38 +179,8 @@ export default function DisabilityGuidePage() {
           "url": baseUrl
         },
         "datePublished": "2026-01-20",
-        "dateModified": "2026-06-01",
+        "dateModified": LAST_REVIEWED,
         "mainEntityOfPage": `${baseUrl}/guides/disability`
-      },
-      {
-        "@type": "FAQPage",
-        "@id": `${baseUrl}/guides/disability#faq`,
-        "mainEntity": [
-          {
-            "@type": "Question",
-            "name": "Who qualifies for Social Security Disability Insurance (SSDI)?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "To qualify for SSDI, you must have a medical condition preventing substantial work expected to last at least 12 months or result in death, and sufficient work credits (typically 40 credits)."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "What is the maximum monthly SSDI payment in 2026?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "The maximum possible SSDI monthly payment in 2026 is $3,822 for individuals with a high lifetime earnings record."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "What is the main difference between SSDI and SSI?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "SSDI is earned based on your employment history and Social Security tax contributions. SSI is a needs-based program for low-income individuals regardless of past employment."
-            }
-          }
-        ]
       },
       {
         "@type": "BreadcrumbList",
@@ -175,14 +230,14 @@ export default function DisabilityGuidePage() {
             Social Security Disability Insurance (SSDI): Complete Guide 2026
           </h1>
           <p className="text-slate-300 text-sm sm:text-base max-w-2xl leading-relaxed">
-            Everything you need to know about qualifying for and applying for SSDI benefits.
+            SSDI can pay benefits to workers who meet Social Security&apos;s medical and insured-status rules. A diagnosis alone does not establish eligibility: SSA reviews medical evidence, work history, and functional limits. Start by checking your work record, collecting treatment details, and filing through SSA; the agency makes the decision and calculates any benefit.
           </p>
           <div className="flex flex-wrap items-center gap-4 text-slate-400 text-[11px] sm:text-xs font-medium tracking-wide mt-6 border-t border-white/10 pt-4">
             <span className="flex items-center gap-1.5 text-slate-200 font-semibold">
               <UserCheck size={14} className="text-amber-400" /> By Amine Saadi
             </span>
             <span className="flex items-center gap-1">
-              <Calendar size={13} className="text-slate-400" /> Updated June 2026
+              <Calendar size={13} className="text-slate-400" /> Last reviewed: {new Date(`${LAST_REVIEWED}T00:00:00Z`).toLocaleDateString("en-US", { month: "long", year: "numeric", timeZone: "UTC" })}
             </span>
             <span className="flex items-center gap-1">
               <Clock size={13} className="text-slate-400" /> 15 min read
@@ -205,7 +260,7 @@ export default function DisabilityGuidePage() {
                   <Sparkles size={18} />
                 </div>
                 <p className="text-xs sm:text-sm text-amber-900 leading-relaxed font-medium m-0">
-                  SSDI applications are complex and often denied on the first attempt. Consider consulting a Social Security attorney or advocate — they typically work on contingency and only get paid if you win.
+                  SSDI decisions depend on the complete medical and work record. This guide explains the process, but only SSA can determine your eligibility and benefit amount.
                 </p>
               </div>
 
@@ -221,6 +276,23 @@ export default function DisabilityGuidePage() {
                     </p>
                   </section>
                 ))}
+                {expandedSections.map((section) => (
+                  <section key={section.title} className="space-y-3">
+                    <h2 className="font-playfair text-lg sm:text-xl font-bold text-[#071530] leading-snug">{section.title}</h2>
+                    {section.paragraphs.map((paragraph) => (
+                      <p key={paragraph} className="text-slate-600 text-sm sm:text-base leading-relaxed m-0">{paragraph}</p>
+                    ))}
+                  </section>
+                ))}
+                <GuideResearchPanels figures={figures} examples={examples} sources={officialSources} />
+                <section className="space-y-3">
+                  <h2 className="font-playfair text-lg sm:text-xl font-bold text-[#071530] leading-snug">Frequently asked questions</h2>
+                  <div className="space-y-4 text-slate-600 text-sm sm:text-base leading-relaxed">
+                    <div><h3 className="font-semibold text-slate-900">Does a diagnosis automatically qualify someone for SSDI?</h3><p>No. SSA evaluates medical evidence, functional effects, duration, work, and insured status under its program rules.</p></div>
+                    <div><h3 className="font-semibold text-slate-900">Are SSDI and SSI the same program?</h3><p>No. SSDI is based on disability and insured work status. SSI is a separate needs-based program with its own eligibility requirements.</p></div>
+                    <div><h3 className="font-semibold text-slate-900">Can this page estimate my SSDI payment?</h3><p>No. The examples demonstrate a retirement PIA formula only. SSA must calculate an SSDI amount from the official record and disability-specific details.</p></div>
+                  </div>
+                </section>
               </div>
 
             </div>
@@ -255,7 +327,7 @@ export default function DisabilityGuidePage() {
                 <ShieldAlert size={15} className="text-rose-600" /> Apply Immediately
               </h3>
               <p className="text-[11px] sm:text-xs text-rose-700 leading-relaxed font-medium">
-                There is a 5-month waiting period. Apply as soon as you become disabled to avoid losing benefits.
+                SSDI generally has a five-full-month waiting period after the established onset date. Confirm how the rule applies to your claim with SSA.
               </p>
             </div>
 

@@ -21,13 +21,9 @@
   --color-gold-700: #83590f;
   --color-gold-800: #6a4613;
   --color-gold-900: #5a3b14;
-  --font-family-sans: "Inter", system-ui, sans-serif;
-  --font-family-display: "Playfair Display", Georgia, serif;
 }
 
 :root {
-  --font-inter: "Inter", system-ui, sans-serif;
-  --font-playfair: "Playfair Display", Georgia, serif;
   --nav-height: 72px;
   --bg-hero: linear-gradient(135deg, #071530 0%, #0b2045 40%, #102e60 100%);
   --bg-gold: linear-gradient(135deg, #c99510 0%, #e4b325 50%, #edc84a 100%);
@@ -36,20 +32,30 @@
   --shadow-gold: 0 4px 20px rgba(201,149,16,0.25);
 }
 
+@theme inline {
+  --font-sans: var(--font-inter), system-ui, sans-serif;
+}
+
+@utility font-playfair {
+  font-family: var(--font-playfair), Georgia, serif;
+}
+
 html { scroll-behavior: smooth; -webkit-font-smoothing: antialiased; }
-body { background-color: white; color: #202124; font-family: var(--font-inter); }
-h1, h2, h3 { font-family: var(--font-inter); }
+body { background-color: white; color: #202124; font-family: var(--font-inter), system-ui, sans-serif; }
+@layer base {
+  h1, h2, h3 { font-family: var(--font-inter), system-ui, sans-serif; }
+}
 ::selection { background-color: #f4de90; color: #071530; }
 
 .container-site { margin-left: auto; margin-right: auto; padding-left: 1rem; padding-right: 1rem; max-width: 80rem; }
 @media (min-width: 640px) { .container-site { padding-left: 1.5rem; padding-right: 1.5rem; } }
 @media (min-width: 1024px) { .container-site { padding-left: 2rem; padding-right: 2rem; } }
 
-.heading-hero { font-family: var(--font-playfair); font-size: clamp(2.5rem, 6vw, 4.5rem); font-weight: 700; line-height: 1.1; letter-spacing: -0.02em; }
-.heading-xl { font-family: var(--font-playfair); font-size: clamp(2rem, 4vw, 3rem); font-weight: 700; line-height: 1.2; }
-.heading-lg { font-family: var(--font-playfair); font-size: clamp(1.5rem, 3vw, 2.25rem); font-weight: 600; line-height: 1.3; }
-.heading-md { font-family: var(--font-playfair); font-size: 1.75rem; font-weight: 600; }
-.heading-sm { font-family: var(--font-inter); font-size: 1.25rem; font-weight: 600; }
+.heading-hero { font-family: var(--font-playfair), Georgia, serif; font-size: clamp(2.5rem, 6vw, 4.5rem); font-weight: 700; line-height: 1.1; letter-spacing: -0.02em; }
+.heading-xl { font-family: var(--font-playfair), Georgia, serif; font-size: clamp(2rem, 4vw, 3rem); font-weight: 700; line-height: 1.2; }
+.heading-lg { font-family: var(--font-playfair), Georgia, serif; font-size: clamp(1.5rem, 3vw, 2.25rem); font-weight: 600; line-height: 1.3; }
+.heading-md { font-family: var(--font-playfair), Georgia, serif; font-size: 1.75rem; font-weight: 600; }
+.heading-sm { font-family: var(--font-inter), system-ui, sans-serif; font-size: 1.25rem; font-weight: 600; }
 .body-lg { font-size: 1.125rem; line-height: 1.75; }
 .body-md { font-size: 1rem; line-height: 1.75; }
 .body-sm { font-size: 0.875rem; line-height: 1.75; }
@@ -100,8 +106,8 @@ h1, h2, h3 { font-family: var(--font-inter); }
 .line-clamp-2 { -webkit-line-clamp: 2; line-clamp: 2; }
 .line-clamp-3 { -webkit-line-clamp: 3; line-clamp: 3; }
 
-.prose-article h2 { font-family: var(--font-playfair); color: #071530; font-size: 1.75rem; font-weight: 700; margin-top: 2rem; margin-bottom: 1rem; }
-.prose-article h3 { font-family: var(--font-inter); color: #071530; font-size: 1.25rem; font-weight: 700 !important; font-style: normal !important; margin-top: 1.75rem; margin-bottom: 0.5rem; line-height: 1.4; }
+.prose-article h2 { font-family: var(--font-playfair), Georgia, serif; color: #071530; font-size: 1.75rem; font-weight: 700; margin-top: 2rem; margin-bottom: 1rem; }
+.prose-article h3 { font-family: var(--font-inter), system-ui, sans-serif; color: #071530; font-size: 1.25rem; font-weight: 700 !important; font-style: normal !important; margin-top: 1.75rem; margin-bottom: 0.5rem; line-height: 1.4; }
 .prose-article p { color: #071530; line-height: 1.8; margin-bottom: 1.25rem; }
 .prose-article a { color: #000000; font-weight: 700; text-decoration: underline; text-underline-offset: 3px; transition: opacity 0.15s; }
 .prose-article a:hover { opacity: 0.8; }

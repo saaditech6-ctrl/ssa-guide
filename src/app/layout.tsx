@@ -4,7 +4,22 @@ import { Header } from "@/components/layout/Header"
 import { Footer } from "@/components/layout/Footer"
 import { Analytics } from "@vercel/analytics/next"
 import { SpeedInsights } from "@vercel/speed-insights/next"
-import { GoogleAnalytics } from "@/components/analytics/GoogleAnalytics"
+import Script from "next/script"
+import { ConsentManager } from "@/components/consent/ConsentManager"
+import { Inter, Playfair_Display } from "next/font/google"
+
+const inter = Inter({
+  subsets: ["latin"],
+  variable: "--font-inter",
+  display: "swap",
+})
+
+const playfairDisplay = Playfair_Display({
+  subsets: ["latin"],
+  weight: ["400", "600", "700"],
+  variable: "--font-playfair",
+  display: "swap",
+})
 
 export const viewport: Viewport = {
   themeColor: "#ffffff",
@@ -77,6 +92,11 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       "@type": "Organization",
       "name": "Social Security Guide",
       "url": "https://www.socialsecurityguidecalc.com",
+      "sameAs": [
+        "https://www.facebook.com/SocialSecurityGuideCalc",
+        "https://www.linkedin.com/in/amine-saadi1985/",
+        "https://www.youtube.com/@SocialSecurityGuideCalc"
+      ],
       "logo": {
         "@type": "ImageObject",
         "url": "https://www.socialsecurityguidecalc.com/logo.png"
@@ -85,8 +105,20 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   }
 
   return (
-    <html lang="en" className="scroll-smooth" suppressHydrationWarning>
+    <html lang="en" className={`${inter.variable} ${playfairDisplay.variable} scroll-smooth`} suppressHydrationWarning>
       <head>
+        <Script id="google-consent-mode-default" strategy="beforeInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            window.gtag = function(){window.dataLayer.push(arguments);};
+            window.gtag('consent', 'default', {
+              ad_storage: 'denied',
+              ad_user_data: 'denied',
+              ad_personalization: 'denied',
+              analytics_storage: 'denied'
+            });
+          `}
+        </Script>
         <meta
           name="msvalidate.01"
           content="D474F952B827672843EF3FDA7D4492FE"
@@ -113,7 +145,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <Footer />
         <Analytics />
         <SpeedInsights />
-        <GoogleAnalytics />
+        <ConsentManager />
       </body>
     </html>
   )

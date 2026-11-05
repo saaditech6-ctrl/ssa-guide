@@ -92,7 +92,7 @@ const guideLinks: NavItem[] = [
   },
   {
     label: "Retirement Benefits",
-    href: "/retirement-benefits",
+    href: "/guides/retirement",
   },
   {
     label: "Retirement Income Planning",
@@ -100,15 +100,15 @@ const guideLinks: NavItem[] = [
   },
   {
     label: "Disability Benefits",
-    href: "/disability-benefits",
+    href: "/guides/disability",
   },
   {
     label: "Spousal Benefits",
-    href: "/spousal-benefits",
+    href: "/guides/spousal-benefits",
   },
   {
     label: "Medicare Guide",
-    href: "/medicare-guide",
+    href: "/guides/medicare",
   },
   {
     label: "Medicare Enrollment",
@@ -329,10 +329,6 @@ export function Header() {
     ...calculatorLinks,
     ...guideLinks,
     {
-      label: "By State",
-      href: "/states",
-    },
-    {
       label: "Blog",
       href: "/blog",
     },
@@ -428,14 +424,6 @@ export function Header() {
               setActiveDropdown={setActiveDropdown}
               closeDropdown={closeDropdown}
             />
-
-            <Link
-              href="/states"
-              className="text-sm font-medium text-[#3c4043] transition-colors hover:text-[#1a73e8]"
-              onClick={closeDropdown}
-            >
-              By State
-            </Link>
 
             <Dropdown
               id="blog"
@@ -552,19 +540,6 @@ export function Header() {
                   onClick={closeMobileMenu}
                 />
               ))}
-            </MobileSection>
-
-            {/* State Guides */}
-
-            <MobileSection title="By State">
-              <MobileLink
-                item={{
-                  label: "All States",
-                  href: "/states",
-                }}
-                onClick={closeMobileMenu}
-                bold
-              />
             </MobileSection>
 
             {/* Blog */}

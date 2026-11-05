@@ -5,6 +5,7 @@ import Link from "next/link"
 import { ArrowLeft, DollarSign, ShieldAlert, HeartPulse, ShieldCheck, Info, FileText, ExternalLink, HelpCircle } from "lucide-react"
 import { WhyTrustCalculator } from "@/components/ui/WhyTrustCalculator"
 import { MEDICARE_2026 } from "@/lib/data/2026"
+import { MEDICARE_2027 } from "@/lib/data/2027"
 
 // 2026 CMS Part B / IRMAA data. Individual filing status is used by this tool.
 const MEDICARE_2026_BRACKETS = MEDICARE_2026.irmmaaBrackets.map((b, index) => ({
@@ -82,6 +83,9 @@ export default function MedicareCostPage() {
             </h1>
             <p className="text-slate-300 text-sm sm:text-base leading-relaxed max-w-2xl">
               Estimate your Medicare Part A and Part B premiums instantly based on your tax records. Fully updated with the official 2026 CMS income-related adjustments and thresholds.
+            </p>
+            <p className="mt-3 text-sm text-slate-300">
+              2027 Part B standard premium: {MEDICARE_2027.partBStandardPremium === null ? "not yet announced" : `$${formatNumber(MEDICARE_2027.partBStandardPremium)}`}
             </p>
           </div>
         </div>

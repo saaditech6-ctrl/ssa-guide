@@ -28,6 +28,8 @@ const jsonLd = {
     author: {
       "@type": "Person",
       name: "Amine Saadi",
+      url: "https://www.socialsecurityguidecalc.com/about",
+      sameAs: "https://www.linkedin.com/in/amine-saadi1985/",
     },
   },
 }
@@ -46,54 +48,52 @@ export default function EditorialStandardsPage() {
 
       <div className="prose-article space-y-6 text-slate-700">
         <p>
-          Social Security Guide is designed to help readers understand retirement, Medicare, disability,
-          and survivor benefit rules without overwhelming them with jargon or one-sided advice. Our
-          content is built around educational clarity and decision support, not upselling or hype.
+          Social Security Guide publishes educational information and calculators about Social Security,
+          Medicare, disability, survivor benefits, and retirement planning. Pages and estimates are not
+          official benefit determinations or individualized professional advice.
         </p>
 
         <h2>Our source hierarchy</h2>
         <p>
-          We prioritize the most authoritative public sources first, including the Social Security
-          Administration, CMS, Medicare.gov, the U.S. Code, the Code of Federal Regulations, and the
-          IRS. When a rule is implemented or updated, we compare the public guidance against the policy
-          language before we publish or revise a page.
+          Our guides and calculators link to public sources, including the Social Security
+          Administration, CMS, Medicare.gov, and the IRS. Program-year values used by calculators are
+          maintained in shared data files under <code>src/lib/data</code>, with source URLs alongside
+          the values. The linked agency material is the place to confirm current rules and personal
+          eligibility.
         </p>
 
-        <h2>What we do not do</h2>
+        <h2>What readers should know</h2>
         <ul>
-          <li>We do not present estimates as official benefit determinations.</li>
-          <li>We do not claim to replace individualized SSA guidance or legal counsel.</li>
-          <li>We do not hide assumptions or simplify away key limitations.</li>
-          <li>We do not use pressure-based marketing language to push a single claiming strategy.</li>
+          <li>Calculator results are estimates, not official benefit determinations.</li>
+          <li>This site is not a substitute for individualized SSA guidance, legal counsel, or tax advice.</li>
+          <li>Check each tool or article for its stated inputs, assumptions, and limitations.</li>
+          <li>Use the linked agency sources to confirm current rules and account-specific decisions.</li>
         </ul>
 
         <h2>How our calculators are framed</h2>
         <p>
-          Our calculators are educational tools created to help people explore common scenarios. They are
-          useful for understanding the mechanics of benefit timing, taxes, break-even trade-offs, and
-          claiming-age decisions. Results are estimates only and should be checked against official rates,
-          earnings records, and SSA account information whenever a decision is material.
+          Our calculators let readers explore scenarios using the inputs and program data shown on the
+          relevant tool or page. Results are estimates, not official benefit determinations. Check the
+          assumptions, source links, and your own SSA or Medicare records before acting on an estimate.
         </p>
 
         <h2>Why independence matters</h2>
         <p>
-          We do not represent ourselves as an official government agency or a licensed financial advisor.
-          We aim to be a transparent, reader-first educational resource. That means we explain how rules
-          work, where the numbers come from, and what to verify before making a financial decision.
+          Social Security Guide is an independent educational website, not a government agency or a
+          substitute for individualized financial, legal, or tax advice. Where a page includes sources
+          or assumptions, readers can use them to identify information to verify with the relevant agency.
         </p>
 
         <h2>Advertising, monetization, and editorial independence</h2>
         <p>
-          This site may display advertising and other monetized placements to support the ongoing research,
-          publishing, and maintenance costs of the platform. Advertising does not determine what we write,
-          how we rank or present educational topics, or what recommendation we give to readers. We do not
-          sell guaranteed outcomes or approve a claim strategy because it is paid to appear.
+          Advertising may be shown on this site to support its operation. Advertising does not influence
+          our editorial content or recommendations. We do not accept payment for a positive recommendation
+          about a product, filing strategy, or benefit outcome.
         </p>
         <ul>
           <li>We are an independent educational resource, not an official government office or insurer.</li>
-          <li>Ads and sponsorships are clearly separate from editorial judgment and source review.</li>
           <li>We do not accept compensation in exchange for a positive review of a plan, product, or filing recommendation.</li>
-          <li>We disclose the limits of our content and direct readers to official sources for final decisions.</li>
+          <li>Our calculators provide estimates; check official sources for current rules and personal decisions.</li>
         </ul>
         <p>
           For more detail, see our <Link href="/ads-disclosure" className="font-semibold text-blue-700 underline">Advertising Disclosure</Link>.
@@ -101,10 +101,8 @@ export default function EditorialStandardsPage() {
 
         <h2>Updating content responsibly</h2>
         <p>
-          Retirement and Medicare information can change when policy, COLA, income rules, or legal wording
-          change. We review and update material when the underlying rule or the published guidance changes,
-          and we make that context visible to readers through timestamps, updated guidance, and clear
-          disclosure language.
+          Retirement and Medicare information can change. Check the date and source shown on a page, when
+          available, and confirm current figures and rules with the relevant agency before making a decision.
         </p>
 
         <h2>How to use this site well</h2>
@@ -114,6 +112,18 @@ export default function EditorialStandardsPage() {
           before acting. Use official sources for final decisions, especially with account-specific rules,
           disability decisions, or tax filing questions.
         </p>
+
+        <h2>Corrections</h2>
+        <p>
+          If you find a possible error, email{" "}
+          <a href="mailto:contact@socialsecurityguidecalc.com" className="font-semibold text-blue-700 underline">
+            contact@socialsecurityguidecalc.com
+          </a>
+          . We review correction reports and update a page or calculator when a correction is warranted.
+        </p>
+
+        <h2>Review</h2>
+        <p>{"Reviewed by: TODO(add the reviewer's name and credential, or delete this line if there is no independent reviewer)"}</p>
 
         <div className="rounded-2xl border border-slate-200 bg-slate-50 p-6">
           <h3 className="text-xl font-semibold text-slate-900">Need more context?</h3>

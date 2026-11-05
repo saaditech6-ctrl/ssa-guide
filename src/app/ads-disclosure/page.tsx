@@ -22,16 +22,9 @@ export default function AdsDisclosurePage() {
 
       <div className="space-y-6 text-slate-700">
         <p>
-          Social Security Guide is an independent educational website focused on retirement, Medicare,
-          disability, and Social Security planning. We may display advertising, sponsored placements,
-          or other revenue-generating content to support the ongoing operation of the site.
-        </p>
-
-        <p>
-          Advertising and sponsorship arrangements do not influence the editorial process. Our content is
-          based on publicly available rules, official guidance, and transparent explanations of the
-          assumptions behind our calculators and articles. We do not let advertising pressure change what
-          we write, what we cite, or how we present a rule or strategy.
+          Advertising may be shown on this site to support its operation. Advertising does not influence
+          our editorial content or recommendations. We do not accept payment for a positive recommendation
+          about a product, filing strategy, or benefit outcome.
         </p>
 
         <h2 className="text-2xl font-semibold text-slate-900">What we do not do</h2>

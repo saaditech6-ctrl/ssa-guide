@@ -19,8 +19,10 @@ import {
 } from "lucide-react"
 
 import { articles } from "@/lib/articles"
+import { formatArticleDate } from "@/lib/article-date"
 import { buildMetadata } from "@/lib/seo"
-import { SSA_2026 } from "@/lib/data/2026"
+import { MEDICARE_2026, SSA_2026 } from "@/lib/data/2026"
+import { COLA_2027 } from "@/lib/data/2027"
 import { HeroEstimator } from "@/components/home/HeroEstimator"
 import { HomeColaBanner } from "@/components/home/HomeColaBanner"
 
@@ -52,24 +54,37 @@ const guides = [
 
 const comparisons = [
   { title: "62 vs 67 vs 70", text: "Compare monthly benefits at three claiming ages.", href: "/blog/social-security-age-62-vs-67-vs-70" },
-  { title: "Break-even age", text: "See when waiting for a bigger check pays off.", href: "/blog/social-security-break-even-age" },
-  { title: "SSI vs SSDI", text: "Understand the key differences between the two programs.", href: "/blog/ssi-eligibility-payment-amounts-2026" },
+  { title: "Break-even age", text: "See when waiting for a bigger check pays off.", href: "/blog/social-security-age-62-vs-67-vs-70" },
+  { title: "SSI vs SSDI", text: "Understand the key differences between the two programs.", href: "/blog/supplemental-security-income" },
   { title: "Spousal vs your own benefit", text: "Learn how spousal benefits compare with your own record.", href: "/guides/spousal-benefits" },
 ]
 
 const trustPoints = [
-  { title: "Independent educational guidance", text: "We explain how Social Security rules work without steering readers toward a sales pitch or a product they don’t need." },
-  { title: "Built around real SSA rules", text: "Our calculators, comparisons, and articles are organized around claiming age, earnings limits, Medicare, and benefit taxation." },
-  { title: "Clear decision support", text: "Readers can compare claim ages, estimate taxes, and understand trade-offs before making a high-impact retirement decision." },
+  {
+    title: "2027 Social Security figure",
+    text: `The 2027 COLA shown on this site is ${COLA_2027.colaPercent}% and links to SSA's announcement${COLA_2027.announcedOn ? ` dated ${new Date(`${COLA_2027.announcedOn}T00:00:00Z`).toLocaleDateString("en-US", { month: "long", day: "numeric", year: "numeric", timeZone: "UTC" })}` : ""}. Last checked November 3, 2026.`,
+    href: COLA_2027.source,
+    link: "SSA COLA announcement",
+  },
+  {
+    title: "2026 Medicare cost source",
+    text: `The Medicare guide's 2026 Part B premium and deductible are linked to CMS's published fact sheet. The premium value in the data is $${MEDICARE_2026.partBStandardPremium.toFixed(2)} per month; see CMS for details.`,
+    href: MEDICARE_2026.source,
+    link: "CMS 2026 premiums and deductibles",
+  },
+  {
+    title: "Estimates, not official decisions",
+    text: "Calculator results depend on the inputs and program data used. They are educational estimates, not Social Security or Medicare determinations.",
+  },
 ]
 
 const topicPillars = [
-  { title: "Retirement planning", text: "Claiming age, FRA, delayed retirement credits, and break-even analysis.", href: "/retirement-benefits", icon: Calculator },
+  { title: "Retirement planning", text: "Claiming age, FRA, delayed retirement credits, and break-even analysis.", href: "/guides/retirement", icon: Calculator },
   { title: "Retirement income planning", text: "How to balance Social Security, taxes, and household cash flow over retirement.", href: "/retirement-income-planning", icon: TrendingUp },
-  { title: "Medicare & health costs", text: "Premiums, IRMAA, enrollment timing, and out-of-pocket planning.", href: "/medicare-guide", icon: HeartPulse },
+  { title: "Medicare & health costs", text: "Premiums, IRMAA, enrollment timing, and out-of-pocket planning.", href: "/guides/medicare", icon: HeartPulse },
   { title: "Medicare enrollment", text: "Initial enrollment timing, special enrollment periods, and late penalty avoidance.", href: "/medicare-enrollment", icon: CalendarDays },
-  { title: "Disability benefits", text: "Eligibility, disability rules, and SSDI/SSI differences for eligible workers.", href: "/disability-benefits", icon: Briefcase },
-  { title: "Spousal & survivor coverage", text: "How benefits are coordinated across filing status and family history.", href: "/spousal-benefits", icon: Scale },
+  { title: "Disability benefits", text: "Eligibility, disability rules, and SSDI/SSI differences for eligible workers.", href: "/guides/disability", icon: Briefcase },
+  { title: "Spousal & survivor coverage", text: "How benefits are coordinated across filing status and family history.", href: "/guides/spousal-benefits", icon: Scale },
   { title: "Taxes & income planning", text: "Benefit-tax thresholds, investment income, and annual income planning.", href: "/guides/benefit-taxes", icon: FileText },
   { title: "How to get started", text: "A beginner-friendly overview of retirement benefits, disclaimers, and next steps.", href: "/guides/getting-started", icon: BookOpen },
 ]
@@ -104,13 +119,13 @@ const faqs = [
   {
     q: "How is the COLA calculated?",
     a: "SSA compares the average CPI-W for July, August and September with the same average from the last year a COLA took effect. The percentage increase, rounded to the nearest tenth, is the COLA.",
-    href: "/blog/how-is-social-security-cola-calculated",
+    href: "/blog/social-security-cola",
     link: "Read how COLA is calculated",
   },
   {
     q: "What is the difference between SSA, SSI, and SSDI?",
     a: "SSA is the agency that runs the programs. SSDI pays disability benefits based on your work history. SSI is need-based assistance with strict income and resource limits.",
-    href: "/blog/ssi-eligibility-payment-amounts-2026",
+    href: "/blog/supplemental-security-income",
     link: "Compare SSI and SSDI",
   },
 ]
@@ -124,8 +139,6 @@ function parseDate(value?: string): Date | null {
   const loose = new Date(value)
   return Number.isNaN(loose.getTime()) ? null : loose
 }
-
-const fmt = (d: Date) => d.toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric", timeZone: "UTC" })
 
 function SectionHeader({ icon: Icon, title, text, href, linkLabel }: { icon: React.ElementType; title: string; text: string; href: string; linkLabel: string }) {
   return (
@@ -236,8 +249,8 @@ export default function HomePage() {
 
         <section aria-labelledby="trust-heading" className="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm sm:p-8">
           <div className="mb-6 max-w-2xl">
-            <p className="text-xs font-bold uppercase tracking-[0.12em] text-blue-700">Why readers choose us</p>
-            <h2 id="trust-heading" className="mt-2 text-2xl font-semibold text-slate-900 sm:text-3xl">A practical guide for important retirement decisions</h2>
+            <p className="text-xs font-bold uppercase tracking-[0.12em] text-blue-700">Sources and limitations</p>
+            <h2 id="trust-heading" className="mt-2 text-2xl font-semibold text-slate-900 sm:text-3xl">Figures, sources, and what estimates mean</h2>
           </div>
           <div className="grid gap-4 md:grid-cols-3">
             {trustPoints.map((point) => (
@@ -247,6 +260,11 @@ export default function HomePage() {
                 </div>
                 <h3 className="text-lg font-semibold text-slate-900">{point.title}</h3>
                 <p className="mt-2 text-sm leading-6 text-slate-600">{point.text}</p>
+                {point.href && (
+                  <a href={point.href} target="_blank" rel="noopener noreferrer" className="mt-3 inline-flex text-sm font-semibold text-blue-700 underline hover:text-blue-900">
+                    {point.link}
+                  </a>
+                )}
               </div>
             ))}
           </div>
@@ -263,17 +281,17 @@ export default function HomePage() {
             </Link>
           </div>
           <div className="mt-6 grid gap-4 md:grid-cols-3">
-            <Link href="/retirement-benefits" className="rounded-2xl border border-white/10 bg-white/5 p-5 transition hover:bg-white/10">
+            <Link href="/guides/retirement" className="rounded-2xl border border-white/10 bg-white/5 p-5 transition hover:bg-white/10">
               <p className="text-sm font-semibold text-[#f5d77f]">I want an estimate</p>
               <h3 className="mt-3 text-lg font-semibold text-white">Calculate my retirement benefit</h3>
               <p className="mt-2 text-sm leading-6 text-slate-200">Start with your age, earnings, and claiming age to understand the likely monthly payment.</p>
             </Link>
-            <Link href="/retirement-benefits" className="rounded-2xl border border-white/10 bg-white/5 p-5 transition hover:bg-white/10">
+            <Link href="/guides/retirement" className="rounded-2xl border border-white/10 bg-white/5 p-5 transition hover:bg-white/10">
               <p className="text-sm font-semibold text-[#f5d77f]">I want to compare ages</p>
               <h3 className="mt-3 text-lg font-semibold text-white">Compare 62, 67, and 70</h3>
               <p className="mt-2 text-sm leading-6 text-slate-200">See how waiting can increase your monthly benefit and when the larger check catches up.</p>
             </Link>
-            <Link href="/medicare-guide" className="rounded-2xl border border-white/10 bg-white/5 p-5 transition hover:bg-white/10">
+            <Link href="/guides/medicare" className="rounded-2xl border border-white/10 bg-white/5 p-5 transition hover:bg-white/10">
               <p className="text-sm font-semibold text-[#f5d77f]">I want health-cost clarity</p>
               <h3 className="mt-3 text-lg font-semibold text-white">Understand Medicare planning</h3>
               <p className="mt-2 text-sm leading-6 text-slate-200">Review premiums, enrollment timing, and how healthcare costs fit into retirement planning.</p>
@@ -351,7 +369,7 @@ export default function HomePage() {
                   <span className="inline-block rounded bg-blue-50 px-2 py-0.5 text-[10px] font-bold uppercase tracking-wide text-blue-700">{article.category}</span>
                   <h3 className="mt-2 text-base font-semibold leading-snug text-slate-900 group-hover:text-blue-700">{article.title}</h3>
                   <time dateTime={effective!.toISOString().slice(0, 10)} className="mt-3 block text-xs text-slate-500">
-                    {isUpdate ? "Updated " : ""}{fmt(effective!)}
+                    {isUpdate ? "Updated " : ""}{formatArticleDate(effective!.toISOString().slice(0, 10))}
                   </time>
                 </div>
               </Link>

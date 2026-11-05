@@ -1,68 +1,58 @@
 "use client"
 
-import { useEffect } from "react"
+import Script from "next/script"
+import { usePathname, useSearchParams } from "next/navigation"
+import { Suspense, useEffect, useRef, useState } from "react"
+import { getGoogleTag } from "@/lib/google-consent"
 
-export function GoogleAnalytics() {
+const GOOGLE_ANALYTICS_ID = "G-V44299JRQB"
+
+function RouteChangeTracker({ ready }: { ready: boolean }) {
+  const pathname = usePathname()
+  const searchParams = useSearchParams()
+  const lastPagePath = useRef<string | null>(null)
+
   useEffect(() => {
-    if (typeof window === "undefined") return
+    if (!ready || !GOOGLE_ANALYTICS_ID) return
 
-    // التأكد من عدم تكرار إضافة السكربت
-    const existingScript = document.querySelector(
-      'script[src*="googletagmanager.com/gtag/js"]'
-    )
-    if (existingScript) return
+    const query = searchParams.toString()
+    const pagePath = query ? `${pathname}?${query}` : pathname
+    if (lastPagePath.current === pagePath) return
 
-    // إدراج dns-prefetch بدلاً من preconnect لمنع تحذيرات Unused preconnect
-    const addDnsPrefetch = (url: string) => {
-      if (!document.querySelector(`link[rel="dns-prefetch"][href="${url}"]`)) {
-        const link = document.createElement("link")
-        link.rel = "dns-prefetch"
-        link.href = url
-        document.head.appendChild(link)
-      }
-    }
-
-    addDnsPrefetch("https://www.googletagmanager.com")
-    addDnsPrefetch("https://www.google-analytics.com")
-
-    let idleHandle: number | undefined
-    let timeoutHandle: ReturnType<typeof globalThis.setTimeout> | undefined
-
-    const insertAnalytics = () => {
-      const script = document.createElement("script")
-      script.src = "https://www.googletagmanager.com/gtag/js?id=G-V44299JRQB"
-      script.async = true
-      document.head.appendChild(script)
-
-      const inlineScript = document.createElement("script")
-      inlineScript.textContent = `
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', 'G-V44299JRQB', { page_path: window.location.pathname });
-      `
-      document.head.appendChild(inlineScript)
-    }
-
-    // تأخير تحميل السكربت لحين استراحة المتصفح بالكامل (Idle)
-    const frame = window.requestAnimationFrame(() => {
-      if ("requestIdleCallback" in window) {
-        idleHandle = window.requestIdleCallback(insertAnalytics, { timeout: 3000 })
-      } else {
-        timeoutHandle = globalThis.setTimeout(insertAnalytics, 3000)
-      }
+    lastPagePath.current = pagePath
+    getGoogleTag()("event", "page_view", {
+      page_path: pagePath,
+      page_location: window.location.href,
     })
-
-    return () => {
-      window.cancelAnimationFrame(frame)
-      if (idleHandle !== undefined) {
-        window.cancelIdleCallback(idleHandle)
-      }
-      if (timeoutHandle !== undefined) {
-        window.clearTimeout(timeoutHandle)
-      }
-    }
-  }, [])
+  }, [pathname, ready, searchParams])
 
   return null
+}
+
+export function GoogleAnalytics() {
+  const [ready, setReady] = useState(false)
+  const configured = useRef(false)
+
+  return (
+    <>
+      {GOOGLE_ANALYTICS_ID && (
+        <Script
+          id="google-analytics"
+          src={`https://www.googletagmanager.com/gtag/js?id=${GOOGLE_ANALYTICS_ID}`}
+          strategy="afterInteractive"
+          onReady={() => {
+            if (configured.current) return
+            const gtag = getGoogleTag()
+            gtag("js", new Date())
+            gtag("config", GOOGLE_ANALYTICS_ID, { send_page_view: false })
+            configured.current = true
+            setReady(true)
+          }}
+        />
+      )}
+      <Suspense fallback={null}>
+        <RouteChangeTracker ready={ready} />
+      </Suspense>
+    </>
+  )
 }

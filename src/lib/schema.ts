@@ -1,4 +1,5 @@
 import { Article } from "@/lib/articles";
+import { getArticleLastModified } from "@/lib/article-date";
 
 const BASE_URL = "https://www.socialsecurityguidecalc.com";
 
@@ -42,9 +43,6 @@ export function generateFAQSchema(content: string) {
  * يبني Article schema كامل ومطابق لشروط Google Rich Results
  */
 export function generateArticleSchema(article: Article, url: string) {
-  const publishedIso = toIsoDate(article.date ?? article.lastUpdated ?? article.updatedDate)
-  const modifiedIso = toIsoDate(article.lastUpdated ?? article.updatedDate ?? article.date)
-
   const imageUrl = article.image
     ? article.image.startsWith("http")
       ? article.image
@@ -71,28 +69,10 @@ export function generateArticleSchema(article: Article, url: string) {
       url: BASE_URL,
       logo: { "@type": "ImageObject", url: `${BASE_URL}/logo.png` },
     },
-    datePublished: publishedIso,
-    dateModified: modifiedIso,
+    datePublished: article.date,
+    dateModified: getArticleLastModified(article),
     mainEntityOfPage: { "@type": "WebPage", "@id": url },
   }
-}
-
-/**
- * Converts "2026-05-05", "June 2, 2026" or "September 2026" to a stable ISO string.
- * Never returns the current time: a build-time date would change on every deploy.
- */
-export function toIsoDate(dateString?: string): string {
-  if (dateString) {
-    const parsed = new Date(dateString.includes("T") ? dateString : `${dateString} 12:00:00 UTC`)
-    if (!Number.isNaN(parsed.getTime())) return parsed.toISOString()
-    const loose = new Date(dateString)
-    if (!Number.isNaN(loose.getTime())) {
-      loose.setUTCHours(12, 0, 0, 0)
-      return loose.toISOString()
-    }
-  }
-  console.error(`schema.ts: missing or invalid article date "${dateString}"`)
-  return "2026-01-01T12:00:00.000Z"
 }
 
 function stripHtml(html: string): string {

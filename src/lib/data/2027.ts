@@ -14,15 +14,35 @@ export const COLA_2027 = {
   sourceLabel: "SSA — Cost-of-Living Adjustment",
 } as const
 
-export const SSA_2027 = {
+export type Ssa2027Params = {
+  year: 2027
+  colaPercent: number
+  taxableMaximum: number
+  quarterOfCoverageAmount: number | null
+  piaBendPoints: {
+    first: number
+    second: number
+    rates: { first: number; second: number; third: number }
+  }
+  earningsTest: {
+    beforeFRA: number
+    yearOfFRA: number
+    beforeFRAWithholdingRatio: number
+    yearOfFRAWithholdingRatio: number
+  }
+  source: string
+  earningsTestSource: string
+}
+
+export const SSA_2027: Ssa2027Params = {
   year: 2027,
   colaPercent: 3.6,
   taxableMaximum: 192300,
   quarterOfCoverageAmount: null, // TODO(verify): SSA 2027 COLA fact sheet
   piaBendPoints: {
-    first: null, // TODO(verify): SSA 2027 fact sheet
-    second: null, // TODO(verify): SSA 2027 fact sheet
-    rates: { first: null, second: null, third: null },
+    first: 1340,
+    second: 8077,
+    rates: { first: 0.9, second: 0.32, third: 0.15 },
   },
   earningsTest: {
     beforeFRA: 25560,

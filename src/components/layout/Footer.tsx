@@ -45,7 +45,7 @@ const footerLinks: Record<string, FooterLink[]> = {
     },
     {
       label: "Retirement Benefits",
-      href: "/retirement-benefits",
+      href: "/guides/retirement",
     },
     {
       label: "Retirement Income Planning",
@@ -53,19 +53,19 @@ const footerLinks: Record<string, FooterLink[]> = {
     },
     {
       label: "Claiming Age Strategy",
-      href: "/blog/social-security-retirement-age-strategies",
+      href: "/blog/social-security-age-62-vs-67-vs-70",
     },
     {
       label: "Disability Benefits",
-      href: "/disability-benefits",
+      href: "/guides/disability",
     },
     {
       label: "Spousal Benefits",
-      href: "/spousal-benefits",
+      href: "/guides/spousal-benefits",
     },
     {
       label: "Medicare Guide",
-      href: "/medicare-guide",
+      href: "/guides/medicare",
     },
     {
       label: "Medicare Enrollment",
@@ -124,9 +124,8 @@ const socialLinks = [
   {
     label: "Facebook",
     shortLabel: "f",
-    href: "https://www.facebook.com/amine.saadi.773",
+    href: "https://www.facebook.com/amine.saadi.773/",
   },
-
 
 ]
 
@@ -135,18 +134,20 @@ export function Footer() {
 
   return (
     <footer className="bg-[#071530] text-white border-t border-white/10">
-      <div className="border-b border-white/10 bg-[#0a1d33]">
-        <div className="container-site mx-auto max-w-7xl px-4 py-3 text-xs text-slate-200 sm:text-sm">
-          <div className="flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between">
-            <p>
-              Independent educational resource • Not affiliated with SSA, Medicare, or any government agency • Ad-supported
-            </p>
-            <Link href="/ads-disclosure" className="font-semibold text-amber-300 hover:text-amber-200 underline underline-offset-2">
-              Advertising disclosure
-            </Link>
+      {process.env.NEXT_PUBLIC_ADS_ENABLED === "true" && (
+        <div className="border-b border-white/10 bg-[#0a1d33]">
+          <div className="container-site mx-auto max-w-7xl px-4 py-3 text-xs text-slate-200 sm:text-sm">
+            <div className="flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between">
+              <p>
+                Independent educational resource • Not affiliated with SSA, Medicare, or any government agency • Ad-supported
+              </p>
+              <Link href="/ads-disclosure" className="font-semibold text-amber-300 hover:text-amber-200 underline underline-offset-2">
+                Advertising disclosure
+              </Link>
+            </div>
           </div>
         </div>
-      </div>
+      )}
 
       {/* =========================================================
           MAIN FOOTER
@@ -189,8 +190,8 @@ export function Footer() {
                     key={social.href}
                     href={social.href}
                     target="_blank"
-                    rel="noopener noreferrer"
-                    aria-label={`Follow us on ${social.label}`}
+                    rel="me noopener noreferrer"
+                    aria-label={`Social Security Guide Calc on ${social.label}`}
                     title={social.label}
                     className="w-9 h-9 rounded-lg border border-white/10 bg-white/5 flex items-center justify-center text-slate-300 hover:text-white hover:bg-white/10 hover:border-amber-400/40 transition-all"
                   >

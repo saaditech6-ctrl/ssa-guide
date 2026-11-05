@@ -4,7 +4,9 @@ import { useState, useMemo } from "react"
 import Link from "next/link"
 import { ArrowLeft, DollarSign, Info, ShieldAlert, TrendingUp, BookOpen, ExternalLink, HelpCircle } from "lucide-react"
 import { WhyTrustCalculator } from "@/components/ui/WhyTrustCalculator"
-import { SSA_2026 } from "@/lib/data/2026"
+import { getSsaParams } from "@/lib/data"
+
+const SSA_2026 = getSsaParams(2026)
 
 export default function EarningsTestCalculator() {
   // Input states

@@ -3,17 +3,17 @@
 import { useId, useState } from "react"
 import Link from "next/link"
 import { ArrowRight, Lock } from "lucide-react"
-import { SSA_2026 } from "@/lib/data/2026"
-import { benefitAtAge, calcPia, formatFra, fraMonthsForBirthYear } from "@/lib/benefit-math"
+import { benefitAtAge, formatFra, fraMonthsForBirthYear } from "@/lib/benefit-math"
+import { computeAime, computePia, createQuickEarningsRecord, indexEarnings } from "@/lib/ssa/aime"
 
-const CURRENT_YEAR = 2026
-const AGES = Array.from({ length: 21 }, (_, i) => 50 + i) // 50-70
+const BIRTH_YEARS = Array.from({ length: 23 }, (_, i) => 1965 - i)
 const CLAIM_AGES = Array.from({ length: 9 }, (_, i) => 62 + i) // 62-70
 
 type Result = {
   claimAge: number
-  clamped: boolean
   fraLabel: string
+  aime: number
+  pia: number
   monthly: number
   rows: { label: string; value: number }[]
 }
@@ -22,8 +22,9 @@ const money = (n: number) => `$${n.toLocaleString("en-US")}`
 
 export function HeroEstimator() {
   const id = useId()
-  const [age, setAge] = useState(62)
+  const [birthYear, setBirthYear] = useState(1960)
   const [income, setIncome] = useState("50,000")
+  const [yearsWorked, setYearsWorked] = useState("35")
   const [claimAge, setClaimAge] = useState(67)
   const [error, setError] = useState("")
   const [result, setResult] = useState<Result | null>(null)
@@ -38,16 +39,24 @@ export function HeroEstimator() {
     }
     setError("")
 
-    const capped = Math.min(annual, SSA_2026.taxableMaximum)
-    const pia = calcPia(capped / 12)
-    const fraMonths = fraMonthsForBirthYear(CURRENT_YEAR - age)
-    const chosen = Math.min(Math.max(claimAge, age), 70)
+    const years = Number(yearsWorked)
+    if (!Number.isInteger(years) || years < 0 || years > 45) {
+      setError("Enter a whole number of years worked from zero through 45.")
+      setResult(null)
+      return
+    }
+    const earnings = createQuickEarningsRecord(birthYear, annual, years)
+    const aime = computeAime(indexEarnings(earnings, birthYear))
+    const eligibilityYear = birthYear + 62
+    const pia = computePia(aime, eligibilityYear)
+    const fraMonths = fraMonthsForBirthYear(birthYear)
 
     setResult({
-      claimAge: chosen,
-      clamped: chosen !== claimAge,
+      claimAge,
       fraLabel: formatFra(fraMonths),
-      monthly: benefitAtAge(pia, chosen * 12, fraMonths),
+      aime,
+      pia,
+      monthly: benefitAtAge(pia, claimAge * 12, fraMonths),
       rows: [
         { label: "Age 62", value: benefitAtAge(pia, 62 * 12, fraMonths) },
         { label: `FRA (${formatFra(fraMonths)})`, value: benefitAtAge(pia, fraMonths, fraMonths) },
@@ -67,16 +76,30 @@ export function HeroEstimator() {
 
       <form onSubmit={onSubmit} className="mt-5 space-y-4" noValidate>
         <div>
-          <label htmlFor={`${id}-age`} className={label}>Your current age</label>
-          <select id={`${id}-age`} value={age} onChange={(e) => setAge(Number(e.target.value))} className={field}>
-            {AGES.map((a) => (
-              <option key={a} value={a}>{a}</option>
+          <label htmlFor={`${id}-birth-year`} className={label}>Year of birth</label>
+          <select id={`${id}-birth-year`} value={birthYear} onChange={(e) => setBirthYear(Number(e.target.value))} className={field}>
+            {BIRTH_YEARS.map((year) => (
+              <option key={year} value={year}>{year}</option>
             ))}
           </select>
         </div>
 
         <div>
-          <label htmlFor={`${id}-income`} className={label}>Annual income (today&apos;s dollars)</label>
+          <label htmlFor={`${id}-years-worked`} className={label}>Years worked</label>
+          <input
+            id={`${id}-years-worked`}
+            type="number"
+            min="0"
+            max="45"
+            step="1"
+            value={yearsWorked}
+            onChange={(e) => setYearsWorked(e.target.value)}
+            className={field}
+          />
+        </div>
+
+        <div>
+          <label htmlFor={`${id}-income`} className={label}>Average annual covered earnings</label>
           <div className="relative">
             <span className="pointer-events-none absolute left-3.5 top-1/2 -translate-y-1/2 text-sm text-slate-400">$</span>
             <input
@@ -115,9 +138,7 @@ export function HeroEstimator() {
           <div className="mt-5 rounded-xl border border-blue-100 bg-blue-50/60 p-4">
             <p className="text-xs font-semibold uppercase tracking-wide text-blue-700">Estimated monthly benefit at {result.claimAge}</p>
             <p className="mt-1 text-3xl font-bold text-slate-900">{money(result.monthly)}</p>
-            {result.clamped && (
-              <p className="mt-1 text-xs text-slate-500">Claiming age was set to your current age.</p>
-            )}
+            <p className="mt-2 text-xs text-slate-600">Estimated AIME: {money(result.aime)}/mo · PIA: {money(result.pia)}/mo</p>
             <dl className="mt-3 grid grid-cols-3 gap-2 text-center">
               {result.rows.map((row) => (
                 <div key={row.label} className="rounded-lg bg-white p-2 shadow-xs">
@@ -127,7 +148,7 @@ export function HeroEstimator() {
               ))}
             </dl>
             <p className="mt-3 text-xs leading-5 text-slate-600">
-              Assumes your income above is your career average and uses the 2026 SSA formula. Your real benefit depends on your full earnings record.{" "}
+              Assumes the same annual earnings for the selected number of consecutive years ending when you turn 60. Your real benefit depends on your full earnings record and eligibility-year rules.{" "}
               <Link href="/calculators/benefits-estimator" className="font-semibold text-blue-700 underline">Open the full estimator</Link>
             </p>
           </div>

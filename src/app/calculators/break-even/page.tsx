@@ -216,7 +216,7 @@ export default function BreakEvenCalculator() {
                       <p className="text-[11px] text-rose-950 font-medium leading-relaxed">
                         A break-even age of <strong>{breakEvenAge}</strong> is relatively high. Want to deeply explore if this matches your retirement goals?
                       </p>
-                      <Link href="/blog/social-security-break-even-age" className="text-[11px] font-bold text-[#071530] underline mt-2 inline-flex items-center gap-0.5 hover:text-amber-600 transition-colors">
+                      <Link href="/blog/social-security-age-62-vs-67-vs-70" className="text-[11px] font-bold text-[#071530] underline mt-2 inline-flex items-center gap-0.5 hover:text-amber-600 transition-colors">
                         Read our In-Depth Break-Even Age Strategy Guide <ArrowRight size={12} />
                       </Link>
                     </div>
@@ -225,7 +225,7 @@ export default function BreakEvenCalculator() {
                       <p className="text-[11px] text-emerald-950 font-medium leading-relaxed">
                         With a break-even age under 80, waiting until age {delayedAge} offers a highly realistic opportunity to maximize your total family wealth.
                       </p>
-                      <Link href="/blog/maximize-delayed-credits" className="text-[11px] font-bold text-[#071530] underline mt-2 inline-flex items-center gap-0.5 hover:text-amber-600 transition-colors">
+                      <Link href="/blog/social-security-delayed-retirement-credits" className="text-[11px] font-bold text-[#071530] underline mt-2 inline-flex items-center gap-0.5 hover:text-amber-600 transition-colors">
                         Strategies to Maximize Your Delayed Retirement Credits <ArrowRight size={12} />
                       </Link>
                     </div>

@@ -199,10 +199,9 @@ export default function AboutPage() {
         </p>
 
         <p className="mt-4 leading-7 text-gray-700">
-          We may display advertising to help support our editorial production and research costs. Those
-          placements do not influence our editorial standards, source hierarchy, or the recommendations
-          we make in educational content. We do not accept payment for a positive recommendation about a
-          product, filing strategy, or benefit outcome.
+          Advertising may be shown on this site to support its operation. Advertising does not influence
+          our editorial content or recommendations. We do not accept payment for a positive recommendation
+          about a product, filing strategy, or benefit outcome.
         </p>
       </section>
 

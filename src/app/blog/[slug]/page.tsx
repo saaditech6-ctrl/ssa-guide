@@ -1,6 +1,7 @@
 import { Metadata } from "next"
 import { notFound } from "next/navigation"
 import { articles, getArticleBySlug } from "@/lib/articles"
+import { getArticleLastModified } from "@/lib/article-date"
 import { generateFAQSchema, generateArticleSchema } from "@/lib/schema"
 import ArticleContent from "./ArticleContent"
 import { ColaStatus } from "@/components/ColaStatus"
@@ -57,7 +58,7 @@ export async function generateMetadata(
       locale: "en_US",
       siteName: "Social Security Guide",
       publishedTime: article.date,
-      modifiedTime: article.lastUpdated || article.updatedDate || article.date,
+      modifiedTime: getArticleLastModified(article),
       authors: [article.author || "Social Security Guide"],
       tags: [...new Set(keywordList)],
       images: imageUrl ? [{ url: imageUrl, alt: article.title, width: 1200, height: 630 }] : undefined,

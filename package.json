@@ -8,7 +8,9 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint .",
-    "type-check": "tsc --noEmit"
+    "type-check": "tsc --noEmit",
+    "check:sitemap": "node scripts/check-sitemap.mjs",
+    "test": "vitest run"
   },
   "dependencies": {
     "@icons-pack/react-simple-icons": "^13.13.0",
@@ -34,7 +36,8 @@
     "eslint": "^9",
     "eslint-config-next": "16.2.9",
     "tailwindcss": "^4",
-    "typescript": "^5"
+    "typescript": "^5",
+    "vitest": "^5.1.0"
   },
   "browserslist": [
     "chrome >= 91",

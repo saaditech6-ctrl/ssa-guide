@@ -9,6 +9,7 @@ import { useRouter, useSearchParams } from "next/navigation"
 import Link from "next/link"
 
 import Image from "next/image"
+import { formatArticleDate } from "@/lib/article-date"
 
 import { Flame, Clock, User, Calendar, Newspaper, ArrowRight } from "lucide-react"
 
@@ -16,26 +17,6 @@ import type { Article } from "@/lib/articles"
 
 type ArticleSummary = Omit<Article, "content">
 type BlogData = { articles: ArticleSummary[]; categories: string[] }
-
-
-
-// دالة برمجية مساعدة لتنسيق التاريخ تلقائياً
-
-function formatArticleDate(dateString?: string) {
-
-  const dateObj = dateString ? new Date(dateString) : new Date()
-
-  return dateObj.toLocaleDateString("en-US", {
-
-    month: "short",
-
-    day: "numeric",
-
-    year: "numeric"
-
-  })
-
-}
 
 
 
@@ -159,9 +140,11 @@ function BlogContent({ articles, categories }: BlogData) {
 
 
 
-  const filtered = activeCategory === "All" ? articles : articles.filter(a => a.category === activeCategory)
+  const indexableArticles = articles.filter(a => !a.noindex)
 
-  const featured = articles.find(a => a.featured)
+  const filtered = activeCategory === "All" ? indexableArticles : indexableArticles.filter(a => a.category === activeCategory)
+
+  const featured = indexableArticles.find(a => a.featured)
 
   const rest = filtered.filter(a => activeCategory !== "All" || !featured || a.slug !== featured.slug)
 
@@ -606,4 +589,3 @@ export default function BlogClient(props: BlogData) {
   )
 
 } 
-

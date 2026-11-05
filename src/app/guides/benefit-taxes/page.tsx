@@ -1,6 +1,9 @@
 import { Calculator, ArrowLeft, BookOpen, ShieldAlert, Sparkles, ChevronRight, ExternalLink, Calendar, Clock, UserCheck } from "lucide-react"
 import Link from "next/link"
 import type { Metadata } from "next"
+import { SSA_2026 } from "@/lib/data/2026"
+
+const LAST_UPDATED = "2026-11-04"
 
 export const metadata: Metadata = {
   title: "Social Security Benefit Taxation Guide 2026 | Thresholds & Strategies",
@@ -14,7 +17,7 @@ export const metadata: Metadata = {
     url: "https://www.socialsecurityguidecalc.com/guides/benefit-taxes",
     type: "article",
     publishedTime: "2026-01-15T00:00:00.000Z",
-    modifiedTime: "2026-06-01T00:00:00.000Z",
+    modifiedTime: `${LAST_UPDATED}T00:00:00.000Z`,
     authors: ["Amine Saadi"],
   },
 }
@@ -29,6 +32,11 @@ const sections = [
     id: "what-is-combined-income",
     title: "What Is Combined Income?",
     content: "The IRS calculates your combined income (also called provisional income) using this formula: Combined Income = Adjusted Gross Income + Nontaxable Interest + 50% of your Social Security Benefits. This combined income figure is then compared to specific thresholds to determine how much of your benefit is taxable."
+  },
+  {
+    id: "social-security-taxable-maximum",
+    title: "The Social Security Taxable Maximum Is a Separate Rule",
+    content: `For 2026, the maximum earnings subject to Social Security payroll tax is $${SSA_2026.taxableMaximum.toLocaleString("en-US")}. This wage-base limit applies to work earnings; it is separate from the combined-income thresholds used to determine whether Social Security benefits are taxable.`
   },
   {
     id: "single-filer-thresholds",
@@ -104,7 +112,7 @@ export default function BenefitTaxesPage() {
           "url": baseUrl
         },
         "datePublished": "2026-01-15",
-        "dateModified": "2026-06-01",
+        "dateModified": LAST_UPDATED,
         "mainEntityOfPage": `${baseUrl}/guides/benefit-taxes`
       },
       {
@@ -192,7 +200,7 @@ export default function BenefitTaxesPage() {
               <UserCheck size={14} className="text-amber-400" /> By Amine Saadi
             </span>
             <span className="flex items-center gap-1">
-              <Calendar size={13} className="text-slate-400" /> Updated June 2026
+              <Calendar size={13} className="text-slate-400" /> Updated November 2026
             </span>
             <span className="flex items-center gap-1">
               <Clock size={13} className="text-slate-400" /> 9 min read
@@ -307,7 +315,7 @@ export default function BenefitTaxesPage() {
             {/* Official External Resources Widget */}
             <div className="bg-slate-100/80 border border-slate-200/40 rounded-2xl p-5 space-y-2">
               <h3 className="font-bold text-[#071530] text-[10px] uppercase tracking-wider font-sans">
-                Official IRS Resource
+                Official Tax and SSA Resources
               </h3>
               <p className="text-xs text-slate-600 font-semibold">IRS Publication 915 — Social Security Benefits</p>
               <a 
@@ -317,6 +325,15 @@ export default function BenefitTaxesPage() {
                 className="inline-flex items-center gap-1 text-xs font-bold text-blue-600 hover:text-blue-700 transition-colors group pt-1"
               >
                 Download Official PDF <ExternalLink size={12} className="text-blue-600/70" />
+              </a>
+              <p className="pt-2 text-xs text-slate-600 font-semibold">SSA contribution and benefit base</p>
+              <a
+                href="https://www.ssa.gov/oact/COLA/cbb.html"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-1 text-xs font-bold text-blue-600 hover:text-blue-700 transition-colors group pt-1"
+              >
+                View SSA taxable maximums <ExternalLink size={12} className="text-blue-600/70" />
               </a>
             </div>
 

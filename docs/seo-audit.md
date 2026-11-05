@@ -10,7 +10,7 @@
 4. Sitemap: generated from `src/app/sitemap.ts`, with all canonical pages plus article routes and state/city entries.
 5. Robots: `src/app/robots.ts` allows the main site and references the XML sitemap, but does not impose noindex on thin or duplicate state pages.
 6. Canonical logic: metadata is set per page via `alternates.canonical` and `metadataBase` in `src/app/layout.tsx`; page-level canonical tags are present on major routes.
-7. Host enforcement: there is no HTTP-to-HTTPS or www-only middleware/redirect rule, so canonical host enforcement is not guaranteed at runtime.
+7. Host enforcement: `next.config.ts` permanently redirects requests for `socialsecurityguidecalc.com` to the same path on `https://www.socialsecurityguidecalc.com`; Vercel handles HTTP-to-HTTPS.
 8. Schema: JSON-LD is present on many pages, but it is not consistently typed or validated across all page templates; several pages reuse the same broad `WebSite` object.
 9. Indexation: state pages, city pages, and some duplicate-topic pages are passable but thin; they need stronger intent filtering or consolidation.
 10. Crawl signal: the built app exposes a working XML sitemap and the key SEO files, but several content and redirect risks remain from duplicate and weak-content clusters.
@@ -41,16 +41,15 @@
 - Titles over 60 characters: several static titles exceed the recommended length and include repeated branding.
 - Meta descriptions are not always tuned to one primary query and can include generic phrasing and repeated keywords.
 - The homepage H1 is a feature article title (`Stocks That Benefit From Social Security COLA in 2027`) instead of a brand/homepage H1; this is a high-priority content/UX mismatch.
-- Canonical host enforcement is missing; no runtime redirect ensures `https://socialsecurityguidecalc.com` becomes `https://www.socialsecurityguidecalc.com`.
 - Duplicate content clusters exist around COLA, break-even, retirement-age strategy, and spousal-benefit articles.
 - Thin or template-heavy state pages should either be noindexed until they have unique local content or consolidated behind a stronger state hub.
 - Malformed legacy URL `/guides/medicareMedicare` is a redirect risk if it is generated externally or encountered in stale backlinks; it should be mapped to `/guides/medicare`.
 - The XML sitemap already omits images and non-HTML asset routes; this is in good shape.
-- Core technical SEO needs: stronger `Last-Modified` logic, more consistent `Article`/`FAQPage` schema, and runtime canonical-host enforcing redirects.
+- Core technical SEO needs: stronger `Last-Modified` logic and more consistent `Article`/`FAQPage` schema.
 
 ### Recommended next actions
 
-1. Add a canonical host redirect (`www` + HTTPS) via middleware.
+1. Confirm `www.socialsecurityguidecalc.com` is the primary Vercel domain and verify the apex-to-www redirect in production.
 2. Redirect the malformed `/guides/medicareMedicare` URL to `/guides/medicare`.
 3. Consolidate duplicate content clusters and keep only a single pillar page per topic.
 4. Rewrite the homepage H1/title to match the site’s primary intent and add a clear value proposition above the fold.
@@ -60,7 +59,8 @@
 ## Phase 1 technical fixes implemented
 
 - Added a 301 redirect for the malformed Medicare URL in `next.config.ts`.
-- Added a canonical-host redirect middleware that enforces HTTPS and `www` on production requests.
+- Added a permanent host-matching redirect in `next.config.ts` from `socialsecurityguidecalc.com` to the same path on `https://www.socialsecurityguidecalc.com`.
+- No `middleware.ts` or `proxy.ts` implements canonical-host or HTTP-to-HTTPS redirects; Vercel handles HTTP-to-HTTPS.
 - Kept the sitemap generation in `src/app/sitemap.ts` restricted to canonical, indexable page routes.
 - The site already avoids image URLs in the XML sitemap and keeps HTML page routes clean.
 
