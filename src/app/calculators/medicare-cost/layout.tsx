@@ -2,7 +2,7 @@ import type { Metadata } from "next"
 
 export const metadata: Metadata = {
   // العنوان المطور: يركز على "الدقة" و "الرسوم الإضافية" لجذب فئة أصحاب الدخل العالي (IRMAA)
-  title: "2026 Medicare Cost Calculator: Estimate Premiums & IRMAA Surcharges",
+  title: { absolute: "2026 Medicare Cost & IRMAA Calculator" },
   description:
     "Estimate 2026 Medicare Part B premiums and IRMAA surcharges using the latest CMS income brackets. Educational estimate based on 2024 tax-year income.",
   

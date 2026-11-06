@@ -9,7 +9,7 @@ import { calcPia } from "@/lib/benefit-math"
 const LAST_REVIEWED = "2026-11-04"
 
 export const metadata: Metadata = {
-  title: "Social Security Disability (SSDI) Guide 2026",
+  title: { absolute: "Social Security Disability (SSDI) Guide 2026" },
   description: "Complete guide to Social Security Disability Insurance (SSDI) — eligibility requirements, monthly benefit amounts, application timeline, and appeal strategies.",
   alternates: {
     canonical: "https://www.socialsecurityguidecalc.com/guides/disability",

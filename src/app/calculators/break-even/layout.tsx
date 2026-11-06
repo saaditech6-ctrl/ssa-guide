@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   // العنوان المطور: يركز على العام 2026 وعلى اتخاذ قرار مالي حاسم لجذب النقرات
-  title: "Social Security Break-Even Calculator: Is Delaying Worth It?",
+  title: { absolute: "Social Security Break-Even Calculator: Worth Delaying?" },
   description:
     "Calculate your exact break-even age. Compare claiming at 62 vs. 70 in real dollars and find your crossover point instantly. 100% Free & No Signup.",
   

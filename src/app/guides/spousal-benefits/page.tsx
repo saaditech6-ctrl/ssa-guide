@@ -9,7 +9,7 @@ import { benefitAtAge, calcPia } from "@/lib/benefit-math"
 const LAST_REVIEWED = "2026-11-03"
 
 export const metadata: Metadata = {
-  title: "Social Security Spousal Benefits Guide 2026",
+  title: { absolute: "Social Security Spousal Benefits Guide 2026" },
   description: "Complete guide to Social Security spousal benefits — who qualifies, how much you receive, divorced spouse rules, and the best claiming strategies for couples.",
   alternates: {
     canonical: "https://www.socialsecurityguidecalc.com/guides/spousal-benefits",

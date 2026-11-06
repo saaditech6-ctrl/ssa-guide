@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   // العنوان المطور: يركز على "الحساب الدقيق" و "عدم الحاجة للتسجيل" لجذب النقرات
-  title: "2026 Social Security Benefits Estimator: Estimate Your Benefit",
+  title: { absolute: "2026 Social Security Benefits Estimator" },
   description:
     "Estimate a Social Security retirement benefit using the 2026 PIA formula and your estimated monthly earnings. Educational estimate; your official benefit depends on your full earnings record.",
   

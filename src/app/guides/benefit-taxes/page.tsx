@@ -6,7 +6,7 @@ import { SSA_2026 } from "@/lib/data/2026"
 const LAST_UPDATED = "2026-11-04"
 
 export const metadata: Metadata = {
-  title: "Social Security Benefit Taxation Guide 2026 | Thresholds & Strategies",
+  title: { absolute: "Social Security Benefit Taxes: 2026 Thresholds" },
   description: "Are your Social Security benefits taxable? Learn the 2026 combined income thresholds, state tax rules, and 10 legal strategies to reduce your tax bill.",
   alternates: {
     canonical: "https://www.socialsecurityguidecalc.com/guides/benefit-taxes",

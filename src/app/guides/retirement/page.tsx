@@ -9,7 +9,7 @@ import { benefitAtAge, calcPia } from "@/lib/benefit-math"
 const LAST_REVIEWED = "2026-11-03"
 
 export const metadata: Metadata = {
-  title: "Social Security Retirement Benefits Guide 2026",
+  title: { absolute: "Social Security Retirement Benefits Guide 2026" },
   description: "How to maximize your Social Security retirement income. Claiming strategies, delayed credits, and spousal coordination explained by Amine Saadi.",
   alternates: {
     canonical: "https://www.socialsecurityguidecalc.com/guides/retirement",

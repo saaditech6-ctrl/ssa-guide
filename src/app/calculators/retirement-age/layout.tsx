@@ -2,7 +2,7 @@ import type { Metadata } from "next"
 
 export const metadata: Metadata = {
   // العنوان المطور: يركز على عام 2026 وعلى "العقوبات" لجذب الباحثين القلقين على مستحقاتهم
-  title: "2026 Full Retirement Age Calculator: See Your Claiming Penalty",
+  title: { absolute: "2026 Full Retirement Age Calculator" },
   description:
     "Find your exact Social Security FRA for 2026. Compare the 30% early claiming penalty vs. 8% annual delayed credits instantly. 100% Free & No Signup Required.",
   

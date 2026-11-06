@@ -88,7 +88,7 @@ export const articles: Article[] = [
   {
  slug: "medicare-2027-costs-premiums-guide",
   title: "2027 Medicare Costs & Part B Premiums: IRMAA Surcharge Forecast",
-  metaTitle: "2027 Medicare Part B Premium & IRMAA Brackets | Cost Forecast",
+  metaTitle: "2027 Medicare Part B Premiums & IRMAA Brackets",
   metaDescription: "What will Medicare Part B cost in 2027? See projected premiums, IRMAA brackets, and deductibles. Estimate your true healthcare costs—100% Free.",
   primaryKeyword: "Medicare 2027 costs Part B premium",
   secondaryKeywords: ["IRMAA surcharge 2027", "Medicare premiums forecast", "Part A deductible 2027", "high income adjustment Medicare"],
@@ -157,7 +157,7 @@ export const articles: Article[] = [
   {
     slug: "social-security-spousal-benefits-rules",
     title: "Social Security Spousal Benefits: How to Claim Your 50% Bonus (2026 Rules)",
-    metaTitle: "Spousal Benefits Rules: Can You Get 50% of Your Partner’s Check?",
+    metaTitle: "Spousal Benefits: Can You Get 50% of a Partner’s Check?",
     metaDescription: "Does your spouse earn more than you? You could qualify for 50% of their benefit—even if you're divorced. See the 2026 eligibility rules and calculate your payout instantly. 100% Free.",
     excerpt: "The 50% PIA rule can boost your household income. Learn the 10-year marriage rule for divorced spouses and how the WEP/GPO repeal affects your final check in 2026.",
     image: "/images/spousal-benefits-cover.webp",
@@ -228,7 +228,7 @@ export const articles: Article[] = [
   {
       slug: "ssa-news-updates-policy-changes",
     title: "SSA News 2026: Mandatory New Login Rules & Policy Shifts Explained",
-    metaTitle: "New Social Security Login Rules 2026: Policy & System Updates",
+    metaTitle: "Social Security Login Rules 2026: Policy Updates",
     metaDescription: "Is your Social Security account secure? Learn about the mandatory 2026 shift to Login.gov, new identity verification protocols, and policy changes. 100% Free Update.",
     excerpt: "The SSA is overhauling its digital infrastructure in 2026. Discover how mandatory login shifts and new verification steps impact your access to benefits.",
     image: "/images/ssa-news-updates-cover.webp",
@@ -293,7 +293,7 @@ export const articles: Article[] = [
   {
      slug: "historical-social-security-cola-increases",
     title: "Social Security COLA History: 10 Years of Record Highs & 2027 Lessons",
-    metaTitle: "Historical Social Security COLA Increases (2017-2027) | Guide",
+    metaTitle: "Historical Social Security COLA Increases (2017–2027)",
     metaDescription: "How much has Social Security really grown? See 10 years of COLA data, including the 8.7% record high. Estimate your 2027 raise instantly. 100% Free.",
     excerpt: "Analyze a decade of COLA volatility, from 0% lows to the 8.7% record high. Discover how past inflation adjustments impact your 2027 planning.",
     image: "/images/historical-cola-increases-cover.webp",
@@ -420,7 +420,7 @@ export const articles: Article[] = [
   {
     slug: "does-ssdi-have-an-asset-limit",
     title: "SSDI Asset Limits 2026: Why Your Savings and House Are 100% Safe",
-    metaTitle: "Does SSDI Have an Asset Limit? 2026 Rules for Savings & Property",
+    metaTitle: "SSDI Asset Limit: 2026 Rules for Savings & Property",
     metaDescription: "Think your savings will disqualify you from disability? SSDI has NO asset limit in 2026. Learn why your house and 401(k) are safe. 100% Free & Private.",
     excerpt: "SSDI has absolutely NO asset limit. Discover why you can own a home, have savings, and still qualify if you meet the 2026 SGA income test.",
     image: "/images/ssdi-asset-limit-cover.webp",
@@ -521,7 +521,7 @@ export const articles: Article[] = [
   {
   slug: "social-security-age-62-vs-67-vs-70",
     title: "Social Security 62 vs. 67 vs. 70: Monthly Benefit Comparison",
-    metaTitle: "Social Security Claiming Ages 62 vs. 67 vs. 70: Benefits and Break-Even",
+    metaTitle: "Claim at 62, 67 or 70? Benefits and Break-Even Ages",
     metaDescription: "Compare Social Security benefits at 62, FRA 67, and 70, with clearly labeled break-even assumptions for COLA and discounting.",
     primaryKeyword: "social security age 62 67 70 comparison",
     secondaryKeywords: ["early claiming reduction percentage", "delayed retirement credit bonus", "monthly benefit amount by age", "full retirement age benefit percentage"],
@@ -742,7 +742,7 @@ export const articles: Article[] = [
   {
       slug: "social-security-early-retirement-penalty-62",
     title: "Social Security Early Retirement Penalty: The Hidden Cost of Filing at 62",
-    metaTitle: "Early Retirement Penalty at 62: Calculate Your 30% Benefit Cut",
+    metaTitle: "Early Retirement Penalty at 62: 30% Benefit Cut",
     metaDescription: "Is filing at 62 worth a 30% permanent cut? Learn the exact dollar penalty, use our free break-even calculator, and see the 2026 earnings test limits. 100% Free.",
     excerpt: "Filing for Social Security at 62 permanently reduces your check by up to 30%. Discover the math behind the penalty and how to find your personal break-even point.",
     category: "Retirement Planning",
@@ -850,7 +850,7 @@ export const articles: Article[] = [
 {
 slug: "supplemental-security-income",
     title: "SSI 2026 Guide: How to Pass the Strict $2,000 Asset Test",
-    metaTitle: "2026 Supplemental Security Income (SSI) Rules & Payment Limits",
+    metaTitle: "2026 Supplemental Security Income Rules",
     metaDescription: "Do you qualify for SSI in 2026? Learn the strict $2,000 asset limit, federal payment rates, and how to apply. Find a local office instantly. 100% Free.",
     excerpt: "SSI is a needs-based program with strict wealth limits. Discover the 2026 resource rules and how to determine if you qualify for monthly cash assistance.",
     category: "SSI",
@@ -1129,7 +1129,7 @@ content: `
 {
   slug: "social-security-delayed-retirement-credits",
   title: "Social Security Delayed Credits 2026: How to Secure Your 8% Annual Bonus",
-  metaTitle: "Maximize Social Security: 8% Annual Raise via Delayed Credits",
+  metaTitle: "Social Security Delayed Credits: 8% Annual Raise",
   metaDescription: "Want a 24% to 32% permanent raise? Learn how delayed retirement credits add 8% to your check every year until age 70.",
   excerpt: "Delaying your claim past FRA is the only guaranteed way to increase your check by 8% annually. Discover how to reach the $5,181 maximum monthly payout.",
   category: "Retirement Planning",
@@ -1486,7 +1486,7 @@ content: `
 {
   slug: "can-you-collect-survivor-benefits-and-your-own-social-security-at-the-same-time",
   title: "Can You Collect Survivor Benefits & Your Own Social Security? Dual Entitlement Rules 2026",
-  metaTitle: "Survivor Benefits vs. Own Social Security: Rules & Strategies 2026",
+  metaTitle: "Social Security Survivor Benefits vs. Own: 2026 Rules",
   metaDescription: "Can you double-dip on Social Security? Learn the 2026 dual entitlement rules, the 'Switching Strategy' to boost your check, and how age affects your payout. 100% Free.",
   excerpt: "Losing a spouse creates financial uncertainty. Discover how the SSA handles dual entitlement and the 'Switching Strategy' to maximize your lifetime income.",
   category: "Survivor Benefits",
@@ -1600,7 +1600,7 @@ content: `
 {
   slug: "social-security-benefits-for-children-after-parent-death",
   title: "Social Security Benefits for Children 2026: The 75% Payout Rule Explained",
-  metaTitle: "Social Security Child Survivor Benefits 2026: Eligibility & Rules",
+  metaTitle: "Social Security Child Survivor Benefits 2026",
   metaDescription: "How much does Social Security pay children after a parent's death? Learn about the 75% payout rule, 2026 family maximum caps, and age limits. 100% Free.",
   excerpt: "When a parent passes away, dependent children may receive up to 75% of the parent's benefit. Discover the 2026 eligibility rules and family maximum caps.",
   category: "Survivor Benefits",
@@ -1754,7 +1754,7 @@ content: `
 {
    slug: "how-to-apply-for-supplemental-security-income",
   title: "How to Apply for SSI 2026: Step-by-Step Checklist & Specialist Interview Tips",
-  metaTitle: "Apply for Supplemental Security Income | 2026 Step-by-Step Guide",
+  metaTitle: "Apply for Supplemental Security Income: 2026 Guide",
   metaDescription: "Ready to file for SSI in 2026? Learn the fastest way to apply, the required documents to bring, and how to navigate the specialist interview. 100% Free.",
   excerpt: "The SSI application process is rigorous. Discover who can apply online, what to expect during your interview, and how to track your claim status.",
   category: "SSI",
@@ -2109,7 +2109,7 @@ content: `
   
   slug: "how-to-get-a-replacement-social-security-card",
   title: "How to Get a Replacement Social Security Card in 2026",
-  metaTitle: "How to Replace Your Social Security Card (Free & Online 2026)",
+  metaTitle: "Replace Your Social Security Card: Free Online (2026)",
   metaDescription: "Learn how to get a replacement Social Security card online or in person in 2026 — required documents, processing time, limits, and who qualifies to apply.",
   excerpt: "Getting a replacement Social Security card is free and, in most states, can be done entirely online. Here's exactly who qualifies, what documents you need, and how long it takes to arrive.",
   image: "/images/how-to-get-a-replacement-social-security-card.webp",
@@ -2229,7 +2229,7 @@ content: `
   
   slug: "is-medicare-only-over-65",
   title: "Is Medicare Only for People Over 65? Under 65 Eligibility Rules",
-  metaTitle: "Is Medicare Only for Over 65? Under 65 Rules & SSDI Eligibility",
+  metaTitle: "Medicare Only for Over 65? Under-65 & SSDI Rules",
   metaDescription: "No, Medicare is not only for people over 65. Learn how SSDI recipients, people with ESRD, and ALS patients qualify under 65 and how coverage works.",
   excerpt: "While most beneficiaries qualify at age 65, Medicare covers millions of Americans under 65 who have qualifying disabilities, End-Stage Renal Disease (ESRD), or ALS.",
   image: "/images/is-medicare-only-over-65.webp",
@@ -2452,7 +2452,7 @@ content: `
 {
   slug: "working-while-receiving-social-security-earnings-limit-rules",
   title: "Working While Receiving Social Security: Earnings Test Rules and Benefit Reductions",
-  metaTitle: "Working While Receiving Social Security: Earnings Limit Rules (2026-2027)",
+  metaTitle: "Working and Social Security: 2026–2027 Earnings Limits",
   metaDescription: "Comprehensive financial guide explaining how working after claiming Social Security impacts your monthly check, the Earnings Test thresholds, and tax implications.",
   excerpt: "An in-depth analysis of the Social Security Retirement Earnings Test, detailing how working early reduces checks, how withheld funds are recalculated, and the key tax impacts.",
   category: "Retirement Planning",
@@ -2709,7 +2709,7 @@ metaDescription: "Spouses can claim up to 50% of a partner's benefit at FRA. Lea
 {
   "slug": "social-security-earnings-test-limit",
   "title": "Social Security Earnings Test Limit: How Working in Retirement Affects Your Benefits",
-  "metaTitle": "Social Security Earnings Test Limit (2026-2027 Rules & Calculator)",
+  "metaTitle": "Social Security Earnings Test Limits: 2026–2027 Rules",
   "metaDescription": "Working while claiming Social Security before Full Retirement Age can temporarily withhold benefits. Learn the 2026 & 2027 earnings test limits ($25,560 and $67,920) and how to calculate your payout.",
   "excerpt": "Claiming Social Security before your Full Retirement Age while continuing to work triggers the Retirement Earnings Test. Learn the updated 2026 and 2027 earnings limits, withholdings, and how withheld money is returned later.",
   "category": "Retirement Planning",
@@ -2959,7 +2959,7 @@ metaDescription: "Spouses can claim up to 50% of a partner's benefit at FRA. Lea
  {
   slug: "my-social-security-account-complete-guide",
   title: "My Social Security Account: How to Set Up, Sign In, and Manage Benefits (2026 Guide)",
-  metaTitle: "My Social Security Account Guide (2026): Login, Setup & Features",
+  metaTitle: "My Social Security Account: 2026 Login & Setup Guide",
   metaDescription: "Learn how to create, access, and manage your my Social Security account using Login.gov or ID.me. Check statements, replace cards, and estimate benefits.",
   excerpt: "A complete step-by-step guide on creating, accessing, and navigating your personal my Social Security account online using Login.gov or ID.me.",
   category: "Account & Applications",

@@ -2,7 +2,7 @@ import type { Metadata } from "next"
 
 export const metadata: Metadata = {
   // العنوان المطور: يركز على "حساب المبلغ" وعام 2026 لجذب النقرات
-  title: "2026 Social Security Tax Calculator: Calculate Your Taxable Amount",
+  title: { absolute: "2026 Social Security Tax Calculator" },
   description:
     "Find out exactly how much of your 2026 Social Security is taxable. Use official IRS income thresholds to estimate your tax exposure instantly. 100% Free & Private.",
   

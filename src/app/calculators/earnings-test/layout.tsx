@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   // العنوان المطور: يركز على "تجنب العقوبات" والحساب الفوري لجذب النقرات
-  title: "2026 Social Security Earnings Test Calculator: Avoid Benefit Cuts",
+  title: { absolute: "2026 Social Security Earnings Test Calculator" },
   description:
     "Estimate how the 2026 Social Security retirement earnings test may affect benefits if you continue working before Full Retirement Age.",
   

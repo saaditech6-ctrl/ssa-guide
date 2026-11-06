@@ -9,7 +9,7 @@ import { benefitAtAge, calcPia } from "@/lib/benefit-math"
 const LAST_REVIEWED = "2026-11-03"
 
 export const metadata: Metadata = {
-  title: "Medicare Complete Guide 2026 — Parts A, B, C, D Explained",
+  title: { absolute: "Medicare Complete Guide 2026 — Parts A, B, C, D Explained" },
   description: "Everything you need to know about Medicare in 2026. Parts A, B, C, and D explained in plain English — enrollment windows, costs, and coverage.",
   alternates: {
     canonical: "https://www.socialsecurityguidecalc.com/guides/medicare",

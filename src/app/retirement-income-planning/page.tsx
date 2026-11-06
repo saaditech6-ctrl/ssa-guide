@@ -17,6 +17,7 @@ export const metadata: Metadata = buildMetadata({
   description:
     "Plan Social Security retirement income with confidence. Learn how claiming age, Medicare timing, taxes, and household strategy can shape your retirement budget.",
   path: "/retirement-income-planning",
+  absoluteTitle: true,
 })
 
 const highlights = [

@@ -3,7 +3,7 @@ import Link from "next/link"
 import type { Metadata } from "next"
 
 export const metadata: Metadata = {
-  title: "Social Security Basics: Getting Started Guide 2026",
+  title: { absolute: "Social Security Basics: Getting Started Guide 2026" },
   description: "Learn how Social Security works, who qualifies, how benefits are calculated, and how to apply. Complete beginner guide by Amine Saadi.",
   alternates: {
     canonical: "https://www.socialsecurityguidecalc.com/guides/getting-started",
