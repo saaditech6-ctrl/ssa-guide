@@ -86,6 +86,23 @@ describe("SSA earnings and PIA calculations", () => {
     expect(computePia(5000, 2026)).toBeGreaterThan(0)
   })
 
+  it("matches the integer-tenths formula for every AIME from 0 to 20,000 in 2025-2027", () => {
+    for (const year of [2025, 2026, 2027]) {
+      const [first, second] = BEND_POINTS[year]
+      for (let aime = 0; aime <= 20_000; aime += 1) {
+        const x = Math.min(aime, first)
+        const y = Math.max(Math.min(aime, second) - first, 0)
+        const z = Math.max(aime - second, 0)
+        const expected = Math.floor((90 * x + 32 * y + 15 * z) / 10) / 10
+        expect(computePia(aime, year), `AIME ${aime}, eligibility year ${year}`).toBe(expected)
+      }
+    }
+  })
+
+  it("calculates a PIA of $4,216.90", () => {
+    expect(computePia(14_358, 2026)).toBe(4_216.9)
+  })
+
   it("does not raise the estimate beyond the indexed taxable-maximum record", () => {
     const birthYear = 1960
     const records = Object.fromEntries(

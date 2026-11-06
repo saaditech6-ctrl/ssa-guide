@@ -78,13 +78,13 @@ export default function PrivacyPolicyPage() {
             <p>When You access the Service through a mobile device, We may collect the type and unique ID of the device, its IP address and operating system, the type of mobile Internet browser used, unique device identifiers and other diagnostic data. We may also collect information that Your browser sends whenever You visit Our Service.</p>
             
             <h4>Tracking Technologies, Advertising, and Cookies</h4>
-            <p>Our consent banner stores your choice (accepted or rejected) in your browser&apos;s local storage under <code>ssa-guide-consent</code>. Google Analytics and, if configured, Google AdSense are not loaded unless you accept. Rejecting keeps Google consent for analytics and advertising denied. You can change your choice at any time with the Privacy settings button shown on every page, or clear this site&apos;s local storage in your browser.</p>
-            <p>After you accept, Google Analytics may use cookies and similar technologies to measure site usage. If AdSense is enabled, Google and its partners may use advertising cookies and similar technologies, including to personalize ads based on your visits to this and other websites. You can manage personalized advertising in <a href="https://www.google.com/settings/ads" target="_blank" rel="noopener noreferrer">Google Ads Settings</a> or opt out of some third-party vendors&apos; personalized advertising at <a href="https://www.aboutads.info/choices/" target="_blank" rel="noopener noreferrer">aboutads.info</a>.</p>
+            <p>Our consent banner stores your choice (accepted or rejected) in your browser&apos;s local storage under <code>ssa-guide-consent</code>. Vercel Analytics, Speed Insights, Google Analytics, and, if configured, Google AdSense are not loaded unless you accept. Rejecting keeps Google consent for analytics and advertising denied. You can change your choice at any time with the Privacy settings button shown on every page, or clear this site&apos;s local storage in your browser.</p>
+            <p>After you accept, Vercel Analytics and Speed Insights, and Google Analytics may measure site usage. If AdSense is enabled, Google and its partners may use advertising cookies and similar technologies, including to personalize ads based on your visits to this and other websites. You can manage personalized advertising in <a href="https://www.google.com/settings/ads" target="_blank" rel="noopener noreferrer">Google Ads Settings</a> or opt out of some third-party vendors&apos; personalized advertising at <a href="https://www.aboutads.info/choices/" target="_blank" rel="noopener noreferrer">aboutads.info</a>.</p>
             <p>The consent banner on this site is not a Google-certified consent management platform. For AdSense in the EEA, UK, or Switzerland, Google requires a certified consent management platform; the recommended setup path is AdSense <strong>Privacy &amp; messaging</strong> in the AdSense dashboard.</p>
             <ul>
               <li><strong>Necessary / Essential Cookies</strong>: Cookies that may be required to operate, secure, and deliver the Website.</li>
               <li><strong>Consent preference</strong>: Your accepted or rejected choice is saved in local storage so the banner can remember your preference.</li>
-              <li><strong>Analytics and advertising</strong>: Google Analytics and Google AdSense are only loaded after you accept; they may use cookies or similar identifiers.</li>
+              <li><strong>Analytics and advertising</strong>: Vercel Analytics, Speed Insights, Google Analytics, and Google AdSense are only loaded after you accept; they may use cookies or similar identifiers.</li>
             </ul>
 
             <h3>Use of Your Personal Data</h3>
@@ -120,7 +120,7 @@ export default function PrivacyPolicyPage() {
             <h2>Service Providers We Use</h2>
             <p>We use the following third-party services to operate this website. Each service has its own privacy policy and handles data under its own terms.</p>
             <ul>
-              <li><strong>Vercel</strong> hosts the website and provides privacy-friendly traffic and performance measurement (Vercel Analytics and Speed Insights).</li>
+              <li><strong>Vercel</strong> hosts the website and provides traffic and performance measurement (Vercel Analytics and Speed Insights), which are loaded only after you accept the consent banner.</li>
               <li><strong>Google Analytics 4</strong> measures how visitors use the site, using cookies and similar identifiers.</li>
               <li><strong>Google AdSense</strong> may provide advertising if enabled; it is loaded only after you accept the consent banner.</li>
               <li><strong>Brevo</strong> processes email addresses you submit to our newsletter form and sends our emails. You can unsubscribe from any email.</li>

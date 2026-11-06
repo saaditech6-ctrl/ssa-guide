@@ -20,6 +20,18 @@ You can start editing the page by modifying `app/page.tsx`. The page auto-update
 
 This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
+## Environment Variables
+
+Configure these public variables in `.env.local` to enable advertising:
+
+```env
+NEXT_PUBLIC_ADSENSE_CLIENT=ca-pub-your-publisher-id
+NEXT_PUBLIC_ADS_ENABLED=true
+```
+
+- `NEXT_PUBLIC_ADSENSE_CLIENT` sets the AdSense publisher client ID. AdSense scripts load only after a visitor accepts the consent banner and this variable is configured.
+- `NEXT_PUBLIC_ADS_ENABLED` controls the advertising disclosure in the footer. Set it to `true` to display the disclosure.
+
 ## Learn More
 
 To learn more about Next.js, take a look at the following resources:

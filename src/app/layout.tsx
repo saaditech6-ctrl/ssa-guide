@@ -2,8 +2,6 @@ import type { Metadata, Viewport } from "next"
 import "./globals.css"
 import { Header } from "@/components/layout/Header"
 import { Footer } from "@/components/layout/Footer"
-import { Analytics } from "@vercel/analytics/next"
-import { SpeedInsights } from "@vercel/speed-insights/next"
 import Script from "next/script"
 import { ConsentManager } from "@/components/consent/ConsentManager"
 import { Inter, Playfair_Display } from "next/font/google"
@@ -93,9 +91,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       "name": "Social Security Guide",
       "url": "https://www.socialsecurityguidecalc.com",
       "sameAs": [
-        "https://www.facebook.com/SocialSecurityGuideCalc",
-        "https://www.linkedin.com/in/amine-saadi1985/",
-        "https://www.youtube.com/@SocialSecurityGuideCalc"
+        "https://www.facebook.com/amine.saadi.773/"
       ],
       "logo": {
         "@type": "ImageObject",
@@ -119,6 +115,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             });
           `}
         </Script>
+        <meta name="google-adsense-account" content="ca-pub-7491932205215887" />
         <meta
           name="msvalidate.01"
           content="D474F952B827672843EF3FDA7D4492FE"
@@ -143,8 +140,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         </main>
         
         <Footer />
-        <Analytics />
-        <SpeedInsights />
         <ConsentManager />
       </body>
     </html>

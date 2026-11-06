@@ -1,10 +1,8 @@
-import { getSsaParams } from "../data"
 import { AWI } from "./awi"
 import { BEND_POINTS } from "./bend-points"
 import { TAXABLE_MAX } from "./taxable-max"
 
 export type EarningsByYear = Record<number, number>
-const PIA_RATES = getSsaParams(2026).piaBendPoints.rates
 
 export function createQuickEarningsRecord(
   birthYear: number,
@@ -65,9 +63,9 @@ export function computePia(aime: number, eligibilityYear: number): number {
   const bendPoints = BEND_POINTS[eligibilityYear]
   if (!bendPoints) throw new RangeError(`No PIA bend points are available for eligibility year ${eligibilityYear}.`)
   const [first, second] = bendPoints
-  const raw =
-    Math.min(aime, first) * PIA_RATES.first +
-    Math.max(Math.min(aime, second) - first, 0) * PIA_RATES.second +
-    Math.max(aime - second, 0) * PIA_RATES.third
-  return Math.floor(raw * 10) / 10
+  const x = Math.min(aime, first)
+  const y = Math.max(Math.min(aime, second) - first, 0)
+  const z = Math.max(aime - second, 0)
+  const dimes = Math.floor((90 * x + 32 * y + 15 * z) / 10)
+  return dimes / 10
 }

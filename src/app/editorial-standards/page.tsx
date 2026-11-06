@@ -29,7 +29,7 @@ const jsonLd = {
       "@type": "Person",
       name: "Amine Saadi",
       url: "https://www.socialsecurityguidecalc.com/about",
-      sameAs: "https://www.linkedin.com/in/amine-saadi1985/",
+      sameAs: "https://www.facebook.com/amine.saadi.773/",
     },
   },
 }
@@ -121,9 +121,6 @@ export default function EditorialStandardsPage() {
           </a>
           . We review correction reports and update a page or calculator when a correction is warranted.
         </p>
-
-        <h2>Review</h2>
-        <p>{"Reviewed by: TODO(add the reviewer's name and credential, or delete this line if there is no independent reviewer)"}</p>
 
         <div className="rounded-2xl border border-slate-200 bg-slate-50 p-6">
           <h3 className="text-xl font-semibold text-slate-900">Need more context?</h3>

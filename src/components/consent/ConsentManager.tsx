@@ -2,6 +2,8 @@
 
 import { useSyncExternalStore } from "react"
 import Link from "next/link"
+import { Analytics } from "@vercel/analytics/next"
+import { SpeedInsights } from "@vercel/speed-insights/next"
 import { AdSenseScript } from "@/components/ads/AdSenseScript"
 import { GoogleAnalytics } from "@/components/analytics/GoogleAnalytics"
 import { updateGoogleConsent, type ConsentChoice } from "@/lib/google-consent"
@@ -106,6 +108,8 @@ export function ConsentManager() {
     <>
       {choice === "accepted" && (
         <>
+          <Analytics />
+          <SpeedInsights />
           <GoogleAnalytics />
           <AdSenseScript />
         </>
@@ -119,7 +123,7 @@ export function ConsentManager() {
           <div className="mx-auto flex max-w-7xl flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
             <div className="max-w-3xl">
               <p id="consent-description" className="text-sm leading-6 text-slate-700">
-                We use Google Analytics and, when enabled, Google advertising after you accept. You can reject or change your choice at any time.{" "}
+                We use analytics and, when enabled, Google advertising after you accept. You can reject or change your choice at any time.{" "}
                 <Link href="/privacy-policy" className="font-semibold text-blue-700 underline underline-offset-2">
                   Privacy policy
                 </Link>
