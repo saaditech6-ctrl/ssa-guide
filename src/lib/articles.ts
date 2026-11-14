@@ -87,7 +87,7 @@ export const articles: Article[] = [
   },
   {
  slug: "medicare-2027-costs-premiums-guide",
-  title: "2027 Medicare Costs & Part B Premiums: IRMAA Surcharge Forecast",
+  title: "Medicare Costs for 2027: Premiums, IRMAA and Deductibles",
   metaTitle: "2027 Medicare Part B Premiums & IRMAA Brackets",
   metaDescription: "What will Medicare Part B cost in 2027? See projected premiums, IRMAA brackets, and deductibles. Estimate your true healthcare costs—100% Free.",
   primaryKeyword: "Medicare 2027 costs Part B premium",
@@ -99,13 +99,13 @@ export const articles: Article[] = [
   category: "Medicare",
   author: "Amine Saadi",
   date: "2026-06-02",
-  lastUpdated: "2026-06-02",
+  lastUpdated: "2026-11-19",
   readTime: "5 min read",
   featured: false,
-    content: `<p>Navigating Medicare expenses is an essential component of a robust retirement strategy. As healthcare costs continue to outpace general economic inflation, structural changes to Medicare Part B premiums and Part A deductibles are highly anticipated for 2027. Beneficiaries must understand these upcoming shifts to protect their monthly net Social Security benefits.</p>
+    content: `<p>Medicare premiums and deductibles change over time. For planning in 2027, confirm amounts with Medicare.gov or CMS and check the year shown in the official table before making decisions. Projections are not final rates; the 2026 amounts below are included only as a comparison.</p>
 
-<h2>Projected 2027 Medicare Premium & Deductible Breakdown</h2>
-<p>While the Centers for Medicare & Medicaid Services (CMS) typically announces official numbers in late autumn, early actuarial trajectory models provide a reliable baseline for financial forecasting. Below is the comparative projection model for standard 2027 Medicare costs:</p>
+<h2>Medicare Premiums and Deductibles: Official Figures</h2>
+<p>Use the official Medicare cost page for annual amounts. This table lists the confirmed 2026 amounts for comparison and does not present an estimate as a final 2027 price.</p>
 
 <table>
   <thead>
@@ -118,68 +118,72 @@ export const articles: Article[] = [
   <tbody>
     <tr>
       <td><strong>Part B Standard Premium</strong></td>
-      <td>$189.50 / month (Projected)</td>
+      <td>Check Medicare.gov (2026 official: $202.90 / month)</td>
       <td>Doctor visits, outpatient care, and preventive services</td>
     </tr>
     <tr>
       <td><strong>Part B Annual Deductible</strong></td>
-      <td>$262.00 / year (Projected)</td>
+      <td>Check Medicare.gov (2026 official: $283 / year)</td>
       <td>Initial out-of-pocket threshold before Part B kicks in</td>
     </tr>
     <tr>
       <td><strong>Part A Inpatient Hospital Deductible</strong></td>
-      <td>$1,698.00 / benefit period</td>
+      <td>Check Medicare.gov (2026 official: $1,736)</td>
       <td>Covers the first 60 days of inpatient hospital care</td>
     </tr>
   </tbody>
 </table>
+<p class="text-xs text-slate-400 mt-1">Source: <a href="https://www.medicare.gov/basics/costs/medicare-costs" target="_blank" rel="noopener noreferrer" class="underline hover:text-amber-600">Medicare.gov — Medicare Costs</a></p>
 
 <h2>The Income-Related Monthly Adjustment Amount (IRMAA)</h2>
-<p>High-income beneficiaries must prepare for additional structural surcharges known as IRMAA. If your Modified Adjusted Gross Income (MAGI) from two years prior (using 2025 tax returns for the 2027 premium year) exceeds the federal baseline threshold, your monthly Part B and Part D premiums will see significant tiered increases.</p>
+<p>Some higher-income beneficiaries pay an Income-Related Monthly Adjustment Amount (IRMAA) in addition to standard Part B and Part D costs. SSA generally uses tax information from two years earlier to determine IRMAA. Check the current income thresholds and premium amounts with Medicare or SSA.</p>
+
+<h2>Part D Drug Coverage Limits</h2>
+<p>Part D deductibles and out-of-pocket limits can change each year. Check Medicare.gov or CMS for the official 2027 figures before comparing plans; do not rely on an estimate or a prior-year limit.</p>
 
 <h2>Avoiding the Lifetime Late Enrollment Penalty</h2>
-<p>Timing your entry into the Medicare ecosystem is legally binding. If you fail to enroll during your Initial Enrollment Period (IEP)—the 7-month window surrounding your 65th birthday—and you do not possess qualifying employer-sponsored health coverage, you face permanent premium penalties:</p>
+<p>If you miss an enrollment deadline and do not qualify for a Special Enrollment Period or another exception, you may owe a late enrollment penalty. Rules depend on the type of coverage and the circumstances:</p>
 <ul>
-  <li><strong>Part B Penalty Track:</strong> An extra 10% premium charge is added for each full 12-month period you were eligible but failed to enroll. This penalty remains attached to your premium for life.</li>
-  <li><strong>Part D Penalty Track:</strong> A cumulative 1% penalty per month of delayed signup is permanently tacked onto your prescription drug coverage plan.</li>
+  <li><strong>Part B:</strong> The penalty is generally 10% for each full 12-month period you could have had Part B but did not, and usually applies for as long as you have Part B. A Special Enrollment Period may be available if you had qualifying group health coverage based on current employment.</li>
+  <li><strong>Part D:</strong> You may owe a penalty if you go 63 or more consecutive days without Part D or other creditable prescription drug coverage after your initial enrollment period. The penalty generally continues while you have Part D.</li>
 </ul>
 
 <h2>Frequently Asked Questions (FAQ)</h2>
 
 <h3>Are Medicare Part B premiums deducted automatically from Social Security?</h3>
-<p>Yes. If you are already collecting Social Security retirement or disability benefits, the law requires that your monthly Medicare Part B premium be automatically deducted directly from your gross Social Security check.</p>
+<p>Usually. If you receive Social Security benefits, your Part B premium is generally deducted from your payment. Some people are billed directly instead.</p>
 <p class="text-xs text-slate-400 mt-1">Source: <a href="https://www.medicare.gov/basics/costs/medicare-costs" target="_blank" rel="noopener noreferrer" class="underline hover:text-amber-600">Medicare.gov — Medicare Costs</a></p>
 
 <h3>What is the Medicare 'Hold Harmless' provision?</h3>
-<p>This statutory rule protects beneficiaries from experiencing a net drop in their monthly Social Security checks. If the dollar increase of the annual COLA is smaller than the dollar increase of the Medicare Part B premium hike, the premium increase is capped to prevent your net benefit from decreasing.</p>
+<p>The hold harmless provision can protect some Social Security beneficiaries from a decrease in their net benefit when the standard Part B premium rises. It does not apply to everyone; for example, people paying IRMAA or those not having the premium deducted from a Social Security payment may not qualify.</p>
 <p class="text-xs text-slate-400 mt-1">Source: <a href="https://www.medicare.gov/basics/costs/medicare-costs" target="_blank" rel="noopener noreferrer" class="underline hover:text-amber-600">Medicare.gov — Medicare Costs</a></p>`
   },
   {
     slug: "social-security-spousal-benefits-rules",
-    title: "Social Security Spousal Benefits: How to Claim Your 50% Bonus (2026 Rules)",
-    metaTitle: "Spousal Benefits: Can You Get 50% of a Partner’s Check?",
-    metaDescription: "Does your spouse earn more than you? You could qualify for 50% of their benefit—even if you're divorced. See the 2026 eligibility rules and calculate your payout instantly. 100% Free.",
+    title: "Social Security Spousal Benefits: Eligibility and the 50% PIA Rule",
+      metaTitle: "Spousal Benefits: Eligibility and Maximum Amounts",
+      metaDescription: "Learn who may qualify for Social Security spousal or divorced-spouse benefits, how the 50% PIA maximum works, and when early claiming reduces payments.",
     excerpt: "The 50% PIA rule can boost your household income. Learn the 10-year marriage rule for divorced spouses and how the WEP/GPO repeal affects your final check in 2026.",
     image: "/images/spousal-benefits-cover.webp",
     imageAlt: "Social Security Spousal Benefits 50 Percent Rule Guide - Social Security Guide",
     category: "Spousal Benefits",
     author: "Amine Saadi",
     date: "2026-06-16",
-    lastUpdated: "2026-06-16",
+    lastUpdated: "2026-11-19",
     readTime: "5 min read",
     featured: false,
     content: `<p>Social Security spousal benefits offer a critical financial pathway for couples to maximize their retirement income. This provision is specifically engineered to protect lower-earning or non-working spouses, allowing them to collect monthly benefits anchored to the lifetime earnings record of their primary-earning partner.</p>
 
 <h2>Core Eligibility Criteria for Current Spouses</h2>
-<p>To legally claim traditional spousal benefits, the Social Security Administration (SSA) enforces three baseline statutory guardrails:</p>
+<p>Eligibility depends on your age, marital history, and the worker's benefit status. These are general rules; exceptions can apply:</p>
 <ul>
-  <li><strong>The Marriage Duration:</strong> The couple must be legally married for a minimum continuous duration of one full year before filing.</li>
-  <li><strong>The Minimum Age Threshold:</strong> The claiming spouse must be at least 62 years of age, unless they are actively caring for a qualifying child under age 16 or a disabled child.</li>
-  <li><strong>The Primary Filer Status:</strong> The higher-earning spouse must have already filed for and be actively receiving their own retirement or disability benefits.</li>
+  <li><strong>Marriage duration:</strong> Generally, you must have been married for at least one year. Exceptions may apply, including in some cases when you are caring for the worker's child.</li>
+  <li><strong>Age:</strong> You generally must be at least 62, unless you qualify as a spouse caring for an eligible child under 16 or a child with a disability who is entitled on the worker's record.</li>
+  <li><strong>Worker's benefit:</strong> For a current spouse's benefit, the worker generally must have applied for Social Security retirement benefits. Other rules may apply when the worker receives disability benefits.</li>
 </ul>
 
 <h2>The 50% PIA Rule and Early Claiming Reductions</h2>
-<p>The maximum monthly allotment for a spouse is capped strictly at 50% of the primary earner's Primary Insurance Amount (PIA)—which is the amount they are entitled to at their Full Retirement Age (FRA). Claiming these benefits prior to reaching your own FRA triggers a permanent actuarial reduction.</p>
+<p>At the spouse's Full Retirement Age (FRA), the total retirement benefit may reach up to 50% of the worker's Primary Insurance Amount (PIA), before any reduction for early claiming. A spousal benefit is not an extra 50% on top of the spouse's own full retirement benefit; SSA pays the worker's own benefit first and may add a spousal amount if eligible. The percentages below assume an FRA of 67 and can differ for other birth years.</p>
 
 <table>
   <thead>
@@ -211,84 +215,58 @@ export const articles: Article[] = [
 <h2>Special Social Security Rules for Divorced Spouses</h2>
 <p>Many individuals remain unaware that they can legally claim spousal benefits based on an ex-spouse's work history. To qualify for divorced spousal benefits, the following strict criteria apply:</p>
 <p>1. Your marriage must have lasted for a minimum of 10 consecutive years prior to the final divorce.<br>
-2. You must currently be unmarried (remarrying voids your entitlement to the ex-spouse's record).<br>
-3. Both you and your ex-spouse must be at least 62 years old.<br>
-4. <strong>The Independently Entitled Twist:</strong> If you have been divorced for at least two consecutive years, you can claim benefits on your ex-spouse's record even if they have not yet filed for their own retirement benefits, provided they are eligible to do so.</p>
+2. You generally must be unmarried to receive benefits on a living former spouse's record. Remarriage usually ends eligibility while that marriage continues; different rules apply to survivor benefits.<br>
+3. You must generally be at least 62 years old.<br>
+4. Your ex-spouse must be entitled to retirement or disability benefits. If they have not filed, you may qualify independently after the divorce has lasted at least two years if they are eligible for retirement benefits.</p>
 
 <h2>Frequently Asked Questions (FAQ)</h2>
 
 <h3>Will claiming benefits on my ex-spouse's record reduce their own monthly check?</h3>
-<p>No. Any spousal benefits paid to a divorced individual do not affect, reduce, or alter the monthly payment amount received by the ex-spouse or their current partner. The SSA permits multiple qualifying spouses to draw from a single earnings record concurrently without financial cross-reduction.</p>
+<p>No. A divorced spouse's benefit does not reduce the former spouse's own retirement benefit. More than one eligible former spouse may qualify on the same record, subject to SSA's rules.</p>
 <p class="text-xs text-slate-400 mt-1">Source: <a href="https://www.ssa.gov/benefits/retirement/planner/applying7.html" target="_blank" rel="noopener noreferrer" class="underline hover:text-amber-600">SSA — Benefits For Your Divorced Spouse</a></p>
 
 <h3>Can I collect my own retirement benefit and a spousal benefit simultaneously?</h3>
-<p>No. Under current statutory rules, the SSA does not permit "double dipping." When you file, you are automatically evaluated for both plans and will receive a single payment equivalent to the larger dollar amount of the two options—not both combined.</p>
+<p>SSA does not pay two full benefits on the same person's record. If you qualify for both retirement and spousal benefits, SSA generally pays your own retirement benefit first and adds any spousal amount you qualify for, subject to deemed-filing rules and exceptions.</p>
 <p class="text-xs text-slate-400 mt-1">Source: <a href="https://www.ssa.gov/benefits/retirement/planner/applying7.html" target="_blank" rel="noopener noreferrer" class="underline hover:text-amber-600">SSA — Filing Rules for Retirement and Spouses Benefits</a></p>`
   },
   {
       slug: "ssa-news-updates-policy-changes",
-    title: "SSA News 2026: Mandatory New Login Rules & Policy Shifts Explained",
-    metaTitle: "Social Security Login Rules 2026: Policy Updates",
-    metaDescription: "Is your Social Security account secure? Learn about the mandatory 2026 shift to Login.gov, new identity verification protocols, and policy changes. 100% Free Update.",
-    excerpt: "The SSA is overhauling its digital infrastructure in 2026. Discover how mandatory login shifts and new verification steps impact your access to benefits.",
+    title: "SSA Updates: How to Check Official Policies and Account Security",
+    metaTitle: "SSA Updates and Social Security Account Security",
+    metaDescription: "Find official Social Security updates, review your earnings record, and learn how to protect your account from scams.",
+    excerpt: "Use official SSA resources to review your earnings record, find current policy information, and recognize common Social Security scams.",
     image: "/images/ssa-news-updates-cover.webp",
-    imageAlt: "Latest SSA News 2026: Login.gov Transition and Policy Updates - Social Security Guide",
+    imageAlt: "Official Social Security updates and account security - Social Security Guide",
     category: "SSA News",
     author: "Amine Saadi",
     date: "2026-06-30",
-    lastUpdated: "2026-06-30",
+    lastUpdated: "2026-11-19",
     readTime: "4 min read",
     featured: false,
     noindex: true,
-    content: `<p>The Social Security Administration (SSA) is undergoing a major technological and administrative transformation. In an effort to reduce processing backlogs, curb improper overpayments, and optimize the user experience, the agency has rolled out new operational directives and digital infrastructure upgrades that beneficiaries need to know.</p>
+    content: `<p>For accurate Social Security news, use the Social Security Administration's official website and notices. Policy details, benefit amounts, and eligibility rules can change, so confirm current information with SSA before making decisions.</p>
 
-<h2>The Launch of the Payroll Information Exchange (PIE)</h2>
-<p>One of the most significant structural news items from the SSA is the comprehensive implementation of the <strong>Payroll Information Exchange (PIE)</strong>. This data-sharing ecosystem allows the SSA to automatically pull monthly wage verification logs directly from major national payroll data providers, assuming the beneficiary grants explicit authorization.</p>
-<p>By shifting to this automated tracking model, the agency aims to drastically reduce the reporting burden on Social Security Disability Insurance (SSDI) and Supplemental Security Income (SSI) recipients, preventing the accidental accumulation of heavy overpayment debts.</p>
+<h2>How to Check Your Social Security Information</h2>
+<p>You can use a <em>my Social Security</em> account to review your earnings record and benefit estimates and access available services. Earnings records may not update in real time, so compare them with your own records and report errors to SSA.</p>
+<p class="text-xs text-slate-400 mt-1">Source: <a href="https://www.ssa.gov/myaccount/" target="_blank" rel="noopener noreferrer" class="underline hover:text-amber-600">SSA — my Social Security Account</a></p>
 
-<h2>Key 2026-2027 Operational Metrics and Baseline Caps</h2>
-<p>Along with technological upgrades, the SSA has adjusted its baseline structural parameters. Below is a summary of the active statutory thresholds and operational baselines established for the ongoing fiscal period:</p>
+<h2>Where to Confirm Current Benefit Rules</h2>
+<p>Annual figures such as the taxable earnings limit, retirement earnings-test limits, and maximum benefit amounts are updated periodically. Check SSA's current published figures rather than relying on an old article or an estimate.</p>
+<p class="text-xs text-slate-400 mt-1">Source: <a href="https://www.ssa.gov/cola/" target="_blank" rel="noopener noreferrer" class="underline hover:text-amber-600">SSA — Cost-of-Living Adjustments and Benefit Amounts</a></p>
 
-<table>
-  <thead>
-    <tr>
-      <th>Operational Policy Rule</th>
-      <th>Active Statutory Ceiling / Metric</th>
-      <th>Administrative Impact</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><strong>Maximum Taxable Earnings Ceiling</strong></td>
-      <td>$184,500 / year</td>
-      <td>The absolute wage base limit subject to FICA taxes</td>
-    </tr>
-    <tr>
-      <td><strong>Retirement Earnings Test (Under FRA)</strong></td>
-      <td>$24,480 / year ($2,040 / month)</td>
-      <td>Earnings above this trigger a $1 withholding for every $2 earned</td>
-    </tr>
-    <tr>
-      <td><strong>Maximum Monthly Retirement Check</strong></td>
-      <td>$4,152 / month</td>
-      <td>The absolute maximum payout for a worker retiring at full retirement age</td>
-    </tr>
-  </tbody>
-</table>
-
-<h2>Strengthening Fraud Prevention & Security Standards</h2>
-<p>With a rise in complex phishing networks targeting senior citizens, the SSA Press Office has doubled down on digital security measures. The agency has mandated biometric and multi-factor authentication (MFA) parameters across all personal <em>my Social Security</em> web portal accounts.</p>
-<p>Furthermore, the SSA issues ongoing community alerts reminding citizens that the agency will never request immediate asset transfers, wire transactions, or gift cards, nor will they threaten immediate asset liquidation over a standard phone conversation.</p>
+<h2>Protect Yourself From Social Security Scams</h2>
+<p>Be cautious of unexpected calls, texts, or emails claiming to be from SSA and demanding immediate payment or personal information. Do not pay a caller with gift cards, wire transfers, or cryptocurrency. Contact SSA using the phone number or website you locate independently if you are unsure a message is genuine.</p>
+<p class="text-xs text-slate-400 mt-1">Source: <a href="https://www.ssa.gov/scam/" target="_blank" rel="noopener noreferrer" class="underline hover:text-amber-600">SSA — Protect Yourself From Social Security Scams</a></p>
 
 <h2>Frequently Asked Questions (FAQ)</h2>
 
-<h3>How can I review my annual SSA updates securely without waiting for mail?</h3>
-<p>You can view your real-time earnings statements, future benefit estimates, and official operational updates by creating and logging into your personal, secure <em>my Social Security</em> account at the official ssa.gov portal.</p>
+<h3>How can I check my Social Security earnings record?</h3>
+<p>Sign in to your <em>my Social Security</em> account to review the earnings information SSA has on file and your benefit estimates. If you find an error, follow SSA's instructions to report it.</p>
 <p class="text-xs text-slate-400 mt-1">Source: <a href="https://www.ssa.gov/myaccount/" target="_blank" rel="noopener noreferrer" class="underline hover:text-amber-600">SSA — my Social Security Account</a></p>
 
-<h3>What is the new policy regarding document submission for active claims?</h3>
-<p>The SSA has expanded its digital intake capabilities, allowing applicants to use the "Upload Documents" modular feature within their online portal. This bypasses the traditional bureaucratic step of mailing or hand-delivering physical, original records to a localized field office.</p>
-<p class="text-xs text-slate-400 mt-1">Source: <a href="https://www.ssa.gov/myaccount/" target="_blank" rel="noopener noreferrer" class="underline hover:text-amber-600">SSA — my Social Security Account</a></p>`
+<h3>How can I tell if a message about my benefits is genuine?</h3>
+<p>Do not rely on caller ID or links in an unexpected message. Contact SSA using contact information from SSA.gov, and never pay a caller with gift cards, wire transfers, or cryptocurrency.</p>
+<p class="text-xs text-slate-400 mt-1">Source: <a href="https://www.ssa.gov/scam/" target="_blank" rel="noopener noreferrer" class="underline hover:text-amber-600">SSA — Protect Yourself From Social Security Scams</a></p>`
   },
   {
      slug: "historical-social-security-cola-increases",
@@ -308,7 +286,7 @@ export const articles: Article[] = [
 
 <p>Understanding this <strong>Social Security COLA history</strong> helps current and future beneficiaries separate short-term market spikes from long-term purchasing power trends. Relying on average historical performance allows for more stable and conservative household budgeting.</p>
 
-<p class="text-sm font-semibold bg-slate-50 p-3 rounded-lg border-l-4 border-blue-600 my-4">[Internal Link Opportunity: Link to <a href="/calculators/break-even" class="text-blue-600 underline hover:text-blue-800">Break-Even Analysis</a> to calculate how compounding historical COLA increases alter your optimal claiming age.]</p>
+<p class="text-sm font-semibold bg-slate-50 p-3 rounded-lg border-l-4 border-blue-600 my-4">Use our <a href="/calculators/break-even" class="text-blue-600 underline hover:text-blue-800">Break-Even Analysis</a> to compare how age-based claiming decisions affect lifetime income under different COLA scenarios.</p>
 
 <h2>The 10-Year Record: Analyzing Past COLA Increases</h2>
 <p>The last ten years of adjustments highlight a story of two distinct economic eras: a period of historically flat inflation followed by a sudden, massive post-pandemic inflationary spike. This contrast is clearly mapped out when analyzing the statutory changes applied to checks over time.</p>
@@ -321,7 +299,7 @@ export const articles: Article[] = [
 <table>
   <thead>
     <tr>
-      <th>Effective Year</th>
+      <th>COLA Year (First Paid in January)</th>
       <th>Approved COLA Percentage</th>
       <th>Economic Catalyst / Context</th>
       <th>Avg. Monthly Check Impact</th>
@@ -406,15 +384,15 @@ export const articles: Article[] = [
 
 <h3>What is the long-term historical average for Social Security COLA?</h3>
 <p>Since the federal government introduced annual adjustments in 1975, the long-term historical average rate settles at approximately 3.7%. The massive spikes of the late 1970s and early 1980s heavily skew this benchmark upward compared to modern cycles.</p>
-<p class="text-xs text-slate-400 mt-1">Source: <a href="https://ssa.gov" target="_blank" rel="noopener noreferrer" class="underline hover:text-amber-600">SSA — Historical COLA Data</a></p>
+<p class="text-xs text-slate-400 mt-1">Source: <a href="https://www.ssa.gov/oact/cola/colaseries.html" target="_blank" rel="noopener noreferrer" class="underline hover:text-amber-600">SSA — Cost-of-Living Adjustments (COLA history)</a></p>
 
 <h3>Has the Social Security COLA ever been 0% in recent history?</h3>
-<p>Yes. Over the last two decades, the annual adjustment has landed at exactly 0.0% on three distinct occasions: 2010, 2011, and 2016. In all three instances, flat or negative third-quarter CPI-W calculations meant that statutory inflation metrics did not trigger an increase.</p>
-<p class="text-xs text-slate-400 mt-1">Source: <a href="https://ssa.gov" target="_blank" rel="noopener noreferrer" class="underline hover:text-amber-600">SSA — Historical COLA Data</a></p>
+<p>Yes. Over the last two decades, the annual adjustment has landed at exactly 0.0% on three distinct occasions: 2010, 2011, and 2016 (SSA's own table labels these by effective year as 2009, 2010, and 2015). In all three instances, flat or negative third-quarter CPI-W calculations meant that statutory inflation metrics did not trigger an increase.</p>
+<p class="text-xs text-slate-400 mt-1">Source: <a href="https://www.ssa.gov/oact/cola/colaseries.html" target="_blank" rel="noopener noreferrer" class="underline hover:text-amber-600">SSA — Cost-of-Living Adjustments (COLA history)</a></p>
 
 <h3>What was the highest Social Security COLA ever approved?</h3>
 <p>The highest statutory adjustment in the history of the program was an astonishing 14.3%, approved for payments starting in January 1981. This monumental boost was enacted to prevent soaring, hyper-inflationary energy costs from completely decimating American senior savings accounts.</p>
-<p class="text-xs text-slate-400 mt-1">Source: <a href="https://ssa.gov" target="_blank" rel="noopener noreferrer" class="underline hover:text-amber-600">SSA — Historical COLA Data</a></p>`
+<p class="text-xs text-slate-400 mt-1">Source: <a href="https://www.ssa.gov/oact/cola/colaseries.html" target="_blank" rel="noopener noreferrer" class="underline hover:text-amber-600">SSA — Cost-of-Living Adjustments (COLA history)</a></p>`
   },
 
   {
@@ -672,14 +650,14 @@ export const articles: Article[] = [
    slug: "how-to-apply-for-disability",
     title: "How to Apply for SSDI in 2026: A Step-by-Step Approval Checklist",
     metaTitle: "SSDI Application Guide 2026: Steps, Documents & Tips",
-    metaDescription: "Ready to file for SSDI? Follow our 2026 checklist to avoid automatic denials. Learn the $1,690 income rule, required documents, and eligibility steps. 100% Free.",
+    metaDescription: "Learn how to apply for SSDI, check work-credit and income rules, gather medical and work information, and respond if SSA denies your claim.",
     excerpt: "The SSDI application is complex. Discover how to navigate 2026 SGA rules, gather critical medical evidence, and verify your work credits before you file.",
     image: "/images/apply-for-disability-cover.webp",
     imageAlt: "How to Apply for Social Security Disability Step-by-Step Guide 2026 - Social Security Guide",
     category: "Disability",
     author: "Amine Saadi",
     date: "2026-07-18",
-    lastUpdated: "2026-07-18",
+    lastUpdated: "2026-11-19",
     readTime: "5 min read",
     featured: false,
     content: `<p>Applying for Social Security Disability Insurance (SSDI) can be a complex and lengthy process. The Social Security Administration (SSA) maintains strict statutory criteria to evaluate medical conditions and work histories. Understanding the application workflow beforehand is essential to optimize your chances of approval.</p>
@@ -687,17 +665,17 @@ export const articles: Article[] = [
 <h2>Step 1: Verify Your Basic Structural Eligibility</h2>
 <p>Before gathering paperwork, ensure you meet the two foundational pillars of the SSDI program:</p>
 <ul>
-  <li><strong>The Work Credit Test:</strong> You must have accumulated enough work credits by paying FICA taxes. Generally, this requires working at least 5 out of the last 10 years prior to your disability.</li>
-  <li><strong>Substantial Gainful Activity (SGA):</strong> For 2026, you cannot be working and earning more than the statutory limit of <strong>$1,690 per month</strong> (or $2,830 if blind). Earnings above this threshold result in an automatic technical denial.</li>
+  <li><strong>The Work Credit Test:</strong> You must have enough recent work credits for SSDI. The number of credits required depends on your age; check your earnings record and SSA's eligibility rules for your situation.</li>
+  <li><strong>Substantial Gainful Activity (SGA):</strong> For 2026, the general monthly SGA amount is <strong>$1,690</strong> for a non-blind person and <strong>$2,830</strong> for a person who is blind. Work and earnings above the applicable amount can affect eligibility, but SSA evaluates work under its rules and circumstances; do not assume the earnings figure alone decides every claim.</li>
 </ul>
 
-<h2>Step 2: Gather the Required Documentation</h2>
-<p>The SSA requires comprehensive verifiable records to review your file. Collecting these documents in advance significantly cuts down on processing delays:</p>
+<h2>Step 2: Gather Information and Documents</h2>
+<p>Prepare the information SSA may request about your identity, medical treatment, and work history. The exact documents needed depend on your circumstances:</p>
 <table>
   <thead>
     <tr>
       <th>Document Category</th>
-      <th>Items You Must Provide</th>
+      <th>Examples to Prepare</th>
     </tr>
   </thead>
   <tbody>
@@ -711,31 +689,32 @@ export const articles: Article[] = [
     </tr>
     <tr>
       <td><strong>Employment History</strong></td>
-      <td>W-2 forms or self-employment tax returns from the prior year, alongside a breakdown of your jobs over the past 15 years.</td>
+      <td>W-2 forms or self-employment tax returns from the prior year, along with the work-history information SSA requests. Under current rules, SSA generally considers work from the five years before its disability determination as past relevant work.</td>
     </tr>
   </tbody>
 </table>
+<p class="text-xs text-slate-400 mt-1">Source: <a href="https://www.ecfr.gov/current/title-20/section-404.1565" target="_blank" rel="noopener noreferrer" class="underline hover:text-amber-600">eCFR — 20 CFR § 404.1565, Your Work Experience</a></p>
 
-<h2>Step 3: Choose Your Application Method</h2>
-<p>The Social Security Administration offers three official channels to submit your disability application packet:</p>
+<h2>Step 3: Start Your Application</h2>
+<p>You may be able to apply online. You can also contact SSA by phone or reach your local field office to ask how to apply and submit supporting information.</p>
 <ol>
-  <li><strong>Online Application:</strong> This is the fastest method. You can complete and track your application via the official portal at SSA.gov.</li>
-  <li><strong>Telephone Appointment:</strong> You can call the SSA toll-free customer service line at 1-800-772-1213 (TTY 1-800-325-0778) to schedule an application window over the phone.</li>
-  <li><strong>In-Person Visit:</strong> You can schedule an appointment to present your physical evidence at a local Social Security field office.</li>
+  <li><strong>Online Application:</strong> If you are eligible to apply online, you can submit an application through SSA.gov.</li>
+  <li><strong>By Phone:</strong> Call SSA at 1-800-772-1213 (TTY 1-800-325-0778) to ask about applying by phone or scheduling an appointment.</li>
+  <li><strong>Field Office:</strong> Contact your local Social Security field office to ask about applying in person and submitting documents.</li>
 </ol>
 
 <h2>Crucial Tips to Minimize Application Denials</h2>
-<p>Statistically, over 60% of initial disability applications are denied, often due to insufficient medical evidence or administrative errors. To shield your claim, ensure your doctors explicitly document exactly how your medical condition prevents you from performing standard job duties. Avoid vague diagnostic summaries; detailed functional capacity assessments are key.</p>
-<p>Additionally, if you are approaching your Full Retirement Age, remember that the application landscape changes, as regular retirement benefits eventually replace disability paychecks. You can check your exact timeline using our <a href="/guides/disability" class="underline hover:text-amber-600 font-bold">SSDI Eligibility Calculator</a>.</p>
+<p>Give SSA complete and accurate information about your medical treatment, daily limitations, and work history, and respond promptly to requests for records or forms. Medical evidence should describe how your condition affects your ability to function; a diagnosis alone does not determine whether SSA will find you disabled.</p>
+<p>Additionally, if you are approaching your Full Retirement Age, remember that the application landscape changes, as regular retirement benefits eventually replace disability paychecks. You can check your exact timeline using our <a href="/guides/disability" class="underline hover:text-amber-600 font-bold">SSDI eligibility guide</a>.</p>
 
 <h2>Frequently Asked Questions (FAQ)</h2>
 
 <h3>How long does it take for the SSA to make a disability decision?</h3>
-<p>An initial medical determination typically takes between 3 to 6 months. The exact timeline depends heavily on how quickly the SSA receives medical records from your doctors and healthcare providers.</p>
+<p>Processing times vary based on the claim and how quickly SSA receives the information it needs. Check SSA.gov for current processing information and respond promptly to requests for records or forms.</p>
 <p class="text-xs text-slate-400 mt-1">Source: <a href="https://www.ssa.gov/disability" target="_blank" rel="noopener noreferrer" class="underline hover:text-amber-600">SSA — Disability Benefits</a></p>
 
 <h3>What happens if my initial disability application is denied?</h3>
-<p>If denied, you have the legal right to appeal the decision within 60 days of receiving the notice. The first structural stage of appeal is requesting a "Reconsideration," where an independent reviewer re-evaluates your entire file.</p>
+<p>If denied, you generally have 60 days to appeal after receiving the notice. The first appeal step is usually a request for Reconsideration, in which SSA reviews the claim again. Follow the instructions and deadline in your notice.</p>
 <p class="text-xs text-slate-400 mt-1">Source: <a href="https://www.ssa.gov/benefits/disability/appeal.html" target="_blank" rel="noopener noreferrer" class="underline hover:text-amber-600">SSA — Appeal a Decision</a></p>`
   },
 
@@ -814,7 +793,7 @@ export const articles: Article[] = [
 </ul>
 <p class="text-xs text-slate-400 mt-1">Source: <a href="https://www.ssa.gov/benefits/retirement/planner/delayret.html" target="_blank" rel="noopener noreferrer" class="underline hover:text-amber-600">Social Security Administration – Delayed Retirement Credits</a></p>
 
-<p>Over a 20-year retirement, the gap between claiming at 62 and waiting until 70 can exceed $250,000 in cumulative payments — before accounting for COLA compounding. To see exactly when the higher monthly checks from waiting catch up to and overtake the head start from claiming early, try our <a href="/calculators/break-even" class="underline text-amber-700 font-bold">Break-Even Calculator</a>.</p>
+<p>The gap between claiming at 62 and waiting until 70 depends on how long you collect. With a $2,000 PIA and no COLAs, the person who claims at 62 has collected more through about age 80, and the person who waits until 70 is ahead by roughly $60,000 by age 85 ($446,400 versus $386,400). To see exactly when the higher monthly checks from waiting overtake the head start from claiming early, try our <a href="/calculators/break-even" class="underline text-amber-700 font-bold">Break-Even Calculator</a>.</p>
 
 <h2>Is the Penalty Ever Reversed?</h2>
 <p>No — the reduction is permanent once you start receiving retirement benefits, and it does not reset when you reach FRA. The only partial exception involves the Retirement Earnings Test: if you claim early and continue working above the annual earnings limit, the SSA temporarily withholds benefits, but later recalculates your monthly amount at FRA to credit back the withheld months. This raises your check slightly, but it does not erase the underlying early-claiming reduction itself.</p>
@@ -840,7 +819,7 @@ export const articles: Article[] = [
 <p class="text-xs text-slate-400 mt-1">Source: <a href="https://www.ssa.gov/benefits/retirement/planner/agereduction.html" target="_blank" rel="noopener noreferrer" class="underline hover:text-amber-600">SSA.gov</a></p>
 
 <h3>What's the break-even age for claiming Social Security early?</h3>
-<p>Most break-even calculations land between ages 78 and 82, depending on your exact benefit amounts and claiming ages compared. If you expect to live beyond that range, delaying typically results in more lifetime income.</p>
+<p>Without COLAs, claiming at 62 versus 67 breaks even at about 78 years and 8 months, and 67 versus 70 at about 82 years and 6 months. COLAs and discounting shift these ages by a year or two. See our <a href="/blog/social-security-age-62-vs-67-vs-70">62 vs. 67 vs. 70 comparison</a> for the assumptions. If you expect to live beyond the break-even age, delaying typically results in more lifetime income.</p>
 
 <h3>Can I undo my decision if I claimed at 62 and regret it?</h3>
 <p>You have a one-time option to withdraw your application within 12 months of filing, but you must repay all benefits received. After that window, or after 12 months have passed, the only way to increase your monthly amount is to suspend benefits at FRA and let delayed retirement credits accrue until age 70.</p>
@@ -938,12 +917,14 @@ content: `
 
 <p class="text-xs text-slate-400 mt-1">Source: <a href="https://www.ssa.gov/ssi/text-resources-ussi.htm" target="_blank" rel="noopener noreferrer" class="underline hover:text-amber-600">Social Security Administration</a></p>
 
-<h2>Infographic illustrating the SSI eligibility process</h2>
+<h2>SSI Eligibility Process at a Glance</h2>
 <img src="/images/supplemental-security-income-Infographic.webp" alt="Infographic illustrating the SSI eligibility process" class="my-6 mx-auto max-w-full h-auto">
 
 <h2>How Much Does SSI Pay?</h2>
 
 <p>The federal benefit rate is updated annually based on the Cost-of-Living Adjustment (COLA). Actual payments may differ depending on your income, living arrangements, and state supplemental payments.</p>
+
+<p>For 2027, SSA set the maximum federal payment at $1,029 for an individual and $1,544 for a couple. See <a href="/blog/ssi-payment-amounts-2027">SSI payment amounts in 2027</a> for the new limits, examples, and payment dates.</p>
 
 <table class="min-w-full border border-slate-300 my-6">
 <thead>
@@ -956,13 +937,13 @@ content: `
 <tbody>
 <tr>
 <td class="border p-3">Individual Federal Benefit Rate</td>
-<td class="border p-3">Determined annually by SSA</td>
-<td class="border p-3">Based on current SSA COLA updates</td>
+<td class="border p-3">$994 per month (rises to $1,029 in 2027)</td>
+<td class="border p-3">Maximum federal amount, before other income and living-arrangement reductions</td>
 </tr>
 <tr>
 <td class="border p-3">Eligible Couple</td>
-<td class="border p-3">Determined annually by SSA</td>
-<td class="border p-3">Subject to federal benefit rules</td>
+<td class="border p-3">$1,491 per month (rises to $1,544 in 2027)</td>
+<td class="border p-3">Maximum federal amount for an eligible couple</td>
 </tr>
 </tbody>
 </table>
@@ -1010,11 +991,10 @@ content: `
 </ul>
 
 <h2>Student work incentive</h2>
-<p>SSI recipients under age 22 who regularly attend school may qualify for the Student Earned Income Exclusion. The source article lists 2026 exclusions of up to $2,410 per month and $9,730 per year. Verify these year-specific amounts with SSA before relying on them; exclusions and eligibility requirements apply.</p>
-<!-- TODO(verify): Confirm the 2026 Student Earned Income Exclusion amounts with SSA. -->
+<p>SSI recipients under age 22 who regularly attend school may qualify for the Student Earned Income Exclusion. SSA's fact sheets list the limits as up to $2,410 per month and $9,730 per year for 2026, rising to $2,500 per month and $10,080 per year in 2027. Eligibility requirements apply. See our <a href="/blog/ssi-payment-amounts-2027">2027 SSI payment amounts guide</a> for the full list of 2027 limits.</p>
 
 <h2>SSI and Medicaid</h2>
-<p>SSI eligibility does not automatically mean Medicare eligibility. Medicaid enrollment rules for SSI recipients vary by state: some states connect the programs automatically, while others require a separate application. Confirm the process with your state Medicaid agency.</p>
+<p>In many states, SSI recipients qualify for Medicaid automatically or through a streamlined process, but the rules vary by state, and some states require a separate Medicaid application. SSI does not by itself make you eligible for Medicare. Confirm the process with your state Medicaid agency.</p>
 
 <h2>Frequently Asked Questions</h2>
 
@@ -1193,7 +1173,7 @@ content: `
 <p>Delaying a claim means deciding how household expenses will be covered before the larger benefit begins. Possible sources include continued or part-time work, savings, retirement-account withdrawals, or another household income. Compare the tax effects, health coverage, and any work-related benefit rules before choosing a plan. These options are not suitable for everyone, and a break-even calculation does not determine whether delaying is affordable for you.</p>
 
 <h2>2026 Context: COLA and the Average Benefit</h2>
-<p>Social Security benefits received a 2.8% cost-of-living adjustment for 2026, which raised the average monthly benefit for retired workers to roughly $2,064 to $2,083. Delayed retirement credits are calculated on top of your own PIA and stack with any COLA increases you receive along the way.</p>
+<p>Social Security benefits received a 2.8% cost-of-living adjustment for 2026, which raised the average retired-worker benefit from about $2,015 to about $2,071 a month. Delayed retirement credits are calculated on top of your own PIA and stack with any COLA increases you receive along the way.</p>
 <p class="text-xs text-slate-400 mt-1">Source: <a href="https://www.ssa.gov/benefits/retirement/planner/delayret.html" target="_blank" rel="noopener noreferrer" class="underline hover:text-amber-600">Social Security Administration</a></p>
 
 <h2>Frequently Asked Questions</h2>
@@ -1208,7 +1188,7 @@ content: `
 <p>Yes. If you delay claiming and pass away before your surviving spouse files, your spouse's survivor benefit is generally based on the higher amount you would have received, including any delayed retirement credits you earned.</p>
 
 <h3>When are delayed retirement credits actually added to my check?</h3>
-<p>Your initial benefit reflects credits earned through the year before you turn 69. Any credits earned in the year you turn 69 are added the following January, not immediately.</p>
+<p>SSA credits you for each month you delay past full retirement age, up to age 70, and your benefit reflects those credits permanently. Credits stop accruing at 70.</p>
 <p class="text-xs text-slate-400 mt-1">Source: <a href="https://www.ssa.gov/benefits/retirement/planner/delayret.html" target="_blank" rel="noopener noreferrer" class="underline hover:text-amber-600">Social Security Administration</a></p>
 
 <p>Ready to see how delaying changes your specific numbers? Use the <a href="/calculators/benefits-estimator" class="underline text-amber-700 font-bold">Benefits Estimator</a> to model your PIA at different claiming ages.</p>`
@@ -1216,7 +1196,7 @@ content: `
 
 {
   slug: "check-how-much-social-security-i-will-get",
-  title: "How Much Will I Get From Social Security? 3 Ways to Check Your 2026 Payout",
+  title: "How Much Will I Get From Social Security? How to Check Your Payout (2026–2027)",
   metaTitle: "Check Your Social Security Benefits | 2026 Estimates & Tools",
   metaDescription: "Stop guessing! Learn the 3 fastest ways to check your exact Social Security amount in 2026. Use our private benefits estimator or access your official SSA record instantly. 100% Free.",
   excerpt: "Planning for retirement starts with accurate numbers. Discover how to access your personalized SSA statement and navigate the new 2026 login rules.",
@@ -1264,7 +1244,7 @@ content: `
     </tr>
     <tr>
       <td class="border border-slate-300 px-3 py-2">Full Retirement Age (66–67, depending on birth year)</td>
-      <td class="border border-slate-300 px-3 py-2">Approximately $4,000–$4,200*</td>
+      <td class="border border-slate-300 px-3 py-2">$4,152</td>
     </tr>
     <tr>
       <td class="border border-slate-300 px-3 py-2">Age 70 (maximum delayed credits)</td>
@@ -1273,7 +1253,7 @@ content: `
   </tbody>
 </table>
 <p class="text-xs text-slate-400 mt-1">Source: <a href="https://www.ssa.gov/faqs/en/questions/KA-01897.html" target="_blank" rel="noopener noreferrer" class="underline hover:text-amber-600">SSA — What is the maximum Social Security retirement benefit payable?</a></p>
-<p class="text-xs text-slate-400 -mt-2">*Full retirement age figure is an estimated midpoint based on current SSA delayed-credit and early-claiming formulas; your actual amount depends on your individual earnings record.</p>
+<p class="text-xs text-slate-400 -mt-2">The full retirement age maximum is $4,152 in 2026 and $4,188 in 2027 (SSA COLA fact sheets). Your actual amount depends on your individual earnings record.</p>
 
 <p>These are maximum figures for top earners only — most people receive less. The average retired worker's benefit rose by about $56 per month starting in January 2026 as part of the annual cost-of-living adjustment.</p>
 <p class="text-xs text-slate-400 mt-1">Source: <a href="https://www.ssa.gov/news/en/press/releases/2025-10-24.html" target="_blank" rel="noopener noreferrer" class="underline hover:text-amber-600">SSA — Social Security Announces 2.8 Percent Benefit Increase for 2026</a></p>
@@ -1294,7 +1274,7 @@ content: `
 <p>Each year, SSA applies a COLA based on inflation data (CPI-W) to help benefits keep pace with the cost of living. For 2026, that adjustment is 2.8 percent, following a 2.5 percent increase in 2025. Your online Statement automatically reflects the most recent COLA, so it's worth checking your account each December when new COLA notices are posted.</p>
 <p class="text-xs text-slate-400 mt-1">Source: <a href="https://www.ssa.gov/faqs/en/questions/KA-01951.html" target="_blank" rel="noopener noreferrer" class="underline hover:text-amber-600">SSA — How much will the COLA amount be for 2026?</a></p>
 
-<p>Keep in mind that based on current SSA trustee projections, the combined trust funds are expected to face a shortfall in the mid-2030s absent Congressional action, which could affect future scheduled benefits. This is an estimate, not a certainty, and should not change how you check your current benefit amount today.</p>
+<p>Keep in mind that the 2026 Trustees Report projects the retirement and survivors trust fund (OASI) can pay full benefits until the fourth quarter of 2032, and the combined retirement and disability funds until 2034, absent Congressional action. After that, incoming revenue would cover roughly 78% (OASI) or 83% (combined) of scheduled benefits. These are projections, not certainties, and they do not change the benefit amount you can check today.</p>
 
 <h2>Don't Forget Medicare and Taxes</h2>
 <p>Your net Social Security check is often lower than your gross benefit once Medicare Part B premiums are deducted. Use our <a href="/calculators/medicare-cost" class="underline text-amber-700 font-bold">Medicare Cost Calculator</a> and <a href="/calculators/tax-calculator" class="underline text-amber-700 font-bold">Tax Calculator</a> to estimate your true take-home retirement income before you finalize your claiming strategy.</p>
@@ -1367,7 +1347,7 @@ content: `
 <p>If you claim survivor benefits at your own full retirement age (FRA) as a survivor, you receive <strong>100%</strong> of the deceased worker's basic benefit amount. Claiming before your full retirement age results in a permanently reduced monthly check, starting at <strong>71.5%</strong> if claimed at age 60.</p>
 <p class="text-xs text-slate-400 mt-1">Source: <a href="https://www.ssa.gov/survivor/amount" target="_blank" rel="noopener noreferrer" class="underline hover:text-amber-600">SSA.gov Survivor Payout Amounts</a></p>
 
-<p>The table below shows the officially published milestones for how claiming age impacts the percentage of the deceased worker's primary benefit amount received by a surviving spouse whose survivor full retirement age is 67 (born 1960 or later):</p>
+<p>The table below shows the officially published milestones for how claiming age impacts the percentage of the deceased worker's primary benefit amount received by a surviving spouse whose survivor full retirement age is 67 (born 1962 or later):</p>
 
 <div class="overflow-x-auto my-6">
   <table class="w-full text-left border-collapse border border-slate-200">
@@ -1386,18 +1366,18 @@ content: `
       </tr>
       <tr>
         <td class="p-3 border border-slate-200"><strong>Age 61</strong></td>
-        <td class="p-3 border border-slate-200">Over 75%</td>
-        <td class="p-3 border border-slate-200">Over $1,500 per month</td>
+        <td class="p-3 border border-slate-200">About 75.6%</td>
+        <td class="p-3 border border-slate-200">About $1,511 per month</td>
       </tr>
       <tr>
         <td class="p-3 border border-slate-200"><strong>Age 63</strong></td>
-        <td class="p-3 border border-slate-200">Over 80%</td>
-        <td class="p-3 border border-slate-200">Over $1,600 per month</td>
+        <td class="p-3 border border-slate-200">About 83.7%</td>
+        <td class="p-3 border border-slate-200">About $1,674 per month</td>
       </tr>
       <tr>
         <td class="p-3 border border-slate-200"><strong>Age 65</strong></td>
-        <td class="p-3 border border-slate-200">Over 90%</td>
-        <td class="p-3 border border-slate-200">Over $1,800 per month</td>
+        <td class="p-3 border border-slate-200">About 91.9%</td>
+        <td class="p-3 border border-slate-200">About $1,837 per month</td>
       </tr>
       <tr>
         <td class="p-3 border border-slate-200"><strong>Age 67</strong> (Full Retirement Age)</td>
@@ -1406,7 +1386,7 @@ content: `
       </tr>
     </tbody>
   </table>
-  <p class="text-xs text-slate-400 mt-2">Figures between ages 60 and 67 reflect the SSA's officially published milestone percentages. Your exact percentage for a specific birth month is calculated by the SSA and may fall between these published figures — use our <a href="/blog/social-security-survivor-benefits-guide" class="underline hover:text-amber-600">Survivor Benefits Calculator</a> for a personalized estimate.</p>
+  <p class="text-xs text-slate-400 mt-2">Percentages between ages 60 and 67 assume a survivor full retirement age of 67 and a straight-line reduction of about 0.339% per month, which is SSA's schedule for survivors born in 1962 or later. Your exact amount depends on your birth month and is calculated by SSA.</p>
 </div>
 <p class="text-xs text-slate-400 mt-1">Source: <a href="https://www.ssa.gov/survivor/amount" target="_blank" rel="noopener noreferrer" class="underline hover:text-amber-600">SSA.gov Survivor Payout Amounts</a></p>
 
@@ -1414,9 +1394,9 @@ content: `
 
 <h2>What is the survivor full retirement age schedule?</h2>
 
-<p>The full retirement age (FRA) for social security survivor benefits is calculated differently than the full retirement age for regular worker retirement benefits. For individuals born between 1945 and 1960, the survivor full retirement age gradually increases from 66 to 67 in two-month increments.</p>
+<p>The full retirement age (FRA) for social security survivor benefits is calculated differently than the full retirement age for regular worker retirement benefits. For survivors born from 1945 through 1956, the survivor full retirement age is 66. It then rises two months per birth year (66 and 2 months for 1957, 66 and 4 months for 1958, 66 and 6 months for 1959, 66 and 8 months for 1960, and 66 and 10 months for 1961) until it reaches 67 for people born in 1962 or later.</p>
 
-<p>If you were born in 1960 or later, your survivor full retirement age is <strong>67</strong>. Claiming survivor benefits prior to reaching this milestone permanently reduces your monthly payment factor.</p>
+<p>If you were born in 1962 or later, your survivor full retirement age is <strong>67</strong>. Claiming survivor benefits before your survivor full retirement age permanently reduces your monthly payment.</p>
 <p class="text-xs text-slate-400 mt-1">Source: <a href="https://www.ssa.gov/planner/survivors.html" target="_blank" rel="noopener noreferrer" class="underline hover:text-amber-600">SSA.gov Survivor Rules</a></p>
 
 <h2>Can you work while receiving Social Security survivor benefits?</h2>
@@ -1434,7 +1414,7 @@ content: `
 
 <p>The survivor benefit switching strategy is a powerful financial planning option that allows a surviving spouse to switch between survivor benefits and their own earned retirement benefit over time. Unlike standard spousal retirement benefits, survivor benefits and worker retirement benefits are treated as independent options.</p>
 
-<p>For example, an eligible widow can claim reduced social security survivor benefits at age 60 while allowing her own worker benefit to build delayed retirement credits until age 70. At age 70, she can switch from the survivor benefit to her own maximum worker retirement benefit if it yields a higher monthly payout. You can estimate your specific dual-benefit scenarios using our <a href="/blog/social-security-survivor-benefits-guide" class="text-amber-700 underline hover:text-amber-800">Survivor Benefits Calculator</a> to determine which claiming timeline maximizes your lifetime income.</p>
+<p>For example, an eligible widow can claim reduced social security survivor benefits at age 60 while allowing her own worker benefit to build delayed retirement credits until age 70. At age 70, she can switch from the survivor benefit to her own maximum worker retirement benefit if it yields a higher monthly payout. You can estimate your specific dual-benefit scenarios using our <a href="/blog/social-security-survivor-benefits-guide" class="text-amber-700 underline hover:text-amber-800">survivor benefits guide</a> to determine which claiming timeline maximizes your lifetime income.</p>
 
 <h2>How does remarriage affect Social Security survivor benefits?</h2>
 
@@ -1464,7 +1444,7 @@ content: `
 <h2>Frequently Asked Questions about Social Security survivor benefits</h2>
 
 <h3>How much does a widow get from Social Security survivor benefits?</h3>
-<p>A widow receives between 71.5% and 100% of the deceased spouse's primary benefit amount. If the widow waits until her full retirement age (67 for those born in 1960 or later), she receives 100% of the deceased worker's basic benefit amount. If claimed early at age 60, the benefit is permanently reduced to 71.5%.</p>
+<p>A widow receives between 71.5% and 100% of the deceased spouse's primary benefit amount. If the widow waits until her full retirement age (67 for those born in 1962 or later), she receives 100% of the deceased worker's basic benefit amount. If claimed early at age 60, the benefit is permanently reduced to 71.5%.</p>
 
 <h3>Can I collect my own Social Security and my deceased spouse's benefit at the same time?</h3>
 <p>No, you cannot draw full payments from both your own retirement benefit and your deceased spouse's survivor benefit simultaneously. The Social Security Administration pays an amount equal to the higher of the two benefits, ensuring you always receive the maximum monthly check available under federal rules.</p>
@@ -1511,7 +1491,7 @@ content: `
 
 <p class="text-slate-700 leading-relaxed mb-4">Instead, the Social Security Administration funds your own earned retirement benefit first. If the deceased spouse's benefit amount is greater than your personal entitlement, Social Security adds a secondary payment equal to the difference. Consequently, your total gross monthly payout equals the higher of the two single benefit rates rather than their sum.</p>
 
-<p class="text-slate-700 leading-relaxed mb-4">You can project your personal retirement baseline against prospective survivor rates across various retirement ages using our <a href="/calculators/benefits-estimator" class="underline text-amber-700 font-bold">Benefits Estimator Calculator</a>, or model your exact survivor payout with our <a href="/blog/social-security-survivor-benefits-guide" class="underline text-amber-700 font-bold">Survivor Benefits Calculator</a>.</p>
+<p class="text-slate-700 leading-relaxed mb-4">You can project your personal retirement baseline against prospective survivor rates across various retirement ages using our <a href="/calculators/benefits-estimator" class="underline text-amber-700 font-bold">Benefits Estimator Calculator</a>, or model your exact survivor payout with our <a href="/blog/social-security-survivor-benefits-guide" class="underline text-amber-700 font-bold">survivor benefits guide</a>.</p>
 
 <p class="text-xs text-slate-400 mt-1">Source: <a href="https://www.ssa.gov/benefits/survivors/planner/survivorstogether.html" target="_blank" rel="noopener noreferrer" class="underline hover:text-amber-600">Social Security Administration</a></p>
 
@@ -1656,7 +1636,7 @@ content: `
 
 <p>Unlike surviving spouse benefits, which depend heavily on the age at which the surviving spouse claims, a child's benefit rate remains fixed at 75% of the worker's underlying PIA regardless of when the parent died.</p>
 
-<p>You can estimate your household's total potential monthly survivor payout by using our free <a href="/blog/social-security-survivor-benefits-guide" class="text-amber-700 underline font-medium hover:text-amber-900">Social Security Survivor Benefits Calculator</a>.</p>
+<p>You can estimate your household's total potential monthly survivor payout by using our free <a href="/blog/social-security-survivor-benefits-guide" class="text-amber-700 underline font-medium hover:text-amber-900">Social Security survivor benefits guide</a>.</p>
 
 <div class="overflow-x-auto my-6">
   <table class="w-full text-left text-sm border-collapse border border-slate-200">
@@ -1777,7 +1757,7 @@ content: `
 <p>As of 2026, full online SSI applications are only available to a limited group: applicants between <strong>18 and 64 years and 10 months old</strong> who have never married, have never applied for SSI before, and are filing for SSI at the same time as a Social Security Disability Insurance (SSDI) claim. The Social Security Administration (SSA) began rolling out this streamlined online option in phases starting in late 2024, with a goal of expanding it to more applicants, including those filing on the basis of age, over time.</p>
 <p class="text-xs text-slate-400 mt-1">Source: <a href="https://www.ssa.gov/ssi/text-apply-ussi.htm" target="_blank" rel="noopener noreferrer" class="underline hover:text-amber-600">SSA — SSI Application Process and Applicant Rights</a></p>
 
-<p>If you don't meet these criteria, you can still start your claim online through the SSA website to determine the right next step, but completing it will require a phone or in-person interview with an SSI specialist. To check whether your situation also qualifies you for the related disability program, you can review the requirements with our <a href="/guides/disability" class="underline text-amber-700 font-bold">SSDI Eligibility Calculator</a> before you begin.</p>
+<p>If you don't meet these criteria, you can still start your claim online through the SSA website to determine the right next step, but completing it will require a phone or in-person interview with an SSI specialist. To check whether your situation also qualifies you for the related disability program, you can review the requirements with our <a href="/guides/disability" class="underline text-amber-700 font-bold">SSDI eligibility guide</a> before you begin.</p>
 
 <h2>How Do You Apply for SSI by Phone or in Person?</h2>
 
@@ -1944,17 +1924,17 @@ content: `
 <h2>What teachers should check about pension coverage</h2>
 <p>Teaching for a public school does not by itself establish whether the job was covered by Social Security. Coverage depends on the work and the applicable public retirement system. Review pay records and your Social Security earnings record, and ask the employer or pension administrator whether Social Security tax was withheld for the specific job. This helps identify whether the former WEP/GPO rules were relevant; it does not determine your current benefit or retroactive payment.</p>
 
-<p>There is no flat dollar increase that applies to everyone. Your actual benefit increase depends on your specific government pension amount and your own Social Security earnings record, so two people in similar jobs can see very different increases. You can estimate your own updated benefit using our <a href="/blog/social-security-fairness-act-wep-gpo-repeal-explained" class="underline text-amber-700 font-bold">WEP/GPO Calculator</a>.</p>
+<p>There is no flat dollar increase that applies to everyone. Your actual benefit increase depends on your specific government pension amount and your own Social Security earnings record, so two people in similar jobs can see very different increases. You can estimate your own updated benefit using our <a href="/blog/social-security-fairness-act-wep-gpo-repeal-explained" class="underline text-amber-700 font-bold">WEP and GPO repeal guide</a>.</p>
 
 <h2>How Much Retroactive Back Pay Has Been Issued?</h2>
 
 <p>The Social Security Fairness Act made the repeal retroactive to January 2024, meaning affected beneficiaries were owed a lump-sum back payment covering the period their benefits had been wrongly reduced, in addition to a higher ongoing monthly amount going forward.</p>
 
-<p>The SSA began depositing retroactive payments on February 25, 2025, and had completed nearly all of them by the end of March 2025, with higher monthly benefits starting in April 2025. As of March 2026, the SSA had paid out roughly <strong>$17 billion</strong> in retroactive benefits to affected beneficiaries.</p>
+<p>The SSA began depositing retroactive payments on February 25, 2025, and processed most cases over the following weeks and months, with higher monthly benefits following. As of March 2026, the SSA had paid out roughly <strong>$17 billion</strong> in retroactive benefits to affected beneficiaries.</p>
 <p class="text-xs text-slate-400 mt-1">Source: <a href="https://www.fool.com/retirement/2026/03/21/the-social-security-fairness-act-paid-out-17-billi/" target="_blank" rel="noopener noreferrer" class="underline hover:text-amber-600">The Motley Fool — Social Security Fairness Act Retroactive Payments</a></p>
 
 <p>Early in the rollout, the SSA reported that more than 1.1 million people had already received over $7.5 billion in retroactive payments by early March 2025 alone, with an average retroactive payment of roughly $6,710 at that stage of processing.</p>
-<p class="text-xs text-slate-400 mt-1">Source: <a href="https://new.patch.com/massachusetts/dedham/social-security-pays-billions-dollars-retroactive-payments" target="_blank" rel="noopener noreferrer" class="underline hover:text-amber-600">Social Security Administration — Fairness Act Implementation Update</a></p>
+<p class="text-xs text-slate-400 mt-1">Source: <a href="https://new.patch.com/massachusetts/dedham/social-security-pays-billions-dollars-retroactive-payments" target="_blank" rel="noopener noreferrer" class="underline hover:text-amber-600">Patch — Social Security pays billions in retroactive payments</a></p>
 
 <h2>What If You Never Applied Because GPO Would Have Zeroed Your Benefit?</h2>
 
@@ -1963,7 +1943,7 @@ content: `
 <p>The Social Security Fairness Act did not change the general rule limiting how far back a new application can be paid. Retroactivity for retirement and spousal claims is generally limited to six months before the month you apply, which means some people who waited to file after the repeal have received far less back pay than those who had already applied and were simply waiting on the recalculation.</p>
 <p class="text-xs text-slate-400 mt-1">Source: <a href="https://www.ssa.gov/benefits/retirement/social-security-fairness-act.html" target="_blank" rel="noopener noreferrer" class="underline hover:text-amber-600">SSA — Social Security Fairness Act</a></p>
 
-<p>If this applies to you, don't wait any longer to file. Use our <a href="/blog/social-security-fairness-act-wep-gpo-repeal-explained" class="underline text-amber-700 font-bold">WEP/GPO Calculator</a> to estimate what your spousal or survivor benefit could now look like, and see our <a href="/blog/social-security-spousal-benefits-rules" class="underline text-amber-700 font-bold">Spousal Benefits guide</a> for the eligibility rules. Our <a href="/calculators/office-locator" class="underline text-amber-700 font-bold">Office Locator</a> can help you find your nearest SSA field office to file in person or prepare for a phone appointment.</p>
+<p>If this applies to you, don't wait any longer to file. Use our <a href="/blog/social-security-fairness-act-wep-gpo-repeal-explained" class="underline text-amber-700 font-bold">WEP and GPO repeal guide</a> to estimate what your spousal or survivor benefit could now look like, and see our <a href="/blog/social-security-spousal-benefits-rules" class="underline text-amber-700 font-bold">Spousal Benefits guide</a> for the eligibility rules. Our <a href="/calculators/office-locator" class="underline text-amber-700 font-bold">Office Locator</a> can help you find your nearest SSA field office to file in person or prepare for a phone appointment.</p>
 
 <h2>Do You Need to Do Anything If You Were Already Receiving a Reduced Benefit?</h2>
 
@@ -1984,7 +1964,7 @@ content: `
 <p>The repeal was made retroactive to January 2024. For people who were already receiving a reduced Social Security benefit before the law passed, that generally meant a lump-sum payment covering the period from January 2024 forward. For people filing a brand-new application after the repeal, standard retroactivity limits — generally up to six months before the application date — still apply.</p>
 
 <h3>How much will my Social Security benefit increase under the repeal?</h3>
-<p>There is no fixed amount. Your increase depends on your specific government pension amount and your own Social Security earnings record, so it varies significantly from person to person. You can use our <a href="/blog/social-security-fairness-act-wep-gpo-repeal-explained" class="underline text-amber-700 font-bold">WEP/GPO Calculator</a> to get a personalized projection.</p>
+<p>There is no fixed amount. Your increase depends on your specific government pension amount and your own Social Security earnings record, so it varies significantly from person to person. You can use our <a href="/blog/social-security-fairness-act-wep-gpo-repeal-explained" class="underline text-amber-700 font-bold">WEP and GPO repeal guide</a> to get a personalized projection.</p>
 
 <h3>Do I need to apply again if I already applied for spousal benefits before the repeal and was denied or received $0 due to GPO?</h3>
 <p>In most of these cases, the SSA has been recalculating benefits automatically for people with an existing application on file, even if GPO had reduced the payment to zero at the time. If you had an approved claim that was simply reduced to $0 by GPO, check your my Social Security account or contact the SSA to confirm your recalculation status before filing a brand-new application.</p>
@@ -2030,7 +2010,7 @@ content: `
 
 <h2>2026 401(k) Contribution Limits</h2>
 
-<p>If you're still working and contributing to a 401(k) before claiming Social Security, the IRS adjusts contribution limits annually. For 2026, the limits are:</p>
+<p>If you're still working and contributing to a 401(k) before claiming Social Security, the IRS adjusts contribution limits annually. On November 12, 2026, the IRS announced that the standard employee deferral limit rises to $25,500 for 2027, with catch-up limits of $8,500 for age 50 and older and $11,750 for ages 60 through 63 (<a href="https://www.irs.gov/newsroom/401k-limit-increases-to-25500-for-2027-ira-limit-remains-7500" target="_blank" rel="noopener noreferrer">IRS announcement</a>). For 2026, the limits are:</p>
 
 <table>
   <thead>
@@ -2124,7 +2104,7 @@ content: `
 
 <div class="bg-amber-50/50 border border-amber-200 rounded-xl p-4 my-6">
   <p class="font-semibold text-amber-900 mb-1">Quick Answer</p>
-  <p class="text-slate-700 text-sm">To get a replacement Social Security card, create or log in to your <strong>my Social Security</strong> account at ssa.gov and start the online request if your state supports it. If not, you'll need to complete Form SS-5 and submit original identity documents by mail or at a local field office. Replacement cards are always free and typically arrive by mail within 5 to 10 business days once your request is processed.</p>
+  <p class="text-slate-700 text-sm">To get a replacement Social Security card, create or log in to your <strong>my Social Security</strong> account at ssa.gov and start the online request if your state supports it. If not, you'll need to complete Form SS-5 and submit original identity documents by mail or at a local field office. Replacement cards are always free and typically arrive by mail within about 10 business days once your request is processed.</p>
 </div>
 
 <h2>Can You Replace a Social Security Card Online?</h2>
@@ -2132,7 +2112,7 @@ content: `
 <p>In most states, yes. The Social Security Administration (SSA) allows eligible people to request a replacement card online through a <strong>my Social Security</strong> account, without visiting an office or mailing any documents. The online option rolled out state by state starting in 2016 and is now available in the majority of states and the District of Columbia.</p>
 <p class="text-xs text-slate-400 mt-1">Source: <a href="https://www.ssa.gov/number-card/replace-card" target="_blank" rel="noopener noreferrer" class="underline hover:text-amber-600">SSA — Replace Your Social Security Card</a></p>
 
-<p>To use the online option, you generally need a valid driver's license or state-issued ID card from a participating state. A few states currently have narrower requirements: in <strong>Alaska, Delaware, and Wisconsin</strong>, only a state driver's license is accepted as identification for the online application — a state ID card is not enough. If your driver's license was issued in a U.S. territory, such as Puerto Rico or the U.S. Virgin Islands, you are not eligible to apply online and will need to use another method.</p>
+<p>To use the online option, you must be a U.S. citizen age 18 or older with a U.S. mailing address, you cannot be requesting a name change or any other change to the card, and you generally need a valid driver's license or state-issued ID card from a participating state. A few states have narrower requirements. SSA has said, for example, that in Delaware and Wisconsin only a driver's license (not a state ID card) is accepted, and a small number of states do not yet participate. Check SSA's current list before you start. If your driver's license was issued in a U.S. territory, such as Puerto Rico or the U.S. Virgin Islands, you are not eligible to apply online and will need to use another method.</p>
 <p class="text-xs text-slate-400 mt-1">Source: <a href="https://www.ssa.gov/faqs/en/questions/KA-02017.html" target="_blank" rel="noopener noreferrer" class="underline hover:text-amber-600">SSA — Applying for a Replacement Card Online</a></p>
 
 <h2>How Do You Apply for a Replacement Card If You Can't Go Online?</h2>
@@ -2179,11 +2159,11 @@ content: `
   <li><strong>Proof of immigration status (for non-citizens):</strong> Current immigration documents from the Department of Homeland Security.</li>
 </ul>
 
-<p>Non-citizens should note a specific SSA rule: only non-citizens working for the Department of Homeland Security can apply for a brand-new card in certain circumstances, and document requirements for replacement cards vary based on immigration status. If your situation is complex, contacting the SSA directly or visiting a field office is the most reliable path.</p>
+<p>The online replacement option is limited to U.S. citizens. Non-citizens must apply in person or by mail with current immigration documents from the Department of Homeland Security, and the documents required vary by immigration status. If your situation is complex, contacting the SSA directly or visiting a field office is the most reliable path.</p>
 
 <h2>How Long Does It Take to Get a Replacement Card?</h2>
 
-<p>Once the SSA processes your request, a replacement Social Security card typically arrives by mail within <strong>5 to 10 business days</strong>. Your local Social Security office cannot print or hand you a card on the spot, even if you apply in person — the card is always mailed to you after processing.</p>
+<p>Once the SSA processes your request, a replacement Social Security card typically arrives by mail within <strong>about 10 business days</strong>. Your local Social Security office cannot print or hand you a card on the spot, even if you apply in person — the card is always mailed to you after processing.</p>
 <p class="text-xs text-slate-400 mt-1">Source: <a href="https://www.ssa.gov/number-card/replace-card" target="_blank" rel="noopener noreferrer" class="underline hover:text-amber-600">SSA — Replace Your Social Security Card</a></p>
 
 <h2>How Many Times Can You Replace a Social Security Card?</h2>
@@ -2207,7 +2187,7 @@ content: `
 <p class="text-xs text-slate-400 mt-1">Source: <a href="https://www.usa.gov/social-security-card" target="_blank" rel="noopener noreferrer" class="underline hover:text-amber-600">USA.gov — Get, Replace, or Correct a Social Security Card</a></p>
 
 <h3>Can I replace my Social Security card the same day?</h3>
-<p>No. Even if you apply in person at a local field office, the SSA does not print or issue cards on the spot. Your replacement card is mailed to you after your application is processed, typically arriving within 5 to 10 business days.</p>
+<p>No. Even if you apply in person at a local field office, the SSA does not print or issue cards on the spot. Your replacement card is mailed to you after your application is processed, typically arriving within about 10 business days.</p>
 <p class="text-xs text-slate-400 mt-1">Source: <a href="https://www.ssa.gov/number-card/replace-card" target="_blank" rel="noopener noreferrer" class="underline hover:text-amber-600">SSA — Replace Your Social Security Card</a></p>
 
 <h3>How many replacement Social Security cards can I get?</h3>
@@ -2237,7 +2217,7 @@ content: `
   category: "Medicare",
   author: "Amine Saadi",
   date: "2026-08-01",
-  lastUpdated: "2026-08-01",
+  lastUpdated: "2026-11-19",
   readTime: "7 min read",
   featured: false,
 
@@ -2257,7 +2237,7 @@ content: `
 <ul>
   <li><strong>Social Security Disability Insurance (SSDI) entitlement:</strong> Receiving cash disability payments from Social Security or the Railroad Retirement Board (RRB).</li>
   <li><strong>Amyotrophic Lateral Sclerosis (ALS):</strong> A diagnosis of ALS (Lou Gehrig's disease).</li>
-  <li><strong>End-Stage Renal Disease (ESRD):</strong> Permanent kidney failure requiring continuous dialysis or a kidney transplant.</li>
+  <li><strong>End-Stage Renal Disease (ESRD):</strong> Permanent kidney failure requiring regular dialysis or a kidney transplant, subject to Medicare's eligibility requirements.</li>
 </ul>
 <p class="text-xs text-slate-400 mt-1">Source: <a href="https://www.medicare.gov/basics/get-started-with-medicare" target="_blank" rel="noopener noreferrer" class="underline hover:text-amber-600">Medicare.gov — Get Started with Medicare</a></p>
 
@@ -2266,7 +2246,7 @@ content: `
 <p>The 24-month SSDI waiting period is a statutory requirement before Medicare Parts A and B coverage can begin for disabled workers under age 65. The 24-month countdown begins on the first month you are legally entitled to receive SSDI cash payments, rather than the calendar date your medical condition began.</p>
 <p class="text-xs text-slate-400 mt-1">Source: <a href="https://www.ssa.gov/disabilityresearch/wi/medicare.htm" target="_blank" rel="noopener noreferrer" class="underline hover:text-amber-600">SSA — Medicare Information for Disabled Beneficiaries</a></p>
 
-<p>During this 24-month qualifying window, individuals must maintain alternative health coverage, such as employer COBRA, Medicaid, or an Health Insurance Marketplace plan. Once your 25th month of disability entitlement arrives, Social Security automatically enrolls you in Medicare Part A (Hospital Insurance) and Medicare Part B (Medical Insurance).</p>
+<p>Medicare does not require you to maintain other health coverage during this waiting period. You may want to compare available coverage, such as employer coverage, COBRA, Medicaid, or a Health Insurance Marketplace plan, to avoid a gap in care. People receiving SSDI are generally enrolled in Medicare automatically after 24 months of entitlement; review the enrollment notice and follow its instructions, especially if you want to decline Part B.</p>
 
 <p>To estimate your monthly out-of-pocket premiums, deductibles, and co-insurance once your coverage starts, use our <a href="https://www.socialsecurityguidecalc.com/calculators/medicare-cost" class="underline text-amber-700 font-bold">Medicare Cost Calculator</a>.</p>
 
@@ -2291,33 +2271,33 @@ content: `
     </tr>
     <tr>
       <td><strong>End-Stage Renal Disease (ESRD)</strong></td>
-      <td>3 months of dialysis (0 if home training/transplant)</td>
-      <td>Manual application required</td>
+      <td>Varies with dialysis, home-training, or transplant timing</td>
+      <td>Contact Social Security to apply</td>
     </tr>
   </tbody>
 </table>
-<p class="text-xs text-slate-400 mt-1">Source: <a href="https://www.cms.gov/training-education/find-provider-type/employers-unions/top-five-medicare-enrollment" target="_blank" rel="noopener noreferrer" class="underline hover:text-amber-600">CMS.gov — Top 5 Medicare Enrollment Rules</a></p>
+<p class="text-xs text-slate-400 mt-1">Source: <a href="https://www.medicare.gov/basics/end-stage-renal-disease" target="_blank" rel="noopener noreferrer" class="underline hover:text-amber-600">Medicare.gov — End-Stage Renal Disease (ESRD)</a></p>
 
-<h2>Are ALS and ESRD Exempt From the 24-Month Waiting Period?</h2>
+<h2>How Do ALS and ESRD Timing Rules Differ From the SSDI Waiting Period?</h2>
 
-<p>Yes, federal law establishes specific exemptions to the standard 24-month waiting period for individuals diagnosed with ALS or ESRD. Under the Medicare Protection for Persons with ALS Act, individuals entitled to SSDI based on an ALS diagnosis bypass the 24-month waiting period entirely. Medicare entitlement begins automatically the very first month disability benefits start.</p>
+<p>People with ALS who qualify for Social Security disability benefits generally qualify for Medicare without the usual 24-month waiting period. ESRD has separate eligibility and coverage-start rules; its timing depends on dialysis and transplant circumstances.</p>
 
-<p>For individuals with End-Stage Renal Disease, Medicare coverage generally begins on the first day of the fourth month of regular dialysis treatments. However, this waiting period can be waived if the patient participates in a self-care home dialysis training program before the third month or undergoes a kidney transplant.</p>
-<p class="text-xs text-slate-400 mt-1">Source: <a href="https://www.ssa.gov/pubs/EN-05-10043.pdf" target="_blank" rel="noopener noreferrer" class="underline hover:text-amber-600">SSA Publication No. 05-10043 — Medicare</a></p>
+<p>For people eligible through ESRD and receiving dialysis, Medicare coverage usually starts on the first day of the fourth month of dialysis. Coverage may begin earlier if qualifying home-dialysis training starts during the first three months, or in the month of a transplant-related hospital admission when the transplant takes place that month or within the next two months.</p>
+<p class="text-xs text-slate-400 mt-1">Source: <a href="https://www.medicare.gov/basics/end-stage-renal-disease" target="_blank" rel="noopener noreferrer" class="underline hover:text-amber-600">Medicare.gov — End-Stage Renal Disease (ESRD)</a></p>
 
 <h2>How Do Medicare Parts Work for Beneficiaries Under 65?</h2>
 
 <p>Under-65 Medicare beneficiaries receive access to the same core program structures as age-65 retirees, including Original Medicare (Part A and Part B), Medicare Advantage (Part C), and Medicare Prescription Drug Plans (Part D). Most individuals under 65 qualify for premium-free Part A if they have earned enough work credits or qualify through a family member's earnings history.</p>
 
-<p>Part B requires a monthly premium payment. In 2026, the standard monthly Part B premium is deducted directly from the beneficiary's monthly SSDI payment. Beneficiaries under 65 can also choose to enroll in a Medicare Advantage plan or buy a standalone Part D drug plan during their Initial Enrollment Period.</p>
+<p>Part B generally requires a monthly premium. If you receive Social Security benefits, the premium is usually deducted from your payment; otherwise, Medicare will bill you. Beneficiaries under 65 may also have the option to enroll in a Medicare Advantage plan or a standalone Part D drug plan.</p>
 <p class="text-xs text-slate-400 mt-1">Source: <a href="https://www.cms.gov/regulations-and-guidance/guidance/manuals/downloads/ge101c01.pdf" target="_blank" rel="noopener noreferrer" class="underline hover:text-amber-600">CMS.gov — Medicare Eligibility and Entitlement Manual</a></p>
 
 <h2>Can You Get a Medigap Policy Under Age 65?</h2>
 
 <p>Medigap (Medicare Supplement Insurance) availability for individuals under age 65 varies by state. Federal law requires private insurance companies to offer Medigap policies to people age 65 and older during their Medigap Open Enrollment Period, but it does not mandate federal under-65 Medigap guarantees.</p>
 
-<p>Over 30 states have enacted state-level laws requiring insurers to offer at least one type of Medigap policy to Medicare beneficiaries under 65 who qualify via disability or ESRD. However, premiums for under-65 Medigap policies in many states can be significantly higher than those offered to 65-year-old beneficiaries.</p>
-<p class="text-xs text-slate-400 mt-1">Source: <a href="https://www.medicare.gov/publications/11306-Medicare-Medicaid.pdf" target="_blank" rel="noopener noreferrer" class="underline hover:text-amber-600">Medicare.gov — Medicare & Medicaid Dual Eligibility Guide</a></p>
+<p>Whether insurers must offer Medigap policies to people under 65 depends on state law. Check with your state insurance department or State Health Insurance Assistance Program (SHIP) about available policies, enrollment rights, and premiums.</p>
+<p class="text-xs text-slate-400 mt-1">Source: <a href="https://www.medicare.gov/health-drug-plans/medigap/basics" target="_blank" rel="noopener noreferrer" class="underline hover:text-amber-600">Medicare.gov — Get Medigap Basics</a></p>
 
 <h2>Frequently Asked Questions</h2>
 
@@ -2328,7 +2308,7 @@ content: `
 <p>You must be entitled to SSDI benefits for 24 months before your Medicare coverage begins. Your Medicare coverage automatically starts on the 25th month of receiving disability payments.</p>
 
 <h3>Do you automatically get Medicare if you get disability?</h3>
-<p>Yes, enrollment is automatic, but only after you complete the 24-month SSDI entitlement period. Social Security sends your Medicare card and enrollment packet roughly three months before your 25th month of disability benefits.</p>
+<p>People receiving SSDI are generally enrolled in Medicare automatically after 24 months of entitlement. Review the enrollment notice you receive and follow its instructions.</p>
 
 <h3>Can someone with ALS get Medicare immediately under 65?</h3>
 <p>Yes, individuals diagnosed with ALS who qualify for SSDI get Medicare coverage automatically during their first month of Social Security disability entitlement, with no 24-month waiting period.</p>
@@ -2406,7 +2386,7 @@ content: `
 <p class="text-xs text-slate-400 mt-1">Source: <a href="https://www.ssa.gov/cola/" target="_blank" rel="noopener noreferrer" class="underline hover:text-amber-600">Social Security Administration</a></p>
 
 <h2>Does the Maximum Social Security Benefit Increase Every Year?</h2>
-<p>Yes. The maximum benefit typically rises each year for two reasons: the annual <strong>cost-of-living adjustment (COLA)</strong>, which raised benefits by 2.8% for 2026, and increases in the taxable maximum itself, which lets high earners build a larger benefit going forward. Because these figures are volatile, treat any maximum-benefit number as current "as of 2026" rather than a permanent ceiling.</p>
+<p>Yes. The maximum benefit typically rises each year for two reasons: the annual <strong>cost-of-living adjustment (COLA)</strong>, which raised benefits by 2.8% for 2026, and increases in the taxable maximum itself, which lets high earners build a larger benefit going forward. Because these figures are volatile, treat any maximum-benefit number as current "as of 2026" rather than a permanent ceiling. For 2027, SSA lists the maximum benefit at full retirement age as $4,188 (up from $4,152), and the taxable maximum rises to $192,300 (SSA 2027 COLA fact sheet).</p>
 <p class="text-xs text-slate-400 mt-1">Source: <a href="https://www.ssa.gov/cola/" target="_blank" rel="noopener noreferrer" class="underline hover:text-amber-600">Social Security Administration</a></p>
 
 <h2>How to Get Closer to the Maximum Benefit</h2>
@@ -2420,7 +2400,7 @@ content: `
 <p>Our <a href="/calculators/benefits-estimator">Benefits Estimator</a> can model how a later filing age or additional working years would change a specific benefit amount.</p>
 
 <h2>Can Spousal, Survivor, or Disability Benefits Exceed the Retirement Maximum?</h2>
-<p>No. A spousal benefit tops out at 50% of the higher earner's PIA, and a survivor benefit can reach up to 100% of the deceased worker's benefit — neither exceeds what the worker themselves could receive. Disability benefits follow the same PIA formula as retirement but without delayed retirement credits, so the maximum SSDI benefit in 2026 is $4,152, matching the full-retirement-age retirement maximum rather than the higher age-70 figure.</p>
+<p>No. A spousal benefit tops out at 50% of the higher earner's PIA, and a survivor benefit can reach up to 100% of the deceased worker's benefit — neither exceeds what the worker themselves could receive. Disability benefits use the same PIA formula as retirement but have no delayed retirement credits, so they cannot exceed the retirement maximum at full retirement age ($4,152 in 2026). The amount an SSDI recipient actually gets depends on the earnings years SSA uses for the disability computation, so most are well below that figure.</p>
 <p class="text-xs text-slate-400 mt-1">Source: <a href="https://www.ssa.gov/faqs/en/questions/KA-01897.html" target="_blank" rel="noopener noreferrer" class="underline hover:text-amber-600">Social Security Administration</a></p>
 
 <h2>Frequently Asked Questions</h2>
@@ -2441,7 +2421,7 @@ content: `
 <p>Yes, up to 85% of Social Security benefits can be subject to federal income tax depending on total household income, regardless of whether the benefit is at the maximum or average level.</p>
 
 <h3>How does the maximum SSDI benefit compare to the maximum retirement benefit?</h3>
-<p>The maximum SSDI benefit in 2026 is $4,152, the same as the full-retirement-age retirement maximum, because disability benefits use the same PIA formula but don't include delayed retirement credits.</p>
+<p>SSDI cannot exceed the full-retirement-age retirement maximum ($4,152 in 2026). It uses the same PIA formula but has no delayed retirement credits, and the actual amount depends on the earnings years SSA uses for the disability computation.</p>
 
 <p>Claiming age is the single biggest lever most people can still pull to raise their own benefit. For a full breakdown of how the numbers change at each age, see our guide on <a href="/blog/social-security-age-62-vs-67-vs-70">Social Security at age 62 vs. 67 vs. 70</a>.</p>
 
@@ -2491,12 +2471,12 @@ content: `
 <tbody>
 <tr>
 <td><strong>Under Full Retirement Age (All Year)</strong></td>
-<td>Standard Annual Threshold</td>
+<td>$24,480 in 2026; $25,560 in 2027</td>
 <td>$1 withheld for every $2 earned above the threshold.</td>
 </tr>
 <tr>
 <td><strong>Year Reaching Full Retirement Age</strong></td>
-<td>Higher Annual Threshold</td>
+<td>$65,160 in 2026; $67,920 in 2027</td>
 <td>$1 withheld for every $3 earned above threshold (only counts earnings before FRA month).</td>
 </tr>
 <tr>
@@ -2554,8 +2534,8 @@ content: `
 
 <ol>
 <li><strong>Spousal Benefits:</strong> If you collect spousal benefits while working early, your earnings reduce your spousal payout check.</li>
-<li><strong>Survivor Benefits:</strong> Widows and widowers receiving survivor payments before FRA are bound by the same annual earnings limits. Calculate your baseline with the <a href="/blog/social-security-survivor-benefits-guide" class="underline text-amber-700 font-bold">Survivor Benefits Calculator</a> or consult the <a href="/blog/can-you-collect-survivor-benefits-and-your-own-social-security-at-the-same-time" class="underline text-amber-700 font-bold">Survivor Claiming Guide</a>.</li>
-<li><strong>Disability Benefits (SSDI):</strong> SSDI does not use the Retirement Earnings Test. Instead, disability recipients are subject to <strong>Substantial Gainful Activity (SGA)</strong> limits. Check your eligibility rules using our <a href="/guides/disability" class="underline text-amber-700 font-bold">SSDI Eligibility Calculator</a>.</li>
+<li><strong>Survivor Benefits:</strong> Widows and widowers receiving survivor payments before FRA are bound by the same annual earnings limits. Calculate your baseline with the <a href="/blog/social-security-survivor-benefits-guide" class="underline text-amber-700 font-bold">survivor benefits guide</a> or consult the <a href="/blog/can-you-collect-survivor-benefits-and-your-own-social-security-at-the-same-time" class="underline text-amber-700 font-bold">Survivor Claiming Guide</a>.</li>
+<li><strong>Disability Benefits (SSDI):</strong> SSDI does not use the Retirement Earnings Test. Instead, disability recipients are subject to <strong>Substantial Gainful Activity (SGA)</strong> limits. Check your eligibility rules using our <a href="/guides/disability" class="underline text-amber-700 font-bold">SSDI eligibility guide</a>.</li>
 </ol>
 
 <h2>Practical Action Plan for Working Retirees</h2>
@@ -2589,7 +2569,7 @@ metaDescription: "Spouses can claim up to 50% of a partner's benefit at FRA. Lea
   category: "Spousal Benefits",
   author: "Amine Saadi",
   date: "2026-08-18",
-  lastUpdated: "2026-08-18",
+  lastUpdated: "2026-11-19",
   readTime: "9 min read",
   featured: true,
   image: "/images/social-security-spousal-and-divorced-benefits-maximizing-payouts-2026.webp",
@@ -2600,28 +2580,28 @@ metaDescription: "Spouses can claim up to 50% of a partner's benefit at FRA. Lea
 
 <div class="bg-amber-50/50 border border-amber-200 rounded-xl p-4 my-6">
   <p class="font-semibold text-amber-900 mb-1">Quick Answer: How Spousal and Divorced Benefits Work in 2026</p>
-  <p class="text-sm text-amber-800">Married spouses can receive up to 50% of the primary earner's Primary Insurance Amount (PIA) once the primary worker files. Divorced individuals whose marriage lasted at least 10 consecutive years can claim up to 50% of an ex-spouse's PIA independently, provided they are unmarried and both parties are at least age 62.</p>
+  <p class="text-sm text-amber-800">Eligible married spouses may receive a benefit based on a worker's record, generally after the worker applies. Divorced spouses whose marriage lasted at least 10 years may qualify on an ex-spouse's record; additional age, marital-status, and entitlement rules apply.</p>
 </div>
 
 <h2>What Are Social Security Spousal Benefits in 2026?</h2>
-<p>Social Security spousal benefits allow a husband or wife to receive retirement income based on their partner's earning record. To qualify, the secondary spouse must be at least <strong>age 62</strong>, and the primary earner must have already filed for their own retirement benefits.</p>
+<p>Social Security spousal benefits may be available to a current spouse based on a worker's earnings record. The spouse generally must be at least <strong>age 62</strong> (unless caring for an eligible child), and the worker generally must have applied for retirement benefits.</p>
 <p class="text-xs text-slate-400 mt-1">Source: <a href="https://www.ssa.gov/oact/quickcalc/earlyretire.html" target="_blank" rel="noopener noreferrer" class="underline hover:text-amber-600">Social Security Administration</a></p>
 
-<p>The maximum spousal payout is <strong>50% of the primary worker's Primary Insurance Amount (PIA)</strong>—the benefit amount the primary earner earns at Full Retirement Age (FRA). If you claim spousal benefits before reaching your own FRA (age 67 for anyone born in 1960 or later), the monthly payout is permanently reduced.</p>
+<p>At the spouse's Full Retirement Age (FRA), the combined retirement and spousal benefit can be up to <strong>50% of the worker's Primary Insurance Amount (PIA)</strong>. This is not an additional 50% on top of the spouse's own full retirement benefit. Claiming before the spouse's FRA generally reduces the spousal amount.</p>
 
-<p>Under current rules, deeming regulations apply. When you apply for retirement benefits, you are automatically deemed to be applying for spousal benefits if eligible, and you will receive whichever amount is higher.</p>
+<p>Deemed-filing rules generally require people born on or after January 2, 1954, who qualify for both retirement and spousal benefits to apply for both. Exceptions apply, including when claiming certain survivor benefits. SSA determines whether the rules apply to your situation.</p>
 
 <h2>How Do Social Security Divorced Spouse Benefits Work?</h2>
-<p>Divorced individuals can claim Social Security benefits based on an ex-spouse's earnings record without impacting the ex-spouse's benefits or notifying them. The Social Security Administration (SSA) keeps all ex-spousal claims confidential.</p>
+<p>An eligible divorced person may be able to claim on an ex-spouse's earnings record without the ex-spouse filing or being involved. A divorced-spouse benefit does not reduce the ex-spouse's own retirement benefit.</p>
 
 <p>To qualify for divorced spousal benefits in 2026, you must meet four primary criteria:</p>
 <ul>
   <li>Your marriage lasted at least <strong>10 consecutive years</strong> prior to the final divorce decree.</li>
-  <li>You are currently <strong>unmarried</strong> (remarrying before age 60 generally invalidates ex-spousal eligibility).</li>
+  <li>You are generally <strong>unmarried</strong> while claiming on a living former spouse's record. Remarriage usually ends this eligibility while the new marriage continues; survivor benefits follow different rules.</li>
   <li>You are at least <strong>age 62</strong>.</li>
   <li>Your ex-spouse is entitled to Social Security retirement or disability benefits.</li>
 </ul>
-<p class="text-xs text-slate-400 mt-1">Source: <a href="https://www.ssa.gov/benefits/retirement/planner/divourced.html" target="_blank" rel="noopener noreferrer" class="underline hover:text-amber-600">Social Security Administration</a></p>
+<p class="text-xs text-slate-400 mt-1">Source: <a href="https://www.ssa.gov/benefits/retirement/planner/applying7.html" target="_blank" rel="noopener noreferrer" class="underline hover:text-amber-600">Social Security Administration</a></p>
 
 <p>Unlike married couples, an independently entitled divorced spouse does not have to wait for their ex-spouse to apply for benefits, provided the divorce occurred at least <strong>two years prior</strong> and both ex-spouses are at least age 62.</p>
 
@@ -2640,7 +2620,7 @@ metaDescription: "Spouses can claim up to 50% of a partner's benefit at FRA. Lea
     <tbody class="divide-y divide-slate-200">
       <tr>
         <td class="p-3"><strong>Minimum Marriage Length</strong></td>
-        <td class="p-3">1 year (1 year continuous)</td>
+        <td class="p-3">1 year</td>
         <td class="p-3">10 consecutive years</td>
       </tr>
       <tr>
@@ -2656,7 +2636,7 @@ metaDescription: "Spouses can claim up to 50% of a partner's benefit at FRA. Lea
       <tr>
         <td class="p-3"><strong>Impact of Remarriage</strong></td>
         <td class="p-3">N/A (Currently married)</td>
-        <td class="p-3">Ends eligibility if remarried before age 60</td>
+        <td class="p-3">Generally ends eligibility on a living ex-spouse's record while remarried</td>
       </tr>
       <tr>
         <td class="p-3"><strong>Impact on Other Claimants</strong></td>
@@ -2672,7 +2652,7 @@ metaDescription: "Spouses can claim up to 50% of a partner's benefit at FRA. Lea
 
 <p>Waiting past FRA (age 67 for individuals born in 1960 or later) will not increase a spousal benefit beyond 50% of the primary earner's Primary Insurance Amount (PIA). Therefore, claiming spousal benefits precisely at FRA yields the maximum allowable monthly amount.</p>
 
-<p>To evaluate how filing ages and earnings histories affect household payouts, analyze your personal scenario using the <a href="/guides/spousal-benefits" class="text-amber-600 underline font-medium hover:text-amber-700">Couples & Divorced Strategy Optimizer</a>.</p>
+<p>To evaluate how filing ages and earnings histories affect household payouts, analyze your personal scenario using the <a href="/guides/spousal-benefits" class="text-amber-600 underline font-medium hover:text-amber-700">spousal and divorced benefits guide</a>.</p>
 
 <h2>How Does the Social Security Earnings Test Affect Spouses in 2026?</h2>
 <p>If you claim spousal or divorced benefits before reaching Full Retirement Age and continue to work, the Social Security Retirement Earnings Test applies.</p>
@@ -2688,13 +2668,13 @@ metaDescription: "Spouses can claim up to 50% of a partner's benefit at FRA. Lea
 <h2>Frequently Asked Questions</h2>
 
 <h3>Can I collect benefits on my ex-spouse's record without them knowing?</h3>
-<p>Yes, the Social Security Administration maintains strict privacy laws and will not notify your former spouse when you file a claim against their record.</p>
+<p>You can generally apply on an ex-spouse's record without their involvement. Contact SSA for details about the information required for your application.</p>
 
 <h3>Does my ex-spouse claiming benefits reduce my own Social Security check?</h3>
 <p>No, any benefits paid to a divorced spouse or multiple ex-spouses do not reduce the retirement payment of the primary worker or their current spouse.</p>
 
 <h3>What happens if I remarry after age 60?</h3>
-<p>If you remarry after age 60, you remain eligible to collect surviving divorced spousal benefits if your ex-spouse is deceased. However, for standard divorced spousal benefits while the ex-spouse is living, remarriage generally voids eligibility unless that subsequent marriage ends.</p>
+<p>Remarriage can affect survivor benefits differently from benefits on a living former spouse's record. A person who remarries at age 60 or older may still qualify for certain surviving divorced-spouse benefits; check SSA's rules for your circumstances.</p>
 
 <h3>Can a spouse collect 50% if they have their own work history?</h3>
 <p>Yes, but under deemed filing rules, the SSA pays your own retirement benefit first. If 50% of your spouse's Primary Insurance Amount is higher than your own benefit, SSA adds a spousal topping-off amount so your total payment equals the higher spousal maximum.</p>
@@ -2860,7 +2840,7 @@ metaDescription: "Spouses can claim up to 50% of a partner's benefit at FRA. Lea
   category: "Tax & Income",
   author: "Amine Saadi",
   date: "2026-08-22",
-  lastUpdated: "2026-08-22",
+  lastUpdated: "2026-11-13",
   readTime: "6 min read",
   featured: false,
   image: "/images/social-security-self-employment-tax-guide-2026.webp",
@@ -2940,6 +2920,9 @@ metaDescription: "Spouses can claim up to 50% of a partner's benefit at FRA. Lea
     <p>If you have both a W-2 job and self-employment income in 2026, W-2 wages credit toward the $184,500 Social Security cap first. Self-employment income is subject to the 12.4% Social Security tax only to the extent that W-2 earnings fall below $184,500.</p>
     <p>An Additional Medicare Tax of 0.9% applies to self-employment income exceeding single filing thresholds of $200,000 ($250,000 for married filing jointly or $125,000 for married filing separately). Unlike the standard 2.9% Medicare tax, the 0.9% Additional Medicare Surtax cannot be reduced by the half-SECA deduction.</p>
 
+    <h2>2027 Update: New Wage Base and Credit Amount</h2>
+    <p>The 15.3% self-employment tax rate does not change for 2027. SSA's 2027 COLA fact sheet raises the maximum taxable earnings to $192,300 (from $184,500), so the 12.4% Social Security portion applies to up to $192,300 of net self-employment earnings after the 92.35% adjustment. A credit (quarter of coverage) requires $1,970 of earnings in 2027, so $7,880 earns the maximum four credits for the year.</p>
+
     <h2>How Self-Employment Earnings Build Social Security Credits</h2>
     <p>Paying self-employment tax directly builds your work record with the Social Security Administration (SSA). In 2026, workers earn one Social Security credit (quarter of coverage) for every $1,890 of net self-employment earnings, up to the annual maximum of four credits ($7,560 total earnings).</p>
     <p>Accumulating 40 credits (10 years of work) is required to qualify for retirement benefits. Your actual monthly Primary Insurance Amount (PIA) is calculated using your highest 35 years of indexed earnings. Underreporting self-employment earnings reduces your official earnings record, which permanently lowers future Social Security retirement, SSDI, and survivor benefits.</p>
@@ -2980,7 +2963,7 @@ metaDescription: "Spouses can claim up to 50% of a partner's benefit at FRA. Lea
   ],
   searchIntent: "Informational and transactional guide explaining how to set up, access, and utilize a personal my Social Security online account.",
   content: `
-<h1>My Social Security Account: How to Set Up, Sign In, and Manage Benefits (2026 Guide)</h1>
+
 
 <hr />
 
@@ -2989,7 +2972,7 @@ metaDescription: "Spouses can claim up to 50% of a partner's benefit at FRA. Lea
   <p><strong>TL;DR:</strong> Manage your retirement, disability, Medicare, and administrative records online through a secure federal portal.</p>
   <ul>
     <li><strong>Main Finding / Definition:</strong> A <em>my Social Security</em> account is a free official portal from the Social Security Administration (SSA) allowing U.S. workers and beneficiaries to view earnings histories, check benefit projections, replace cards, and manage direct deposits.</li>
-    <li><strong>Key Metric / Statistic:</strong> SSA transitioned all legacy accounts to federal Credential Service Providers, requiring mandatory multi-factor authentication via Login.gov or ID.me for over 46 million account holders.</li>
+    <li><strong>Key Metric / Statistic:</strong> SSA requires sign-in through a federal Credential Service Provider, either Login.gov or ID.me, with multi-factor authentication.</li>
     <li><strong>Core Recommendation:</strong> Create your account before reaching retirement age to lock down your digital identity against fraud and audit your annual earnings record for costly errors.</li>
   </ul>
 </blockquote>
@@ -2997,7 +2980,7 @@ metaDescription: "Spouses can claim up to 50% of a partner's benefit at FRA. Lea
 <div class="author-verification">
   <p><strong>Written by:</strong> Amine Saadi </p>
   <p><strong>Last Updated:</strong> September 1, 2026</p>
-  <p><em>Amine Saadi has over a decade of experience analyzing public benefits policy and guiding individuals through federal benefit enrollment and retirement planning.</em></p>
+  <p><em>Amine Saadi writes and researches consumer-facing Social Security guides using official Social Security Administration sources.</em></p>
 </div>
 
 <div class="table-of-contents">
@@ -3021,7 +3004,7 @@ metaDescription: "Spouses can claim up to 50% of a partner's benefit at FRA. Lea
 <h3>Deeper Context & Nuance</h3>
 <ul>
   <li><strong>Key Point 1:</strong> The portal provides real-time access to your official Social Security Statement, outlining your covered earnings history alongside tailored retirement estimates at ages 62, Full Retirement Age (FRA), and 70.</li>
-  <li><strong>Key Point 2:</strong> According to the Social Security Administration, legacy SSA usernames created before September 2021 have been fully phased out to meet federal cybersecurity standards, requiring mandatory migration to Login.gov or ID.me.</li>
+  <li><strong>Key Point 2:</strong> SSA no longer offers its old username-and-password sign-in. Accounts use Login.gov or ID.me to meet federal cybersecurity standards.</li>
   <li><strong>First-Hand Experience:</strong> Reviewing your statement annually is vital because uncorrected employer reporting errors on your earnings record directly decrease your future monthly benefit calculations.</li>
 </ul>
 
@@ -3063,7 +3046,7 @@ metaDescription: "Spouses can claim up to 50% of a partner's benefit at FRA. Lea
     <tr>
       <td><strong>International Access</strong></td>
       <td>Best for U.S. residents with state-issued photo IDs</td>
-      <td>Supports non-U.S. address verification & foreign passports</td>
+      <td>Often used by people living outside the U.S.; check current requirements</td>
       <td>ID.me is preferred for expats and international sign-ins.</td>
     </tr>
     <tr>
@@ -3083,7 +3066,7 @@ metaDescription: "Spouses can claim up to 50% of a partner's benefit at FRA. Lea
 <h2 id="frequently-asked-questions">Frequently Asked Questions</h2>
 
 <h3>How do I replace a lost Social Security card through my account?</h3>
-<p><strong>Answer:</strong> Log into your account, navigate to "Replace Your Social Security Card", and submit an online request. Most adult U.S. citizens without name changes receive replacement cards by mail within 10 to 14 days. For eligibility conditions, read our complete guide on <a href="https://www.socialsecurityguidecalc.com/blog/how-to-get-a-replacement-social-security-card">how to replace a Social Security card</a>.</p>
+<p><strong>Answer:</strong> Log into your account, navigate to "Replace Your Social Security Card", and submit an online request. Most adult U.S. citizens without name changes receive replacement cards by mail within about 10 business days after SSA processes the request. For eligibility conditions, read our complete guide on <a href="https://www.socialsecurityguidecalc.com/blog/how-to-get-a-replacement-social-security-card">how to replace a Social Security card</a>.</p>
 
 <h3>Can I check my estimated monthly benefits online?</h3>
 <p><strong>Answer:</strong> Yes. Your account dashboard provides custom benefit statements detailing monthly payouts at ages 62, 67, and 70 based on your lifetime earnings. You can also run custom scenario planning with our <a href="https://www.socialsecurityguidecalc.com/calculators/benefits-estimator">Social Security Benefits Estimator Calculator</a>.</p>
@@ -3126,7 +3109,7 @@ metaDescription: "Spouses can claim up to 50% of a partner's benefit at FRA. Lea
     "when is social security cola announced"
   ],
   searchIntent: "Informational",
-  content: `<h1>Social Security COLA 2026: What It Is, How It Is Calculated, and What to Expect in 2027</h1>
+  content: `
 
 <p><strong>TL;DR:</strong></p>
 <ul>
@@ -3220,7 +3203,7 @@ metaDescription: "Spouses can claim up to 50% of a partner's benefit at FRA. Lea
     </tr>
     <tr>
       <td><strong>Average retired-worker benefit after COLA</strong></td>
-      <td>$2,072/month</td>
+      <td>$2,071/month</td>
       <td>SSA estimate based on benefit data</td>
     </tr>
     <tr>
@@ -3231,7 +3214,7 @@ metaDescription: "Spouses can claim up to 50% of a partner's benefit at FRA. Lea
   </tbody>
 </table>
 
-<p>SSA's detailed estimate shows an average retired-worker benefit of approximately <strong>$2,015 before the 2.8% COLA and $2,072 after the adjustment</strong>, an increase of about $57 per month. The separate SSA announcement describes the average increase as about $56 per month because of the underlying benefit population and rounding. </p>
+<p>SSA's estimate shows an average retired-worker benefit of approximately <strong>$2,015 before the 2.8% COLA and $2,071 after it</strong>, an increase of about $56 per month. </p>
 
 <h2 id="2027-cola">What will the Social Security COLA be for 2027?</h2>
 
@@ -3242,7 +3225,7 @@ metaDescription: "Spouses can claim up to 50% of a partner's benefit at FRA. Lea
 <p>For example, a $2,000 monthly benefit rises by $72 with a 3.6% COLA (2,000 x 0.036). Your own increase is your current benefit multiplied by 0.036, before any Medicare Part B premium or other deductions. SSA says COLA notices appear in your my Social Security Message Center starting in late November, and arrive by mail in December for people without an online account.</p>
 
 <blockquote>
-  <strong>Note:</strong> Earlier forecasts, including the 2.4% assumption in the 2026 Trustees Report, were estimates. The official 2027 COLA is 3.6%.
+  <strong>Note:</strong> Earlier forecasts were estimates. The official 2027 COLA is 3.6%.
 </blockquote>
 
 <h2 id="historical-cola">Social Security COLA history</h2>
@@ -3461,7 +3444,7 @@ metaDescription: "Spouses can claim up to 50% of a partner's benefit at FRA. Lea
     "maximum social security benefit 2027"
   ],
   "searchIntent": "Informational",
-  "content": "<h2>Social Security 2027: See What's Really Changing in 2027</h2><p>As 2027 approaches, millions of American workers, retirees, and beneficiaries are facing important structural shifts in the United States Social Security system. Understanding how <strong>social security 2027</strong> regulations affect your household budget requires evaluating cost-of-living adjustments (COLA), maximum wage cap changes, and claiming milestones. This guide walks you through every major regulatory, financial, and strategic update set to define Social Security benefits in 2027.</p><p>Navigating these updates effectively ensures that you maximize lifetime payouts, avoid unexpected income tax penalties, and align your broader financial portfolio with official Social Security Administration (SSA) policy guidelines.</p><div class=\"key-takeaways-box\">\n  <h3>⚡ Key Takeaways / Executive Summary</h3>\n  <ul>\n    <li><strong>Full Retirement Age Reaches Peak:</strong> For anyone born in 1960 or later, Full Retirement Age (FRA) remains locked at exactly 67 years old, representing the complete phase-in of the 1983 Social Security Amendments.</li>\n    <li><strong>COLA Adjustments:</strong> SSA announced an official 2027 Cost-of-Living Adjustment (COLA) of 3.6% on October 14, 2026, based on third-quarter CPI-W data calculated by the Bureau of Labor Statistics (<a href=\"https://www.ssa.gov/news/press/factsheets/colafacts.pdf\" target=\"_blank\" rel=\"noopener noreferrer\">SSA.gov</a>).</li>\n    <li><strong>Taxable Earnings Limit Increases:</strong> The Social Security taxable maximum rises to $192,300 in 2027, up from $184,500 in 2026. The 6.2% Social Security tax applies to earnings up to that limit.</li>\n    <li><strong>Core Action Step:</strong> Utilize the <a href=\"https://www.socialsecurityguidecalc.com/calculators/benefits-estimator\">Social Security Benefits Estimator</a> to calculate your exact monthly check under updated 2027 parameters.</li>\n  </ul>\n</div><hr /><div class=\"author-verification-block\">\n  <p><strong>Written by:</strong> Amine Saadi</p>\n  <p><strong>Last Updated:</strong> October 14, 2026</p>\n  <p><em></em></p>\n</div><hr /><h3>Table of Contents</h3>\n<ul>\n  <li><a href=\"#section-1\">1. What is Changing for Social Security 2027?</a></li>\n  <li><a href=\"#section-2\">2. Cost-of-Living Adjustment (COLA) for 2027</a></li>\n  <li><a href=\"#section-3\">3. Full Retirement Age (FRA) Rules for 2027 Claimants</a></li>\n  <li><a href=\"#section-4\">4. Social Security Tax Base Limit & High Earners in 2027</a></li>\n  <li><a href=\"#section-5\">5. Social Security Retirement Age 62 vs. 67 vs. 70</a></li>\n  <li><a href=\"#section-6\">6. The Retirement Earnings Test Limits in 2027</a></li>\n  <li><a href=\"#section-7\">7. Maximum Social Security Benefit at 62, 67, and 70</a></li>\n  <li><a href=\"#section-8\">8. Spousal and Survivor Benefits Rules for 2027</a></li>\n  <li><a href=\"#section-9\">9. How Social Security Income is Taxed in 2027</a></li>\n  <li><a href=\"#section-10\">10. Impact of WEP and GPO Policy Changes</a></li>\n  <li><a href=\"#section-11\">11. Supplemental Security Income (SSI) & SSDI Updates</a></li>\n  <li><a href=\"#section-12\">12. Medicare Part B Premium Impact on Social Security Checks</a></li>\n  <li><a href=\"#section-13\">13. How to Calculate Your 2027 Social Security Benefit</a></li>\n  <li><a href=\"#section-14\">14. Strategic Claiming Options: 2027 Action Plan</a></li>\n  <li><a href=\"#section-15\">15. Frequently Asked Questions (FAQ)</a></li>\n</ul><hr /><h2 id=\"section-1\">What is Changing for Social Security 2027?</h2><p>In 2027, Social Security will undergo annual index-based structural shifts, including cost-of-living increases, raised maximum taxable earnings caps, adjusted retirement earnings test thresholds, and higher maximum benefit limits. Furthermore, workers reaching age 67 in 2027 mark the complete, permanent stabilization of Full Retirement Age (FRA) at 67 for all individuals born in 1960 or later.</p><p>These annual systemic calibrations ensure that benefit payments adapt to national wage inflation and overall cost-of-living movements. To prepare effectively, examine how each change directly impacts your net income:</p><ul>\n  <li><strong>Cost-of-Living Boosts:</strong> Designed to prevent loss of purchasing power due to consumer price inflation. Read details on past trends via our <a href=\"https://www.socialsecurityguidecalc.com/blog/cola-updates\">COLA Updates Guide</a>.</li>\n  <li><strong>Tax Base Adjustments:</strong> Higher income earners pay FICA taxes on a larger portion of their annual earnings.</li>\n  <li><strong>Earnings Test Thresholds:</strong> Beneficiaries who work while receiving early benefits get higher baseline earnings exemptions before benefits are temporarily withheld.</li>\n</ul><blockquote>\n  <p>\"Navigating <strong>social security 2027</strong> changes isn't just about expecting a higher monthly payment; it requires understanding how inflation indexes, tax limits, and claiming ages interact with your broader retirement plan.\" — <em>Amine Saadi</em></p>\n</blockquote><h2 id=\"section-2\">Cost-of-Living Adjustment (COLA) for 2027</h2><p>The annual Cost-of-Living Adjustment (COLA) for 2027 protects recipients against purchasing power erosion. Calculated using third-quarter consumer price index data (CPI-W) from July, August, and September, the official 2027 COLA is <strong>3.6%</strong>, announced by SSA on October 14, 2026. It applies to benefits payable in January 2027.</p><p>SSA says the average retirement benefit rises by about $75 per month. To estimate your own increase, multiply your current monthly benefit by 0.036: a $2,000 benefit rises by $72, before any Medicare Part B premium change or other deductions.</p><p>To see how the CPI-W calculation works under official federal guidelines, review our comprehensive breakdown on <a href=\"https://www.socialsecurityguidecalc.com/blog/social-security-cola\">how Social Security COLA is calculated</a>.</p><figure>\n  <img src=\"https://images.unsplash.com/photo-1579621970563-ebec7560ff3e?auto=format&fit=crop&w=1344&h=768&q=80\" alt=\"social security 2027 inflation tracking and economic data chart\" width=\"1344\" height=\"768\" />\n  <figcaption>Economic trends and CPI-W metrics influencing the 2027 Social Security COLA assessment.</figcaption>\n</figure><h2 id=\"section-3\">Full Retirement Age (FRA) Rules for 2027 Claimants</h2><p>For individuals turning age 67 in 2027 (those born in 1960), Full Retirement Age (FRA) is officially fixed at 67. This milestone represents the complete culmination of the statutory phase-in mandated by the Social Security Amendments of 1983.</p><p>If you choose to file for retirement benefits before hitting your exact FRA, your monthly benefit is permanently reduced. Claiming at the earliest allowed age of 62 in 2027 results in a 30% lifetime reduction compared to your Full Retirement Age baseline. Conversely, delaying your claim past age 67 yields Delayed Retirement Credits equal to 8% per year up to age 70.</p><p>To calculate your exact age milestone, use our interactive <a href=\"https://www.socialsecurityguidecalc.com/calculators/retirement-age\">Retirement Age Calculator</a>.</p><h2 id=\"section-4\">Social Security Tax Base Limit & High Earners in 2027</h2><p>High-wage earners will contribute taxes up to an increased maximum taxable earnings limit in 2027. Under current tax law, employee wage earnings up to this cap are subject to the standard 6.2% Old-Age, Survivors, and Disability Insurance (OASDI) tax, matched by an equal 6.2% contribution from employers (or 12.4% total for self-employed individuals).</p><p>As national average wages increase, this limit scales upward annually based on the National Average Wage Index (NAWI). Earnings above this cap are exempt from Social Security payroll taxes, though the 1.45% Medicare tax continues indefinitely across all earned income (plus the 0.9% Additional Medicare Tax for high earners).</p><h2 id=\"section-5\">Social Security Retirement Age 62 vs. 67 vs. 70</h2><p>Choosing when to claim benefits remains one of the most crucial choices in retirement planning. Below is a comparative breakdown of how claiming age alters benefit levels for someone with a primary insurance amount (PIA) of $2,000 per month at FRA in 2027:</p><table>\n  <thead>\n    <tr>\n      <th>Claiming Age</th>\n      <th>Benefit Percentage of PIA</th>\n      <th>Monthly Benefit Amount ($2,000 PIA)</th>\n      <th>Core Advantage / Consideration</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td><strong>Age 62</strong></td>\n      <td>70.0%</td>\n      <td>$1,400</td>\n      <td>Early cash flow, but permanent 30% reduction.</td>\n    </tr>\n    <tr>\n      <td><strong>Age 67 (FRA)</strong></td>\n      <td>100.0%</td>\n      <td>$2,000</td>\n      <td>Full standard benefit with no early earnings test penalties.</td>\n    </tr>\n    <tr>\n      <td><strong>Age 70</strong></td>\n      <td>124.0%</td>\n      <td>$2,480</td>\n      <td>Maximum guaranteed monthly payout (+24% over FRA).</td>\n    </tr>\n  </tbody>\n</table><p>When evaluating these age benchmarks, consider your health history, immediate cash flow requirements, and long-term investment portfolios. Compare strategies directly with our <a href=\"https://www.socialsecurityguidecalc.com/blog/social-security-age-62-vs-67-vs-70\">Age 62 vs. 67 vs. 70 Analysis Guide</a>.</p><h2 id=\"section-6\">The Retirement Earnings Test Limits in 2027</h2><p>If you collect Social Security benefits while continuing to work prior to reaching your Full Retirement Age, your benefits are subject to the Social Security Retirement Earnings Test (RET). Exceeding annual earnings limits causes the SSA to temporarily withhold a portion of your monthly checks.</p><ol>\n  <li><strong>Under FRA All Year:</strong> The SSA withholds $1 in benefits for every $2 earned above the annual exempt threshold.</li>\n  <li><strong>Reaching FRA During 2027:</strong> A higher threshold applies. The SSA withholds $1 in benefits for every $3 earned above the limit until the month you hit full retirement age.</li>\n  <li><strong>Post-FRA Earnings:</strong> Starting the exact month you reach age 67, the earnings test disappears entirely. You can earn an unlimited amount without benefit reduction.</li>\n</ol><p><em>Note: Withheld benefits are not lost forever. Once you reach FRA, the SSA recalculates your monthly benefit upward to credit you for the checks that were previously withheld.</em> Check your exposure using our <a href=\"https://www.socialsecurityguidecalc.com/calculators/earnings-test\">Earnings Test Calculator</a>.</p><p><strong>Pro Tip / Key Warning:</strong> <em>Failing to notify the SSA of earnings above the annual threshold can result in sudden benefit overpayment notices and mandatory check withholdings later in the tax year.</em></p><h2 id=\"section-7\">Maximum Social Security Benefit at 62, 67, and 70</h2><p>The maximum potential Social Security check requires earning at or above the maximum taxable wage base limit for at least 35 years of your working career. In 2027, COLA increases elevate these maximum payout thresholds across all claiming ages:</p><p>SSA publishes the maximum monthly benefit for each claiming age after it announces the new-year figures. Check the <a href=\"https://www.ssa.gov/oact/cola/\" target=\"_blank\" rel=\"noopener noreferrer\">official SSA figures</a> rather than relying on early projections.</p><p>Read our full guide on how to position your career to qualify for the <a href=\"https://www.socialsecurityguidecalc.com/blog/highest-social-security-benefit-per-month\">highest Social Security benefit per month</a>.</p><h2 id=\"section-8\">Spousal and Survivor Benefits Rules for 2027</h2><p>Family protection rules remain a cornerstone of Social Security design. In 2027, spousal and survivor benefit calculations build directly off the primary worker's earning history:</p><ul>\n  <li><strong>Spousal Benefits:</strong> A spouse can receive up to 50% of the primary earner's Primary Insurance Amount (PIA) at FRA. Claiming spousal benefits early (between 62 and 67) reduces the payout percentage.</li>\n  <li><strong>Survivor Benefits:</strong> A surviving spouse is entitled to up to 100% of the deceased spouse's actual monthly benefit payment, provided they have reached their full retirement age for survivor benefits.</li>\n  <li><strong>Divorced Spousal Rules:</strong> If you were married for at least 10 consecutive years and are currently unmarried, you can claim benefits based on your ex-spouse's work record.</li>\n</ul><p>For tailored planning, explore our dedicated <a href=\"/guides/spousal-benefits\">Couples & Divorced Strategy Optimizer</a> and read about <a href=\"https://www.socialsecurityguidecalc.com/blog/social-security-spousal-benefits-rules\">Spousal Benefit Rules</a>.</p><figure>\n  <img src=\"https://images.unsplash.com/photo-1532619675605-1ede6c2ed2b0?auto=format&fit=crop&w=1344&h=768&q=80\" alt=\"social security 2027 retirement planning consultation for couples\" width=\"1344\" height=\"768\" />\n  <figcaption>Navigating spousal benefits, survivor rights, and delayed retirement credits for optimal household income.</figcaption>\n</figure><h2 id=\"section-9\">How Social Security Income is Taxed in 2027</h2><p>Federal taxation of Social Security benefits depends on your \"Combined Income\" (Adjusted Gross Income + Nontaxable Interest + 50% of Social Security Benefits). Because these income thresholds are not indexed for inflation, more retirees face federal income taxation on their benefits each year.</p><table>\n  <thead>\n    <tr>\n      <th>Filing Status</th>\n      <th>Combined Income Threshold</th>\n      <th>Taxable Percentage of Benefits</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Individual / Single</td>\n      <td>$25,000 - $34,000</td>\n      <td>Up to 50%</td>\n    </tr>\n    <tr>\n      <td>Individual / Single</td>\n      <td>Over $34,000</td>\n      <td>Up to 85%</td>\n    </tr>\n    <tr>\n      <td>Married Filing Jointly</td>\n      <td>$32,000 - $44,000</td>\n      <td>Up to 50%</td>\n    </tr>\n    <tr>\n      <td>Married Filing Jointly</td>\n      <td>Over $44,000</td>\n      <td>Up to 85%</td>\n    </tr>\n  </tbody>\n</table><p>Learn how to minimize your exposure using our <a href=\"https://www.socialsecurityguidecalc.com/calculators/tax-calculator\">Social Security Tax Calculator</a> or check our guide on <a href=\"https://www.socialsecurityguidecalc.com/guides/benefit-taxes\">Is Social Security Income Taxable?</a>.</p><h2 id=\"section-10\">Impact of WEP and GPO Policy Changes</h2><p>Public sector employees, teachers, firefighters, and municipal workers affected by non-covered pensions should closely monitor developments regarding the Windfall Elimination Provision (WEP) and Government Pension Offset (GPO).</p><p>Legislative movements, including ongoing discussions around the Social Security Fairness Act, aim to reform or repeal WEP/GPO provisions that historically reduce standard benefits for public servants. Estimate your specific offset with our specialized <a href=\"/blog/social-security-fairness-act-wep-gpo-repeal-explained\">WEP/GPO Calculator</a> and review the <a href=\"https://www.socialsecurityguidecalc.com/blog/social-security-fairness-act-wep-gpo-repeal-explained\">WEP/GPO Repeal Explained Guide</a>.</p><h2 id=\"section-11\">Supplemental Security Income (SSI) & SSDI Updates</h2><p>In addition to retirement claims, disability and income assistance programs shift under 2027 parameters:</p><ul>\n  <li><strong>Social Security Disability Insurance (SSDI):</strong> Substantial Gainful Activity (SGA) thresholds increase for non-blind and blind disabled beneficiaries, allowing higher wage retention during work attempts.</li>\n  <li><strong>Supplemental Security Income (SSI):</strong> Federal maximum SSI benefit rates automatically increase alongside the 2027 COLA percentage. Recent administrative reforms also streamline asset calculations and unearned food assistance rules.</li>\n</ul><p>Evaluate your eligibility using the <a href=\"/guides/disability\">SSDI Eligibility Estimator</a> or review our <a href=\"https://www.socialsecurityguidecalc.com/guides/disability\">Disability Benefits Guide</a>.</p><h2 id=\"section-12\">Medicare Part B Premium Impact on Social Security Checks</h2><p>For most retirees, Medicare Part B premiums are deducted directly from monthly Social Security payments. When Part B premiums rise, they reduce the net dollar gain delivered by annual COLA adjustments.</p><p>If the 2027 Medicare Part B premium increases, the statutory \"Hold Harmless Provision\" prevents Social Security checks from decreasing year-over-year for qualified beneficiaries, ensuring that higher healthcare premiums do not result in a lower net monthly payout than the year before. Review projected healthcare deductions with our <a href=\"https://www.socialsecurityguidecalc.com/calculators/medicare-cost\">Medicare Cost Estimator</a>.</p><h2 id=\"section-13\">How to Calculate Your 2027 Social Security Benefit</h2><p>Calculating your baseline benefit requires a 3-step formula established under federal law:</p><ol>\n  <li><strong>Calculate AIME:</strong> The SSA indexes your 35 highest-earning years to compute your Average Indexed Monthly Earnings (AIME).</li>\n  <li><strong>Apply Bend Points:</strong> Your AIME is run through three distinct percentage brackets (90%, 32%, and 15%) known as \"bend points\" to determine your Primary Insurance Amount (PIA).</li>\n  <li><strong>Factor Claiming Age:</strong> Apply reduction factors if claiming before age 67, or add 8% annual Delayed Retirement Credits for every year delayed up to age 70.</li>\n</ol><p>Skip manual math and get an exact output using our <a href=\"https://www.socialsecurityguidecalc.com/calculators/benefits-estimator\">Online Benefits Estimator</a>.</p><h2 id=\"section-14\">Strategic Claiming Options: 2027 Action Plan</h2><p>To optimize your total household lifetime income ahead of 2027, implement this 4-step strategic plan:</p><ul>\n  <li><strong>Step 1: Verify Earnings History.</strong> Create or log in to your official <a href=\"https://www.socialsecurityguidecalc.com/blog/my-social-security-account-complete-guide\">My Social Security Account</a> to confirm that your lifetime earnings history is accurately recorded.</li>\n  <li><strong>Step 2: Run Break-Even Analysis.</strong> Compare total lifetime benefits accrued by filing early at 62 versus waiting for FRA (67) or age 70 using our <a href=\"https://www.socialsecurityguidecalc.com/calculators/break-even\">Break-Even Calculator</a>.</li>\n  <li><strong>Step 3: Coordinate Tax Bracket Management.</strong> Combine Social Security withdrawals with traditional 401(k) or Roth IRA distributions to prevent pushing your income into upper tax brackets. Check our analysis on <a href=\"https://www.socialsecurityguidecalc.com/blog/social-security-and-401k-how-they-work-together\">Social Security and 401(k) Coordinated Strategies</a>.</li>\n  <li><strong>Step 4: Contact Local SSA Office.</strong> If filing in 2027, schedule an appointment 3 months prior to your target start date. Locate your nearest branch via our <a href=\"https://www.socialsecurityguidecalc.com/calculators/office-locator\">SSA Office Locator</a>.</li>\n</ul><hr /><h2 id=\"section-15\">Frequently Asked Questions (FAQ)</h2><h3>What is the Social Security COLA for 2027?</h3>\n<p>The official 2027 COLA is 3.6%, announced by SSA on October 14, 2026. It applies to benefits payable in January 2027.</p><h3>What is the Full Retirement Age for someone turning 62 in 2027?</h3>\n<p>For anyone turning 62 in 2027 (born in 1965), Full Retirement Age is exactly 67 years old. Filing for benefits in 2027 at age 62 results in a permanent 30% reduction from your full Primary Insurance Amount.</p><h3>Will Social Security run out of money in 2027?</h3>\n<p>No, Social Security will not run out of money in 2027. The <a href=\"https://www.ssa.gov/news/en/press/releases/2026-06-09.html\" target=\"_blank\" rel=\"noopener noreferrer\">2026 Trustees Report</a> projects that the retirement and survivors fund (OASI) can pay full benefits until the fourth quarter of 2032, after which incoming revenue would cover about 78% of scheduled OASI benefits. For the combined retirement and disability funds, the projected depletion year is 2034, with about 83% payable. Benefits would not stop; they would be reduced unless Congress acts.</p><hr /><h3>Sources & Citations</h3>\n<ol>\n  <li><a href=\"https://www.ssa.gov/oact/cola/latestCOLA.html\" target=\"_blank\" rel=\"noopener noreferrer\">Social Security Administration (SSA)</a> - Official Cost-of-Living Adjustment Updates & Trust Fund Status Reports</li>\n  <li><a href=\"https://www.bls.gov/cpi/\" target=\"_blank\" rel=\"noopener noreferrer\">U.S. Bureau of Labor Statistics (BLS)</a> - Consumer Price Index for Urban Wage Earners and Clerical Workers (CPI-W) Data</li>\n  <li><a href=\"https://www.seniorsleague.org/\" target=\"_blank\" rel=\"noopener noreferrer\">The Senior Citizens League (TSCL)</a> - Annual COLA Research & Senior Economic Projections</li>\n</ol><p><em>Disclaimer: This article is for general educational purposes and does not constitute individualized financial, tax, legal, or Social Security claiming advice. Social Security rules and benefit amounts can change, and individual results depend on the claimant's circumstances. For an official benefit determination, use information from the Social Security Administration and your personal Social Security record.</em></p>"
+  "content": "<h2>Social Security 2027: See What's Really Changing in 2027</h2><p>As 2027 approaches, millions of American workers, retirees, and beneficiaries are facing important structural shifts in the United States Social Security system. Understanding how <strong>social security 2027</strong> regulations affect your household budget requires evaluating cost-of-living adjustments (COLA), maximum wage cap changes, and claiming milestones. This guide walks you through every major regulatory, financial, and strategic update set to define Social Security benefits in 2027.</p><p>Navigating these updates effectively ensures that you maximize lifetime payouts, avoid unexpected income tax penalties, and align your broader financial portfolio with official Social Security Administration (SSA) policy guidelines.</p><div class=\"key-takeaways-box\">\n  <h3>⚡ Key Takeaways / Executive Summary</h3>\n  <ul>\n    <li><strong>Full Retirement Age Reaches Peak:</strong> For anyone born in 1960 or later, Full Retirement Age (FRA) remains locked at exactly 67 years old, representing the complete phase-in of the 1983 Social Security Amendments.</li>\n    <li><strong>COLA Adjustments:</strong> SSA announced an official 2027 Cost-of-Living Adjustment (COLA) of 3.6% on October 14, 2026, based on third-quarter CPI-W data calculated by the Bureau of Labor Statistics (<a href=\"https://www.ssa.gov/news/en/cola/factsheets/2027.html\" target=\"_blank\" rel=\"noopener noreferrer\">SSA.gov</a>).</li>\n    <li><strong>Taxable Earnings Limit Increases:</strong> The Social Security taxable maximum rises to $192,300 in 2027, up from $184,500 in 2026. The 6.2% Social Security tax applies to earnings up to that limit.</li>\n    <li><strong>Core Action Step:</strong> Utilize the <a href=\"https://www.socialsecurityguidecalc.com/calculators/benefits-estimator\">Social Security Benefits Estimator</a> to calculate your exact monthly check under updated 2027 parameters.</li>\n  </ul>\n</div><hr /><div class=\"author-verification-block\">\n  <p><strong>Written by:</strong> Amine Saadi</p>\n  <p><strong>Last Updated:</strong> October 14, 2026</p>\n  \n</div><hr /><h3>Table of Contents</h3>\n<ul>\n  <li><a href=\"#section-1\">1. What is Changing for Social Security 2027?</a></li>\n  <li><a href=\"#section-2\">2. Cost-of-Living Adjustment (COLA) for 2027</a></li>\n  <li><a href=\"#section-3\">3. Full Retirement Age (FRA) Rules for 2027 Claimants</a></li>\n  <li><a href=\"#section-4\">4. Social Security Tax Base Limit & High Earners in 2027</a></li>\n  <li><a href=\"#section-5\">5. Social Security Retirement Age 62 vs. 67 vs. 70</a></li>\n  <li><a href=\"#section-6\">6. The Retirement Earnings Test Limits in 2027</a></li>\n  <li><a href=\"#section-7\">7. Maximum Social Security Benefit at 62, 67, and 70</a></li>\n  <li><a href=\"#section-8\">8. Spousal and Survivor Benefits Rules for 2027</a></li>\n  <li><a href=\"#section-9\">9. How Social Security Income is Taxed in 2027</a></li>\n  <li><a href=\"#section-10\">10. Impact of WEP and GPO Policy Changes</a></li>\n  <li><a href=\"#section-11\">11. Supplemental Security Income (SSI) & SSDI Updates</a></li>\n  <li><a href=\"#section-12\">12. Medicare Part B Premium Impact on Social Security Checks</a></li>\n  <li><a href=\"#section-13\">13. How to Calculate Your 2027 Social Security Benefit</a></li>\n  <li><a href=\"#section-14\">14. Strategic Claiming Options: 2027 Action Plan</a></li>\n  <li><a href=\"#section-15\">15. Frequently Asked Questions (FAQ)</a></li>\n</ul><hr /><h2 id=\"section-1\">What is Changing for Social Security 2027?</h2><p>In 2027, Social Security will undergo annual index-based structural shifts, including cost-of-living increases, raised maximum taxable earnings caps, adjusted retirement earnings test thresholds, and higher maximum benefit limits. Furthermore, workers reaching age 67 in 2027 mark the complete, permanent stabilization of Full Retirement Age (FRA) at 67 for all individuals born in 1960 or later.</p><p>These annual systemic calibrations ensure that benefit payments adapt to national wage inflation and overall cost-of-living movements. To prepare effectively, examine how each change directly impacts your net income:</p><ul>\n  <li><strong>Cost-of-Living Boosts:</strong> Designed to prevent loss of purchasing power due to consumer price inflation. Read details on past trends via our <a href=\"https://www.socialsecurityguidecalc.com/blog/cola-updates\">COLA Updates Guide</a>.</li>\n  <li><strong>Tax Base Adjustments:</strong> Higher income earners pay FICA taxes on a larger portion of their annual earnings.</li>\n  <li><strong>Earnings Test Thresholds:</strong> Beneficiaries who work while receiving early benefits get higher baseline earnings exemptions before benefits are temporarily withheld.</li>\n</ul><blockquote>\n  <p>\"Navigating <strong>social security 2027</strong> changes isn't just about expecting a higher monthly payment; it requires understanding how inflation indexes, tax limits, and claiming ages interact with your broader retirement plan.\" — <em>Amine Saadi</em></p>\n</blockquote><h2 id=\"section-2\">Cost-of-Living Adjustment (COLA) for 2027</h2><p>The annual Cost-of-Living Adjustment (COLA) for 2027 protects recipients against purchasing power erosion. Calculated using third-quarter consumer price index data (CPI-W) from July, August, and September, the official 2027 COLA is <strong>3.6%</strong>, announced by SSA on October 14, 2026. It applies to benefits payable in January 2027.</p><p>SSA says the average retirement benefit rises by about $75 per month. To estimate your own increase, multiply your current monthly benefit by 0.036: a $2,000 benefit rises by $72, before any Medicare Part B premium change or other deductions.</p><p>To see how the CPI-W calculation works under official federal guidelines, review our comprehensive breakdown on <a href=\"https://www.socialsecurityguidecalc.com/blog/social-security-cola\">how Social Security COLA is calculated</a>.</p><h2 id=\"section-3\">Full Retirement Age (FRA) Rules for 2027 Claimants</h2><p>For individuals turning age 67 in 2027 (those born in 1960), Full Retirement Age (FRA) is officially fixed at 67. This milestone represents the complete culmination of the statutory phase-in mandated by the Social Security Amendments of 1983.</p><p>If you choose to file for retirement benefits before hitting your exact FRA, your monthly benefit is permanently reduced. Claiming at the earliest allowed age of 62 in 2027 results in a 30% lifetime reduction compared to your Full Retirement Age baseline. Conversely, delaying your claim past age 67 yields Delayed Retirement Credits equal to 8% per year up to age 70.</p><p>To calculate your exact age milestone, use our interactive <a href=\"https://www.socialsecurityguidecalc.com/calculators/retirement-age\">Retirement Age Calculator</a>, or see the <a href=\"/blog/social-security-full-retirement-age-2027\">full retirement age chart by birth year</a>.</p><h2 id=\"section-4\">Social Security Tax Base Limit & High Earners in 2027</h2><p>High-wage earners will contribute taxes up to an increased maximum taxable earnings limit in 2027: $192,300, up from $184,500 in 2026, according to SSA's 2027 COLA fact sheet. Under current tax law, employee wage earnings up to this cap are subject to the standard 6.2% Old-Age, Survivors, and Disability Insurance (OASDI) tax, matched by an equal 6.2% contribution from employers (or 12.4% total for self-employed individuals).</p><p>As national average wages increase, this limit scales upward annually based on the National Average Wage Index (NAWI). Earnings above this cap are exempt from Social Security payroll taxes, though the 1.45% Medicare tax continues indefinitely across all earned income (plus the 0.9% Additional Medicare Tax for high earners).</p><h2 id=\"section-5\">Social Security Retirement Age 62 vs. 67 vs. 70</h2><p>Choosing when to claim benefits remains one of the most crucial choices in retirement planning. Below is a comparative breakdown of how claiming age alters benefit levels for someone with a primary insurance amount (PIA) of $2,000 per month at FRA in 2027:</p><table>\n  <thead>\n    <tr>\n      <th>Claiming Age</th>\n      <th>Benefit Percentage of PIA</th>\n      <th>Monthly Benefit Amount ($2,000 PIA)</th>\n      <th>Core Advantage / Consideration</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td><strong>Age 62</strong></td>\n      <td>70.0%</td>\n      <td>$1,400</td>\n      <td>Early cash flow, but permanent 30% reduction.</td>\n    </tr>\n    <tr>\n      <td><strong>Age 67 (FRA)</strong></td>\n      <td>100.0%</td>\n      <td>$2,000</td>\n      <td>Full standard benefit with no early earnings test penalties.</td>\n    </tr>\n    <tr>\n      <td><strong>Age 70</strong></td>\n      <td>124.0%</td>\n      <td>$2,480</td>\n      <td>Maximum guaranteed monthly payout (+24% over FRA).</td>\n    </tr>\n  </tbody>\n</table><p>When evaluating these age benchmarks, consider your health history, immediate cash flow requirements, and long-term investment portfolios. Compare strategies directly with our <a href=\"https://www.socialsecurityguidecalc.com/blog/social-security-age-62-vs-67-vs-70\">Age 62 vs. 67 vs. 70 Analysis Guide</a>.</p><h2 id=\"section-6\">The Retirement Earnings Test Limits in 2027</h2><p>If you collect Social Security benefits while continuing to work prior to reaching your Full Retirement Age, your benefits are subject to the Social Security Retirement Earnings Test (RET). Exceeding annual earnings limits causes the SSA to temporarily withhold a portion of your monthly checks.</p><ol>\n  <li><strong>Under FRA All Year:</strong> The SSA withholds $1 in benefits for every $2 earned above the annual exempt threshold.</li>\n  <li><strong>Reaching FRA During 2027:</strong> A higher threshold applies. The SSA withholds $1 in benefits for every $3 earned above the limit until the month you hit full retirement age.</li>\n  <li><strong>Post-FRA Earnings:</strong> Starting the exact month you reach age 67, the earnings test disappears entirely. You can earn an unlimited amount without benefit reduction.</li>\n</ol><p><em>Note: Withheld benefits are not lost forever. Once you reach FRA, the SSA recalculates your monthly benefit upward to credit you for the checks that were previously withheld.</em> Check your exposure using our <a href=\"https://www.socialsecurityguidecalc.com/calculators/earnings-test\">Earnings Test Calculator</a>.</p><p><strong>Pro Tip / Key Warning:</strong> <em>Failing to notify the SSA of earnings above the annual threshold can result in sudden benefit overpayment notices and mandatory check withholdings later in the tax year.</em></p><h2 id=\"section-7\">Maximum Social Security Benefit at 62, 67, and 70</h2><p>The maximum potential Social Security check requires earning at or above the maximum taxable wage base limit for at least 35 years of your working career. For 2027, SSA lists the maximum monthly benefit for a worker retiring at full retirement age as $4,188, up from $4,152 in 2026 (<a href=\"https://www.ssa.gov/news/en/cola/factsheets/2027.html\" target=\"_blank\" rel=\"noopener noreferrer\">SSA 2027 COLA fact sheet</a>). SSA publishes the maximums for other claiming ages separately.</p><p>Read our full guide on how to position your career to qualify for the <a href=\"https://www.socialsecurityguidecalc.com/blog/highest-social-security-benefit-per-month\">highest Social Security benefit per month</a>.</p><h2 id=\"section-8\">Spousal and Survivor Benefits Rules for 2027</h2><p>Family protection rules remain a cornerstone of Social Security design. In 2027, spousal and survivor benefit calculations build directly off the primary worker's earning history:</p><ul>\n  <li><strong>Spousal Benefits:</strong> A spouse can receive up to 50% of the primary earner's Primary Insurance Amount (PIA) at FRA. Claiming spousal benefits early (between 62 and 67) reduces the payout percentage.</li>\n  <li><strong>Survivor Benefits:</strong> A surviving spouse is entitled to up to 100% of the deceased spouse's actual monthly benefit payment, provided they have reached their full retirement age for survivor benefits.</li>\n  <li><strong>Divorced Spousal Rules:</strong> If you were married for at least 10 consecutive years and are currently unmarried, you can claim benefits based on your ex-spouse's work record.</li>\n</ul><p>For tailored planning, explore our dedicated <a href=\"/guides/spousal-benefits\">spousal and divorced benefits guide</a> and read about <a href=\"https://www.socialsecurityguidecalc.com/blog/social-security-spousal-benefits-rules\">Spousal Benefit Rules</a>.</p><h2 id=\"section-9\">How Social Security Income is Taxed in 2027</h2><p>Federal taxation of Social Security benefits depends on your \"Combined Income\" (Adjusted Gross Income + Nontaxable Interest + 50% of Social Security Benefits). Because these income thresholds are not indexed for inflation, more retirees face federal income taxation on their benefits each year.</p><table>\n  <thead>\n    <tr>\n      <th>Filing Status</th>\n      <th>Combined Income Threshold</th>\n      <th>Taxable Percentage of Benefits</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Individual / Single</td>\n      <td>$25,000 - $34,000</td>\n      <td>Up to 50%</td>\n    </tr>\n    <tr>\n      <td>Individual / Single</td>\n      <td>Over $34,000</td>\n      <td>Up to 85%</td>\n    </tr>\n    <tr>\n      <td>Married Filing Jointly</td>\n      <td>$32,000 - $44,000</td>\n      <td>Up to 50%</td>\n    </tr>\n    <tr>\n      <td>Married Filing Jointly</td>\n      <td>Over $44,000</td>\n      <td>Up to 85%</td>\n    </tr>\n  </tbody>\n</table><p>Learn how to minimize your exposure using our <a href=\"https://www.socialsecurityguidecalc.com/calculators/tax-calculator\">Social Security Tax Calculator</a> or check our guide on <a href=\"https://www.socialsecurityguidecalc.com/guides/benefit-taxes\">Is Social Security Income Taxable?</a>.</p><h2 id=\"section-10\">Impact of WEP and GPO Policy Changes</h2><p>Public sector employees, teachers, firefighters, and municipal workers affected by non-covered pensions were historically affected by the Windfall Elimination Provision (WEP) and Government Pension Offset (GPO).</p><p>The Social Security Fairness Act, signed on January 5, 2025, repealed both provisions, so WEP and GPO no longer reduce benefits. Read our <a href=\"/blog/social-security-fairness-act-wep-gpo-repeal-explained\">WEP and GPO repeal guide</a> to see who qualifies and how back payments worked.</p><h2 id=\"section-11\">Supplemental Security Income (SSI) & SSDI Updates</h2><p>In addition to retirement claims, disability and income assistance programs shift under 2027 parameters:</p><ul>\n  <li><strong>Social Security Disability Insurance (SSDI):</strong> Substantial Gainful Activity (SGA) thresholds increase for non-blind and blind disabled beneficiaries, allowing higher wage retention during work attempts.</li>\n  <li><strong>Supplemental Security Income (SSI):</strong> The federal maximum SSI payment rises to $1,029 a month for an individual and $1,544 for a couple, and the substantial gainful activity limit is $1,770 a month ($2,950 if blind), according to SSA's 2027 COLA fact sheet. See our <a href=\"/blog/ssi-payment-amounts-2027\">SSI payment amounts guide</a>. Recent administrative reforms also streamline asset calculations and unearned food assistance rules.</li>\n</ul><p>Evaluate your eligibility using the <a href=\"/guides/disability\">SSDI eligibility guide</a> or review our <a href=\"https://www.socialsecurityguidecalc.com/guides/disability\">Disability Benefits Guide</a>.</p><h2 id=\"section-12\">Medicare Part B Premium Impact on Social Security Checks</h2><p>For most retirees, Medicare Part B premiums are deducted directly from monthly Social Security payments. When Part B premiums rise, they reduce the net dollar gain delivered by annual COLA adjustments.</p><p>The 2026 Medicare Trustees Report projects a 2027 standard Part B premium of $209.50, up from $202.90 in 2026, but CMS had not announced the official amount at the time of writing. If the 2027 Medicare Part B premium increases, the statutory \"Hold Harmless Provision\" prevents Social Security checks from decreasing year-over-year for qualified beneficiaries, ensuring that higher healthcare premiums do not result in a lower net monthly payout than the year before. Review projected healthcare deductions with our <a href=\"https://www.socialsecurityguidecalc.com/calculators/medicare-cost\">Medicare Cost Estimator</a>.</p><h2 id=\"section-13\">How to Calculate Your 2027 Social Security Benefit</h2><p>Calculating your baseline benefit requires a 3-step formula established under federal law:</p><ol>\n  <li><strong>Calculate AIME:</strong> The SSA indexes your 35 highest-earning years to compute your Average Indexed Monthly Earnings (AIME).</li>\n  <li><strong>Apply Bend Points:</strong> Your AIME is run through three distinct percentage brackets (90%, 32%, and 15%) known as \"bend points\" to determine your Primary Insurance Amount (PIA).</li>\n  <li><strong>Factor Claiming Age:</strong> Apply reduction factors if claiming before age 67, or add 8% annual Delayed Retirement Credits for every year delayed up to age 70.</li>\n</ol><p>Skip manual math and get an exact output using our <a href=\"https://www.socialsecurityguidecalc.com/calculators/benefits-estimator\">Online Benefits Estimator</a>.</p><h2 id=\"section-14\">Strategic Claiming Options: 2027 Action Plan</h2><p>To optimize your total household lifetime income ahead of 2027, implement this 4-step strategic plan:</p><ul>\n  <li><strong>Step 1: Verify Earnings History.</strong> Create or log in to your official <a href=\"https://www.socialsecurityguidecalc.com/blog/my-social-security-account-complete-guide\">My Social Security Account</a> to confirm that your lifetime earnings history is accurately recorded.</li>\n  <li><strong>Step 2: Run Break-Even Analysis.</strong> Compare total lifetime benefits accrued by filing early at 62 versus waiting for FRA (67) or age 70 using our <a href=\"https://www.socialsecurityguidecalc.com/calculators/break-even\">Break-Even Calculator</a>.</li>\n  <li><strong>Step 3: Coordinate Tax Bracket Management.</strong> Combine Social Security withdrawals with traditional 401(k) or Roth IRA distributions to prevent pushing your income into upper tax brackets. Check our analysis on <a href=\"https://www.socialsecurityguidecalc.com/blog/social-security-and-401k-how-they-work-together\">Social Security and 401(k) Coordinated Strategies</a>.</li>\n  <li><strong>Step 4: Contact Local SSA Office.</strong> If filing in 2027, schedule an appointment 3 months prior to your target start date. Locate your nearest branch via our <a href=\"https://www.socialsecurityguidecalc.com/calculators/office-locator\">SSA Office Locator</a>.</li>\n</ul><hr /><h2 id=\"section-15\">Frequently Asked Questions (FAQ)</h2><h3>What is the Social Security COLA for 2027?</h3>\n<p>The official 2027 COLA is 3.6%, announced by SSA on October 14, 2026. It applies to benefits payable in January 2027.</p><h3>What is the Full Retirement Age for someone turning 62 in 2027?</h3>\n<p>For anyone turning 62 in 2027 (born in 1965), Full Retirement Age is exactly 67 years old. Filing for benefits in 2027 at age 62 results in a permanent 30% reduction from your full Primary Insurance Amount.</p><h3>Will Social Security run out of money in 2027?</h3>\n<p>No, Social Security will not run out of money in 2027. The <a href=\"https://www.ssa.gov/news/en/press/releases/2026-06-09.html\" target=\"_blank\" rel=\"noopener noreferrer\">2026 Trustees Report</a> projects that the retirement and survivors fund (OASI) can pay full benefits until the fourth quarter of 2032, after which incoming revenue would cover about 78% of scheduled OASI benefits. For the combined retirement and disability funds, the projected depletion year is 2034, with about 83% payable. Benefits would not stop; they would be reduced unless Congress acts.</p><hr /><h3>Sources & Citations</h3>\n<ol>\n  <li><a href=\"https://www.ssa.gov/oact/cola/latestCOLA.html\" target=\"_blank\" rel=\"noopener noreferrer\">Social Security Administration (SSA)</a> - Official Cost-of-Living Adjustment Updates & Trust Fund Status Reports</li>\n  <li><a href=\"https://www.bls.gov/cpi/\" target=\"_blank\" rel=\"noopener noreferrer\">U.S. Bureau of Labor Statistics (BLS)</a> - Consumer Price Index for Urban Wage Earners and Clerical Workers (CPI-W) Data</li>\n  <li><a href=\"https://www.seniorsleague.org/\" target=\"_blank\" rel=\"noopener noreferrer\">The Senior Citizens League (TSCL)</a> - Annual COLA Research & Senior Economic Projections</li>\n</ol><p><em>Disclaimer: This article is for general educational purposes and does not constitute individualized financial, tax, legal, or Social Security claiming advice. Social Security rules and benefit amounts can change, and individual results depend on the claimant's circumstances. For an official benefit determination, use information from the Social Security Administration and your personal Social Security record.</em></p>"
 },
 
 {
@@ -3487,7 +3470,7 @@ metaDescription: "Spouses can claim up to 50% of a partner's benefit at FRA. Lea
     "social security eligibility"
   ],
   "searchIntent": "informational",
-  "content": "\n<p>Preparing for your retirement is one of the most significant financial milestones in your life, and at the center of this transition lies the federal retirement system. Navigating the complexities of <strong>Social Security benefits</strong> requires careful planning, timely decisions, and a deep understanding of how the Social Security Administration (SSA) calculates your lifelong monthly payments. Whether you are a few years away from retirement or just starting to map out your long-term wealth strategy, understanding how to optimize your claiming schedule can mean the difference of hundreds of thousands of dollars in lifetime income.</p>\n<p>Many pre-retirees mistakenly treat Social Security as a passive safety net that automatically activates at the perfect time. In reality, the system is a highly active, rule-based program where your claiming age, work history, and tax strategies dictate your permanent payout rate. In this comprehensive guide, we will break down the essential steps, calculators, and rules you must understand to prepare for your retirement benefits and secure your financial future.</p>\n<div class=\"key-takeaways\" style=\"background-color: #f4f6f8; padding: 20px; border-left: 5px solid #003366; margin-bottom: 25px;\">\n  <h3 style=\"margin-top: 0;\">\u26a1 Key Takeaways / Executive Summary</h3>\n  <p><strong>TL;DR:</strong> Planning for your Social Security retirement benefits requires a proactive approach to your work history and claiming age.</p>\n  <ul>\n    <li><strong>Main Finding / Definition:</strong> Social Security benefits are monthly federal payments designed to replace a portion of your career earnings in retirement, calculated based on your 35 highest-earning years.</li>\n    <li><strong>Key Metric / Statistic:</strong> Delaying your claim past your Full Retirement Age (FRA) of 67 increases your monthly payment by <strong>8% annually</strong> up to age 70, resulting in a potential 24% permanent increase. Conversely, claiming early at age 62 results in a permanent reduction of up to 30%.</li>\n    <li><strong>Core Recommendation:</strong> Create and monitor your personal account on the official SSA website to verify your earnings history annually, model your retirement age strategies, and run estimates before making a final claim.</li>\n  </ul>\n</div>\n<div class=\"author-verification\" style=\"font-size: 0.9em; color: #555; margin-bottom: 30px; border-bottom: 1px solid #ddd; padding-bottom: 15px;\">\n  <p><strong>Written by:</strong> Amine Saadi | <strong>Last Updated:</strong> November 6, 2026</p>\n</div>\n<div class=\"table-of-contents\" style=\"background-color: #fafafa; padding: 15px; border: 1px solid #eaeaea; margin-bottom: 30px;\">\n  <h4 style=\"margin-top: 0;\">Table of Contents</h4>\n  <ul>\n    <li><a href=\"#definition\">1. What are Social Security Benefits and Why is Preparation Key?</a></li>\n    <li><a href=\"#eligibility\">2. How to Check Your Eligibility for Social Security Benefits?</a></li>\n    <li><a href=\"#estimate\">3. How to Get a Reliable Estimate of Your Social Security Benefits?</a></li>\n    <li><a href=\"#record\">4. How to Review and Update Your Social Security Record of Earnings?</a></li>\n    <li><a href=\"#comparison\">5. Choosing Your Claiming Age: 62 vs. 67 vs. 70</a></li>\n    <li><a href=\"#spousal\">6. How Spousal and Divorced Spousal Benefits Work?</a></li>\n    <li><a href=\"#survivor\">7. What are Social Security Survivor Benefits?</a></li>\n    <li><a href=\"#disability\">8. How Does Disability (SSDI) Work and How to Apply?</a></li>\n    <li><a href=\"#ssi\">9. What is Supplemental Security Income (SSI) and Who Qualifies?</a></li>\n    <li><a href=\"#medicare\">10. How Do Social Security Benefits and Medicare Work Together?</a></li>\n    <li><a href=\"#tax\">11. Is Social Security Income Taxable?</a></li>\n    <li><a href=\"#earnings-test\">12. How the Earnings Test Limits Your Early Retirement Benefits?</a></li>\n    <li><a href=\"#wep-gpo\">13. What are the WEP and GPO Offsets and How Do They Affect Public Employees?</a></li>\n    <li><a href=\"#cola\">14. How is the Social Security COLA Calculated and What is Changing?</a></li>\n    <li><a href=\"#faq\">15. Frequently Asked Questions About Preparing for Social Security</a></li>\n  </ul>\n</div>\n<h2 id=\"definition\">1. What are Social Security Benefits and Why is Preparation Key?</h2>\n<div class=\"aeo-answer\" style=\"background-color: #f0f7ff; padding: 15px; border-left: 4px solid #0056b3; font-style: italic; margin-bottom: 20px;\">\n  <p><strong>Direct Answer:</strong> Social Security benefits are monthly cash payments provided by the federal government to replace a portion of pre-retirement wages. Thorough preparation is essential because the choices you make regarding your claiming age, working while receiving benefits, and tax planning will permanently lock in your monthly payout and impact your family's financial security.</p>\n</div><p>To fully grasp the mechanics of <strong>Social Security benefits</strong>, you must understand that the system is not a simple personal savings account where your exact payroll taxes are stored in a personal vault. Social Security payroll taxes under the Federal Insurance Contributions Act (FICA) are 6.2% for employees and 6.2% for employers, or 12.4% for self-employed individuals.</p><p>The amount of your monthly retirement check is based on your <strong>Primary Insurance Amount (PIA)</strong>, which is determined by a complex formula that indexes your lifetime earnings. Specifically, the SSA looks at your 35 highest-earning years, adjusts them for inflation, and calculates your Average Indexed Monthly Earnings (AIME). From there, the SSA applies \"bend points\" to determine your monthly benefit at your Full Retirement Age (FRA).</p><p>According to historical data from the Social Security Administration, <em>about 88% of individuals aged 65 and older receive retirement benefits</em>, which represents about 40% of the average worker's career earnings before retirement. This highlights the foundational role that Social Security plays in American retirement security. However, relying solely on this income without a structured plan can be a costly mistake. If you claim your benefits prematurely, you face a permanent reduction in your monthly income. Conversely, if you plan strategically, you can secure delayed retirement credits that boost your check for the rest of your life.</p><div class=\"pro-tip\" style=\"background-color: #fff9e6; border-left: 4px solid #ffcc00; padding: 15px; margin: 20px 0;\">\n  <p><strong>Pro Tip / Key Warning:</strong> Never assume the government has recorded your income correctly. An uncorrected error in your earnings history can permanently depress your monthly benefit amount. Check your record annually to ensure your hard-earned income is accurately reflected in the system.</p>\n</div>\n<h2 id=\"eligibility\">2. How to Check Your Eligibility for Social Security Benefits?</h2>\n<p>Determining your eligibility is the first concrete step in preparing for Social Security benefits. The SSA uses a credit system to measure your work history and establish your qualification for various programs.</p><p>To qualify for retirement benefits, you must accumulate a set number of \"work credits\" over your employment career. Let's break down the process of verifying your eligibility into three distinct steps:</p><ol>\n  <li><strong>Earn Your Credits:</strong> To qualify for standard retirement benefits, you need a minimum of <strong>40 work credits</strong>, which is equivalent to 10 years of work. You earn one credit for each set amount of covered earnings (SSA publishes the amount each year), up to a maximum of four credits per year. This threshold increases slightly each year to keep pace with inflation.</li>\n  <li><strong>Check Your Status Online:</strong> The most efficient way to verify your progress is to access the official SSA portal. You can <a href=\"https://www.ssa.gov/prepare/check-eligibility-for-benefits\" target=\"_blank\" rel=\"noopener noreferrer\">answer a few eligibility questions</a> on the Social Security website to see if you qualify for retirement or other benefits right now. This tool provides an instantaneous assessment of your current qualification status.</li>\n  <li><strong>Explore Auxiliary Options:</strong> If you do not have enough work credits under your own record, do not assume you are locked out of the system. You may still qualify for benefits based on the record of a current spouse, a divorced spouse (if the marriage lasted at least 10 years), or a deceased spouse. For more details, consult our <a href=\"https://www.socialsecurityguidecalc.com/guides/getting-started\" target=\"_blank\">Getting Started Guide</a> or evaluate your qualification status using the <a href=\"/guides/disability\" target=\"_blank\">SSDI Eligibility Tool</a>.</li>\n</ol>\n<h2 id=\"estimate\">3. How to Get a Reliable Estimate of Your Social Security Benefits?</h2>\n<p>Before making any claiming decisions, you must acquire an accurate estimate of your future monthly payouts. The SSA provides several ways to see estimates for various benefits based on your earnings and when you apply.</p><p>Having a realistic projection of your monthly income is critical for mapping out your broader retirement cash flow, coordinates with your 401(k) or IRA drawdowns, and planning for taxes. Follow this process to get a high-fidelity benefit estimate:</p><ol>\n  <li><strong>Access Your Online Statement:</strong> Establish and monitor your personal account via the official SSA site. This online statement serves as the baseline for all calculations. To understand the complete setup process, read our comprehensive guide on the <a href=\"https://www.socialsecurityguidecalc.com/blog/my-social-security-account-complete-guide\" target=\"_blank\">my Social Security account portal</a>.</li>\n  <li><strong>Use Official Estimation Tools:</strong> Once logged in, you can <a href=\"https://www.ssa.gov/prepare/get-benefits-estimate\" target=\"_blank\" rel=\"noopener noreferrer\">see estimates for various benefits</a> using the SSA's interactive tools. These tools allow you to model different future earnings scenarios, such as retiring early, changing your salary, or working part-time.</li>\n  <li><strong>Supplement with Specialty Calculators:</strong> While the SSA tools are excellent, they may not model complex spousal claiming strategies or tax impacts. You can leverage the <a href=\"https://www.socialsecurityguidecalc.com/calculators/benefits-estimator\" target=\"_blank\">Social Security Benefits Estimator</a> and check out our strategic blog on <a href=\"https://www.socialsecurityguidecalc.com/blog/check-how-much-social-security-i-will-get\" target=\"_blank\">how much Social Security you will get</a> to optimize your claiming roadmap.</li>\n</ol>\n<h2 id=\"record\">4. How to Review and Update Your Social Security Record of Earnings?</h2>\n<p>Your Social Security statement is only as accurate as the underlying earnings record reported by your employers. If there is an error in your record, your final monthly benefit will be lower than what you actually earned.</p><p>Reviewing your record of earnings is a critical quality-control step that every worker should perform annually. Follow these steps to verify and update your earnings record:</p><ol>\n  <li><strong>Download Your Record:</strong> Log into your account and <a href=\"https://www.ssa.gov/prepare/review-record-earnings\" target=\"_blank\" rel=\"noopener noreferrer\">check the record of your yearly income</a>. This document lists your earnings for every single year you've worked since you first entered the labor force.</li>\n  <li><strong>Cross-Reference with Tax Docs:</strong> Compare the yearly figures on your Social Security record against your historical W-2 forms, 1099s, or tax returns. Pay close attention to years where you changed jobs, as these are the most common source of reporting errors.</li>\n  <li><strong>Submit a Correction Request:</strong> If you find a discrepancy (e.g., a year with $0 earnings when you actually worked, or an underreported salary), you must file a correction request with the SSA. You will need to provide proof of earnings, such as tax returns or W-2s. For support on managing your records and obtaining replacement identification, refer to our guide on <a href=\"https://www.socialsecurityguidecalc.com/blog/how-to-get-a-replacement-social-security-card\" target=\"_blank\">how to get a replacement Social Security card</a>.</li>\n</ol>\n<h2 id=\"comparison\">5. Choosing Your Claiming Age: 62 vs. 67 vs. 70</h2>\n<p>The age at which you choose to claim your Social Security benefits is the single most impactful factor in determining your monthly payment amount. You can claim retirement benefits as early as age 62, but waiting until your Full Retirement Age (FRA) or delaying up to age 70 will significantly increase your monthly check.</p><p>Let's examine a direct comparison of the key claiming ages and how they impact your overall benefit structure:</p><table border=\"1\" cellpadding=\"8\" style=\"border-collapse: collapse; width: 100%; margin: 20px 0;\">\n  <thead>\n    <tr style=\"background-color: #f2f2f2;\">\n      <th>Feature / Metric</th>\n      <th>Age 62 (Early Claiming)</th>\n      <th>Age 67 (Full Retirement Age)</th>\n      <th>Age 70 (Delayed Claiming)</th>\n      <th>Core Verdict</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td><strong>Primary Use Case</strong></td>\n      <td>Immediate cash flow; retiring early due to health or job loss.</td>\n      <td>Standard retirement; receiving 100% of earned benefits.</td>\n      <td>Maximizing monthly check and protecting surviving spouse.</td>\n      <td>Age 62 is for immediate cash needs; Age 70 is for maximizing lifetime income.</td>\n    </tr>\n    <tr>\n      <td><strong>Benefit Payout</strong></td>\n      <td>Permanently reduced by 25% to 30% of your PIA.</td>\n      <td>100% of your Primary Insurance Amount (PIA).</td>\n      <td>Permanently increased by 24% over your PIA (8% annual credit).</td>\n      <td>Delaying from age 62 to 70 results in a <strong>77% higher monthly benefit</strong>.</td>\n    </tr>\n    <tr>\n      <td><strong>Earnings Test Impact</strong></td>\n      <td>Subject to strict annual limits; benefits withheld if you earn too much.</td>\n      <td>No limits; you can work and earn any amount without penalty.</td>\n      <td>No limits; you can work and earn any amount without penalty.</td>\n      <td>Claiming early while working can trigger temporary benefit withholding.</td>\n    </tr>\n    <tr>\n      <td><strong>Spousal Max Payout</strong></td>\n      <td>Reduced spousal benefits (based on 50% of partner's PIA).</td>\n      <td>Maximum spousal benefit (50% of partner's PIA).</td>\n      <td>Maximum spousal benefit (50% of partner's PIA; no delayed credits for spouses).</td>\n      <td>Spousal benefits do not increase if you delay past your Full Retirement Age.</td>\n    </tr>\n  </tbody>\n</table><p><strong>When to choose Age 62:</strong> You should choose to claim early at age 62 if you have an urgent financial need, have a shorter-than-average life expectancy due to chronic illness, or have retired and need the income immediately to meet basic living costs. For details on the financial trade-offs, see our article on the <a href=\"https://www.socialsecurityguidecalc.com/blog/social-security-early-retirement-penalty-62\" target=\"_blank\">early retirement penalty at age 62</a>.</p><p><strong>When to choose Age 67:</strong> Choosing Age 67 is ideal if you want to retire at the standard milestone, receive 100% of your hard-earned benefits, and continue working without being subject to the earnings test. Explore our guide on <a href=\"https://www.socialsecurityguidecalc.com/blog/social-security-age-62-vs-67-vs-70\" target=\"_blank\">Social Security age 62 vs 67 vs 70</a> to evaluate these scenarios.</p><p><strong>When to choose Age 70:</strong> You should wait until age 70 if you are in excellent health, have other retirement assets (like a 401k or IRA) to live on in the interim, and want to lock in the highest possible monthly payment for yourself and a potential surviving spouse. Learn more about maximizing your credits in our post on <a href=\"https://www.socialsecurityguidecalc.com/blog/social-security-delayed-retirement-credits\" target=\"_blank\">delayed retirement credits</a> or calculate your break-even milestone using the <a href=\"https://www.socialsecurityguidecalc.com/calculators/break-even\" target=\"_blank\">Social Security Break-Even Calculator</a>.</p>\n<h2 id=\"spousal\">6. How Spousal and Divorced Spousal Benefits Work?</h2>\n<div class=\"aeo-answer\" style=\"background-color: #f0f7ff; padding: 15px; border-left: 4px solid #0056b3; font-style: italic; margin-bottom: 20px;\">\n  <p><strong>Direct Answer:</strong> Spousal and divorced spousal benefits provide monthly payments to a current or former partner, up to a maximum of 50% of the primary earner's Full Retirement Age benefit. This auxiliary program ensures that spouses with limited or no work histories receive substantial financial support during retirement.</p>\n</div><p>The spousal benefit rules are a powerful component of the Social Security system, designed to protect families where one partner was the primary breadwinner and the other focused on caregiving or worked in a lower-paying field. Under these rules, a spouse can receive up to 50% of their partner's Full Retirement Age benefit, depending on when they claim. If a spouse claims their spousal benefit before reaching their own Full Retirement Age, their monthly payment is permanently reduced.</p><p>For example, if your spouse's Full Retirement Age benefit is $2,000 per month, your maximum spousal benefit at your Full Retirement Age is $1,000 per month. If you claim this benefit at age 62, it will be reduced to roughly 32.5% of their benefit, or $650 per month. To understand these rules and optimize your household strategy, consult our detailed post on <a href=\"https://www.socialsecurityguidecalc.com/blog/social-security-spousal-benefits-rules\" target=\"_blank\">Social Security spousal benefits rules</a>.</p><p><strong>Divorced Spousal Benefits:</strong> If you are divorced, you can still claim benefits based on your ex-spouse's earnings record. To qualify, your marriage must have lasted at least <strong>10 consecutive years</strong>, you must be currently unmarried, and you must be at least 62 years old. If your ex-spouse has not yet applied for benefits but is eligible, you can still apply as long as you have been divorced for at least two consecutive years. To optimize your strategy as a couple or a divorced individual, check out the <a href=\"/guides/spousal-benefits\" target=\"_blank\">Couples and Divorced Strategy Optimizer</a>.</p><div class=\"pro-tip\" style=\"background-color: #fff9e6; border-left: 4px solid #ffcc00; padding: 15px; margin: 20px 0;\">\n  <p><strong>Pro Tip / Key Warning:</strong> Claiming a divorced spousal benefit has absolutely no impact on your ex-spouse's monthly benefit, nor does it affect the benefit of their current spouse. It is an independent, confidential claim between you and the SSA.</p>\n</div>\n<h2 id=\"survivor\">7. What are Social Security Survivor Benefits?</h2>\n<div class=\"aeo-answer\" style=\"background-color: #f0f7ff; padding: 15px; border-left: 4px solid #0056b3; font-style: italic; margin-bottom: 20px;\">\n  <p><strong>Direct Answer:</strong> Social Security survivor benefits are monthly payments paid to widows, widowers, dependent children, and eligible parents of a deceased worker. These benefits help cushion the financial impact of a wage earner's death and are calculated based on the deceased worker's career earnings record.</p>\n</div><p>Survivor benefits are a crucial form of life insurance provided through the Social Security system. When a worker who has earned enough work credits passes away, their surviving family members may qualify for monthly support. The amount they receive depends on several factors, including the deceased worker's total lifetime earnings and the age at which the survivor claims the benefit.</p><p>A surviving spouse can claim reduced survivor benefits as early as <strong>age 60</strong> (or age 50 if the survivor has a qualifying disability). If the surviving spouse waits until their own Full Retirement Age, they can receive 100% of the deceased worker's benefit amount. For a comprehensive look at how these provisions work, read our <a href=\"https://www.socialsecurityguidecalc.com/blog/social-security-survivor-benefits-guide\" target=\"_blank\">Social Security survivor benefits guide</a>.</p><p><strong>Benefits for Children and Families:</strong> Survivor benefits are not limited to spouses. Unmarried children under age 18 (or up to age 19 if they are full-time high school students) can receive monthly payments. Disabled children of any age can also qualify if their disability began before age 22. Learn more about how these family protections operate in our guide on <a href=\"https://www.socialsecurityguidecalc.com/blog/social-security-benefits-for-children-after-parent-death\" target=\"_blank\">Social Security benefits for children after a parent's death</a>.</p><p>One of the most common questions is whether a surviving spouse can claim survivor benefits while also receiving their own retirement benefit. To explore how the SSA handles multiple simultaneous claims, read our analysis on <a href=\"https://www.socialsecurityguidecalc.com/blog/can-you-collect-survivor-benefits-and-your-own-social-security-at-the-same-time\" target=\"_blank\">collecting survivor benefits and your own Social Security at the same time</a> or run the calculations using our <a href=\"/blog/social-security-survivor-benefits-guide\" target=\"_blank\">Survivor Benefits Calculator</a>.</p>\n<h2 id=\"disability\">8. How Does Disability (SSDI) Work and How to Apply?</h2>\n<div class=\"aeo-answer\" style=\"background-color: #f0f7ff; padding: 15px; border-left: 4px solid #0056b3; font-style: italic; margin-bottom: 20px;\">\n  <p><strong>Direct Answer:</strong> Social Security Disability Insurance (SSDI) provides monthly cash benefits to individuals who can no longer engage in substantial gainful activity due to a severe, long-term medical condition. Qualifying requires satisfying both work history thresholds and the SSA's strict definition of total disability.</p>\n</div><p>The SSDI program acts as a financial lifeline for workers who suffer a career-ending illness or injury. Unlike private disability insurance, the federal government's program has an exceptionally strict definition of disability. To qualify, your physical or mental impairment must prevent you from performing any substantial gainful work, must be expected to last for at least <strong>12 consecutive months</strong> or result in death, and must be documented with extensive objective medical evidence.</p><p>The application process is notoriously rigorous and often involves a detailed review of your medical records, treatment history, and work experience. For a detailed breakdown of the medical and work requirements, check out our <a href=\"https://www.socialsecurityguidecalc.com/guides/disability\" target=\"_blank\">Disability Guide</a> and review the <a href=\"https://www.socialsecurityguidecalc.com/guides/disability\" target=\"_blank\">SSDI qualification guide</a>.</p><p>To apply for SSDI, you should gather all your medical reports, prescription lists, doctor contacts, and detailed employment history. You can then submit your claim online or in person. To walk through the step-by-step filing process, consult our article on <a href=\"https://www.socialsecurityguidecalc.com/blog/how-to-apply-for-disability\" target=\"_blank\">how to apply for disability</a> and learn about asset limits and program restrictions in our post on <a href=\"https://www.socialsecurityguidecalc.com/blog/does-ssdi-have-an-asset-limit\" target=\"_blank\">does SSDI have an asset limit</a>.</p>\n<h2 id=\"ssi\">9. What is Supplemental Security Income (SSI) and Who Qualifies?</h2>\n<div class=\"aeo-answer\" style=\"background-color: #f0f7ff; padding: 15px; border-left: 4px solid #0056b3; font-style: italic; margin-bottom: 20px;\">\n  <p><strong>Direct Answer:</strong> Supplemental Security Income (SSI) is a federal needs-based program that provides monthly payments to adults and children with disabilities, as well as seniors aged 65 and older, who have extremely limited income and financial resources. SSI is funded by general U.S. treasury revenues, not Social Security payroll taxes.</p>\n</div><p>While SSDI is based on your work history and FICA payroll tax contributions, the <strong>Supplemental Security Income (SSI)</strong> program is strictly a needs-based welfare program. It is designed to provide basic financial support for food, shelter, and clothing to individuals who are aged, blind, or disabled, and who fall below very low income and asset limits.</p><p>To qualify for SSI, your countable financial resources (assets) must not exceed <strong>$2,000 for an individual</strong> or <strong>$3,000 for a married couple</strong>. Countable resources include cash, bank accounts, stocks, and real estate other than your primary home. The SSA also evaluates your monthly income, which can reduce your SSI benefit amount if it exceeds certain thresholds. For detailed information on the current payment rates and eligibility rules, refer to our comprehensive post on <a href=\"https://www.socialsecurityguidecalc.com/blog/supplemental-security-income\" target=\"_blank\">Supplemental Security Income basics</a> and see the <a href=\"https://www.socialsecurityguidecalc.com/blog/supplemental-security-income\" target=\"_blank\">SSI eligibility and payment amounts in 2026</a>.</p><p>The application process for SSI requires providing detailed financial documentation, including bank statements, tax records, lease agreements, and proof of all household income. To ensure your application is filled out correctly, follow our step-by-step instructions on <a href=\"https://www.socialsecurityguidecalc.com/blog/how-to-apply-for-supplemental-security-income\" target=\"_blank\">how to apply for Supplemental Security Income</a>.</p>\n<h2 id=\"medicare\">10. How Do Social Security Benefits and Medicare Work Together?</h2>\n<div class=\"aeo-answer\" style=\"background-color: #f0f7ff; padding: 15px; border-left: 4px solid #0056b3; font-style: italic; margin-bottom: 20px;\">\n  <p><strong>Direct Answer:</strong> Social Security and Medicare are separate federal programs that coordinate closely in retirement. If you are already receiving Social Security benefits when you turn 65, you are automatically enrolled in Medicare Parts A and B, and your Part B premiums are automatically deducted from your monthly Social Security check.</p>\n</div><p>For most retirees, navigating Social Security goes hand-in-hand with planning for healthcare costs through Medicare. Medicare is the federal health insurance program for people aged 65 and older, as well as certain younger people with disabilities. Because the two programs are administered in tandem, your Social Security status dictates how and when you transition into Medicare.</p><p>If you have already started receiving your <strong>Social Security benefits</strong> prior to turning 65, the federal government will automatically enroll you in Medicare Part A (Hospital Insurance) and Medicare Part B (Medical Insurance) starting the first day of the month you turn 65. Your Medicare card will be mailed to you, and your monthly Part B premium will be automatically deducted from your retirement benefit. For an in-depth breakdown of these healthcare dynamics, read our <a href=\"https://www.socialsecurityguidecalc.com/guides/medicare\" target=\"_blank\">Medicare Planning Guide</a>.</p><p>However, if you delay claiming Social Security past age 65 to maximize your retirement credits, you will not be enrolled in Medicare automatically. In this scenario, you must manually sign up for Medicare during your Initial Enrollment Period to avoid lifetime enrollment penalties. To explore premium costs and registration timelines, read our guide on <a href=\"https://www.socialsecurityguidecalc.com/blog/medicare-2027-costs-premiums-guide\" target=\"_blank\">Medicare costs and premiums</a> and use the interactive <a href=\"/guides/medicare\" target=\"_blank\">Medicare Plan Finder</a> to choose your optimal coverage.</p>\n<h2 id=\"tax\">11. Is Social Security Income Taxable?</h2>\n<div class=\"aeo-answer\" style=\"background-color: #f0f7ff; padding: 15px; border-left: 4px solid #0056b3; font-style: italic; margin-bottom: 20px;\">\n  <p><strong>Direct Answer:</strong> Social Security benefits are taxable if your combined income exceeds federal thresholds. Depending on your adjusted gross income, non-taxable interest, and half of your Social Security benefits, you may have to pay federal income tax on up to 50% or 85% of your benefits.</p>\n</div><p>Many retirees are surprised to learn that their <strong>Social Security benefits</strong> are not necessarily tax-free. The IRS uses a specific metric called \"combined income\" (also known as provisional income) to determine if your benefits are taxable. Combined income is calculated as your Adjusted Gross Income (AGI) plus any tax-exempt interest income, plus exactly 50% of your annual Social Security benefits.</p><p>The federal tax thresholds for Social Security are set by law and are not indexed for inflation, meaning more retirees pay taxes on their benefits each year as average payouts rise. Let's examine the thresholds:</p><ul>\n  <li><strong>For Single Filers:</strong>\n    <ul>\n      <li>If your combined income is between <strong>$25,000 and $34,000</strong>, up to 50% of your benefits may be subject to income tax.</li>\n      <li>If your combined income is <strong>more than $34,000</strong>, up to 85% of your benefits may be subject to income tax.</li>\n    </ul>\n  </li>\n  <li><strong>For Joint Filers (Married Filing Jointly):</strong>\n    <ul>\n      <li>If your combined income is between <strong>$32,000 and $44,000</strong>, up to 50% of your benefits may be subject to income tax.</li>\n      <li>If your combined income is <strong>more than $44,000</strong>, up to 85% of your benefits may be subject to income tax.</li>\n    </ul>\n  </li>\n</ul><p>To evaluate your tax exposure and explore withholding strategies, review our <a href=\"https://www.socialsecurityguidecalc.com/guides/benefit-taxes\" target=\"_blank\">Social Security Benefit Taxes Guide</a> and read our blog post on <a href=\"https://www.socialsecurityguidecalc.com/guides/benefit-taxes\" target=\"_blank\">is Social Security income taxable</a>. If you need to estimate your withholding or complete IRS paperwork, consult the <a href=\"https://www.socialsecurityguidecalc.com/blog/irs-tax-withholding-estimator-guide\" target=\"_blank\">IRS Tax Withholding Estimator Guide</a> and use our interactive <a href=\"https://www.socialsecurityguidecalc.com/calculators/tax-calculator\" target=\"_blank\">Social Security Tax Calculator</a>.</p>\n<h2 id=\"earnings-test\">12. How the Earnings Test Limits Your Early Retirement Benefits?</h2>\n<div class=\"aeo-answer\" style=\"background-color: #f0f7ff; padding: 15px; border-left: 4px solid #0056b3; font-style: italic; margin-bottom: 20px;\">\n  <p><strong>Direct Answer:</strong> The Social Security earnings test is a federal rule that temporarily reduces monthly retirement benefits for claimants who continue to work and earn money before reaching their Full Retirement Age. Once you reach your Full Retirement Age, the earnings limits disappear, and your benefits are recalculated upward.</p>\n</div><p>If you choose to claim your <strong>Social Security benefits</strong> early at age 62 but plan to continue working, you must be aware of the strict earnings test limits. The SSA imposes these limits to ensure that retirement benefits are paid to individuals who are fully or partially retired, rather than those earning high active wages.</p><p>In 2027, the earnings test limits are structured as follows:</p><ul>\n  <li><strong>Under Full Retirement Age:</strong> If you are under your Full Retirement Age for the entire year, the SSA will deduct <strong>$1 from your benefits for every $2</strong> you earn above the annual limit. For 2027, this limit is $25,560.</li>\n  <li><strong>The Year You Reach Full Retirement Age:</strong> In the months leading up to your FRA milestone, the SSA deducts <strong>$1 for every $3</strong> you earn above a much higher limit (set at $67,920 in 2027).</li>\n  <li><strong>At and After Full Retirement Age:</strong> Once you reach the month of your Full Retirement Age, the earnings test no longer applies. You can earn an unlimited amount of money from active employment, and your monthly benefit will never be reduced.</li>\n</ul><p>It is important to know that these \"withheld\" benefits are not permanently lost. When you reach your Full Retirement Age, the SSA will recalculate your monthly benefit amount upward to credit you for the months in which your benefits were withheld. You can model this dynamic and calculate your personal limits using our <a href=\"https://www.socialsecurityguidecalc.com/calculators/earnings-test\" target=\"_blank\">Social Security Earnings Test Calculator</a> and reading our dedicated article on the <a href=\"https://www.socialsecurityguidecalc.com/blog/social-security-earnings-test-limit\" target=\"_blank\">Social Security earnings test limit</a>.</p>\n<h2 id=\"wep-gpo\">13. What are the WEP and GPO Offsets and How Do They Affect Public Employees?</h2>\n<div class=\"aeo-answer\" style=\"background-color: #f0f7ff; padding: 15px; border-left: 4px solid #0056b3; font-style: italic; margin-bottom: 20px;\">\n  <p><strong>Direct Answer:</strong> The Windfall Elimination Provision (WEP) and Government Pension Offset (GPO) are federal provisions that reduce Social Security benefits for individuals who receive a pension from non-covered work, such as state or local government employment where they did not pay Social Security taxes.</p>\n</div><p>The WEP and GPO offsets are among the most misunderstood rules in the Social Security handbook. They apply primarily to public servants, such as teachers, police officers, firefighters, and municipal workers in states where public pensions are offered in lieu of Social Security coverage. Let's distinguish between the two offsets:</p><ul>\n  <li><strong>The Windfall Elimination Provision (WEP):</strong> WEP affects how your own retirement or disability benefit is calculated. If you receive a pension from a non-covered government job and also qualify for Social Security under a different job, WEP applies a modified, less generous formula to calculate your Primary Insurance Amount, reducing your monthly check. Learn more and calculate your potential offset using our <a href=\"/blog/social-security-fairness-act-wep-gpo-repeal-explained\" target=\"_blank\">WEP and GPO Calculator</a>.</li>\n  <li><strong>The Government Pension Offset (GPO):</strong> GPO affects spousal or survivor benefits. If you receive a non-covered government pension and claim a spousal or survivor benefit based on your partner's Social Security record, the GPO reduces your spousal or survivor benefit by <strong>two-thirds of the amount of your government pension</strong>. In many cases, this completely offsets the Social Security benefit, reducing it to $0.</li>\n</ul><p>For several years, advocates have pushed to repeal these offsets, citing their unfair impact on retired public servants. To stay up to date on legislative efforts, read our comprehensive blog on the <a href=\"https://www.socialsecurityguidecalc.com/blog/social-security-fairness-act-wep-gpo-repeal-explained\" target=\"_blank\">Social Security Fairness Act and WEP/GPO repeal efforts</a>.</p>\n<h2 id=\"cola\">14. How is the Social Security COLA Calculated and What is Changing?</h2>\n<div class=\"aeo-answer\" style=\"background-color: #f0f7ff; padding: 15px; border-left: 4px solid #0056b3; font-style: italic; margin-bottom: 20px;\">\n  <p><strong>Direct Answer:</strong> The Social Security Cost-of-Living Adjustment (COLA) is calculated annually based on percentage increases in the Consumer Price Index for Urban Wage Earners and Clerical Workers (CPI-W). This annual adjustment ensures that benefits maintain their real purchasing power in the face of inflation.</p>\n</div><p>The Cost-of-Living Adjustment (COLA) is the mechanism that keeps your Social Security payments aligned with the real-world cost of living. Each year, the SSA compares the third-quarter CPI-W data (for July, August, and September) against the third-quarter data from the previous year. If there is a percentage increase, that rate is applied as the COLA for the upcoming year's January benefits.</p><p>Understanding how COLA is calculated helps retirees plan for inflation and anticipate shifts in their annual household income. To explore the underlying mathematics, read our article on <a href=\"https://www.socialsecurityguidecalc.com/blog/social-security-cola\" target=\"_blank\">how Social Security COLA is calculated</a> and trace previous adjustments in our overview of <a href=\"https://www.socialsecurityguidecalc.com/blog/historical-social-security-cola-increases\" target=\"_blank\">historical Social Security COLA increases</a>.</p><p>As we transition into late 2026, policy analysts and pre-retirees can plan for the official 3.6% COLA for 2027, announced by SSA on October 14, 2026. To keep your finger on the pulse of the latest legislative updates, benefit adjustments, and systemic rules, read our <a href=\"https://www.socialsecurityguidecalc.com/blog/cola-updates\" target=\"_blank\">COLA Updates Blog</a> and consult our strategic overview of <a href=\"https://www.socialsecurityguidecalc.com/blog/social-security-whats-really-changing-in-2027\" target=\"_blank\">what is changing for Social Security in 2027</a>. For general updates from the agency, follow the <a href=\"https://www.socialsecurityguidecalc.com/blog/ssa-news-updates-policy-changes\" target=\"_blank\">SSA News and Policy Updates</a>.</p>\n<h2 id=\"faq\">15. Frequently Asked Questions About Preparing for Social Security</h2>\n<p>In this section, we answer some of the most common search queries regarding the practical preparation and management of your Social Security benefits.</p><h3 id=\"faq-office\">How can I find my local Social Security office?</h3>\n<p><strong>Answer:</strong> You can find your nearest local Social Security office by using the official SSA office locator tool or checking our website's <a href=\"https://www.socialsecurityguidecalc.com/calculators/office-locator\" target=\"_blank\">Social Security Office Locator Tool</a>. If you prefer to browse office hours and directions, read our post on the <a href=\"https://www.socialsecurityguidecalc.com/calculators/office-locator\" target=\"_blank\">Social Security office locator guide</a>.</p><h3 id=\"faq-maximize\">What are the best strategies to maximize my retirement age?</h3>\n<p><strong>Answer:</strong> To maximize your Social Security benefit, you should aim to work for at least 35 years at high salary levels, review your earnings history annually, and delay claiming your benefit until age 70 if healthy. For a deep dive into claiming tactics, read our articles on <a href=\"https://www.socialsecurityguidecalc.com/blog/social-security-age-62-vs-67-vs-70\" target=\"_blank\">social security retirement age strategies</a> and <a href=\"https://www.socialsecurityguidecalc.com/blog/social-security-delayed-retirement-credits\" target=\"_blank\">maximizing delayed retirement credits</a>.</p><h3 id=\"faq-safety\">How can I safely manage my Social Security number?</h3>\n<p><strong>Answer:</strong> To protect your identity, never carry your Social Security card in your wallet, secure your online accounts with multi-factor authentication, and monitor your credit reports regularly for suspicious activity. For more protection tips, review our guide on Social Security number safety tips.</p><h3 id=\"faq-states\">Are there state-specific rules for Social Security benefits?</h3>\n<p><strong>Answer:</strong> While Social Security is a federal program, state laws differ significantly regarding the taxation of benefits, with some states offering complete tax exemptions. To check the specific tax and program rules in your region, consult official sources for state-specific rules.</p>\n<h2 id=\"conclusion\">Conclusion: Navigating Your Social Security Journey with Confidence</h2>\n<p>Preparing for your retirement benefits is one of the most powerful steps you can take to ensure your financial independence and stability. As we have explored in this guide, your monthly payments are not a fixed certainty, but a dynamic, rule-based asset that you can actively optimize through careful timing, rigorous audit of your earnings history, and smart coordination with Medicare, taxes, and other retirement vehicles. Whether you are aiming to claim early due to health or lifestyle needs, or waiting until age 70 to lock in maximum monthly checks, the key to success is <strong>proactive preparation</strong>.</p>\n<p>By leveraging official resources like your <em>my Social Security</em> account, using dedicated calculators to model claiming scenarios, and staying informed about upcoming legislative changes, you can step into retirement with clarity and confidence. The choices you make today will shape your financial security for decades to come\u2014take the time to plan, double-check your records, and claim your benefits with the security of a well-researched strategy.</p><hr style=\"border: 0; border-top: 1px solid #ddd; margin: 40px 0 20px 0;\" />\n<p style=\"font-size: 0.85em; color: #666; line-height: 1.6; font-style: italic;\"><strong>Disclaimer:</strong> This article is for general educational purposes and does not constitute individualized financial, tax, legal, or Social Security claiming advice. Social Security rules and benefit amounts can change, and individual results depend on the claimant's circumstances. For an official benefit determination, use information from the Social Security Administration and your personal Social Security record.</p>\n"
+  "content": "\n<p>Preparing for your retirement is one of the most significant financial milestones in your life, and at the center of this transition lies the federal retirement system. Navigating the complexities of <strong>Social Security benefits</strong> requires careful planning, timely decisions, and a deep understanding of how the Social Security Administration (SSA) calculates your lifelong monthly payments. Whether you are a few years away from retirement or just starting to map out your long-term wealth strategy, understanding how to optimize your claiming schedule can mean the difference of hundreds of thousands of dollars in lifetime income.</p>\n<p>Many pre-retirees mistakenly treat Social Security as a passive safety net that automatically activates at the perfect time. In reality, the system is a highly active, rule-based program where your claiming age, work history, and tax strategies dictate your permanent payout rate. In this comprehensive guide, we will break down the essential steps, calculators, and rules you must understand to prepare for your retirement benefits and secure your financial future.</p>\n<div class=\"key-takeaways\" style=\"background-color: #f4f6f8; padding: 20px; border-left: 5px solid #003366; margin-bottom: 25px;\">\n  <h3 style=\"margin-top: 0;\">\u26a1 Key Takeaways / Executive Summary</h3>\n  <p><strong>TL;DR:</strong> Planning for your Social Security retirement benefits requires a proactive approach to your work history and claiming age.</p>\n  <ul>\n    <li><strong>Main Finding / Definition:</strong> Social Security benefits are monthly federal payments designed to replace a portion of your career earnings in retirement, calculated based on your 35 highest-earning years.</li>\n    <li><strong>Key Metric / Statistic:</strong> Delaying your claim past your Full Retirement Age (FRA) of 67 increases your monthly payment by <strong>8% annually</strong> up to age 70, resulting in a potential 24% permanent increase. Conversely, claiming early at age 62 results in a permanent reduction of up to 30%.</li>\n    <li><strong>Core Recommendation:</strong> Create and monitor your personal account on the official SSA website to verify your earnings history annually, model your retirement age strategies, and run estimates before making a final claim.</li>\n  </ul>\n</div>\n<div class=\"author-verification\" style=\"font-size: 0.9em; color: #555; margin-bottom: 30px; border-bottom: 1px solid #ddd; padding-bottom: 15px;\">\n  <p><strong>Written by:</strong> Amine Saadi | <strong>Last Updated:</strong> November 6, 2026</p>\n</div>\n<div class=\"table-of-contents\" style=\"background-color: #fafafa; padding: 15px; border: 1px solid #eaeaea; margin-bottom: 30px;\">\n  <h4 style=\"margin-top: 0;\">Table of Contents</h4>\n  <ul>\n    <li><a href=\"#definition\">1. What are Social Security Benefits and Why is Preparation Key?</a></li>\n    <li><a href=\"#eligibility\">2. How to Check Your Eligibility for Social Security Benefits?</a></li>\n    <li><a href=\"#estimate\">3. How to Get a Reliable Estimate of Your Social Security Benefits?</a></li>\n    <li><a href=\"#record\">4. How to Review and Update Your Social Security Record of Earnings?</a></li>\n    <li><a href=\"#comparison\">5. Choosing Your Claiming Age: 62 vs. 67 vs. 70</a></li>\n    <li><a href=\"#spousal\">6. How Spousal and Divorced Spousal Benefits Work?</a></li>\n    <li><a href=\"#survivor\">7. What are Social Security Survivor Benefits?</a></li>\n    <li><a href=\"#disability\">8. How Does Disability (SSDI) Work and How to Apply?</a></li>\n    <li><a href=\"#ssi\">9. What is Supplemental Security Income (SSI) and Who Qualifies?</a></li>\n    <li><a href=\"#medicare\">10. How Do Social Security Benefits and Medicare Work Together?</a></li>\n    <li><a href=\"#tax\">11. Is Social Security Income Taxable?</a></li>\n    <li><a href=\"#earnings-test\">12. How the Earnings Test Limits Your Early Retirement Benefits?</a></li>\n    <li><a href=\"#wep-gpo\">13. What Were the WEP and GPO Offsets, and What Changed?</a></li>\n    <li><a href=\"#cola\">14. How is the Social Security COLA Calculated and What is Changing?</a></li>\n    <li><a href=\"#faq\">15. Frequently Asked Questions About Preparing for Social Security</a></li>\n  </ul>\n</div>\n<h2 id=\"definition\">1. What are Social Security Benefits and Why is Preparation Key?</h2>\n<div class=\"aeo-answer\" style=\"background-color: #f0f7ff; padding: 15px; border-left: 4px solid #0056b3; font-style: italic; margin-bottom: 20px;\">\n  <p><strong>Direct Answer:</strong> Social Security benefits are monthly cash payments provided by the federal government to replace a portion of pre-retirement wages. Thorough preparation is essential because the choices you make regarding your claiming age, working while receiving benefits, and tax planning will permanently lock in your monthly payout and impact your family's financial security.</p>\n</div><p>To fully grasp the mechanics of <strong>Social Security benefits</strong>, you must understand that the system is not a simple personal savings account where your exact payroll taxes are stored in a personal vault. Social Security payroll taxes under the Federal Insurance Contributions Act (FICA) are 6.2% for employees and 6.2% for employers, or 12.4% for self-employed individuals.</p><p>The amount of your monthly retirement check is based on your <strong>Primary Insurance Amount (PIA)</strong>, which is determined by a complex formula that indexes your lifetime earnings. Specifically, the SSA looks at your 35 highest-earning years, adjusts them for inflation, and calculates your Average Indexed Monthly Earnings (AIME). From there, the SSA applies \"bend points\" to determine your monthly benefit at your Full Retirement Age (FRA).</p><p>According to historical data from the Social Security Administration, <em>about 88% of individuals aged 65 and older receive retirement benefits</em>, which represents about 40% of the average worker's career earnings before retirement. This highlights the foundational role that Social Security plays in American retirement security. However, relying solely on this income without a structured plan can be a costly mistake. If you claim your benefits prematurely, you face a permanent reduction in your monthly income. Conversely, if you plan strategically, you can secure delayed retirement credits that boost your check for the rest of your life.</p><div class=\"pro-tip\" style=\"background-color: #fff9e6; border-left: 4px solid #ffcc00; padding: 15px; margin: 20px 0;\">\n  <p><strong>Pro Tip / Key Warning:</strong> Never assume the government has recorded your income correctly. An uncorrected error in your earnings history can permanently depress your monthly benefit amount. Check your record annually to ensure your hard-earned income is accurately reflected in the system.</p>\n</div>\n<h2 id=\"eligibility\">2. How to Check Your Eligibility for Social Security Benefits?</h2>\n<p>Determining your eligibility is the first concrete step in preparing for Social Security benefits. The SSA uses a credit system to measure your work history and establish your qualification for various programs.</p><p>To qualify for retirement benefits, you must accumulate a set number of \"work credits\" over your employment career. Let's break down the process of verifying your eligibility into three distinct steps:</p><ol>\n  <li><strong>Earn Your Credits:</strong> To qualify for standard retirement benefits, you need a minimum of <strong>40 work credits</strong>, which is equivalent to 10 years of work. You earn one credit for each set amount of covered earnings (SSA publishes the amount each year), up to a maximum of four credits per year. This threshold increases slightly each year to keep pace with inflation.</li>\n  <li><strong>Check Your Status Online:</strong> The most efficient way to verify your progress is to access the official SSA portal. You can <a href=\"https://www.ssa.gov/prepare/check-eligibility-for-benefits\" target=\"_blank\" rel=\"noopener noreferrer\">answer a few eligibility questions</a> on the Social Security website to see if you qualify for retirement or other benefits right now. This tool provides an instantaneous assessment of your current qualification status.</li>\n  <li><strong>Explore Auxiliary Options:</strong> If you do not have enough work credits under your own record, do not assume you are locked out of the system. You may still qualify for benefits based on the record of a current spouse, a divorced spouse (if the marriage lasted at least 10 years), or a deceased spouse. For more details, consult our <a href=\"https://www.socialsecurityguidecalc.com/guides/getting-started\" target=\"_blank\">Getting Started Guide</a> or evaluate your qualification status using the <a href=\"/guides/disability\" target=\"_blank\">SSDI eligibility guide</a>.</li>\n</ol>\n<h2 id=\"estimate\">3. How to Get a Reliable Estimate of Your Social Security Benefits?</h2>\n<p>Before making any claiming decisions, you must acquire an accurate estimate of your future monthly payouts. The SSA provides several ways to see estimates for various benefits based on your earnings and when you apply.</p><p>Having a realistic projection of your monthly income is critical for mapping out your broader retirement cash flow, coordinates with your 401(k) or IRA drawdowns, and planning for taxes. Follow this process to get a high-fidelity benefit estimate:</p><ol>\n  <li><strong>Access Your Online Statement:</strong> Establish and monitor your personal account via the official SSA site. This online statement serves as the baseline for all calculations. To understand the complete setup process, read our comprehensive guide on the <a href=\"https://www.socialsecurityguidecalc.com/blog/my-social-security-account-complete-guide\" target=\"_blank\">my Social Security account portal</a>.</li>\n  <li><strong>Use Official Estimation Tools:</strong> Once logged in, you can <a href=\"https://www.ssa.gov/prepare/get-benefits-estimate\" target=\"_blank\" rel=\"noopener noreferrer\">see estimates for various benefits</a> using the SSA's interactive tools. These tools allow you to model different future earnings scenarios, such as retiring early, changing your salary, or working part-time.</li>\n  <li><strong>Supplement with Specialty Calculators:</strong> While the SSA tools are excellent, they may not model complex spousal claiming strategies or tax impacts. You can leverage the <a href=\"https://www.socialsecurityguidecalc.com/calculators/benefits-estimator\" target=\"_blank\">Social Security Benefits Estimator</a> and check out our strategic blog on <a href=\"https://www.socialsecurityguidecalc.com/blog/check-how-much-social-security-i-will-get\" target=\"_blank\">how much Social Security you will get</a> to optimize your claiming roadmap.</li>\n</ol>\n<h2 id=\"record\">4. How to Review and Update Your Social Security Record of Earnings?</h2>\n<p>Your Social Security statement is only as accurate as the underlying earnings record reported by your employers. If there is an error in your record, your final monthly benefit will be lower than what you actually earned.</p><p>Reviewing your record of earnings is a critical quality-control step that every worker should perform annually. Follow these steps to verify and update your earnings record:</p><ol>\n  <li><strong>Download Your Record:</strong> Log into your account and <a href=\"https://www.ssa.gov/prepare/review-record-earnings\" target=\"_blank\" rel=\"noopener noreferrer\">check the record of your yearly income</a>. This document lists your earnings for every single year you've worked since you first entered the labor force.</li>\n  <li><strong>Cross-Reference with Tax Docs:</strong> Compare the yearly figures on your Social Security record against your historical W-2 forms, 1099s, or tax returns. Pay close attention to years where you changed jobs, as these are the most common source of reporting errors.</li>\n  <li><strong>Submit a Correction Request:</strong> If you find a discrepancy (e.g., a year with $0 earnings when you actually worked, or an underreported salary), you must file a correction request with the SSA. You will need to provide proof of earnings, such as tax returns or W-2s. For support on managing your records and obtaining replacement identification, refer to our guide on <a href=\"https://www.socialsecurityguidecalc.com/blog/how-to-get-a-replacement-social-security-card\" target=\"_blank\">how to get a replacement Social Security card</a>.</li>\n</ol>\n<h2 id=\"comparison\">5. Choosing Your Claiming Age: 62 vs. 67 vs. 70</h2>\n<p>The age at which you choose to claim your Social Security benefits is the single most impactful factor in determining your monthly payment amount. You can claim retirement benefits as early as age 62, but waiting until your Full Retirement Age (FRA) or delaying up to age 70 will significantly increase your monthly check.</p><p>Let's examine a direct comparison of the key claiming ages and how they impact your overall benefit structure:</p><table border=\"1\" cellpadding=\"8\" style=\"border-collapse: collapse; width: 100%; margin: 20px 0;\">\n  <thead>\n    <tr style=\"background-color: #f2f2f2;\">\n      <th>Feature / Metric</th>\n      <th>Age 62 (Early Claiming)</th>\n      <th>Age 67 (Full Retirement Age)</th>\n      <th>Age 70 (Delayed Claiming)</th>\n      <th>Core Verdict</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td><strong>Primary Use Case</strong></td>\n      <td>Immediate cash flow; retiring early due to health or job loss.</td>\n      <td>Standard retirement; receiving 100% of earned benefits.</td>\n      <td>Maximizing monthly check and protecting surviving spouse.</td>\n      <td>Age 62 is for immediate cash needs; Age 70 is for maximizing lifetime income.</td>\n    </tr>\n    <tr>\n      <td><strong>Benefit Payout</strong></td>\n      <td>Permanently reduced by 25% to 30% of your PIA.</td>\n      <td>100% of your Primary Insurance Amount (PIA).</td>\n      <td>Permanently increased by 24% over your PIA (8% annual credit).</td>\n      <td>Delaying from age 62 to 70 results in a <strong>77% higher monthly benefit</strong>.</td>\n    </tr>\n    <tr>\n      <td><strong>Earnings Test Impact</strong></td>\n      <td>Subject to strict annual limits; benefits withheld if you earn too much.</td>\n      <td>No limits; you can work and earn any amount without penalty.</td>\n      <td>No limits; you can work and earn any amount without penalty.</td>\n      <td>Claiming early while working can trigger temporary benefit withholding.</td>\n    </tr>\n    <tr>\n      <td><strong>Spousal Max Payout</strong></td>\n      <td>Reduced spousal benefits (based on 50% of partner's PIA).</td>\n      <td>Maximum spousal benefit (50% of partner's PIA).</td>\n      <td>Maximum spousal benefit (50% of partner's PIA; no delayed credits for spouses).</td>\n      <td>Spousal benefits do not increase if you delay past your Full Retirement Age.</td>\n    </tr>\n  </tbody>\n</table><p><strong>When to choose Age 62:</strong> You should choose to claim early at age 62 if you have an urgent financial need, have a shorter-than-average life expectancy due to chronic illness, or have retired and need the income immediately to meet basic living costs. For details on the financial trade-offs, see our article on the <a href=\"https://www.socialsecurityguidecalc.com/blog/social-security-early-retirement-penalty-62\" target=\"_blank\">early retirement penalty at age 62</a>.</p><p><strong>When to choose Age 67:</strong> Choosing Age 67 is ideal if you want to retire at the standard milestone, receive 100% of your hard-earned benefits, and continue working without being subject to the earnings test. Explore our guide on <a href=\"https://www.socialsecurityguidecalc.com/blog/social-security-age-62-vs-67-vs-70\" target=\"_blank\">Social Security age 62 vs 67 vs 70</a> to evaluate these scenarios.</p><p><strong>When to choose Age 70:</strong> You should wait until age 70 if you are in excellent health, have other retirement assets (like a 401k or IRA) to live on in the interim, and want to lock in the highest possible monthly payment for yourself and a potential surviving spouse. Learn more about maximizing your credits in our post on <a href=\"https://www.socialsecurityguidecalc.com/blog/social-security-delayed-retirement-credits\" target=\"_blank\">delayed retirement credits</a> or calculate your break-even milestone using the <a href=\"https://www.socialsecurityguidecalc.com/calculators/break-even\" target=\"_blank\">Social Security Break-Even Calculator</a>.</p>\n<h2 id=\"spousal\">6. How Spousal and Divorced Spousal Benefits Work?</h2>\n<div class=\"aeo-answer\" style=\"background-color: #f0f7ff; padding: 15px; border-left: 4px solid #0056b3; font-style: italic; margin-bottom: 20px;\">\n  <p><strong>Direct Answer:</strong> Spousal and divorced spousal benefits provide monthly payments to a current or former partner, up to a maximum of 50% of the primary earner's Full Retirement Age benefit. This auxiliary program ensures that spouses with limited or no work histories receive substantial financial support during retirement.</p>\n</div><p>The spousal benefit rules are a powerful component of the Social Security system, designed to protect families where one partner was the primary breadwinner and the other focused on caregiving or worked in a lower-paying field. Under these rules, a spouse can receive up to 50% of their partner's Full Retirement Age benefit, depending on when they claim. If a spouse claims their spousal benefit before reaching their own Full Retirement Age, their monthly payment is permanently reduced.</p><p>For example, if your spouse's Full Retirement Age benefit is $2,000 per month, your maximum spousal benefit at your Full Retirement Age is $1,000 per month. If you claim this benefit at age 62, it will be reduced to roughly 32.5% of their benefit, or $650 per month. To understand these rules and optimize your household strategy, consult our detailed post on <a href=\"https://www.socialsecurityguidecalc.com/blog/social-security-spousal-benefits-rules\" target=\"_blank\">Social Security spousal benefits rules</a>.</p><p><strong>Divorced Spousal Benefits:</strong> If you are divorced, you can still claim benefits based on your ex-spouse's earnings record. To qualify, your marriage must have lasted at least <strong>10 consecutive years</strong>, you must be currently unmarried, and you must be at least 62 years old. If your ex-spouse has not yet applied for benefits but is eligible, you can still apply as long as you have been divorced for at least two consecutive years. To optimize your strategy as a couple or a divorced individual, check out the <a href=\"/guides/spousal-benefits\" target=\"_blank\">spousal and divorced benefits guide</a>.</p><div class=\"pro-tip\" style=\"background-color: #fff9e6; border-left: 4px solid #ffcc00; padding: 15px; margin: 20px 0;\">\n  <p><strong>Pro Tip / Key Warning:</strong> Claiming a divorced spousal benefit has absolutely no impact on your ex-spouse's monthly benefit, nor does it affect the benefit of their current spouse. It is an independent, confidential claim between you and the SSA.</p>\n</div>\n<h2 id=\"survivor\">7. What are Social Security Survivor Benefits?</h2>\n<div class=\"aeo-answer\" style=\"background-color: #f0f7ff; padding: 15px; border-left: 4px solid #0056b3; font-style: italic; margin-bottom: 20px;\">\n  <p><strong>Direct Answer:</strong> Social Security survivor benefits are monthly payments paid to widows, widowers, dependent children, and eligible parents of a deceased worker. These benefits help cushion the financial impact of a wage earner's death and are calculated based on the deceased worker's career earnings record.</p>\n</div><p>Survivor benefits are a crucial form of life insurance provided through the Social Security system. When a worker who has earned enough work credits passes away, their surviving family members may qualify for monthly support. The amount they receive depends on several factors, including the deceased worker's total lifetime earnings and the age at which the survivor claims the benefit.</p><p>A surviving spouse can claim reduced survivor benefits as early as <strong>age 60</strong> (or age 50 if the survivor has a qualifying disability). If the surviving spouse waits until their own Full Retirement Age, they can receive 100% of the deceased worker's benefit amount. For a comprehensive look at how these provisions work, read our <a href=\"https://www.socialsecurityguidecalc.com/blog/social-security-survivor-benefits-guide\" target=\"_blank\">Social Security survivor benefits guide</a>.</p><p><strong>Benefits for Children and Families:</strong> Survivor benefits are not limited to spouses. Unmarried children under age 18 (or up to age 19 if they are full-time high school students) can receive monthly payments. Disabled children of any age can also qualify if their disability began before age 22. Learn more about how these family protections operate in our guide on <a href=\"https://www.socialsecurityguidecalc.com/blog/social-security-benefits-for-children-after-parent-death\" target=\"_blank\">Social Security benefits for children after a parent's death</a>.</p><p>One of the most common questions is whether a surviving spouse can claim survivor benefits while also receiving their own retirement benefit. To explore how the SSA handles multiple simultaneous claims, read our analysis on <a href=\"https://www.socialsecurityguidecalc.com/blog/can-you-collect-survivor-benefits-and-your-own-social-security-at-the-same-time\" target=\"_blank\">collecting survivor benefits and your own Social Security at the same time</a> or run the calculations using our <a href=\"/blog/social-security-survivor-benefits-guide\" target=\"_blank\">survivor benefits guide</a>.</p>\n<h2 id=\"disability\">8. How Does Disability (SSDI) Work and How to Apply?</h2>\n<div class=\"aeo-answer\" style=\"background-color: #f0f7ff; padding: 15px; border-left: 4px solid #0056b3; font-style: italic; margin-bottom: 20px;\">\n  <p><strong>Direct Answer:</strong> Social Security Disability Insurance (SSDI) provides monthly cash benefits to individuals who can no longer engage in substantial gainful activity due to a severe, long-term medical condition. Qualifying requires satisfying both work history thresholds and the SSA's strict definition of total disability.</p>\n</div><p>The SSDI program acts as a financial lifeline for workers who suffer a career-ending illness or injury. Unlike private disability insurance, the federal government's program has an exceptionally strict definition of disability. To qualify, your physical or mental impairment must prevent you from performing any substantial gainful work, must be expected to last for at least <strong>12 consecutive months</strong> or result in death, and must be documented with extensive objective medical evidence.</p><p>The application process is notoriously rigorous and often involves a detailed review of your medical records, treatment history, and work experience. For a detailed breakdown of the medical and work requirements, check out our <a href=\"https://www.socialsecurityguidecalc.com/guides/disability\" target=\"_blank\">Disability Guide</a> and review the <a href=\"https://www.socialsecurityguidecalc.com/guides/disability\" target=\"_blank\">SSDI qualification guide</a>.</p><p>To apply for SSDI, you should gather all your medical reports, prescription lists, doctor contacts, and detailed employment history. You can then submit your claim online or in person. To walk through the step-by-step filing process, consult our article on <a href=\"https://www.socialsecurityguidecalc.com/blog/how-to-apply-for-disability\" target=\"_blank\">how to apply for disability</a> and learn about asset limits and program restrictions in our post on <a href=\"https://www.socialsecurityguidecalc.com/blog/does-ssdi-have-an-asset-limit\" target=\"_blank\">does SSDI have an asset limit</a>.</p>\n<h2 id=\"ssi\">9. What is Supplemental Security Income (SSI) and Who Qualifies?</h2>\n<div class=\"aeo-answer\" style=\"background-color: #f0f7ff; padding: 15px; border-left: 4px solid #0056b3; font-style: italic; margin-bottom: 20px;\">\n  <p><strong>Direct Answer:</strong> Supplemental Security Income (SSI) is a federal needs-based program that provides monthly payments to adults and children with disabilities, as well as seniors aged 65 and older, who have extremely limited income and financial resources. SSI is funded by general U.S. treasury revenues, not Social Security payroll taxes.</p>\n</div><p>While SSDI is based on your work history and FICA payroll tax contributions, the <strong>Supplemental Security Income (SSI)</strong> program is strictly a needs-based welfare program. It is designed to provide basic financial support for food, shelter, and clothing to individuals who are aged, blind, or disabled, and who fall below very low income and asset limits.</p><p>To qualify for SSI, your countable financial resources (assets) must not exceed <strong>$2,000 for an individual</strong> or <strong>$3,000 for a married couple</strong>. Countable resources include cash, bank accounts, stocks, and real estate other than your primary home. The SSA also evaluates your monthly income, which can reduce your SSI benefit amount if it exceeds certain thresholds. For detailed information on the current payment rates and eligibility rules, refer to our comprehensive post on <a href=\"https://www.socialsecurityguidecalc.com/blog/supplemental-security-income\" target=\"_blank\">Supplemental Security Income basics</a> and see the <a href=\"https://www.socialsecurityguidecalc.com/blog/supplemental-security-income\" target=\"_blank\">SSI eligibility and payment amounts in 2026</a>.</p><p>The application process for SSI requires providing detailed financial documentation, including bank statements, tax records, lease agreements, and proof of all household income. To ensure your application is filled out correctly, follow our step-by-step instructions on <a href=\"https://www.socialsecurityguidecalc.com/blog/how-to-apply-for-supplemental-security-income\" target=\"_blank\">how to apply for Supplemental Security Income</a>.</p>\n<h2 id=\"medicare\">10. How Do Social Security Benefits and Medicare Work Together?</h2>\n<div class=\"aeo-answer\" style=\"background-color: #f0f7ff; padding: 15px; border-left: 4px solid #0056b3; font-style: italic; margin-bottom: 20px;\">\n  <p><strong>Direct Answer:</strong> Social Security and Medicare are separate federal programs that coordinate closely in retirement. If you are already receiving Social Security benefits when you turn 65, you are automatically enrolled in Medicare Parts A and B, and your Part B premiums are automatically deducted from your monthly Social Security check.</p>\n</div><p>For most retirees, navigating Social Security goes hand-in-hand with planning for healthcare costs through Medicare. Medicare is the federal health insurance program for people aged 65 and older, as well as certain younger people with disabilities. Because the two programs are administered in tandem, your Social Security status dictates how and when you transition into Medicare.</p><p>If you have already started receiving your <strong>Social Security benefits</strong> prior to turning 65, the federal government will automatically enroll you in Medicare Part A (Hospital Insurance) and Medicare Part B (Medical Insurance) starting the first day of the month you turn 65. Your Medicare card will be mailed to you, and your monthly Part B premium will be automatically deducted from your retirement benefit. For an in-depth breakdown of these healthcare dynamics, read our <a href=\"https://www.socialsecurityguidecalc.com/guides/medicare\" target=\"_blank\">Medicare Planning Guide</a>.</p><p>However, if you delay claiming Social Security past age 65 to maximize your retirement credits, you will not be enrolled in Medicare automatically. In this scenario, you must manually sign up for Medicare during your Initial Enrollment Period to avoid lifetime enrollment penalties. To explore premium costs and registration timelines, read our guide on <a href=\"https://www.socialsecurityguidecalc.com/blog/medicare-2027-costs-premiums-guide\" target=\"_blank\">Medicare costs and premiums</a> and review our <a href=\"/guides/medicare\" target=\"_blank\">Medicare guide</a> to choose your optimal coverage.</p>\n<h2 id=\"tax\">11. Is Social Security Income Taxable?</h2>\n<div class=\"aeo-answer\" style=\"background-color: #f0f7ff; padding: 15px; border-left: 4px solid #0056b3; font-style: italic; margin-bottom: 20px;\">\n  <p><strong>Direct Answer:</strong> Social Security benefits are taxable if your combined income exceeds federal thresholds. Depending on your adjusted gross income, non-taxable interest, and half of your Social Security benefits, you may have to pay federal income tax on up to 50% or 85% of your benefits.</p>\n</div><p>Many retirees are surprised to learn that their <strong>Social Security benefits</strong> are not necessarily tax-free. The IRS uses a specific metric called \"combined income\" (also known as provisional income) to determine if your benefits are taxable. Combined income is calculated as your Adjusted Gross Income (AGI) plus any tax-exempt interest income, plus exactly 50% of your annual Social Security benefits.</p><p>The federal tax thresholds for Social Security are set by law and are not indexed for inflation, meaning more retirees pay taxes on their benefits each year as average payouts rise. Let's examine the thresholds:</p><ul>\n  <li><strong>For Single Filers:</strong>\n    <ul>\n      <li>If your combined income is between <strong>$25,000 and $34,000</strong>, up to 50% of your benefits may be subject to income tax.</li>\n      <li>If your combined income is <strong>more than $34,000</strong>, up to 85% of your benefits may be subject to income tax.</li>\n    </ul>\n  </li>\n  <li><strong>For Joint Filers (Married Filing Jointly):</strong>\n    <ul>\n      <li>If your combined income is between <strong>$32,000 and $44,000</strong>, up to 50% of your benefits may be subject to income tax.</li>\n      <li>If your combined income is <strong>more than $44,000</strong>, up to 85% of your benefits may be subject to income tax.</li>\n    </ul>\n  </li>\n</ul><p>To evaluate your tax exposure and explore withholding strategies, review our <a href=\"https://www.socialsecurityguidecalc.com/guides/benefit-taxes\" target=\"_blank\">Social Security Benefit Taxes Guide</a> and read our blog post on <a href=\"https://www.socialsecurityguidecalc.com/guides/benefit-taxes\" target=\"_blank\">is Social Security income taxable</a>. If you need to estimate your withholding or complete IRS paperwork, consult the <a href=\"https://www.socialsecurityguidecalc.com/blog/irs-tax-withholding-estimator-guide\" target=\"_blank\">IRS Tax Withholding Estimator Guide</a> and use our interactive <a href=\"https://www.socialsecurityguidecalc.com/calculators/tax-calculator\" target=\"_blank\">Social Security Tax Calculator</a>.</p>\n<h2 id=\"earnings-test\">12. How the Earnings Test Limits Your Early Retirement Benefits?</h2>\n<div class=\"aeo-answer\" style=\"background-color: #f0f7ff; padding: 15px; border-left: 4px solid #0056b3; font-style: italic; margin-bottom: 20px;\">\n  <p><strong>Direct Answer:</strong> The Social Security earnings test is a federal rule that temporarily reduces monthly retirement benefits for claimants who continue to work and earn money before reaching their Full Retirement Age. Once you reach your Full Retirement Age, the earnings limits disappear, and your benefits are recalculated upward.</p>\n</div><p>If you choose to claim your <strong>Social Security benefits</strong> early at age 62 but plan to continue working, you must be aware of the strict earnings test limits. The SSA imposes these limits to ensure that retirement benefits are paid to individuals who are fully or partially retired, rather than those earning high active wages.</p><p>In 2027, the earnings test limits are structured as follows:</p><ul>\n  <li><strong>Under Full Retirement Age:</strong> If you are under your Full Retirement Age for the entire year, the SSA will deduct <strong>$1 from your benefits for every $2</strong> you earn above the annual limit. For 2027, this limit is $25,560.</li>\n  <li><strong>The Year You Reach Full Retirement Age:</strong> In the months leading up to your FRA milestone, the SSA deducts <strong>$1 for every $3</strong> you earn above a much higher limit (set at $67,920 in 2027).</li>\n  <li><strong>At and After Full Retirement Age:</strong> Once you reach the month of your Full Retirement Age, the earnings test no longer applies. You can earn an unlimited amount of money from active employment, and your monthly benefit will never be reduced.</li>\n</ul><p>It is important to know that these \"withheld\" benefits are not permanently lost. When you reach your Full Retirement Age, the SSA will recalculate your monthly benefit amount upward to credit you for the months in which your benefits were withheld. You can model this dynamic and calculate your personal limits using our <a href=\"https://www.socialsecurityguidecalc.com/calculators/earnings-test\" target=\"_blank\">Social Security Earnings Test Calculator</a> and reading our dedicated article on the <a href=\"https://www.socialsecurityguidecalc.com/blog/social-security-earnings-test-limit\" target=\"_blank\">Social Security earnings test limit</a>.</p>\n<h2 id=\"wep-gpo\">13. What Were the WEP and GPO Offsets, and What Changed?</h2>\n<div class=\"aeo-answer\" style=\"background-color: #f0f7ff; padding: 15px; border-left: 4px solid #0056b3; font-style: italic; margin-bottom: 20px;\">\n  <p><strong>Direct Answer:</strong> The Windfall Elimination Provision (WEP) and Government Pension Offset (GPO) were federal provisions that reduced Social Security benefits for people who received a pension from non-covered work, such as some state or local government jobs. The Social Security Fairness Act repealed both provisions in January 2025.</p>\n</div><p>The WEP and GPO offsets were among the most misunderstood rules in Social Security. They affected primarily public servants, such as teachers, police officers, firefighters, and municipal workers in states where public pensions are offered in lieu of Social Security coverage. Let's distinguish between the two offsets:</p><ul>\n  <li><strong>The Windfall Elimination Provision (WEP):</strong> WEP affects how your own retirement or disability benefit is calculated. If you receive a pension from a non-covered government job and also qualify for Social Security under a different job, WEP applies a modified, less generous formula to calculate your Primary Insurance Amount, reducing your monthly check. Learn more and calculate your potential offset using our <a href=\"/blog/social-security-fairness-act-wep-gpo-repeal-explained\" target=\"_blank\">WEP and GPO repeal guide</a>.</li>\n  <li><strong>The Government Pension Offset (GPO):</strong> GPO affects spousal or survivor benefits. If you receive a non-covered government pension and claim a spousal or survivor benefit based on your partner's Social Security record, the GPO reduces your spousal or survivor benefit by <strong>two-thirds of the amount of your government pension</strong>. In many cases, this completely offsets the Social Security benefit, reducing it to $0.</li>\n</ul><p>Advocates pushed for years to repeal these offsets, and Congress did so in 2025. For the details, read our comprehensive blog on the <a href=\"https://www.socialsecurityguidecalc.com/blog/social-security-fairness-act-wep-gpo-repeal-explained\" target=\"_blank\">Social Security Fairness Act and WEP/GPO repeal efforts</a>.</p>\n<h2 id=\"cola\">14. How is the Social Security COLA Calculated and What is Changing?</h2>\n<div class=\"aeo-answer\" style=\"background-color: #f0f7ff; padding: 15px; border-left: 4px solid #0056b3; font-style: italic; margin-bottom: 20px;\">\n  <p><strong>Direct Answer:</strong> The Social Security Cost-of-Living Adjustment (COLA) is calculated annually based on percentage increases in the Consumer Price Index for Urban Wage Earners and Clerical Workers (CPI-W). This annual adjustment ensures that benefits maintain their real purchasing power in the face of inflation.</p>\n</div><p>The Cost-of-Living Adjustment (COLA) is the mechanism that keeps your Social Security payments aligned with the real-world cost of living. Each year, the SSA compares the third-quarter CPI-W data (for July, August, and September) against the third-quarter data from the previous year. If there is a percentage increase, that rate is applied as the COLA for the upcoming year's January benefits.</p><p>Understanding how COLA is calculated helps retirees plan for inflation and anticipate shifts in their annual household income. To explore the underlying mathematics, read our article on <a href=\"https://www.socialsecurityguidecalc.com/blog/social-security-cola\" target=\"_blank\">how Social Security COLA is calculated</a> and trace previous adjustments in our overview of <a href=\"https://www.socialsecurityguidecalc.com/blog/historical-social-security-cola-increases\" target=\"_blank\">historical Social Security COLA increases</a>.</p><p>As we transition into late 2026, policy analysts and pre-retirees can plan for the official 3.6% COLA for 2027, announced by SSA on October 14, 2026. To keep your finger on the pulse of the latest legislative updates, benefit adjustments, and systemic rules, read our <a href=\"https://www.socialsecurityguidecalc.com/blog/cola-updates\" target=\"_blank\">COLA Updates Blog</a> and consult our strategic overview of <a href=\"https://www.socialsecurityguidecalc.com/blog/social-security-whats-really-changing-in-2027\" target=\"_blank\">what is changing for Social Security in 2027</a>. For general updates from the agency, follow the <a href=\"https://www.socialsecurityguidecalc.com/blog/ssa-news-updates-policy-changes\" target=\"_blank\">SSA News and Policy Updates</a>.</p>\n<h2 id=\"faq\">15. Frequently Asked Questions About Preparing for Social Security</h2>\n<p>In this section, we answer some of the most common search queries regarding the practical preparation and management of your Social Security benefits.</p><h3 id=\"faq-office\">How can I find my local Social Security office?</h3>\n<p><strong>Answer:</strong> You can find your nearest local Social Security office by using the official SSA office locator tool or checking our website's <a href=\"https://www.socialsecurityguidecalc.com/calculators/office-locator\" target=\"_blank\">Social Security Office Locator Tool</a>. If you prefer to browse office hours and directions, read our post on the <a href=\"https://www.socialsecurityguidecalc.com/calculators/office-locator\" target=\"_blank\">Social Security office locator guide</a>.</p><h3 id=\"faq-maximize\">What are the best strategies to maximize my retirement age?</h3>\n<p><strong>Answer:</strong> To maximize your Social Security benefit, you should aim to work for at least 35 years at high salary levels, review your earnings history annually, and delay claiming your benefit until age 70 if healthy. For a deep dive into claiming tactics, read our articles on <a href=\"https://www.socialsecurityguidecalc.com/blog/social-security-age-62-vs-67-vs-70\" target=\"_blank\">social security retirement age strategies</a> and <a href=\"https://www.socialsecurityguidecalc.com/blog/social-security-delayed-retirement-credits\" target=\"_blank\">maximizing delayed retirement credits</a>.</p><h3 id=\"faq-safety\">How can I safely manage my Social Security number?</h3>\n<p><strong>Answer:</strong> To protect your identity, never carry your Social Security card in your wallet, secure your online accounts with multi-factor authentication, and monitor your credit reports regularly for suspicious activity.</p><h3 id=\"faq-states\">Are there state-specific rules for Social Security benefits?</h3>\n<p><strong>Answer:</strong> While Social Security is a federal program, state laws differ significantly regarding the taxation of benefits, with some states offering complete tax exemptions. To check the specific tax and program rules in your region, consult official sources for state-specific rules.</p>\n<h2 id=\"conclusion\">Conclusion: Navigating Your Social Security Journey with Confidence</h2>\n<p>Preparing for your retirement benefits is one of the most powerful steps you can take to ensure your financial independence and stability. As we have explored in this guide, your monthly payments are not a fixed certainty, but a dynamic, rule-based asset that you can actively optimize through careful timing, rigorous audit of your earnings history, and smart coordination with Medicare, taxes, and other retirement vehicles. Whether you are aiming to claim early due to health or lifestyle needs, or waiting until age 70 to lock in maximum monthly checks, the key to success is <strong>proactive preparation</strong>.</p>\n<p>By leveraging official resources like your <em>my Social Security</em> account, using dedicated calculators to model claiming scenarios, and staying informed about upcoming legislative changes, you can step into retirement with clarity and confidence. The choices you make today will shape your financial security for decades to come\u2014take the time to plan, double-check your records, and claim your benefits with the security of a well-researched strategy.</p><hr style=\"border: 0; border-top: 1px solid #ddd; margin: 40px 0 20px 0;\" />\n<p style=\"font-size: 0.85em; color: #666; line-height: 1.6; font-style: italic;\"><strong>Disclaimer:</strong> This article is for general educational purposes and does not constitute individualized financial, tax, legal, or Social Security claiming advice. Social Security rules and benefit amounts can change, and individual results depend on the claimant's circumstances. For an official benefit determination, use information from the Social Security Administration and your personal Social Security record.</p>\n"
 },
 
 
@@ -3766,6 +3749,382 @@ metaDescription: "Spouses can claim up to 50% of a partner's benefit at FRA. Lea
   searchIntent: "informational",
 }, 
 
+  {
+    slug: "social-security-full-retirement-age-2027",
+    title: "Social Security Full Retirement Age in 2027: Chart by Birth Year",
+    metaTitle: "Social Security Full Retirement Age 2027 (Chart)",
+    metaDescription: "Full retirement age is 67 for anyone born in 1960 or later. See the FRA chart by birth year, what 2027 changes, and how claiming early or late affects you.",
+    excerpt: "Full retirement age is 67 for anyone born in 1960 or later, and 2027 is the first year that group reaches it. Here is the chart by birth year and what it means for your benefit.",
+    content: `<h2>Your full retirement age in one paragraph</h2>
+<p>Your <strong>full retirement age (FRA)</strong> is <strong>67 if you were born in 1960 or later</strong>, and <strong>66 if you were born from 1943 through 1954</strong>. If you were born from 1955 through 1959, it falls in between: 66 and 2 months for 1955, rising by two months each birth year to 66 and 10 months for 1959. <strong>2027 does not raise the age.</strong> It is the first year that people born in 1960 reach 67, which completes the schedule Congress set in 1983.</p>
+
+<h2>Full retirement age chart by birth year</h2>
+<table>
+<thead><tr><th>Birth year</th><th>Full retirement age</th><th>Months before FRA at 62</th><th>Reduction if you claim at 62</th><th>Share of your full benefit at 62</th><th>Share at 70</th></tr></thead>
+<tbody>
+<tr><td>1943–1954</td><td>66</td><td>48</td><td>25.00%</td><td>75.00%</td><td>132.00%</td></tr>
+<tr><td>1955</td><td>66 and 2 months</td><td>50</td><td>25.83%</td><td>74.17%</td><td>130.67%</td></tr>
+<tr><td>1956</td><td>66 and 4 months</td><td>52</td><td>26.67%</td><td>73.33%</td><td>129.33%</td></tr>
+<tr><td>1957</td><td>66 and 6 months</td><td>54</td><td>27.50%</td><td>72.50%</td><td>128.00%</td></tr>
+<tr><td>1958</td><td>66 and 8 months</td><td>56</td><td>28.33%</td><td>71.67%</td><td>126.67%</td></tr>
+<tr><td>1959</td><td>66 and 10 months</td><td>58</td><td>29.17%</td><td>70.83%</td><td>125.33%</td></tr>
+<tr><td><strong>1960 or later</strong></td><td><strong>67</strong></td><td><strong>60</strong></td><td><strong>30.00%</strong></td><td><strong>70.00%</strong></td><td><strong>124.00%</strong></td></tr>
+</tbody>
+</table>
+<p>The FRA column follows SSA's schedule. The reduction and percentage columns come from SSA's early-retirement rules (below). SSA's own table shows the same 29.17% for 1959 and 30.00% for 1960 and later.</p>
+<p><strong>Born on January 1?</strong> SSA treats you as born in the previous year, so use the prior year's row. If you were born on the 1st of any month, SSA works out your benefit and FRA as if you were born in the previous month.</p>
+
+<h2>What actually changes in 2027</h2>
+<p>People are searching for "2027 full retirement age" because 2027 is a milestone, not because a rule changes.</p>
+<ul>
+<li>The 1983 Social Security amendments raised FRA gradually from 65 to 67.</li>
+<li>Workers born in 1960 or later have an FRA of 67. Those people turn 62 in 2022 or later and turn 67 in 2027 or later, according to the Congressional Research Service.</li>
+<li>The last group still below 67 has now passed. From 2027 on, everyone reaching FRA is reaching 67.</li>
+</ul>
+<p><strong>Will FRA go up again?</strong> Not under current law. Congress could change it, and SSA's Office of the Chief Actuary has published summaries of options that include raising retirement ages, but options are not law. If you are born in 1960 or later, plan around 67.</p>
+
+<h2>The renaming bill: "standard monthly benefit age"</h2>
+<p>In September 2026 the Senate passed the <strong>Claiming Age Clarity Act (H.R. 5284)</strong>, which already passed the House in December 2025. If enacted, SSA would have to replace its terminology:</p>
+<table>
+<thead><tr><th>Current term</th><th>Proposed term</th></tr></thead>
+<tbody>
+<tr><td>Early eligibility age (62)</td><td>Minimum monthly benefit age</td></tr>
+<tr><td>Full retirement age / normal retirement age</td><td>Standard monthly benefit age</td></tr>
+<tr><td>Delayed retirement credit (age 70)</td><td>Maximum monthly benefit age</td></tr>
+</tbody>
+</table>
+<p>This is a <strong>name change only</strong>. The bill does not change any ages or payment amounts. Congress cleared the bill in 2026. As of November 13, 2026, we could not confirm that it has been signed into law, so SSA's current terms still apply. If it is enacted, SSA would have until the later of January 1, 2027, or one year after enactment to update its notices and publications. Check the <a href="https://www.congress.gov/bill/119th-congress/house-bill/5284/history" target="_blank" rel="noopener noreferrer">bill's action history on Congress.gov</a> for the latest status.</p>
+<p>You can keep searching for "full retirement age." SSA's materials are expected to change over time, so this page will cover both names.</p>
+
+<h2>How to find your exact full retirement age</h2>
+<ol>
+<li><strong>Find your birth year</strong> in the chart above. If you were born on January 1, use the previous year.</li>
+<li><strong>Add the FRA to your birthday.</strong> If you were born March 15, 1960, your FRA of 67 arrives March 15, 2027.</li>
+<li><strong>Check SSA's record.</strong> Your <a href="/blog/my-social-security-account-complete-guide">my Social Security account</a> shows your personal estimates.</li>
+<li><strong>Run the numbers.</strong> Use our <a href="/calculators/retirement-age">retirement age calculator</a> and our <a href="/calculators/benefits-estimator">benefits estimator</a> to see how claiming at different ages changes your monthly benefit.</li>
+</ol>
+
+<h2>What full retirement age does to your monthly check</h2>
+<p>Your full benefit (your <em>primary insurance amount</em>, or PIA) is paid at FRA. Claiming earlier or later changes it permanently.</p>
+<p><strong>Before FRA:</strong></p>
+<ul>
+<li>For each of the first 36 months you claim early, the benefit falls by 5/9 of 1% (6⅔% per year).</li>
+<li>For each month beyond 36, it falls by 5/12 of 1% (5% per year).</li>
+</ul>
+<p><strong>After FRA:</strong></p>
+<ul><li>For anyone born in 1943 or later, benefits grow by 2/3 of 1% for each month you wait (8% per year) until age 70. No credits accrue after 70.</li></ul>
+
+<h3>Example: FRA of 67, full benefit $2,000 a month</h3>
+<table>
+<thead><tr><th>Claiming age</th><th>Share of full benefit</th><th>Monthly benefit</th></tr></thead>
+<tbody>
+<tr><td>62</td><td>70.00%</td><td>$1,400</td></tr>
+<tr><td>63</td><td>75.00%</td><td>$1,500</td></tr>
+<tr><td>64</td><td>80.00%</td><td>$1,600</td></tr>
+<tr><td>65</td><td>86.67%</td><td>$1,733</td></tr>
+<tr><td>66</td><td>93.33%</td><td>$1,866</td></tr>
+<tr><td><strong>67 (FRA)</strong></td><td><strong>100%</strong></td><td><strong>$2,000</strong></td></tr>
+<tr><td>68</td><td>108%</td><td>$2,160</td></tr>
+<tr><td>69</td><td>116%</td><td>$2,320</td></tr>
+<tr><td>70</td><td>124%</td><td>$2,480</td></tr>
+</tbody>
+</table>
+<p><em>Before cost-of-living adjustments. SSA rounds the final benefit down to the whole dollar. Your actual figure depends on your earnings record.</em></p>
+<p>Waiting from 62 to 70 raises the monthly benefit by about 77% (from 70% to 124% of the full benefit). That does not make waiting right for everyone: it depends on health, other income, a spouse's benefit and how long you expect to collect. Our guide to <a href="/blog/social-security-age-62-vs-67-vs-70">claiming at 62, 67 or 70</a> walks through the break-even ages, and <a href="/blog/social-security-early-retirement-penalty-62">the early retirement penalty explained</a> covers the reduction in detail.</p>
+
+<h2>Where else FRA matters</h2>
+<p><strong>The earnings test.</strong> If you claim before FRA and keep working, SSA withholds benefits above an annual limit. For 2027, SSA's fact sheet gives:</p>
+<ul>
+<li><strong>$25,560 a year</strong> if you are under FRA all year. SSA withholds $1 for every $2 above it.</li>
+<li><strong>$67,920</strong> in the year you reach FRA, counting only earnings before the month you reach it. SSA withholds $1 for every $3 above it.</li>
+<li><strong>No limit</strong> from the month you reach FRA.</li>
+</ul>
+<p>See our <a href="/calculators/earnings-test">earnings test calculator</a> and the <a href="/blog/social-security-earnings-test-limit">earnings limit guide</a>.</p>
+<p><strong>Spousal benefits.</strong> A spouse who claims before their own FRA gets a bigger reduction than a worker would (25/36 of 1% per month for the first 36 months, then 5/12 of 1%). See <a href="/guides/spousal-benefits">spousal benefits</a>.</p>
+<p><strong>Survivor benefits.</strong> Widow's and widower's benefits use a different, slightly earlier full retirement age schedule, so do not assume the chart above applies. For survivors, FRA is 66 for people born from 1945 through 1956. It then rises two months per birth year (66 and 2 months for 1957, 66 and 4 months for 1958, 66 and 6 months for 1959, 66 and 8 months for 1960, and 66 and 10 months for 1961) to 67 for those born in 1962 or later. See our <a href="/blog/social-security-survivor-benefits-guide">survivor benefits guide</a>.</p>
+<p><strong>Disability.</strong> Disability benefits convert to retirement benefits when you reach FRA.</p>
+<p><strong>Medicare.</strong> Medicare eligibility starts at 65 and does not depend on your FRA.</p>
+
+<h2>Frequently asked questions</h2>
+<h3>What is the full retirement age for someone born in 1960?</h3>
+<p>67.</p>
+<h3>Is the full retirement age 67 in 2027?</h3>
+<p>Yes for anyone born in 1960 or later. 2027 is the year the 1960 group reaches it. The age itself has not changed.</p>
+<h3>What if I was born in 1959?</h3>
+<p>66 and 10 months. If your birthday is, for example, June 10, 1959, you reach FRA in April 2026.</p>
+<h3>How much is the reduction at 62?</h3>
+<p>30% if your FRA is 67, which means you receive 70% of your full benefit for life (plus cost-of-living adjustments). For earlier birth years the reduction is smaller (see the chart).</p>
+<h3>Is the full retirement age going to 68 or 69?</h3>
+<p>Not under current law. Proposals have been discussed, but no law has changed it.</p>
+<h3>What is "standard monthly benefit age"?</h3>
+<p>The proposal would rename "full retirement age" to "retirement age" in SSA communications, but it would not alter the actual claiming age or benefit calculation.</p>
+<h3>Does my FRA change my Medicare start date?</h3>
+<p>No. Medicare generally starts at 65.</p>
+
+<h2>Sources</h2>
+<ul>
+<li>SSA, <a href="https://www.ssa.gov/news/en/cola/factsheets/2027.html">2027 Cost-of-Living Adjustment fact sheet</a>: earnings-test limits for 2027.</li>
+<li>SSA Office of the Chief Actuary, <a href="https://ssa.gov/OACT/quickcalc/earlyretire.html">Reduction for early retirement</a>: FRA by birth year, reduction percentages, January 1 rule.</li>
+<li>Congressional Research Service, <a href="https://sgp.fas.org/crs/misc/IF12323.pdf">The Social Security Retirement Age (IF12323)</a>: 1983 phase-in, FRA 67 for those born in 1960 or later, delayed credits of 8% a year.</li>
+<li>20 CFR § 404.409, <a href="https://www.govinfo.gov/content/pkg/CFR-2022-title20-vol2/pdf/CFR-2022-title20-vol2-sec404-409.pdf">full retirement age and reduction rules</a>.</li>
+<li>Congress.gov, <a href="https://www.congress.gov/bill/119th-congress/house-bill/5284/text">H.R. 5284, Claiming Age Clarity Act</a>.</li>
+<li>SSA, <a href="https://www.ssa.gov/pubs/EN-05-10084.pdf">Survivors Benefits (Publication 05-10084)</a>: full retirement age for survivors.</li>
+</ul>
+<p><em>This guide is educational and is not financial or legal advice. SSA determines your actual benefit.</em></p>`,
+    category: "Retirement Planning",
+    author: "Amine Saadi",
+    date: "2026-11-13",
+    lastUpdated: "2026-11-13",
+    readTime: "8 min read",
+        image: "/images/full-retirement-age-2027-chart.webp",
+    imageAlt: "Full retirement age chart by birth year for Social Security, Social Security Guide",
+    primaryKeyword: "social security full retirement age 2027",
+    secondaryKeywords: ["full retirement age chart", "what is my full retirement age", "full retirement age by birth year", "FRA 67 born 1960", "standard monthly benefit age"],
+    searchIntent: "Find my full retirement age, learn whether it changes in 2027, and see how claiming before or after it changes my monthly benefit.",
+  },
+  {
+    slug: "how-social-security-benefits-are-calculated",
+    title: "How Social Security Benefits Are Calculated: AIME, PIA and Bend Points (2027 Examples)",
+    metaTitle: "How Social Security Benefits Are Calculated (2027)",
+    metaDescription: "See how SSA turns earnings into a monthly benefit: indexing, your best 35 years (AIME), the 90/32/15 formula with 2027 bend points, and claiming age.",
+    excerpt: "Social Security uses your 35 highest indexed years, a three-step formula and your claiming age. This guide shows each step with 2027 bend points and worked examples.",
+    content: `<h2>The short answer</h2>
+<p>SSA calculates a retirement benefit in three steps:</p>
+<ol>
+<li><strong>AIME:</strong> it adjusts your past earnings for wage growth, picks your <strong>highest 35 years</strong>, adds them up and divides by 420 months. The result is your <em>average indexed monthly earnings</em>.</li>
+<li><strong>PIA:</strong> it runs your AIME through a three-tier formula (90%, 32% and 15%) split at two dollar amounts called <strong>bend points</strong>. The result is your <em>primary insurance amount</em>, the benefit you get at full retirement age.</li>
+<li><strong>Claiming age:</strong> it reduces your PIA if you claim before full retirement age or increases it if you wait (up to age 70).</li>
+</ol>
+<p>For people who turn 62 in <strong>2027</strong>, the bend points are <strong>$1,340 and $8,077</strong>. The most a worker can receive at full retirement age in 2027 is <strong>$4,188 a month</strong> (SSA 2027 fact sheet).</p>
+
+<h2>Step 1: Your earnings become AIME</h2>
+<h3>1a. Only earnings up to the taxable maximum count</h3>
+<p>Social Security counts each year's earnings only up to that year's <strong>maximum taxable earnings</strong>. In 2027 that limit is <strong>$192,300</strong>, up from $184,500 in 2026 (SSA 2027 fact sheet). Earnings above the limit are not taxed for Social Security and do not raise your benefit.</p>
+<h3>1b. Earnings are indexed to wage growth</h3>
+<p>A dollar earned in 2000 bought more than a dollar earned today, so SSA multiplies each earlier year by a ratio from the <strong>National Average Wage Index (AWI)</strong>:</p>
+<blockquote><p>Indexed earnings = earnings in that year × (AWI of your indexing year ÷ AWI of that year)</p></blockquote>
+<p>Your <strong>indexing year is the year you turn 60</strong>. Earnings from that year onward are counted at face value (not indexed). If you were born on January 1, SSA treats you as turning 60 on December 31 of the prior year.</p>
+<p><strong>Example (born 1965, so indexing year 2025):</strong> you earned $40,000 in 2000.</p>
+<ul>
+<li>AWI for 2025: $72,800.33</li>
+<li>AWI for 2000: $32,154.82</li>
+<li>Factor: 72,800.33 ÷ 32,154.82 = 2.2641</li>
+<li>Indexed earnings: $40,000 × 2.2641 = <strong>$90,562</strong></li>
+</ul>
+<h3>1c. Take the best 35 years</h3>
+<p>SSA picks your 35 highest indexed years. If you worked fewer than 35 years, the missing years count as <strong>zeros</strong>. It adds the 35 years and divides by <strong>420</strong> (35 × 12 months), then rounds down to the whole dollar. That is your <strong>AIME</strong>.</p>
+<p><strong>Why this matters:</strong> working longer can raise your benefit if a new year replaces a lower or zero-earnings year.</p>
+
+<h2>Step 2: AIME becomes PIA (the bend-point formula)</h2>
+<p>The formula has three tiers. For someone who turns 62 in 2027:</p>
+<table>
+<thead><tr><th>Tier of AIME</th><th>Rate</th></tr></thead>
+<tbody><tr><td>First $1,340</td><td>90%</td></tr><tr><td>$1,340 to $8,077</td><td>32%</td></tr><tr><td>Above $8,077</td><td>15%</td></tr></tbody>
+</table>
+<p>SSA rounds the PIA down to the next lower dime.</p>
+<p><strong>Which year's bend points apply?</strong> The year you <strong>turn 62</strong>, not the year you claim. Someone born in 1965 turns 62 in 2027, so the 2027 numbers apply even if they claim at 67 or 70.</p>
+<table>
+<thead><tr><th>Year you turn 62</th><th>First bend point</th><th>Second bend point</th></tr></thead>
+<tbody><tr><td>2025</td><td>$1,226</td><td>$7,391</td></tr><tr><td>2026</td><td>$1,286</td><td>$7,749</td></tr><tr><td>2027</td><td>$1,340</td><td>$8,077</td></tr></tbody>
+</table>
+
+<h3>PIA examples (2027 bend points)</h3>
+<table>
+<thead><tr><th>AIME</th><th>First tier (90%)</th><th>Second tier (32%)</th><th>Third tier (15%)</th><th>PIA</th><th>PIA as % of AIME</th></tr></thead>
+<tbody>
+<tr><td>$3,000</td><td>$1,206.00</td><td>$531.20</td><td>$0</td><td><strong>$1,737.20</strong></td><td>57.9%</td></tr>
+<tr><td>$5,000</td><td>$1,206.00</td><td>$1,171.20</td><td>$0</td><td><strong>$2,377.20</strong></td><td>47.5%</td></tr>
+<tr><td>$9,000</td><td>$1,206.00</td><td>$2,155.84</td><td>$138.45</td><td><strong>$3,500.29 → $3,500.20</strong></td><td>38.9%</td></tr>
+<tr><td>$12,000</td><td>$1,206.00</td><td>$2,155.84</td><td>$588.45</td><td><strong>$3,950.29 → $3,950.20</strong></td><td>32.9%</td></tr>
+</tbody>
+</table>
+<p><strong>What the table shows:</strong> Social Security replaces a larger share of income for lower earners. Each extra dollar of AIME adds 90 cents of benefit in the first tier, 32 cents in the second and 15 cents above $8,077.</p>
+
+<h2>Step 3: Your claiming age adjusts the PIA</h2>
+<p>Your PIA is the amount you receive at <strong>full retirement age (FRA)</strong>. Claiming earlier cuts it permanently, and delaying past FRA raises it up to age 70. See our <a href="/blog/social-security-full-retirement-age-2027">full retirement age chart</a> for the exact rules and percentages by birth year.</p>
+<p>For FRA 67: 70% of PIA at 62, 100% at 67 and 124% at 70.</p>
+
+<h2>Putting it together: a full worked example</h2>
+<p>Assume a worker born in 1965 whose 35 best indexed years average <strong>$72,000</strong>:</p>
+<ol>
+<li><strong>AIME:</strong> $72,000 × 35 ÷ 420 = <strong>$6,000</strong></li>
+<li><strong>PIA (2027 bend points):</strong> $1,206.00 + 0.32 × ($6,000 − $1,340) = <strong>$2,697.20</strong></li>
+<li><strong>Claiming age (FRA 67):</strong></li>
+</ol>
+<table>
+<thead><tr><th>Claim at</th><th>Share of PIA</th><th>Monthly benefit*</th></tr></thead>
+<tbody><tr><td>62</td><td>70%</td><td>$1,888</td></tr><tr><td>67</td><td>100%</td><td>$2,697</td></tr><tr><td>70</td><td>124%</td><td>$3,344</td></tr></tbody>
+</table>
+<p><em>*Rounded down to whole dollars, before cost-of-living adjustments.</em></p>
+<p><strong>Cost of missing years:</strong> if the same worker had only 30 years of work at the same average, AIME would be $5,142 and PIA $2,422.60. That is about <strong>$275 a month less</strong> for life, from five zero years.</p>
+<p><strong>COLAs:</strong> cost-of-living adjustments are added to your benefit starting the year you turn 62, even before you claim. Our <a href="/blog/cola-updates">2027 COLA guide</a> explains the 3.6% adjustment.</p>
+
+<h2>Check your own numbers</h2>
+<ol>
+<li><strong>Get your real earnings record</strong> from your <a href="/blog/my-social-security-account-complete-guide">my Social Security account</a>. Check that every year is correct. Errors cost you benefits.</li>
+<li><strong>Use SSA's own statement</strong> for official estimates (<a href="/blog/check-how-much-social-security-i-will-get">how to check how much you'll get</a>).</li>
+<li><strong>Try our <a href="/calculators/benefits-estimator">benefits estimator</a></strong> to see AIME, PIA and the effect of claiming at different ages. It runs in your browser and does not store your data.</li>
+</ol>
+
+<h2>What this calculation leaves out</h2>
+<ul>
+<li><strong>Cost-of-living adjustments</strong> after you turn 62.</li>
+<li><strong>Spouse and survivor benefits,</strong> which use your PIA but follow their own rules (see <a href="/guides/spousal-benefits">spousal benefits</a>).</li>
+<li><strong>Taxes on benefits</strong> and <strong>Medicare premiums,</strong> which reduce what you receive.</li>
+<li><strong>Government pensions:</strong> the Windfall Elimination Provision and Government Pension Offset were repealed by the Social Security Fairness Act. See <a href="/blog/social-security-fairness-act-wep-gpo-repeal-explained">what changed</a>.</li>
+<li><strong>People born in 1966 or later:</strong> their final bend points are not yet known, so any estimate is a projection.</li>
+</ul>
+
+<h2>Frequently asked questions</h2>
+<h3>How many years does Social Security use?</h3>
+<p>The 35 highest years of indexed earnings. Fewer than 35 years means zeros fill the gap.</p>
+<h3>Do earnings above the taxable maximum count?</h3>
+<p>No. In 2027 only the first $192,300 of each year's earnings counts.</p>
+<h3>What are bend points?</h3>
+<p>The two dollar amounts ($1,340 and $8,077 for people turning 62 in 2027) where the benefit formula changes from 90% to 32% to 15%.</p>
+<h3>Are the bend points the same for everyone?</h3>
+<p>No. They are set by the year you turn 62 and rise with the national average wage.</p>
+<h3>What is the maximum Social Security benefit in 2027?</h3>
+<p>$4,188 a month for a worker retiring at full retirement age, per SSA's 2027 fact sheet.</p>
+<h3>Is PIA the amount I will be paid?</h3>
+<p>Only if you claim at full retirement age. Claiming earlier or later changes it, and cost-of-living adjustments are added over time.</p>
+<h3>Does working after 62 raise my benefit?</h3>
+<p>It can, if the new year's indexed earnings are among your highest 35.</p>
+
+<h2>Sources</h2>
+<ul>
+<li>SSA, <a href="https://www.ssa.gov/news/en/cola/factsheets/2027.html">2027 COLA fact sheet</a>: 2027 taxable maximum ($192,300) and maximum benefit at FRA ($4,188).</li>
+<li>SSA Office of the Chief Actuary, <a href="https://www.ssa.gov/oact/cola/AWI.html">National Average Wage Index</a> and <a href="https://www.ssa.gov/OACT/COLA/cbb.html">maximum taxable earnings</a>.</li>
+<li>SSA, <a href="https://secure.ssa.gov/poms.Nsf/lnx/0300605900">POMS RS 00605.900</a>: PIA bend points by year of eligibility, 1979 to 2027.</li>
+<li>SSA, <a href="https://ssa.gov/OACT/quickcalc/earlyretire.html">Reduction for early retirement</a>.</li>
+</ul>
+<p><em>Examples are illustrations calculated from SSA's published tables. They are educational, not financial advice. SSA determines your actual benefit.</em></p>`,
+    category: "Retirement Planning",
+    author: "Amine Saadi",
+    date: "2026-11-13",
+    lastUpdated: "2026-11-13",
+    readTime: "9 min read",
+    image: "/images/how-social-security-benefits-are-calculated.webp",
+    imageAlt: "Diagram of the Social Security benefit calculation from earnings to AIME to PIA, Social Security Guide",
+    primaryKeyword: "how social security benefits are calculated",
+    secondaryKeywords: ["social security benefit formula 2027", "AIME and PIA explained", "social security bend points 2027", "PIA formula", "how is social security calculated"],
+    searchIntent: "Understand exactly how my earnings record becomes a monthly benefit and see a worked example with current numbers.",
+  },
+  {
+    slug: "ssi-payment-amounts-2027",
+    title: "SSI Payment Amounts in 2027: New Federal Rates, Limits and Payment Dates",
+    metaTitle: "SSI Payment Amounts 2027: $1,029 Individual, $1,544 Couple",
+    metaDescription: "SSI rises 3.6% in 2027: $1,029 a month for an individual and $1,544 for a couple. See limits, how your payment is figured, and when the increase arrives.",
+    excerpt: "The 2027 federal SSI payment is $1,029 for an individual and $1,544 for a couple. Here are the new limits, how your actual payment is calculated, and when the raise arrives.",
+    content: `<h2>2027 SSI amounts at a glance</h2>
+<p>SSA announced a <strong>3.6% cost-of-living adjustment (COLA)</strong> for 2027. The maximum federal SSI payment becomes <strong>$1,029 a month for an individual</strong> (up $35) and <strong>$1,544 for a couple</strong> (up $53).</p>
+<table>
+<thead><tr><th></th><th>2026</th><th>2027</th><th>Change</th></tr></thead>
+<tbody>
+<tr><td>Federal payment, individual</td><td>$994</td><td><strong>$1,029</strong></td><td>+$35</td></tr>
+<tr><td>Federal payment, couple</td><td>$1,491</td><td><strong>$1,544</strong></td><td>+$53</td></tr>
+<tr><td>Essential person</td><td>$498</td><td><strong>$516</strong></td><td>+$18</td></tr>
+<tr><td>Resource limit, individual</td><td>$2,000</td><td>$2,000</td><td>none</td></tr>
+<tr><td>Resource limit, couple</td><td>$3,000</td><td>$3,000</td><td>none</td></tr>
+<tr><td>Student earned income exclusion, monthly</td><td>$2,410</td><td>$2,500</td><td>+$90</td></tr>
+<tr><td>Student earned income exclusion, yearly</td><td>$9,730</td><td>$10,080</td><td>+$350</td></tr>
+</tbody>
+</table>
+<p>Sources: SSA's 2027 COLA fact sheet and SSA's SSI payment-standards table.</p>
+<p><strong>These are maximum federal amounts.</strong> Your own payment is lower if you have other income or certain living arrangements, and higher if your state adds a supplement.</p>
+
+<h2>When does the 2027 increase arrive?</h2>
+<p>SSI is normally paid on the <strong>first of the month</strong>. When the first day falls on a weekend or federal holiday, SSA generally pays on the preceding business day. so SSI recipients will get their January payment, <strong>with the new 2027 amount, on Thursday, December 31, 2026</strong>. SSA's October 14, 2026 announcement says increased SSI payments begin on December 31, 2026 (<a href="https://www.ssa.gov/news/en/press/releases/2026-10-14.html" target="_blank" rel="noopener noreferrer">SSA press release</a>).</p></p>
+<p>What this means in practice:</p>
+<ul>
+<li>You may receive <strong>two payments in December 2026</strong>: one on December 1 and one on December 31.</li>
+<li><strong>No payment arrives on January 1.</strong> The next one is February 1, 2027, a Monday.</li>
+<li>Plan your rent and bills for the month with that gap in mind.</li>
+</ul>
+<p>People who get <strong>Social Security retirement or disability</strong> benefits are on a different schedule. Their 3.6% increase appears in the benefits paid starting in January 2027. See our <a href="/blog/cola-updates">2027 COLA guide</a>.</p>
+
+<h2>Why the amounts are not simply "$994 plus 3.6%"</h2>
+<p>The federal rate is set from an unrounded annual amount that SSA then rounds. For 2027, SSA lists $12,358.92 a year for an individual and $18,536.33 for a couple, which becomes <strong>$1,029</strong> and <strong>$1,544</strong> a month.</p>
+<p><strong>The couple rate is not double.</strong> Two eligible individuals would each get $1,029, or $2,058 together. An eligible couple gets $1,544, which is <strong>$514 a month less</strong> than two single recipients. If you are married to another SSI recipient, expect the couple rate.</p>
+
+<h2>How your actual SSI payment is figured</h2>
+<p>SSA starts with the federal rate and subtracts your <strong>countable income</strong>:</p>
+<blockquote><p>Your SSI = federal payment rate − countable income (+ any state supplement)</p></blockquote>
+<p>Long-standing federal rules exclude part of your income before the subtraction:</p>
+<ul>
+<li><strong>The first $20 a month</strong> of most income.</li>
+<li>For earnings, the <strong>first $65</strong> of earned income and <strong>half of the rest</strong>.</li>
+</ul>
+<p>These dollar amounts are set in federal regulations (20 CFR 416.1112 and 416.1124), not adjusted each year by the COLA. SSA applies the $20 general exclusion first to unearned income, as explained in its <a href="https://www.ssa.gov/redbook/eng/earned-income-exclusion.htm" target="_blank" rel="noopener noreferrer">Red Book guide to the earned income exclusion</a>.</p>
+
+<h3>Example 1: Social Security income only (2027)</h3>
+<p>You live on your own and receive <strong>$400 a month</strong> in Social Security.</p>
+<ul><li>Countable income: $400 − $20 = $380</li><li>SSI: $1,029 − $380 = <strong>$649 a month</strong> (before any state supplement)</li></ul>
+<h3>Example 2: Part-time wages (2027)</h3>
+<p>You live on your own and earn <strong>$800 a month</strong>, with no other income.</p>
+<ul><li>Countable earned income: ($800 − $20 − $65) ÷ 2 = $357.50</li><li>SSI: $1,029 − $357.50 = <strong>$671.50 a month</strong> (before any state supplement)</li></ul>
+<h3>Example 3: Eligible couple, no other income</h3>
+<p>SSI for the couple is <strong>$1,544 a month</strong>.</p>
+<p><em>These are simplified illustrations. Your living arrangement (for example, help with food or shelter), a spouse's or parent's income and other rules can change the result. SSA decides your actual payment.</em></p>
+
+<h2>SSI limits that did not change</h2>
+<ul>
+<li><strong>Resources:</strong> <strong>$2,000</strong> for an individual and <strong>$3,000</strong> for a couple. The limit is not adjusted by COLA, so a balance that was fine in 2026 is still the same cap in 2027. Countable resources include cash, bank accounts and most investments. See our guide to <a href="/blog/does-ssdi-have-an-asset-limit">asset limits</a> for how this differs from SSDI.</li>
+<li><strong>Student exclusion:</strong> the 2027 limits rise to <strong>$2,500 a month</strong> and <strong>$10,080 a year</strong> for eligible students under 22.</li>
+</ul>
+
+<h2>Disability thresholds for 2027</h2>
+<p>If you are applying for SSI because of a disability, SSA's "substantial gainful activity" limit matters. For 2027:</p>
+<ul>
+<li><strong>$1,770 a month</strong> (non-blind)</li>
+<li><strong>$2,950 a month</strong> (blind)</li>
+<li><strong>Trial work period:</strong> $1,270 a month (this mainly applies to SSDI)</li>
+</ul>
+<p>Source: SSA's 2027 COLA fact sheet.</p>
+
+<h2>State supplements</h2>
+<p>Some states add their own payment on top of the federal SSI amount. Others add nothing, so in those states the federal rate is all you receive. Supplement amounts and who qualifies <strong>differ by state</strong>, and states set them, not the federal COLA. To find out whether your state pays one, contact your state's social services or SSI supplement office, or call SSA at 1-800-772-1213. SSA stopped publishing its state-by-state supplement tables after the 2011 edition, so older charts you find online may be out of date.</p>
+
+<h2>Other effects of getting SSI</h2>
+<ul>
+<li><strong>Medicaid:</strong> in many states, SSI recipients qualify for Medicaid, but the rules differ by state.</li>
+<li><strong>Taxes:</strong> SSI is not taxable income.</li>
+<li><strong>Reporting:</strong> report changes in income, resources, living arrangements or marital status to SSA promptly, because they can change your payment.</li>
+</ul>
+
+<h2>Frequently asked questions</h2>
+<h3>How much is SSI in 2027?</h3>
+<p>The maximum federal payment is $1,029 a month for an individual and $1,544 for a couple.</p>
+<h3>Is the SSI increase automatic?</h3>
+<p>Yes. SSA applies the COLA to eligible recipients without an application.</p>
+<h3>When will I get the 2027 SSI increase?</h3>
+<p>SSA says increased SSI payments begin on December 31, 2026. That is the January 2027 payment, paid early because January 1 is a federal holiday.</p>
+<h3>Did the SSI resource limit go up?</h3>
+<p>No. It stays at $2,000 for individuals and $3,000 for couples.</p>
+<h3>What if I receive both SSI and Social Security?</h3>
+<p>Your Social Security benefit also rises 3.6%. Because Social Security counts as income for SSI (after the $20 exclusion), your SSI payment can change, and the total may rise by less than the full amount. See <a href="/blog/supplemental-security-income">SSI vs. SSDI</a>.</p>
+<h3>Where do I apply?</h3>
+<p>Our guide to <a href="/blog/how-to-apply-for-supplemental-security-income">applying for SSI</a> covers the steps.</p>
+
+<h2>Sources</h2>
+<ul>
+<li>SSA, <a href="https://www.ssa.gov/news/en/cola/factsheets/2027.html">2027 Cost-of-Living Adjustment fact sheet</a>: federal payment standards, resource limits, student exclusion, SGA and trial work period.</li>
+<li>SSA Office of the Chief Actuary, <a href="https://www.ssa.gov/OACT/COLA/SSI.html">SSI federal payment amounts</a>: unrounded annual amounts and essential person amount.</li>
+<li>20 CFR § 416.1112 and § 416.1124: earned and unearned income exclusions, and SSA's <a href="https://www.ssa.gov/redbook/eng/earned-income-exclusion.htm">Red Book: Earned Income Exclusion</a>.</li>
+<li>SSA, <a href="https://www.ssa.gov/news/en/press/releases/2026-10-14.html">Social Security Announces 3.6 Percent Benefit Increase for 2027</a>: SSI increase begins December 31, 2026.</li>
+</ul>
+<p><em>This guide is educational and is not legal advice. SSA decides eligibility and your actual payment.</em></p>`,
+    category: "SSI",
+    author: "Amine Saadi",
+    date: "2026-11-13",
+    lastUpdated: "2026-11-13",
+    readTime: "7 min read",
+        image: "/images/ssi-payment-amounts-2027.webp",
+    imageAlt: "SSI payment amounts 2027 compared with 2026, Social Security Guide",
+    primaryKeyword: "SSI payment amounts 2027",
+    secondaryKeywords: ["SSI increase 2027", "SSI federal benefit rate 2027", "SSI payment schedule December 31 2026", "SSI resource limit 2027", "SSI couple amount 2027"],
+    searchIntent: "Find the new 2027 SSI amounts and limits, learn when the increase is paid, and estimate my own payment.",
+  },
 ];
 
 export const categories = [
