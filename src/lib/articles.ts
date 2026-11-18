@@ -4125,6 +4125,243 @@ metaDescription: "Spouses can claim up to 50% of a partner's benefit at FRA. Lea
     secondaryKeywords: ["SSI increase 2027", "SSI federal benefit rate 2027", "SSI payment schedule December 31 2026", "SSI resource limit 2027", "SSI couple amount 2027"],
     searchIntent: "Find the new 2027 SSI amounts and limits, learn when the increase is paid, and estimate my own payment.",
   },
+  {
+    slug: "2027-social-security-full-retirement-age-chart",
+    title: "2027 Social Security Full Retirement Age: 1960 Chart & Rules",
+    metaTitle: "2027 Social Security Full Retirement Age Chart",
+    metaDescription: "Turning 67 in 2027? See the official 2027 Social Security Full Retirement Age (FRA) chart for 1960 births, the $67,920 earnings limit, and claiming rules.",
+    excerpt: "Turning 67 in 2027? See the official 2027 Social Security Full Retirement Age (FRA) chart for 1960 births, the $67,920 earnings limit, and claiming rules.",
+    category: "Retirement",
+    author: "Amine Saadi",
+    date: "2026-11-18",
+    lastUpdated: "2026-11-18",
+    readTime: "8 min read",
+    image: "/images/full-retirement-age-2027-chart.webp",
+    imageAlt: "2027 Social Security full retirement age chart for people born in 1960",
+    primaryKeyword: "2027 social security full retirement age",
+    secondaryKeywords: ["full retirement age for 1960", "what is my fra", "2027 retirement earnings test limit", "social security full retirement age chart"],
+    searchIntent: "Find the official 2027 Full Retirement Age and earning rules for the 1960 birth cohort.",
+    content: `<p><strong>In 2027, the Social Security Full Retirement Age (FRA) officially reaches its statutory maximum of 67 for anyone born between January 2, 1960, and January 1, 1961.</strong> This milestone marks the final step in the decades-long phase-in mandated by the 1983 Social Security Amendments—meaning the age-66-and-months era is officially over for all new retirees reaching FRA in 2027 and beyond.</p>
+
+<p>If you were born in 1960, reaching your Full Retirement Age in 2027 unlocks <strong>100% of your Primary Insurance Amount (PIA)</strong>, eliminates the Social Security Retirement Earnings Test, and allows you to start earning <strong>8% annual Delayed Retirement Credits</strong> if you wait to claim. Use our <a href="/calculators/retirement-age">Full Retirement Age Calculator</a> to pinpoint your exact eligibility month, or review the complete 2027 breakdown below.</p>
+
+<h2>2027 Social Security Full Retirement Age Chart by Birth Year</h2>
+<p>While 2027 is the landmark year for the 1960 birth cohort, your exact FRA depends on the year—and even the exact day—you were born. Under Social Security Administration (SSA) rules, individuals born on the <strong>1st of any month</strong> are treated as having attained their age on the last day of the preceding month.</p>
+
+<table>
+<thead><tr><th>Year of Birth</th><th>Full Retirement Age (FRA)</th><th>Year You Reach FRA</th><th>Benefit Payout at Age 62</th><th>Benefit Payout at Age 70</th></tr></thead>
+<tbody>
+<tr><td><strong>1958</strong></td><td>66 and 8 months</td><td>2024–2025</td><td>71.67%</td><td>126.67%</td></tr>
+<tr><td><strong>1959</strong></td><td>66 and 10 months</td><td>2025–2026</td><td>70.83%</td><td>125.33%</td></tr>
+<tr><td><strong>Jan 1, 1960</strong></td><td>66 and 10 months <em>(1959 rules)</em></td><td>November 2026</td><td>70.83%</td><td>125.33%</td></tr>
+<tr><td><strong>Jan 2 – Dec 31, 1960</strong></td><td><strong>67 years, 0 months</strong></td><td><strong>2027</strong></td><td><strong>70.00%</strong></td><td><strong>124.00%</strong></td></tr>
+<tr><td><strong>1961 or later</strong></td><td><strong>67 years, 0 months</strong></td><td><strong>2028 or later</strong></td><td><strong>70.00%</strong></td><td><strong>124.00%</strong></td></tr>
+</tbody>
+</table>
+
+<p><strong>Critical Birthday Rule for 1960:</strong> If you were born on <strong>January 1, 1961</strong>, the SSA considers you to have reached age 67 on December 31, 2027—meaning your Full Retirement Age lands in <strong>December 2027</strong>. Conversely, if you were born on the 1st of any month in 1960 (e.g., May 1, 1960), your FRA month is the month prior (April 2027).</p>
+
+<h2>What Changes When You Reach Full Retirement Age in 2027?</h2>
+<p>Reaching age 67 in 2027 triggers four major financial changes to how your Social Security benefits are calculated, taxed, and paid.</p>
+
+<h3>1. You Unlock 100% of Your Earned Benefit (No Early Reduction)</h3>
+<p>Claiming Social Security before your FRA permanently reduces your monthly check by <strong>5/9 of 1%</strong> per month for the first 36 months, and <strong>5/12 of 1%</strong> for each additional month. For someone born in 1960:</p>
+<ul>
+<li><strong>Claiming at age 62 (60 months early):</strong> Permanent <strong>30% reduction</strong> (a $2,200 full benefit drops to $1,540/month).</li>
+<li><strong>Claiming at age 65 (24 months early):</strong> Permanent <strong>13.33% reduction</strong> ($1,906/month).</li>
+<li><strong>Claiming at age 67 in 2027:</strong> <strong>100% of your full benefit</strong> ($2,200/month), boosted by the <strong>3.6% 2027 COLA</strong>—even if you haven't filed yet.</li>
+</ul>
+
+<h3>2. The 2027 Retirement Earnings Test Jumps to $67,920—Then Vanishes</h3>
+<p>If you continue working while collecting Social Security benefits, the SSA applies an annual earnings cap until the exact month you turn 67:</p>
+<ul>
+<li><strong>Under FRA for all of 2027 (born 1961 or later):</strong> You can earn up to <strong>$25,560/year</strong> ($2,130/month) before the SSA withholds $1 in benefits for every $2 earned above the limit.</li>
+<li><strong>Reaching FRA in 2027 (born in 1960):</strong> In the months <em>before</em> your 67th birthday month, a much higher <strong>$67,920/year</strong> ($5,660/month) limit applies, with $1 withheld for every $3 earned above the cap.</li>
+<li><strong>Starting the month you turn 67:</strong> <strong>No earnings limit applies.</strong> You can earn $100,000 or $500,000 a year with zero benefit withholding, and the SSA will recalculate your benefit upward to credit back any months withheld earlier. Test your exact numbers with our <a href="/calculators/earnings-test">Retirement Earnings Test Calculator</a>.</li>
+</ul>
+
+<h3>3. You Can Earn 8% Annual Delayed Retirement Credits Until Age 70</h3>
+<p>Once you hit age 67 in 2027, every month you delay claiming adds <strong>2/3 of 1% (8% per year)</strong> in Delayed Retirement Credits (DRCs) up to age 70:</p>
+<ul>
+<li><strong>Age 67 (2027):</strong> 100% of PIA ($2,200/month)</li>
+<li><strong>Age 68 (2028):</strong> 108% of PIA ($2,376/month)</li>
+<li><strong>Age 69 (2029):</strong> 116% of PIA ($2,552/month)</li>
+<li><strong>Age 70 (2030):</strong> 124% of PIA ($2,728/month)</li>
+</ul>
+<p>Run your personal longevity math in our <a href="/calculators/break-even">Social Security Break-Even Calculator</a> to see whether claiming at 67 or waiting until 70 yields higher lifetime income.</p>
+
+<h3>4. Spousal vs. Survivor Full Retirement Age Rules Differ</h3>
+<p>Do not confuse your retirement FRA with your survivor FRA:</p>
+<ul>
+<li><strong>Spousal Benefits:</strong> Your FRA for spousal benefits (up to <strong>50%</strong> of your spouse's PIA) is <strong>67</strong> if you were born in 1960. Importantly, spousal benefits <strong>do not</strong> earn Delayed Retirement Credits past age 67.</li>
+<li><strong>Survivor Benefits (Widows/Widowers):</strong> Under a separate statutory schedule, the Full Retirement Age for survivor benefits for individuals born between January 2, 1960, and January 1, 1961, is <strong>66 and 8 months</strong>—not 67.</li>
+</ul>
+
+<h2>Frequently Asked Questions (2027 Full Retirement Age)</h2>
+<h3>Do I get the 3.6% 2027 COLA if I turn 67 in 2027 but wait until 70 to claim?</h3>
+<p><strong>Yes.</strong> Every annual Cost-of-Living Adjustment starting from the year you turn 62 (2022 for the 1960 cohort) is automatically factored into your Primary Insurance Amount. Waiting until 70 compounds your 8% annual delayed credits <em>on top</em> of the 3.6% 2027 COLA.</p>
+
+<h3>When should I apply if I want my benefits to start at age 67 in 2027?</h3>
+<p>You can submit your application online through your <code>my Social Security</code> account up to <strong>four months before</strong> the month you want benefits to begin. If your 67th birthday is in July 2027, you can apply as early as March 2027.</p>
+
+<h3>Does reaching Full Retirement Age at 67 affect my Medicare enrollment?</h3>
+<p><strong>No.</strong> Medicare eligibility begins at <strong>age 65</strong> regardless of your Social Security Full Retirement Age. If you delayed Medicare Part B while covered by an active employer health plan and are retiring at 67 in 2027, enroll during your 8-month Special Enrollment Period to avoid lifetime late-enrollment penalties.</p>`
+  },
+
+  {
+    slug: "how-to-calculate-taxable-social-security-provisional-income",
+    title: "How to Calculate Social Security Taxes & Provisional Income",
+    metaTitle: "How to Calculate Social Security Taxes",
+    metaDescription: "Up to 85% of your Social Security check may be taxed. Learn the 2026–2027 Provisional Income formula, IRS brackets, and ways to lower taxes.",
+    excerpt: "Up to 85% of your Social Security check may be taxed by the IRS. Learn the exact 2026–2027 Provisional Income formula, IRS brackets, and 4 ways to lower taxes.",
+    category: "Taxes",
+    author: "Amine Saadi",
+    date: "2026-11-18",
+    lastUpdated: "2026-11-18",
+    readTime: "9 min read",
+    image: "/images/social-security-taxable-income-cover.webp",
+    imageAlt: "Guide to calculating Social Security taxes and provisional income",
+    primaryKeyword: "how to calculate social security taxes",
+    secondaryKeywords: ["provisional income calculator", "taxable social security benefits calculator", "how much of my social security is taxable", "2027 social security tax thresholds"],
+    searchIntent: "Calculate which portion of Social Security benefits is taxable using provisional income.",
+    content: `<p><strong>Up to 85% of your Social Security benefits can be subject to federal income tax if your combined "Provisional Income" exceeds $34,000 as a single filer or $44,000 as a married couple filing jointly.</strong> Unlike regular tax brackets, the IRS thresholds that govern Social Security taxation have never been indexed for inflation since they were enacted in 1983 and 1993—meaning annual Cost-of-Living Adjustments (including the <strong>3.6% COLA for 2027</strong>) push more retirees into taxable territory every year.</p>
+
+<p>Instead of guessing what you will owe the IRS, you can plug your numbers directly into our interactive <a href="/calculators/tax-calculator">Social Security Tax Calculator</a> or follow the step-by-step Provisional Income formula below.</p>
+
+<h2>Step 1: Calculate Your IRS Provisional Income</h2>
+<p>The IRS does not look at your Adjusted Gross Income (AGI) alone to tax your Social Security check. Instead, it uses a specific metric called <strong>Provisional Income</strong> (also known as <em>Combined Income</em> on IRS Worksheet 1).</p>
+<p><strong>Provisional Income = Adjusted Gross Income (excluding SS) + Tax-Exempt Interest + (50% × Annual Social Security Benefits)</strong></p>
+
+<h3>What Counts Toward Provisional Income?</h3>
+<ol>
+<li><strong>Modified Adjusted Gross Income (MAGI):</strong> Wages, self-employment net earnings, traditional 401(k) and IRA withdrawals, taxable pensions, dividends, and realized capital gains.</li>
+<li><strong>Tax-Exempt Interest:</strong> Interest from municipal bonds (reported on Form 1099-INT, Box 8). Even though municipal bond interest is free from regular federal income tax, <strong>the IRS adds it back</strong> when determining whether your Social Security is taxable.</li>
+<li><strong>Half (50%) of Your Gross Social Security Benefits:</strong> Use the gross amount in Box 5 of Form SSA-1099 <em>before</em> Medicare Part B or Part D premiums are deducted.</li>
+</ol>
+<p><em>Note: Qualified distributions from a <strong>Roth IRA or Roth 401(k)</strong> do NOT count toward your Provisional Income.</em></p>
+
+<h2>Step 2: Check the IRS Social Security Tax Thresholds (2026 &amp; 2027)</h2>
+<p>Once you have your Provisional Income total, match it against your filing status in the table below. Remember: <strong>85% is the maximum portion of your benefit that can be taxed</strong>—you never lose 85% of your check to the IRS; rather, up to 85% of your benefit is added to your taxable income and taxed at your ordinary marginal income tax rate (10%, 12%, 22%, etc.).</p>
+
+<table>
+<thead><tr><th>Filing Status</th><th>Tier 1: 0% Taxable</th><th>Tier 2: Up to 50% Taxable</th><th>Tier 3: Up to 85% Taxable</th></tr></thead>
+<tbody>
+<tr><td><strong>Single, Head of Household, or Qualifying Surviving Spouse</strong></td><td>Below $25,000</td><td>$25,000 – $34,000</td><td>Above $34,000</td></tr>
+<tr><td><strong>Married Filing Jointly</strong></td><td>Below $32,000</td><td>$32,000 – $44,000</td><td>Above $44,000</td></tr>
+<tr><td><strong>Married Filing Separately</strong> <em>(lived together at any time)</em></td><td>$0 <em>(No exemption)</em></td><td>$0</td><td><strong>85% taxable immediately</strong></td></tr>
+</tbody>
+</table>
+
+<h2>Step 3: Real-World Calculation Examples</h2>
+<h3>Example A: Single Retiree (Moderate Retirement Income)</h3>
+<ul>
+<li><strong>Annual Social Security Benefit:</strong> $26,000 ($13,000 = 50%)</li>
+<li><strong>Traditional IRA Withdrawals:</strong> $24,000</li>
+<li><strong>Municipal Bond Interest:</strong> $1,000</li>
+<li><strong>Provisional Income:</strong> $24,000 + $1,000 + $13,000 = <strong>$38,000</strong></li>
+</ul>
+<p><strong>How the IRS Taxes It:</strong></p>
+<ol>
+<li>The first $25,000 is <strong>0% taxable</strong>.</li>
+<li>Between $25,000 and $34,000 ($9,000 span), 50% is taxable = <strong>$4,500</strong>.</li>
+<li>Above $34,000 ($38,000 − $34,000 = $4,000), 85% is taxable = <strong>$3,400</strong>.</li>
+<li><strong>Total Taxable Social Security:</strong> $4,500 + $3,400 = <strong>$7,900</strong> (about 30.4% of their $26,000 benefit is included in taxable income).</li>
+</ol>
+
+<h3>Example B: Married Couple Filing Jointly</h3>
+<ul>
+<li><strong>Combined Annual Social Security Benefits:</strong> $42,000 ($21,000 = 50%)</li>
+<li><strong>Pension &amp; 401(k) Income:</strong> $35,000</li>
+<li><strong>Provisional Income:</strong> $35,000 + $21,000 = <strong>$56,000</strong></li>
+</ul>
+<p>Because $56,000 exceeds the $44,000 joint Tier 3 threshold by $12,000, the IRS taxes 50% of the $12,000 Tier 2 band ($6,000) plus 85% of the $12,000 excess ($10,200), resulting in <strong>$16,200</strong> of taxable Social Security benefits.</p>
+
+<h2>4 Legal Strategies to Reduce Taxes on Your Social Security Benefits</h2>
+<p>Because of the "tax torpedo" effect—where every extra dollar withdrawn from a Traditional IRA can trigger tax on an additional $0.50 or $0.85 of your Social Security check—smart withdrawal sequencing can save thousands per year:</p>
+<ol>
+<li><strong>Draw From Roth Accounts During High-Expense Years:</strong> Qualified Roth IRA distributions are excluded from Provisional Income. Using Roth funds to pay for a new car, home repair, or travel keeps your MAGI below the $34,000 / $44,000 cliff.</li>
+<li><strong>Execute Roth Conversions Between Retirement and Age 67–70:</strong> Converting Traditional 401(k)/IRA funds into a Roth IRA <em>before</em> you claim Social Security shrinks future Required Minimum Distributions (RMDs) that would otherwise push your Provisional Income into the 85% tier.</li>
+<li><strong>Use Qualified Charitable Distributions (QCDs) at Age 70½+:</strong> Donating directly from your IRA to a qualified charity satisfies your RMD without adding a single dollar to your AGI or Provisional Income.</li>
+<li><strong>Check State-Level Social Security Exemptions:</strong> Over 40 U.S. states fully exempt Social Security benefits from state income tax, while fewer than 10 states still tax a portion of benefits based on age or AGI limits.</li>
+</ol>
+
+<h2>Frequently Asked Questions</h2>
+<h3>How do I have federal taxes withheld from my Social Security check?</h3>
+<p>Submit <strong>IRS Form W-4V (Voluntary Withholding Request)</strong> to the Social Security Administration—either online via your <code>my Social Security</code> account or by mail. You can choose a flat withholding rate of <strong>7%, 10%, 12%, or 22%</strong> from each monthly deposit so you don't face an underpayment penalty in April.</p>
+
+<h3>Are SSDI (Social Security Disability Insurance) benefits taxed the same way?</h3>
+<p><strong>Yes.</strong> SSDI benefits are subject to the exact same Provisional Income thresholds ($25,000 single / $32,000 joint). However, <strong>Supplemental Security Income (SSI)</strong> payments are <strong>never</strong> taxable at the federal or state level.</p>`
+  },
+
+  {
+    slug: "social-security-spousal-benefits-complete-rules-chart",
+    title: "Social Security Spousal Benefits: 2027 Rules, Ages & Chart",
+    metaTitle: "Social Security Spousal Benefits: Rules & Chart",
+    metaDescription: "Learn Social Security spousal benefits, payout percentages by age from 32.5% to 50%, divorced spouse rules, and why waiting past 67 adds nothing.",
+    excerpt: "Learn how Social Security spousal benefits work, the exact payout percentage by age (32.5% to 50%), divorced spouse rules, and why waiting past 67 won't pay more.",
+    category: "Spousal Benefits",
+    author: "Amine Saadi",
+    date: "2026-11-18",
+    lastUpdated: "2026-11-18",
+    readTime: "7 min read",
+    image: "/images/spousal-benefits-cover.webp",
+    imageAlt: "Guide to Social Security spousal benefits rules and claiming ages",
+    primaryKeyword: "what is social security spousal benefit",
+    secondaryKeywords: ["spousal benefit percentage by age", "social security spousal benefits rules", "delayed retirement credits spousal benefit", "divorced spouse social security rules"],
+    searchIntent: "Find Social Security spousal benefit eligibility, payout percentages, and divorced-spouse rules.",
+    content: `<p><strong>A Social Security spousal benefit allows a lower-earning or non-working spouse to receive up to 50% of the higher-earning spouse's Full Retirement Age benefit—even if they never paid into Social Security themselves.</strong> For millions of married and divorced couples, coordinating when each partner files is the difference between leaving tens of thousands of dollars on the table and maximizing household retirement income.</p>
+
+<p>You can model your exact household filing combinations using our <a href="/calculators/couples-divorced-strategy-optimizer">Couples &amp; Divorced Strategy Optimizer</a>, or use the rules and age-reduction chart below to plan your claim.</p>
+
+<h2>Core Eligibility Requirements for Spousal Benefits</h2>
+<p>To qualify for a spousal benefit on your current husband or wife's work record, you must meet three baseline SSA requirements:</p>
+<ol>
+<li><strong>Length of Marriage:</strong> You must have been married for at least <strong>one continuous year</strong> (exceptions apply if you are the parent of your spouse's child or were eligible for certain benefits the month before marriage).</li>
+<li><strong>Minimum Age:</strong> You must be at least <strong>age 62</strong> (unless you are caring for a qualifying child under age 16 or a child with a disability).</li>
+<li><strong>Primary Worker Must File:</strong> Your spouse must have <strong>already filed</strong> for their own Social Security retirement or disability benefits before you can collect a spousal benefit on their record. <em>(Note: Divorced spouses are exempt from this rule—see below).</em></li>
+</ol>
+
+<h2>Spousal Benefit Percentage by Age (For 1960+ Birth Cohort)</h2>
+<p>Just like your own retirement benefit, claiming a spousal benefit before your Full Retirement Age (age 67 for anyone born in 1960 or later) results in a <strong>permanent reduction</strong>. However, the reduction formula is steeper for spousal benefits: <strong>25/36 of 1%</strong> per month for the first 36 months, and <strong>5/12 of 1%</strong> for each month beyond 36.</p>
+
+<table>
+<thead><tr><th>Age You Claim Spousal Benefit</th><th>Months Before FRA (Age 67)</th><th>Percentage of Spouse's Full Benefit (PIA)</th><th>Monthly Payout (If Spouse's PIA = $3,000)</th></tr></thead>
+<tbody>
+<tr><td><strong>62</strong></td><td>60 months early</td><td><strong>32.50%</strong></td><td>$975 / month</td></tr>
+<tr><td><strong>63</strong></td><td>48 months early</td><td><strong>35.00%</strong></td><td>$1,050 / month</td></tr>
+<tr><td><strong>64</strong></td><td>36 months early</td><td><strong>37.50%</strong></td><td>$1,125 / month</td></tr>
+<tr><td><strong>65</strong></td><td>24 months early</td><td><strong>41.67%</strong></td><td>$1,250 / month</td></tr>
+<tr><td><strong>66</strong></td><td>12 months early</td><td><strong>45.83%</strong></td><td>$1,375 / month</td></tr>
+<tr><td><strong>67 (FRA)</strong></td><td><strong>0 months</strong></td><td><strong>50.00% (Maximum)</strong></td><td><strong>$1,500 / month</strong></td></tr>
+<tr><td><strong>68 – 70</strong></td><td>Delayed past FRA</td><td><strong>50.00% (No extra credits)</strong></td><td><strong>$1,500 / month</strong></td></tr>
+</tbody>
+</table>
+
+<p><strong>The #1 Spousal Claiming Mistake:</strong> Spousal benefits <strong>do not</strong> earn 8% annual Delayed Retirement Credits past Full Retirement Age. Once you reach age 67, your spousal benefit is permanently capped at <strong>50%</strong> of your partner's PIA. Furthermore, if your partner delays their own claim from 67 to 70 to earn 124% of their benefit, <strong>your spousal benefit is still calculated on their age-67 PIA—not their age-70 check.</strong></p>
+
+<h2>How "Deemed Filing" Works When You Have Your Own Work Record</h2>
+<p>If you worked and earned your own Social Security credits, the SSA does <strong>not</strong> pay you both your full retirement benefit <em>and</em> a full 50% spousal benefit. Instead, under the <strong>Deemed Filing rule</strong> (which applies to everyone born on or after January 2, 1954):</p>
+<ul>
+<li>When you apply for either your own retirement benefit or a spousal benefit, you are automatically "deemed" to have filed for <strong>both</strong>.</li>
+<li>The SSA pays your own earned retirement benefit first, and then adds a <strong>spousal "top-up"</strong> equal to the difference between your own PIA and 50% of your spouse's PIA.</li>
+<li><strong>Example:</strong> If your own age-67 benefit is <strong>$1,100</strong> and your spouse's age-67 benefit is <strong>$3,000</strong> (50% = $1,500), you will receive your $1,100 plus a $400 spousal top-up for a combined <strong>$1,500/month</strong> at age 67.</li>
+</ul>
+
+<h2>Divorced Spouse Social Security Rules</h2>
+<p>If you are divorced, you may still be entitled to the exact same <strong>50% spousal benefit</strong> on your ex-spouse's record without affecting their current benefits or their new spouse's benefits:</p>
+<ul>
+<li><strong>10-Year Marriage Rule:</strong> Your marriage must have lasted at least <strong>10 years</strong> prior to the final divorce decree.</li>
+<li><strong>Currently Unmarried:</strong> You must be unmarried at the time you file (if you remarried and that marriage later ended by death, divorce, or annulment, you regain eligibility).</li>
+<li><strong>Independently Entitled Divorced Spouse Rule:</strong> If you have been divorced for at least <strong>two continuous years</strong> and both you and your ex-spouse are at least age 62, you can claim a divorced spousal benefit <strong>even if your ex-spouse has not yet filed</strong> for their own Social Security.</li>
+</ul>
+
+<h2>Frequently Asked Questions</h2>
+<h3>What happens to my spousal benefit if my spouse passes away?</h3>
+<p>Your spousal benefit automatically converts into a <strong>Survivor Benefit</strong> (see our <a href="/blog/social-security-survivor-benefits-guide">Survivor Benefits Guide</a>). Instead of being capped at 50% of your spouse's age-67 PIA, a survivor benefit jumps to <strong>100% of what your spouse was receiving (or entitled to receive) at death</strong>—including any Delayed Retirement Credits they earned by waiting until age 70.</p>
+
+<h3>Can I collect a spousal benefit if my spouse is receiving SSDI?</h3>
+<p><strong>Yes.</strong> If your spouse receives Social Security Disability Insurance (SSDI), you can claim a spousal benefit at age 62 or older (or at any age if caring for their child under age 16), subject to the Family Maximum Benefit cap.</p>`
+  },
 ];
 
 export const categories = [
